@@ -10,29 +10,16 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    207875,       3904]
-NotebookOptionsPosition[    198963,       3614]
-NotebookOutlinePosition[    200695,       3664]
-CellTagsIndexPosition[    200615,       3659]
+NotebookDataLength[    225657,       4342]
+NotebookOptionsPosition[    215734,       4019]
+NotebookOutlinePosition[    217439,       4069]
+CellTagsIndexPosition[    217359,       4064]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["", "SlideShowNavigationBar",
- CellTags->"SlideShowHeader"],
-
-Cell[CellGroupData[{
-
-Cell["Slide", "Section"],
-
-Cell["This is a text cell.", "Text"]
-}, Open  ]]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
 Cell[BoxData[
  TogglerBox[2, {1->
   OverlayBox[{
@@ -340,17 +327,27 @@ Cell["The principle of parsimony", "Subsection",
  CellChangeTimes->{{3.636193771940345*^9, 3.6361937917062607`*^9}, {
   3.636194881475922*^9, 3.6361948862600307`*^9}}],
 
+Cell[CellGroupData[{
+
 Cell[TextData[{
  StyleBox["Prefer a simple explanation",
   FontSlant->"Italic"],
  " or model over a complex one, if both are ",
- StyleBox["equally compatible with the data.\n",
-  FontSlant->"Italic"],
- "Start from a simple null model; rejected in favour of a more complicated \
-model if necessary."
-}], "Text",
+ StyleBox["equally compatible with the data",
+  FontSlant->"Italic"]
+}], "Item",
  CellChangeTimes->{{3.636194898537521*^9, 3.636195037913911*^9}, {
-  3.63628275065714*^9, 3.636282766801564*^9}}]
+  3.63628275065714*^9, 3.636282766801564*^9}, {3.6364600163136473`*^9, 
+  3.636460036296401*^9}}],
+
+Cell["\<\
+Start from a simple null model; rejected in favour of a more complicated \
+model if necessary\
+\>", "Item",
+ CellChangeTimes->{{3.636194898537521*^9, 3.636195037913911*^9}, {
+  3.63628275065714*^9, 3.636282766801564*^9}, {3.6364600163136473`*^9, 
+  3.636460037168419*^9}}]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -366,10 +363,11 @@ Cell["Seven steps to modelling a biological problem", "Section",
  CellChangeTimes->{{3.636115722253561*^9, 3.636115734052698*^9}}],
 
 Cell["\<\
-In Box 2.1, Otto and Day (2007) [OD07 in the following] propose seven steps \
-to modelling a biological problem:\
+In Box 2.1, Otto and Day (2007) [OD07] propose seven steps to modelling a \
+biological problem:\
 \>", "Text",
- CellChangeTimes->{{3.636115736204953*^9, 3.6361158218062*^9}}],
+ CellChangeTimes->{{3.636115736204953*^9, 3.6361158218062*^9}, 
+   3.63646005617413*^9}],
 
 Cell[CellGroupData[{
 
@@ -422,7 +420,16 @@ Start from an interesting observation. There may be an unexpected resolution!\
 \>", "Item",
  CellChangeTimes->{{3.636115872860146*^9, 3.636115884988915*^9}, {
   3.636192540665494*^9, 3.636192686740991*^9}, {3.6361956877567883`*^9, 
-  3.636195715718863*^9}, {3.6361959483477993`*^9, 3.636196005024706*^9}}]
+  3.636195715718863*^9}, {3.6361959483477993`*^9, 3.636196005024706*^9}, {
+  3.636458836548049*^9, 3.6364588365633793`*^9}}],
+
+Cell["\<\
+Example: Why does the # of HIV particles drop after an initial peak?\
+\>", "Subitem",
+ CellChangeTimes->{{3.636115872860146*^9, 3.636115884988915*^9}, {
+  3.636192540665494*^9, 3.636192686740991*^9}, {3.6361956877567883`*^9, 
+  3.636195715718863*^9}, {3.6361959483477993`*^9, 3.636196005024706*^9}, {
+  3.636458836548049*^9, 3.6364588815235977`*^9}}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -920,9 +927,11 @@ JBcAxfF0uiO1+h+14b8AAjp2OQ==
       "], "RGB", "XYZ"], Interleaving -> True],
    Selectable->False],
   BaseStyle->"ImageGraphics",
-  ImageSize->{373.32632770944144`, Automatic},
+  ImageSize->{424.52945270944144`, Automatic},
   ImageSizeRaw->{573, 376},
   PlotRange->{{0, 573}, {0, 376}}]], "Input"],
+
+Cell[CellGroupData[{
 
 Cell["\<\
 Start with the simplest, biologically reasonable description of the problem\
@@ -931,7 +940,21 @@ Start with the simplest, biologically reasonable description of the problem\
    3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
    3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
    3.636196059597213*^9}, {3.636196495496621*^9, 3.6361965086874847`*^9}, {
-   3.636197524157209*^9, 3.6361975505357018`*^9}}]
+   3.636197524157209*^9, 3.6361975505357018`*^9}, {3.63645895295934*^9, 
+   3.636458952983028*^9}}],
+
+Cell["\<\
+Example: \[OpenCurlyDoubleQuote]The immune system responds\
+\[CloseCurlyDoubleQuote] (complex) vs \[OpenCurlyDoubleQuote]HIV runs out of \
+CD4+ cells to infect\[CloseCurlyDoubleQuote] (simple)\
+\>", "Subitem",
+ CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
+   3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
+   3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
+   3.636196059597213*^9}, {3.636196495496621*^9, 3.6361965086874847`*^9}, {
+   3.636197524157209*^9, 3.6361975505357018`*^9}, {3.63645895295934*^9, 
+   3.636459021225178*^9}, {3.636459108412301*^9, 3.636459162481249*^9}}]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -955,28 +978,35 @@ Cell["Examples:", "Item",
 
 Cell[CellGroupData[{
 
-Cell["\<\
-How does the number of branches of a tree change over time?\[LineSeparator]\
-\[Rule] Population growth\
-\>", "Subitem",
+Cell[TextData[{
+ "How does the number of branches of a tree change over time?\[LineSeparator]\
+\[Rule] ",
+ StyleBox["Population growth",
+  FontSlant->"Italic"]
+}], "Subitem",
  CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
    3.636192768089711*^9, 3.6361927698814697`*^9}, 3.636192913262154*^9, {
    3.636195795029636*^9, 3.63619581919582*^9}, {3.636196182389943*^9, 
    3.636196216704419*^9}, {3.636196580001836*^9, 3.636196590659445*^9}}],
 
-Cell["\<\
-How does cycling affect the number of squirrels on campus?\[LineSeparator]\
-\[Rule] Immigration \
-\>", "Subitem",
+Cell[TextData[{
+ "How does cycling affect the number of squirrels on campus?\[LineSeparator]\
+\[Rule] ",
+ StyleBox["Immigration",
+  FontSlant->"Italic"]
+}], "Subitem",
  CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
    3.636192768089711*^9, 3.6361927698814697`*^9}, 3.636192913262154*^9, {
    3.636195795029636*^9, 3.636195865560248*^9}, {3.636196598883483*^9, 
-   3.6361966171572847`*^9}, {3.636197170298833*^9, 3.636197193641753*^9}}],
+   3.6361966171572847`*^9}, {3.636197170298833*^9, 3.636197193641753*^9}, 
+   3.6364592427202168`*^9}],
 
-Cell["\<\
-How does the number of people with the flu change over the season?\
-\[LineSeparator]\[Rule] Interactions\
-\>", "Subitem",
+Cell[TextData[{
+ "How does the number of people with the flu change over the season?\
+\[LineSeparator]\[Rule] ",
+ StyleBox["Interactions",
+  FontSlant->"Italic"]
+}], "Subitem",
  CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
    3.636192768089711*^9, 3.6361927698814697`*^9}, 3.636192913262154*^9, {
    3.636195795029636*^9, 3.636195906768846*^9}, 3.636196232061741*^9, 
@@ -1114,7 +1144,7 @@ Cell["Describe constraints on the variables", "Item",
 Cell[CellGroupData[{
 
 Cell[TextData[{
- "Branches: ",
+ "Branches, squirrels: ",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -1125,7 +1155,8 @@ Cell[TextData[{
    3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
    3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
    3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361972880439987`*^9}, 
-   3.6361979166711197`*^9, {3.636197985322764*^9, 3.636198014857232*^9}},
+   3.6361979166711197`*^9, {3.636197985322764*^9, 3.636198014857232*^9}, {
+   3.636459287714005*^9, 3.6364592902349253`*^9}},
  FontColor->RGBColor[0.2, 0.6, 0.4]],
 
 Cell[TextData[{
@@ -1159,7 +1190,13 @@ Cell["Describe interactions among variables", "Item",
  CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
    3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
    3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
-   3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361972972431*^9}}],
+   3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361972972431*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[CellGroupData[{
 
 Cell["Discrete or continuous time?", "Item",
  CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
@@ -1203,9 +1240,14 @@ Choose a time scale (discrete time: time step; continuous time: unit of rates)\
    3.6361988645504*^9, 3.636198908657468*^9, {3.6362829354805593`*^9, 
    3.636282942829575*^9}, {3.636283737702756*^9, 3.636283751638434*^9}}],
 
-Cell["\<\
-Examples: discrete time step of 1 day; rates measured in units per day\
-\>", "Subsubitem",
+Cell[TextData[{
+ "Examples: discrete time step of ",
+ StyleBox["1 day",
+  FontSlant->"Italic"],
+ "; rates measured in units ",
+ StyleBox["per day",
+  FontSlant->"Italic"]
+}], "Subsubitem",
  CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
    3.636115472206657*^9, 3.6361154802805347`*^9}, {3.6361982728729753`*^9, 
    3.636198368333645*^9}, {3.636198407260191*^9, 3.6361984358921843`*^9}, {
@@ -1218,25 +1260,26 @@ Examples: discrete time step of 1 day; rates measured in units per day\
 Cell[CellGroupData[{
 
 Cell[BoxData["mpContDiscDyn"], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.63628764377464*^9, 3.636287644377982*^9}, 
    3.636287700213032*^9}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`n0$$ = 2, $CellContext`r0$$ = 0.782, 
+   DynamicModuleBox[{$CellContext`n0$$ = 2, $CellContext`r0$$ = 0.5, 
     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`n0$$], 2}, {{
        Hold[$CellContext`r0$$], 0.5}, 0., 1}}, Typeset`size$$ = {
-    360., {115., 120.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`r0$48910$$ = 0}, 
+    360., {118., 123.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`r0$15977$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`n0$$ = 2, $CellContext`r0$$ = 0.5}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`r0$$, $CellContext`r0$48910$$, 0]}, 
+        Hold[$CellContext`r0$$, $CellContext`r0$15977$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1250,7 +1293,7 @@ Cell[BoxData[
         FrameLabel -> {"Time (Days)", "Number of branches"}], 
       "Specifications" :> {{$CellContext`n0$$, 2}, {{$CellContext`r0$$, 0.5}, 
          0., 1}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{405., {184., 189.}},
+     ImageSizeCache->{405., {174., 179.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1264,8 +1307,13 @@ Cell[BoxData[
  CellChangeTimes->{
   3.6362876448277693`*^9, 3.6362877007648067`*^9, 3.636287763158388*^9, 
    3.636287854031967*^9, 3.636287929935902*^9, {3.636287965118103*^9, 
-   3.6362880238464127`*^9}, {3.6362880590643797`*^9, 3.6362881107699013`*^9}}]
+   3.6362880238464127`*^9}, {3.6362880590643797`*^9, 
+   3.6362881107699013`*^9}, {3.6364641160735397`*^9, 
+   3.6364641420497303`*^9}, {3.6364641974287853`*^9, 3.636464227983267*^9}}]
 }, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
 
 Cell[CellGroupData[{
 
@@ -1290,12 +1338,7 @@ a discrete-time model."
   3.636283780928927*^9, 3.636283901896826*^9}, {3.6362846337932167`*^9, 
   3.6362846891382647`*^9}, {3.636288269851758*^9, 3.636288269861972*^9}}],
 
-Cell[TextData[{
- "Discrete time: ",
- StyleBox["recursion equations",
-  FontSlant->"Italic"],
- ", describing the value of a variable in the next time step"
-}], "Subitem",
+Cell["Discrete time:", "Subitem",
  CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
    3.636115472206657*^9, 3.6361154802805347`*^9}, {3.6361982728729753`*^9, 
    3.6361983236295443`*^9}, {3.6361983632219973`*^9, 3.636198384422186*^9}, {
@@ -1303,7 +1346,28 @@ Cell[TextData[{
    3.6361994894119997`*^9}, {3.636282968556181*^9, 3.6362831194145412`*^9}, {
    3.636283780928927*^9, 3.636283901896826*^9}, {3.6362846337932167`*^9, 
    3.6362846891382647`*^9}, 3.636288269851758*^9, {3.636288452414414*^9, 
-   3.636288489564814*^9}, {3.6362886289013367`*^9, 3.636288628908842*^9}}]
+   3.636288489564814*^9}, {3.6362886289013367`*^9, 3.636288628908842*^9}, {
+   3.636459744940695*^9, 3.636459745383892*^9}}],
+
+Cell[TextData[{
+ StyleBox["Recursion equations",
+  FontWeight->"Bold"],
+ ", describing the ",
+ StyleBox["value",
+  FontSlant->"Italic"],
+ " of a variable ",
+ StyleBox["in the next time step",
+  FontSlant->"Italic"]
+}], "Subsubitem",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+   3.636115472206657*^9, 3.6361154802805347`*^9}, {3.6361982728729753`*^9, 
+   3.6361983236295443`*^9}, {3.6361983632219973`*^9, 3.636198384422186*^9}, {
+   3.636198599563367*^9, 3.636198601384912*^9}, {3.636199423824724*^9, 
+   3.6361994894119997`*^9}, {3.636282968556181*^9, 3.6362831194145412`*^9}, {
+   3.636283780928927*^9, 3.636283901896826*^9}, {3.6362846337932167`*^9, 
+   3.6362846891382647`*^9}, 3.636288269851758*^9, {3.636288452414414*^9, 
+   3.636288489564814*^9}, {3.6362886289013367`*^9, 3.636288628908842*^9}, {
+   3.636459744940695*^9, 3.636459750122595*^9}}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1316,11 +1380,15 @@ Cell[BoxData[
  CellChangeTimes->{{3.6362886693319263`*^9, 3.6362886956903543`*^9}}],
 
 Cell[TextData[{
- "Discrete time: ",
- StyleBox["difference equations",
+ StyleBox["Difference equations",
+  FontWeight->"Bold"],
+ ", describing the ",
+ StyleBox["change",
   FontSlant->"Italic"],
- ", describing the change in a variable over one unit of time"
-}], "Subitem",
+ " in a variable ",
+ StyleBox["per unit of time",
+  FontSlant->"Italic"]
+}], "Subsubitem",
  CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
    3.636115472206657*^9, 3.6361154802805347`*^9}, {3.6361982728729753`*^9, 
    3.6361983236295443`*^9}, {3.6361983632219973`*^9, 3.636198384422186*^9}, {
@@ -1328,7 +1396,8 @@ Cell[TextData[{
    3.6361994894119997`*^9}, {3.636282968556181*^9, 3.6362831194145412`*^9}, {
    3.636283780928927*^9, 3.636283901896826*^9}, {3.6362846337932167`*^9, 
    3.6362846891382647`*^9}, 3.636288269851758*^9, {3.636288452414414*^9, 
-   3.636288530225758*^9}, {3.636288737212307*^9, 3.636288740827998*^9}}],
+   3.636288530225758*^9}, {3.636288737212307*^9, 3.636288740827998*^9}, {
+   3.636459757612706*^9, 3.636459785534781*^9}}],
 
 Cell[BoxData[
  RowBox[{"\t\t", 
@@ -1346,12 +1415,9 @@ Cell[BoxData[
  CellChangeTimes->{{3.6362886693319263`*^9, 3.6362886956903543`*^9}, {
   3.636288755918974*^9, 3.6362887716498528`*^9}}],
 
-Cell[TextData[{
- "Continuous time: ",
- StyleBox["differential equations",
-  FontSlant->"Italic"],
- ", describing the rate at which a variable changes over time"
-}], "Subitem",
+Cell[CellGroupData[{
+
+Cell["Continuous time:", "Subitem",
  CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
    3.636115472206657*^9, 3.6361154802805347`*^9}, {3.6361982728729753`*^9, 
    3.6361983236295443`*^9}, {3.6361983632219973`*^9, 3.636198384422186*^9}, {
@@ -1359,20 +1425,45 @@ Cell[TextData[{
    3.6361994894119997`*^9}, {3.636282968556181*^9, 3.6362831194145412`*^9}, {
    3.636283780928927*^9, 3.636283901896826*^9}, {3.6362846337932167`*^9, 
    3.6362846891382647`*^9}, 3.636288269851758*^9, {3.636288452414414*^9, 
-   3.6362885356020927`*^9}, {3.63628886892253*^9, 3.636288886944708*^9}}],
+   3.6362885356020927`*^9}, {3.63628886892253*^9, 3.636288886944708*^9}, {
+   3.636459815492679*^9, 3.63645981688931*^9}}],
+
+Cell[TextData[{
+ StyleBox["Differential equations",
+  FontWeight->"Bold"],
+ ", describing the ",
+ StyleBox["rate of change over time",
+  FontSlant->"Italic"],
+ " of a variable"
+}], "Subsubitem",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+   3.636115472206657*^9, 3.6361154802805347`*^9}, {3.6361982728729753`*^9, 
+   3.6361983236295443`*^9}, {3.6361983632219973`*^9, 3.636198384422186*^9}, {
+   3.636198599563367*^9, 3.636198601384912*^9}, {3.636199423824724*^9, 
+   3.6361994894119997`*^9}, {3.636282968556181*^9, 3.6362831194145412`*^9}, {
+   3.636283780928927*^9, 3.636283901896826*^9}, {3.6362846337932167`*^9, 
+   3.6362846891382647`*^9}, 3.636288269851758*^9, {3.636288452414414*^9, 
+   3.6362885356020927`*^9}, {3.63628886892253*^9, 3.636288886944708*^9}, {
+   3.636459815492679*^9, 3.636459817803286*^9}, {3.636459856001336*^9, 
+   3.636459880212431*^9}}]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{"\t\t", 
   RowBox[{
-   FractionBox[
-    RowBox[{
-     RowBox[{"\[DifferentialD]", "n"}], 
-     RowBox[{"(", "t", ")"}]}], 
-    RowBox[{"\[DifferentialD]", "t"}]], 
    RowBox[{
-   "=", "\"\<some function of n(t)\>\""}]}]}]], "DisplayFormulaNumbered",
+    FractionBox[
+     RowBox[{
+      RowBox[{"\[DifferentialD]", "n"}], 
+      RowBox[{"(", "t", ")"}]}], 
+     RowBox[{"\[DifferentialD]", "t"}]]}], "=", 
+   "\"\<some function of n(t)\>\""}]}]], "DisplayFormulaNumbered",
  CellChangeTimes->{{3.6362886693319263`*^9, 3.6362886956903543`*^9}, {
-  3.6362889175593653`*^9, 3.63628892458701*^9}}],
+  3.6362889175593653`*^9, 3.63628892458701*^9}, {3.6364594788482513`*^9, 
+  3.636459480053829*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
 
 Cell[CellGroupData[{
 
@@ -1380,14 +1471,198 @@ Cell["Define the parameters", "Item",
  CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
    3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
    3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
-   3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361974264988337`*^9}}],
+   3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361974264988337`*^9}, {
+   3.6364602722431927`*^9, 3.6364602722531137`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Remain fixed over time as the variables change", "Subitem",
+ CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
+   3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
+   3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
+   3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361974264988337`*^9}, {
+   3.6364602722431927`*^9, 3.636460307363451*^9}}],
+
+Cell["\<\
+Common to use italicised roman letters or lower-case greek letters\
+\>", "Subitem",
+ CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
+   3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
+   3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
+   3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361974264988337`*^9}, {
+   3.6364602722431927`*^9, 3.636460346707012*^9}, {3.636460461905321*^9, 
+   3.636460461912202*^9}}],
+
+Cell[TextData[{
+ "Parameters ",
+ StyleBox["representing events per unit time",
+  FontSlant->"Italic"],
+ ":"
+}], "Subitem",
+ CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
+   3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
+   3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
+   3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361974264988337`*^9}, {
+   3.6364602722431927`*^9, 3.636460346707012*^9}, {3.636460461905321*^9, 
+   3.6364604872967787`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Discrete-time models: ",
+ StyleBox["number of events",
+  FontSlant->"Italic"],
+ " per time step"
+}], "Subsubitem",
+ CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
+   3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
+   3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
+   3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361974264988337`*^9}, {
+   3.6364602722431927`*^9, 3.636460346707012*^9}, {3.636460461905321*^9, 
+   3.63646050186432*^9}, {3.636460537706519*^9, 3.63646053771306*^9}}],
+
+Cell[TextData[{
+ "Continuous-time models: ",
+ StyleBox["rate of events",
+  FontSlant->"Italic"],
+ " per unit time"
+}], "Subsubitem",
+ CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
+   3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
+   3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
+   3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361974264988337`*^9}, {
+   3.6364602722431927`*^9, 3.636460346707012*^9}, {3.636460461905321*^9, 
+   3.63646050186432*^9}, {3.636460537706519*^9, 3.6364605529264793`*^9}}]
+}, Open  ]],
+
+Cell["\<\
+Other parameters (e.g. the probability of a certain type of event) retain the \
+same definition in discrete and continuous time\
+\>", "Subitem",
+ CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
+   3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
+   3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
+   3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361974264988337`*^9}, {
+   3.6364602722431927`*^9, 3.636460346707012*^9}, {3.636460461905321*^9, 
+   3.63646050186432*^9}, {3.636460537706519*^9, 3.636460639449029*^9}, {
+   3.636460720182515*^9, 3.636460720194159*^9}}],
+
+Cell["Examples:", "Subitem",
+ CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
+   3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
+   3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
+   3.636196059597213*^9}, {3.6361972747498083`*^9, 3.6361974264988337`*^9}, {
+   3.6364602722431927`*^9, 3.636460346707012*^9}, {3.636460461905321*^9, 
+   3.63646050186432*^9}, {3.636460537706519*^9, 3.636460639449029*^9}, {
+   3.636460720182515*^9, 3.636460756559263*^9}, {3.636463418282628*^9, 
+   3.636463419520479*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["paramExampleTable"], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.6364634225667667`*^9, 3.636463435922748*^9}, {
+  3.6364640287756863`*^9, 3.6364640296061783`*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Discrete time\"\>", "\<\"Continuous time\"\>"},
+    {
+     TagBox[GridBox[{
+        {"\<\"\\!\\(\\*\\nStyleBox[\\\"b\\\",\\nFontSlant->\\\"Italic\\\"]\\)\
+\\!\\(\\*\\nStyleBox[\\\",\\\",\\nFontSlant->\\\"Italic\\\"]\\) \
+\\!\\(\\*\\nStyleBox[\\\"nr\\\",\\nFontSlant->\\\"Italic\\\"]\\) of branches \
+budding off each old branch per day\"\>"}
+       },
+       DefaultBaseStyle->"Column",
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Column"], 
+     TagBox[GridBox[{
+        {"\<\"\[Beta], \
+\\!\\(\\*\\nStyleBox[\\\"rate\\\",\\nFontSlant->\\\"Italic\\\"]\\) of budding \
+for each old branch per day\"\>"}
+       },
+       DefaultBaseStyle->"Column",
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Column"]},
+    {
+     TagBox[GridBox[{
+        {"\<\"\\!\\(\\*\\nStyleBox[\\\"d\\\",\\nFontSlant->\\\"Italic\\\"]\\)\
+\\!\\(\\*\\nStyleBox[\\\",\\\",\\nFontSlant->\\\"Italic\\\"]\\) \
+\\!\\(\\*\\nStyleBox[\\\"fraction\\\",\\nFontSlant->\\\"Italic\\\"]\\) of \
+squirrels killed by cyclists per day\"\>"},
+        {"\<\"\\!\\(\\*\\nStyleBox[\\\"b\\\",\\nFontSlant->\\\"Italic\\\"]\\)\
+\\!\\(\\*\\nStyleBox[\\\",\\\",\\nFontSlant->\\\"Italic\\\"]\\) \
+\\!\\(\\*\\nStyleBox[\\\"number\\\",\\nFontSlant->\\\"Italic\\\"]\\) of \
+squirrels born per squirrel per day\"\>"}
+       },
+       DefaultBaseStyle->"Column",
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Column"], 
+     TagBox[GridBox[{
+        {"\<\"\[Delta], \
+\\!\\(\\*\\nStyleBox[\\\"rate\\\",\\nFontSlant->\\\"Italic\\\"]\\) of death \
+due to cyclists per day\"\>"},
+        {"\<\"\[Beta], \
+\\!\\(\\*\\nStyleBox[\\\"rate\\\",\\nFontSlant->\\\"Italic\\\"]\\) of birth \
+per squirrel per day\"\>"}
+       },
+       DefaultBaseStyle->"Column",
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Column"]},
+    {
+     TagBox[GridBox[{
+        {"\<\"\\!\\(\\*\\nStyleBox[\\\"c\\\",\\nFontSlant->\\\"Italic\\\"]\\)\
+\\!\\(\\*\\nStyleBox[\\\",\\\",\\nFontSlant->\\\"Italic\\\"]\\) \
+\\!\\(\\*\\nStyleBox[\\\"fraction\\\",\\nFontSlant->\\\"Italic\\\"]\\) of \
+healthy people exposed to flu carriers per day\"\>"},
+        {"\<\"\\!\\(\\*\\nStyleBox[\\\"a\\\",\\nFontSlant->\\\"Italic\\\"]\\)\
+\\!\\(\\*\\nStyleBox[\\\",\\\",\\nFontSlant->\\\"Italic\\\"]\\) \
+\\!\\(\\*\\nStyleBox[\\\"probability\\\",\\nFontSlant->\\\"Italic\\\"]\\) of \
+transmission upon exposure\"\>"}
+       },
+       DefaultBaseStyle->"Column",
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Column"], 
+     TagBox[GridBox[{
+        {"\<\"\[Gamma], \
+\\!\\(\\*\\nStyleBox[\\\"rate\\\",\\nFontSlant->\\\"Italic\\\"]\\) of contact \
+between carriers and susceptibles per day\"\>"},
+        {"\<\"\\!\\(\\*\\nStyleBox[\\\"a\\\",\\nFontSlant->\\\"Italic\\\"]\\),\
+ \\!\\(\\*\\nStyleBox[\\\"probability\\\",\\nFontSlant->\\\"Italic\\\"]\\) of \
+transmission upon exposure\"\>"}
+       },
+       DefaultBaseStyle->"Column",
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Column"]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxBackground->{"Columns" -> {None, None}, "Rows" -> {
+       GrayLevel[0.85], None}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxItemStyle->{"Columns" -> {{"Text"}}, "Rows" -> {{"Text"}}},
+   GridBoxSpacings->{"Columns" -> {{1}}, "Rows" -> {{1}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.6364634243601227`*^9, 3.636463436727276*^9}, {
+  3.636464029948107*^9, 3.636464054861211*^9}, {3.6364641166914883`*^9, 
+  3.636464142462008*^9}, {3.6364641978856163`*^9, 3.636464228132943*^9}}]
+}, Open  ]],
 
 Cell["Describe constraints on the parameters", "Item",
  CellChangeTimes->{{3.636115872860146*^9, 3.636115903221726*^9}, {
    3.636192768089711*^9, 3.6361927698814697`*^9}, {3.636192913262154*^9, 
    3.636192913271853*^9}, 3.636195758429903*^9, {3.6361960376785383`*^9, 
    3.636196059597213*^9}, {3.6361972747498083`*^9, 3.636197432694227*^9}}]
-}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -3581,7 +3856,137 @@ Cell[BoxData[
       RowBox[{"{", 
        RowBox[{"r0", ",", "0.5"}], "}"}], ",", "0.", ",", "1"}], "}"}]}], 
    "\[IndentingNewLine]", "]"}]}]], "Input",
- CellChangeTimes->{3.6362882362165117`*^9}]
+ InitializationCell->True,
+ CellChangeTimes->{3.6362882362165117`*^9}],
+
+Cell[BoxData[
+ RowBox[{"paramTableData", ":=", 
+  RowBox[{"{", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<Discrete time\>\"", ",", " ", "\"\<Continuous time\>\""}], 
+     "}"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Column", "[", 
+       RowBox[{
+        RowBox[{"{", "\"\<\!\(\*
+StyleBox[\"b\",
+FontSlant->\"Italic\"]\)\!\(\*
+StyleBox[\",\",
+FontSlant->\"Italic\"]\) \!\(\*
+StyleBox[\"nr\",
+FontSlant->\"Italic\"]\) of branches budding off each old branch per day\>\"",
+          "}"}], ",", "Left"}], "]"}], ",", 
+      RowBox[{"Column", "[", 
+       RowBox[{
+        RowBox[{"{", "\"\<\[Beta], \!\(\*
+StyleBox[\"rate\",
+FontSlant->\"Italic\"]\) of budding for each old branch per day\>\"", "}"}], 
+        ",", "Left"}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Column", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\"\<\!\(\*
+StyleBox[\"d\",
+FontSlant->\"Italic\"]\)\!\(\*
+StyleBox[\",\",
+FontSlant->\"Italic\"]\) \!\(\*
+StyleBox[\"fraction\",
+FontSlant->\"Italic\"]\) of squirrels killed by cyclists per day\>\"", ",", 
+          "\"\<\!\(\*
+StyleBox[\"b\",
+FontSlant->\"Italic\"]\)\!\(\*
+StyleBox[\",\",
+FontSlant->\"Italic\"]\) \!\(\*
+StyleBox[\"number\",
+FontSlant->\"Italic\"]\) of squirrels born per squirrel per day\>\""}], "}"}],
+         ",", "Left"}], "]"}], ",", 
+      RowBox[{"Column", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\"\<\[Delta], \!\(\*
+StyleBox[\"rate\",
+FontSlant->\"Italic\"]\) of death due to cyclists per day\>\"", ",", 
+          "\"\<\[Beta], \!\(\*
+StyleBox[\"rate\",
+FontSlant->\"Italic\"]\) of birth per squirrel per day\>\""}], "}"}], ",", 
+        "Left"}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Column", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\"\<\!\(\*
+StyleBox[\"c\",
+FontSlant->\"Italic\"]\)\!\(\*
+StyleBox[\",\",
+FontSlant->\"Italic\"]\) \!\(\*
+StyleBox[\"fraction\",
+FontSlant->\"Italic\"]\) of healthy people exposed to flu carriers per \
+day\>\"", ",", "\"\<\!\(\*
+StyleBox[\"a\",
+FontSlant->\"Italic\"]\)\!\(\*
+StyleBox[\",\",
+FontSlant->\"Italic\"]\) \!\(\*
+StyleBox[\"probability\",
+FontSlant->\"Italic\"]\) of transmission upon exposure\>\""}], "}"}], ",", 
+        "Left"}], "]"}], ",", 
+      RowBox[{"Column", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\"\<\[Gamma], \!\(\*
+StyleBox[\"rate\",
+FontSlant->\"Italic\"]\) of contact between carriers and susceptibles per day\
+\>\"", ",", "\"\<\!\(\*
+StyleBox[\"a\",
+FontSlant->\"Italic\"]\), \!\(\*
+StyleBox[\"probability\",
+FontSlant->\"Italic\"]\) of transmission upon exposure\>\""}], "}"}], ",", 
+        "Left"}], "]"}]}], "}"}]}], "\[IndentingNewLine]", "}"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.636461834728125*^9, 3.636462105065881*^9}, {
+  3.6364621516705933`*^9, 3.6364622250581636`*^9}, {3.636462319767095*^9, 
+  3.63646236971189*^9}, {3.6364624542812223`*^9, 3.6364625286742573`*^9}, {
+  3.636462574189618*^9, 3.6364626166710663`*^9}, {3.636462713037917*^9, 
+  3.6364627674907846`*^9}, {3.636462870501905*^9, 3.6364628780643873`*^9}, {
+  3.636462925554611*^9, 3.636462933248262*^9}, {3.636463032364319*^9, 
+  3.636463114552107*^9}, {3.636463179570331*^9, 3.636463180415544*^9}, {
+  3.6364632350852222`*^9, 3.636463239384124*^9}, {3.636463280542719*^9, 
+  3.636463280946981*^9}, {3.636463803306265*^9, 3.636463944489203*^9}, {
+  3.636463978326762*^9, 3.636464019319022*^9}, {3.636464161630258*^9, 
+  3.636464162412779*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"paramExampleTable", "=", 
+   RowBox[{"Grid", "[", 
+    RowBox[{"paramTableData", ",", 
+     RowBox[{"Spacings", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1"}], "}"}]}], ",", 
+     RowBox[{"ItemStyle", "\[Rule]", "\"\<Text\>\""}], ",", 
+     RowBox[{"Alignment", "\[Rule]", "Left"}], ",", 
+     RowBox[{"Frame", "\[Rule]", "All"}], ",", 
+     RowBox[{"Background", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"None", ",", "None"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"LightGray", ",", "None"}], "}"}]}], "}"}]}]}], "]"}]}], 
+  ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.636461289226328*^9, 3.6364613362933187`*^9}, {
+   3.6364613840734863`*^9, 3.636461389750627*^9}, {3.636462598734836*^9, 
+   3.6364625991997223`*^9}, {3.636462642739703*^9, 3.636462646623788*^9}, {
+   3.636462686402413*^9, 3.636462694446806*^9}, {3.636462782185687*^9, 
+   3.636462803830722*^9}, {3.636463338802269*^9, 3.6364633689903603`*^9}, {
+   3.6364639519989023`*^9, 3.636463968699913*^9}, 3.636464023536599*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -3613,8 +4018,10 @@ Cell["Recipes 2.1 to 2.4", "Item",
 }, Open  ]]
 },
 ScreenStyleEnvironment->"Working",
-WindowSize->{981, 632},
+WindowSize->{1024, 768},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
 TaggingRules->{"SlideShow" -> True},
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
 2014)",
@@ -3626,283 +4033,314 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "SlideShowHeader"->{
-  Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[580, 22, 4298, 96, 75, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[781, 35, 4298, 96, 75, "SlideShowNavigationBar",
+  Cell[6258, 161, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[6459, 174, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[7866, 220, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[8067, 233, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[9544, 270, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[9745, 283, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[12091, 356, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[12024, 359, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[13477, 399, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[13402, 401, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[45966, 962, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[44735, 939, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[48013, 1021, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[46620, 991, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[75956, 1670, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[64030, 1395, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[76928, 1697, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[65002, 1422, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[78492, 1750, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[66566, 1475, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[208313, 3810, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[196387, 3535, 64, 1, 74, "SlideShowNavigationBar",
-   CellTags->"SlideShowHeader"],
-  Cell[198221, 3589, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[214992, 3994, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 199347, 3627}
+ {"SlideShowHeader", 216173, 4034}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+Cell[580, 22, 4298, 96, 75, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[4881, 120, 87, 1, 46, "Input"],
+Cell[4971, 123, 307, 4, 29, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[5303, 131, 258, 5, 92, "Title"],
+Cell[5564, 138, 340, 5, 29, "Subsubtitle"],
+Cell[5907, 145, 116, 2, 29, "Subsubtitle"],
+Cell[6026, 149, 183, 6, 69, "Subsubtitle"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6258, 161, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[669, 27, 24, 0, 64, "Section"],
-Cell[696, 29, 36, 0, 30, "Text"]
+Cell[6347, 166, 92, 1, 64, "Section"],
+Cell[CellGroupData[{
+Cell[6464, 171, 95, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[6584, 176, 134, 1, 28, "Item"],
+Cell[6721, 179, 165, 3, 28, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[781, 35, 4298, 96, 75, "SlideShowNavigationBar",
- CellTags->"SlideShowHeader"],
-Cell[5082, 133, 87, 1, 46, "Input"],
-Cell[5172, 136, 307, 4, 29, "Subsubtitle"],
+Cell[6935, 188, 98, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[5504, 144, 258, 5, 92, "Title"],
-Cell[5765, 151, 340, 5, 29, "Subsubtitle"],
-Cell[6108, 158, 116, 2, 29, "Subsubtitle"],
-Cell[6227, 162, 183, 6, 69, "Subsubtitle"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[6459, 174, 64, 1, 74, "SlideShowNavigationBar",
- CellTags->"SlideShowHeader"],
-Cell[CellGroupData[{
-Cell[6548, 179, 92, 1, 64, "Section"],
-Cell[CellGroupData[{
-Cell[6665, 184, 95, 1, 44, "Subsection"],
-Cell[CellGroupData[{
-Cell[6785, 189, 134, 1, 28, "Item"],
-Cell[6922, 192, 165, 3, 28, "Item"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[7136, 201, 98, 1, 44, "Subsection"],
-Cell[CellGroupData[{
-Cell[7259, 206, 103, 1, 28, "Item"],
-Cell[7365, 209, 103, 1, 28, "Item"],
-Cell[7471, 212, 116, 1, 28, "Item"],
-Cell[7590, 215, 104, 1, 28, "Item"],
-Cell[7697, 218, 101, 1, 28, "Item"],
-Cell[7801, 221, 95, 1, 28, "Item"],
-Cell[7899, 224, 95, 1, 28, "Item"]
+Cell[7058, 193, 103, 1, 28, "Item"],
+Cell[7164, 196, 103, 1, 28, "Item"],
+Cell[7270, 199, 116, 1, 28, "Item"],
+Cell[7389, 202, 104, 1, 28, "Item"],
+Cell[7496, 205, 101, 1, 28, "Item"],
+Cell[7600, 208, 95, 1, 28, "Item"],
+Cell[7698, 211, 95, 1, 28, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8067, 233, 64, 1, 1, "SlideShowNavigationBar",
+Cell[7866, 220, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[8156, 238, 101, 1, 64, "Section"],
-Cell[8260, 241, 520, 10, 49, "Text"],
+Cell[7955, 225, 101, 1, 64, "Section"],
+Cell[8059, 228, 520, 10, 49, "Text"],
 Cell[CellGroupData[{
-Cell[8805, 255, 169, 2, 28, "Item"],
-Cell[8977, 259, 225, 3, 28, "Item"],
-Cell[9205, 264, 203, 4, 28, "Item"]
+Cell[8604, 242, 169, 2, 28, "Item"],
+Cell[8776, 246, 225, 3, 28, "Item"],
+Cell[9004, 251, 203, 4, 28, "Item"]
 }, Open  ]],
-Cell[9423, 271, 273, 6, 30, "Text"]
+Cell[9222, 258, 273, 6, 30, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9745, 283, 64, 1, 1, "SlideShowNavigationBar",
+Cell[9544, 270, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[9834, 288, 209, 3, 64, "Section"],
+Cell[9633, 275, 209, 3, 64, "Section"],
 Cell[CellGroupData[{
-Cell[10068, 295, 122, 1, 44, "Subsection"],
+Cell[9867, 282, 122, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[10215, 300, 326, 7, 28, "Item"],
-Cell[10544, 309, 277, 8, 28, "Item"],
-Cell[10824, 319, 290, 7, 28, "Item"],
-Cell[11117, 328, 203, 4, 28, "Item"]
+Cell[10014, 287, 326, 7, 28, "Item"],
+Cell[10343, 296, 277, 8, 28, "Item"],
+Cell[10623, 306, 290, 7, 28, "Item"],
+Cell[10916, 315, 203, 4, 28, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11369, 338, 167, 2, 44, "Subsection"],
-Cell[11539, 342, 424, 10, 135, "Text"]
+Cell[11168, 325, 167, 2, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[11360, 331, 373, 9, 28, "Item"],
+Cell[11736, 342, 282, 6, 28, "Item"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12024, 359, 64, 1, 1, "SlideShowNavigationBar",
+Cell[12091, 356, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[12113, 364, 130, 1, 106, "Section"],
-Cell[12246, 367, 200, 4, 75, "Text"],
+Cell[12180, 361, 130, 1, 64, "Section"],
+Cell[12313, 364, 208, 5, 30, "Text"],
 Cell[CellGroupData[{
-Cell[12471, 375, 112, 1, 45, "ItemNumbered"],
-Cell[12586, 378, 121, 1, 45, "ItemNumbered"],
-Cell[12710, 381, 136, 1, 45, "ItemNumbered"],
-Cell[12849, 384, 135, 1, 45, "ItemNumbered"],
-Cell[12987, 387, 111, 1, 45, "ItemNumbered"],
-Cell[13101, 390, 108, 1, 30, "ItemNumbered"],
-Cell[13212, 393, 129, 1, 30, "ItemNumbered"]
+Cell[12546, 373, 112, 1, 30, "ItemNumbered"],
+Cell[12661, 376, 121, 1, 30, "ItemNumbered"],
+Cell[12785, 379, 136, 1, 30, "ItemNumbered"],
+Cell[12924, 382, 135, 1, 30, "ItemNumbered"],
+Cell[13062, 385, 111, 1, 30, "ItemNumbered"],
+Cell[13176, 388, 108, 1, 30, "ItemNumbered"],
+Cell[13287, 391, 129, 1, 30, "ItemNumbered"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13402, 401, 64, 1, 74, "SlideShowNavigationBar",
+Cell[13477, 399, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[13491, 406, 112, 1, 64, "Section"],
+Cell[13566, 404, 112, 1, 64, "Section"],
 Cell[CellGroupData[{
-Cell[13628, 411, 306, 5, 28, "Item"],
-Cell[13937, 418, 317, 6, 28, "Item"]
+Cell[13703, 409, 306, 5, 28, "Item"],
+Cell[14012, 416, 368, 7, 28, "Item"],
+Cell[14383, 425, 360, 6, 26, "Subitem"]
 }, Open  ]],
-Cell[14269, 427, 29973, 497, 260, "Input"],
-Cell[44245, 926, 441, 7, 28, "Item"]
+Cell[14758, 434, 29973, 497, 294, "Input"],
+Cell[CellGroupData[{
+Cell[44756, 935, 490, 8, 28, "Item"],
+Cell[45249, 945, 656, 10, 26, "Subitem"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[44735, 939, 64, 1, 74, "SlideShowNavigationBar",
+Cell[45966, 962, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[44824, 944, 112, 1, 64, "Section"],
+Cell[46055, 967, 112, 1, 64, "Section"],
 Cell[CellGroupData[{
-Cell[44961, 949, 267, 4, 28, "Item"],
+Cell[46192, 972, 267, 4, 28, "Item"],
 Cell[CellGroupData[{
-Cell[45253, 957, 414, 7, 41, "Subitem"],
-Cell[45670, 966, 411, 7, 41, "Subitem"],
-Cell[46084, 975, 463, 8, 41, "Subitem"]
+Cell[46484, 980, 459, 9, 41, "Subitem"],
+Cell[46946, 991, 483, 10, 41, "Subitem"],
+Cell[47432, 1003, 508, 10, 41, "Subitem"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[46620, 991, 64, 1, 74, "SlideShowNavigationBar",
+Cell[48013, 1021, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[46709, 996, 121, 1, 64, "Section"],
+Cell[48102, 1026, 121, 1, 64, "Section"],
 Cell[CellGroupData[{
-Cell[46855, 1001, 658, 11, 28, "Item"],
+Cell[48248, 1031, 658, 11, 28, "Item"],
 Cell[CellGroupData[{
-Cell[47538, 1016, 927, 19, 26, "Subitem"],
-Cell[48468, 1037, 1034, 23, 26, "Subitem"],
-Cell[49505, 1062, 634, 10, 26, "Subitem"],
+Cell[48931, 1046, 927, 19, 26, "Subitem"],
+Cell[49861, 1067, 1034, 23, 26, "Subitem"],
+Cell[50898, 1092, 634, 10, 26, "Subitem"],
 Cell[CellGroupData[{
-Cell[50164, 1076, 726, 11, 23, "Subsubitem"],
-Cell[50893, 1089, 805, 13, 23, "Subsubitem"]
+Cell[51557, 1106, 726, 11, 23, "Subsubitem"],
+Cell[52286, 1119, 805, 13, 23, "Subsubitem"]
 }, Open  ]]
 }, Open  ]],
-Cell[51725, 1106, 397, 5, 28, "Item"],
+Cell[53118, 1136, 397, 5, 28, "Item"],
 Cell[CellGroupData[{
-Cell[52147, 1115, 569, 13, 26, "Subitem"],
-Cell[52719, 1130, 878, 24, 26, "Subitem"]
+Cell[53540, 1145, 632, 14, 26, "Subitem"],
+Cell[54175, 1161, 878, 24, 26, "Subitem"]
 }, Open  ]],
-Cell[53612, 1157, 341, 4, 28, "Item"],
-Cell[53956, 1163, 386, 5, 28, "Item"],
-Cell[CellGroupData[{
-Cell[54367, 1172, 409, 8, 26, "Subitem"],
-Cell[54779, 1182, 627, 11, 26, "Subitem"],
-Cell[55409, 1195, 541, 8, 26, "Subitem"],
-Cell[55953, 1205, 535, 8, 23, "Subsubitem"]
-}, Open  ]]
+Cell[55068, 1188, 341, 4, 28, "Item"]
 }, Open  ]],
+Cell[55424, 1195, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[56537, 1219, 130, 2, 28, "Input"],
-Cell[56670, 1223, 2209, 43, 390, "Output"]
-}, Open  ]],
+Cell[55493, 1200, 386, 5, 28, "Item"],
 Cell[CellGroupData[{
-Cell[58916, 1271, 904, 19, 41, "Subitem"],
-Cell[59823, 1292, 763, 13, 26, "Subitem"]
-}, Open  ]],
-Cell[60601, 1308, 259, 7, 23, "DisplayFormulaNumbered"],
-Cell[60863, 1317, 763, 13, 26, "Subitem"],
-Cell[61629, 1332, 473, 14, 23, "DisplayFormulaNumbered"],
-Cell[62105, 1348, 768, 13, 26, "Subitem"],
-Cell[62876, 1363, 392, 11, 42, "DisplayFormulaNumbered"],
-Cell[CellGroupData[{
-Cell[63293, 1378, 329, 4, 28, "Item"],
-Cell[63625, 1384, 344, 4, 28, "Item"]
-}, Open  ]]
+Cell[55904, 1209, 409, 8, 26, "Subitem"],
+Cell[56316, 1219, 627, 11, 26, "Subitem"],
+Cell[56946, 1232, 541, 8, 26, "Subitem"],
+Cell[57490, 1242, 623, 13, 23, "Subsubitem"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[64030, 1395, 64, 1, 74, "SlideShowNavigationBar",
+Cell[58162, 1261, 157, 3, 28, "Input",
+ InitializationCell->True],
+Cell[58322, 1266, 2313, 45, 370, "Output"]
+}, Open  ]],
+Cell[60650, 1314, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[60719, 1319, 904, 19, 41, "Subitem"],
+Cell[61626, 1340, 677, 9, 26, "Subitem"],
+Cell[62306, 1351, 876, 18, 23, "Subsubitem"]
+}, Open  ]],
+Cell[63197, 1372, 259, 7, 23, "DisplayFormulaNumbered"],
+Cell[63459, 1381, 871, 18, 23, "Subsubitem"],
+Cell[64333, 1401, 473, 14, 23, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[64831, 1419, 677, 9, 26, "Subitem"],
+Cell[65511, 1430, 887, 17, 23, "Subsubitem"]
+}, Open  ]],
+Cell[66413, 1450, 448, 12, 42, "DisplayFormulaNumbered"],
+Cell[66864, 1464, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[66933, 1469, 383, 5, 28, "Item"],
+Cell[CellGroupData[{
+Cell[67341, 1478, 409, 5, 26, "Subitem"],
+Cell[67753, 1485, 487, 8, 26, "Subitem"],
+Cell[68243, 1495, 518, 11, 26, "Subitem"],
+Cell[CellGroupData[{
+Cell[68786, 1510, 570, 11, 23, "Subsubitem"],
+Cell[69359, 1523, 573, 11, 23, "Subsubitem"]
+}, Open  ]],
+Cell[69947, 1537, 643, 10, 26, "Subitem"],
+Cell[70593, 1549, 567, 8, 26, "Subitem"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[71209, 1563, 191, 3, 28, "Input",
+ InitializationCell->True],
+Cell[71403, 1568, 4145, 89, 171, "Output"]
+}, Open  ]],
+Cell[75563, 1660, 344, 4, 28, "Item"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75956, 1670, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[64119, 1400, 121, 1, 64, "Section"],
+Cell[76045, 1675, 121, 1, 64, "Section"],
 Cell[CellGroupData[{
-Cell[64265, 1405, 329, 4, 28, "Item"],
-Cell[64597, 1411, 344, 4, 28, "Item"]
+Cell[76191, 1680, 329, 4, 28, "Item"],
+Cell[76523, 1686, 344, 4, 28, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[65002, 1422, 64, 1, 74, "SlideShowNavigationBar",
+Cell[76928, 1697, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[65091, 1427, 46, 0, 64, "Section"],
-Cell[65140, 1429, 307, 5, 68, "Text"],
+Cell[77017, 1702, 46, 0, 64, "Section"],
+Cell[77066, 1704, 307, 5, 49, "Text"],
 Cell[CellGroupData[{
-Cell[65472, 1438, 304, 5, 45, "Item"],
+Cell[77398, 1713, 304, 5, 45, "Item"],
 Cell[CellGroupData[{
-Cell[65801, 1447, 159, 3, 26, "Subitem"],
-Cell[65963, 1452, 124, 3, 26, "Subitem"]
+Cell[77727, 1722, 159, 3, 26, "Subitem"],
+Cell[77889, 1727, 124, 3, 26, "Subitem"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[66136, 1461, 50, 0, 44, "Subsection"],
-Cell[66189, 1463, 316, 5, 49, "Text"]
+Cell[78062, 1736, 50, 0, 44, "Subsection"],
+Cell[78115, 1738, 316, 5, 49, "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[66566, 1475, 64, 1, 74, "SlideShowNavigationBar",
+Cell[78492, 1750, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[66655, 1480, 50, 0, 44, "Subsection"],
-Cell[66708, 1482, 307, 5, 68, "Text"],
+Cell[78581, 1755, 50, 0, 44, "Subsection"],
+Cell[78634, 1757, 307, 5, 49, "Text"],
 Cell[CellGroupData[{
-Cell[67040, 1491, 52, 0, 35, "Subsubsection"],
+Cell[78966, 1766, 52, 0, 35, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[67117, 1495, 406, 12, 28, "Input"],
-Cell[67526, 1509, 68560, 1018, 234, "Output"]
+Cell[79043, 1770, 406, 12, 28, "Input"],
+Cell[79452, 1784, 68560, 1018, 234, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[136147, 2534, 50, 0, 44, "Subsection"],
-Cell[136200, 2536, 60138, 993, 181, "SideCaptionArray"]
+Cell[148073, 2809, 50, 0, 44, "Subsection"],
+Cell[148126, 2811, 60138, 993, 181, "SideCaptionArray"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[196387, 3535, 64, 1, 74, "SlideShowNavigationBar",
+Cell[208313, 3810, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[196476, 3540, 105, 1, 64, "Section"],
-Cell[196584, 3543, 1588, 40, 206, "Input"]
+Cell[208402, 3815, 105, 1, 64, "Section"],
+Cell[208510, 3818, 1615, 41, 206, "Input",
+ InitializationCell->True],
+Cell[210128, 3861, 3692, 100, 267, "Input",
+ InitializationCell->True],
+Cell[213823, 3963, 1120, 25, 104, "Input",
+ InitializationCell->True]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[198221, 3589, 64, 1, 74, "SlideShowNavigationBar",
+Cell[214992, 3994, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[198310, 3594, 97, 1, 64, "Section"],
+Cell[215081, 3999, 97, 1, 64, "Section"],
 Cell[CellGroupData[{
-Cell[198432, 3599, 136, 1, 28, "Item"],
-Cell[198571, 3602, 151, 2, 28, "Item"],
-Cell[198725, 3606, 198, 3, 28, "Item"]
+Cell[215203, 4004, 136, 1, 28, "Item"],
+Cell[215342, 4007, 151, 2, 28, "Item"],
+Cell[215496, 4011, 198, 3, 28, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
