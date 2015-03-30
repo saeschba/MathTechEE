@@ -6,5 +6,5 @@ Link to e-copy:
 
 URL: http://princeton.einspections.eb20.com/Account/Login
 user: saeschbacher@ucdavis.edu
-pwd: w4ypNbMA
+pwd: granola_123
 
