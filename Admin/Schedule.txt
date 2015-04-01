@@ -1,0 +1,13 @@
+Schedule
+--------
+
+Week 03/30: Chapter 2: How to construct a model
+Week 04/06: Chapter 3: Deriving classic models in ecology and evolution
+Week 04/13: Primer 1: Functions and approximations; parts of chapter 4: Numerical and graphical techniques
+Week 04/20: Chapter 5: Equilibria and stability analyses (one-variable models)
+Week 04/27: Remainder of chapter 5
+Week 05/04: 
+Week 05/11: 
+Week 05/18: 
+Week 05/25: [Monday is Memorial Day]
+Week 06/01: 
