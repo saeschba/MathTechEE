@@ -1,0 +1,1559 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     58884,       1550]
+NotebookOptionsPosition[     52413,       1345]
+NotebookOutlinePosition[     54019,       1394]
+CellTagsIndexPosition[     53940,       1389]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ TogglerBox[2, {1->
+  OverlayBox[{
+   TagBox[GridBox[{
+      {
+       GraphicsBox[RasterBox[CompressedData["
+1:eJxTTMoPSmNiYGAo5gASQYnljkVFiZXBLECOU2VJahIzkCEFxAJADBL8//8/
+Qfzo0SP2GzduCF29elXs/Pnz0sgYn747d+5wA9VoArE/EB8B4uPoGJu+Fy9e
+MF+4cEENKB8AxBeB+AMQ/wXif+gYi1tBdvoB8QUg/ghV9x8XRtb7/PlzFqje
+t1D7cOrDpv/ixYvqUHuJ0ousHxpWAVA3E6UXWT80nC8S8i82/Q8ePOAgx26Y
+/uvXrwsD2UdJ8Tey/kuXLolD0wNJbofpB6YVSUr0n4ek5QHTT6n7KQ0/SuOP
+0vRDafqlRv6BxgPZ+Ret/HhHrBl4yi9QWHwiFB7Yyk+QO6B+CTxPYvmJjG/f
+vs17nozyG1f9cR6t7gBhAPeiQ4A=
+         "], {{0, 26}, {16, 0}}, {0, 255},
+         ColorFunction->RGBColor],
+        BaseStyle->"ImageGraphics",
+        ImageSize->Magnification[1],
+        ImageSizeRaw->{16, 26},
+        PlotRange->{{0, 16}, {0, 26}}], 
+       GraphicsBox[RasterBox[CompressedData["
+1:eJzt2d9OVFcUB2DSNmkfQRFEiRQ1gCK1vW4fwT6BJu1tE9uk8fUUERE9aECC
+qLGYEmKkErWxtont2mGdcDLVOpNgZijfJB9hzp+99j6zb9b5Hb3ww7nvP+rr
+6/vxs/hz7vzPX1+8eP7St5/El28u/fTdhY/jn/6w8GlfXzlYVdWhDgyEwXT4
+HQYbBho6qQMAAOxt/Q0HWxxo0TzX3xij7juGwpFwNAyHY2EkfB6OhxPhZBgL
+42EinAqnw2SYSl+Es+HL9FWb6uvP5hj1eJNZ41TWHM85nMw5Hc85juSch3MN
+R3JNdf/UfGbtPqf6WdW6/XsDAADsV7vd/7b2vqPV2/veuuc9k6Za1Mfr3vVt
+feto9e+eVb9KL2tmz81M+n25dadZ9bU2zYXbYSmshNXwoOF+uJfn7obFcKfa
+/twMN8L1MNtBTQAAYO+ZSVfTdLqSLreoj0/n9eXe0jeUHmQ+3AoL1XZ/UfqR
+5Wq77yg9yMPwS3gcfg0b4Ul4Gn4LW+F5eBl+D6/CH+F1+DP99Q71+dd5z6sc
+42WOuZU1nmbNjZzD45zTw5zjSs55KdewkGuazzXONp5Xu8+pflb185rpgd8d
+AABgv/kQ/W/J4krGVvrIkruVDO5RWAvr1U7fuxmeVTt9b/Ei1d+38prNaqdv
+Xc+xHuXY97LWYtbWr9Jryj4sGXPJmkvmXD7l/UrZsyWTLu9dyj4u72Ca2fVq
+nivvY8renuug5ps2/b2L2q0JAADwX3azT/kQuv18AAAA2Pv0rOxn3djz3X6f
+BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAADsHW/a1I2aAAAAAAAAsJ91OyOEburGnr/W
+prlwOyyFlbAaHjTcD/fy3N2wGO5U25+b4Ua4HmY7qAkAAAAAAAC9aCZdTdPp
+Srrcoj4+ndeXe0tuVjK4+XCr2s7iSsa2XG3nbiWDexTWwnrYCE/CZngWtsLz
+9CLV37fyms28ZyPHWMsxH2SN5ax5O+cwn3Oabayv3XXVa6vXN9MDvxN7W9mH
+JWMuWXPJnMunZNBlz5ZMumTTZR+XrLqZXa/muZJtl70910HNQx0YCIPp8DsM
+Ngw0dFIHAAAAAAAAel1/w8EWB1o0z/U3xqhzt6FwNAyHY2EkjIYT4WQYC+Nh
+IpwOk+FMmmpRH5/Mayfy3rEc60SOPZK1hrP2ULWT9zXX2O666rXVuv378P/S
+zJ6bmfT7cuuOsup/AFmW9vs=
+         "], {{0, 26}, {2000, 0}}, {0, 255},
+         ColorFunction->RGBColor],
+        BaseStyle->"ImageGraphics",
+        ImageSize->Magnification[1],
+        ImageSizeRaw->{2000, 26},
+        PlotRange->{{0, 2000}, {0, 26}}], 
+       GraphicsBox[RasterBox[CompressedData["
+1:eJy9lstOwkAUhhthQUJcuUBl5cr4GPoABvEJINGtCZoYng4Il4Z7gXAJYUHY
+QAi3GlYQPZ5/4pCm0pYC2uSDaXvmn5lzzpzpVfQl/HyiKMqrj3/CkffbWCwS
+f/TyzV387Snq4cYlc87gYbVaDbpB07SLRqMR6Pf7PiJSnOA+6h7kmBBz0+12
+Tx30v/bgk9GZOvPAa7oejUYeC306AIz1wWjM/WAw8B9ZX4L1TDHGcDj02ulX
+KpUNbt79jKHBV1b66Fcul3fCYgzEJNTr9fxmfaldKpWoUChQPp8X/8ViUWB8
+BhuLMRCPGvJqmz76QWOxWFCtVqNsNku5XE6AdqfToclkImxga7cGuT/M+uw/
+ms/ntF6vqdlsUjKZFKCNC/pynTZxyLbb7bNt/sHcMpkMzWYzoVev1wW4xuOx
+WAdsbGIAH6ncJ7BNH/6FRjqdJl3XSV7T6VSsA76CDWxt9oSKOmLOH/RBLKEP
+LVVVN/qJRGKjDxsnfSZoN3/4CPNfrVa/5n+IvtH/iDHu9/G/2T/G/JT5A41U
+KiXm3Wq1xBhcx5zy0zK+Mj+Xy6XIf5n7EuQ/9sYh+Wneqy73r+3+2rX2OPh+
+a31wqpHG5xbatvXtCDjW5wO1Z9UdzheXyPMRPrc6H49yvpvn/Y/fJ3/6ffUN
+AyH/6w==
+         "], {{0, 26}, {24, 0}}, {0, 255},
+         ColorFunction->RGBColor],
+        BaseStyle->"ImageGraphics",
+        ImageSize->Magnification[1],
+        ImageSizeRaw->{24, 26},
+        PlotRange->{{0, 24}, {0, 26}}]}
+     },
+     AutoDelete->False,
+     GridBoxItemSize->{"Columns" -> {Automatic, 
+         Scaled[0.6], Automatic}},
+     GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {{0}}}],
+    "Grid"], 
+   PaneBox[
+    StyleBox[
+     RowBox[{
+     "Background", " ", "images", " ", "and", " ", "text", " ", "colors", " ",
+       "have", " ", "been", " ", "adjusted", " ", "for", " ", "editing", " ", 
+      
+      RowBox[{"purposes", "."}]}],
+     LineBreakWithin->False,
+     FontFamily->"Helvetica",
+     FontSize->12,
+     FontColor->GrayLevel[0.4]],
+    Alignment->Center,
+    ImageSize->Scaled[0.5],
+    ScrollPosition->{0., 0.}]},
+   Alignment->{Center, Center}], 2->""}, "1"]], "SlideShowNavigationBar", \
+"FirstSlide",
+ CellMargins->{{0, 0}, {0, 0}},
+ CellFrameLabelMargins->2,
+ CellSize->{Inherited, 30},
+ CellChangeTimes->{3.63611411702881*^9},
+ TextAlignment->Center,
+ CellTags->"SlideShowHeader"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.636114599213521*^9}],
+
+Cell["Mathematical Techniques in Evolution and Ecology", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}},
+ TextAlignment->Center],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Some classic models in
+evolution and ecology\
+\>", "Title",
+ CellChangeTimes->{
+  3.559948400406288*^9, {3.636114041492673*^9, 3.636114071360457*^9}, 
+   3.6361143314213037`*^9, 3.636114611686428*^9, {3.6361146855231953`*^9, 
+   3.636114706235161*^9}, {3.637404947653048*^9, 3.6374049502815857`*^9}, {
+   3.63740501133258*^9, 3.637405025808597*^9}, {3.637460441988028*^9, 
+   3.637460444607782*^9}},
+ TextAlignment->Center],
+
+Cell["Based on chapter 3 in Otto and Day (2007)", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}, {
+  3.636114746487883*^9, 3.636114771516698*^9}, {3.636857110980406*^9, 
+  3.636857112831702*^9}, {3.637405036623555*^9, 3.637405036943508*^9}},
+ TextAlignment->Center],
+
+Cell["", "Subsubtitle",
+ CellChangeTimes->{
+  3.636114639569048*^9, {3.6361147219781303`*^9, 3.636114742854782*^9}}],
+
+Cell["\<\
+Spring Quarter 2015
+Simon Aeschbacher
+saeschbacher@ucdavis.edu\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.636114263144814*^9, 3.636114285607094*^9}},
+ TextAlignment->Center]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Outline", "Section",
+ CellChangeTimes->{{3.636114858795425*^9, 3.636114888142228*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Goals", "Subsection",
+ CellChangeTimes->{{3.636114896869628*^9, 3.6361149212213917`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+To introduce/revisit some classic models in evolution and ecology\
+\>", "Item",
+ CellChangeTimes->{{3.636114980168631*^9, 3.636114992282305*^9}, {
+  3.6374050626541033`*^9, 3.637405075966322*^9}}],
+
+Cell["\<\
+To derive dynamical equations, some of which will be analysed in later units\
+\>", "Item",
+ CellChangeTimes->{{3.636114980168631*^9, 3.6361150081986637`*^9}, {
+  3.6374050823425913`*^9, 3.637405112263372*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Concepts", "Subsection",
+ CellChangeTimes->{{3.6361149300211782`*^9, 3.636114933406128*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Exponential growth", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.6361150401357803`*^9}, {
+  3.637406039565957*^9, 3.637406043570958*^9}}],
+
+Cell["Logistic growth", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.636115045103869*^9}, {
+  3.6374060472836237`*^9, 3.637406049347752*^9}}],
+
+Cell["Linear and non-linear models", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.636115059839525*^9}, {
+  3.637406053371892*^9, 3.637406058091694*^9}}],
+
+Cell["Symmetric models", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.636115063127789*^9}, {
+  3.637406067003765*^9, 3.6374060714513607`*^9}}],
+
+Cell["Normalisation", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.636115069156454*^9}, {
+  3.6374060770117617`*^9, 3.6374060787558126`*^9}}],
+
+Cell["Competition models", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.636115072359952*^9}, {
+  3.637406082556238*^9, 3.637406085844111*^9}}]
+}, Open  ]],
+
+Cell["Not discussed, but in the book:", "Text",
+ CellChangeTimes->{{3.637406089716155*^9, 3.637406094540288*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Consumer\[Dash]resource models (e.g. predator\[Dash]prey models)", \
+"Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.6361150751282387`*^9}, {
+  3.6374060990047197`*^9, 3.637406137792389*^9}}],
+
+Cell["SIR epidemiological models", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.6361150751282387`*^9}, {
+  3.6374060990047197`*^9, 3.637406147937113*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Exponential and logistic models of population growth", "Section",
+ CellChangeTimes->{{3.63611520840694*^9, 3.6361152099721193`*^9}, {
+  3.637406164710917*^9, 3.6374061948287487`*^9}}],
+
+Cell["Common assumptions:", "Text",
+ CellChangeTimes->{{3.636115242270652*^9, 3.636115317200636*^9}, {
+  3.636115350554655*^9, 3.636115358506082*^9}, {3.636115420984268*^9, 
+  3.636115427799919*^9}, {3.63611565670411*^9, 3.636115663156169*^9}, {
+  3.636116060439621*^9, 3.636116061012479*^9}, {3.637406204061928*^9, 
+  3.637406205445161*^9}, {3.637406277924766*^9, 3.637406281252676*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Constant environment",
+ FontSlant->"Italic"]], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.6374062103818893`*^9, 
+  3.6374062148935623`*^9}}],
+
+Cell[TextData[{
+ StyleBox["No interaction",
+  FontSlant->"Italic"],
+ " with other species (no competition, predation etc.)"
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.6361154802805347`*^9}, {3.6361982728729753`*^9, 
+  3.6361982758758717`*^9}, {3.637406222266458*^9, 3.6374062559108753`*^9}, {
+  3.637406375889337*^9, 3.6374063759689093`*^9}}]
+}, Open  ]],
+
+Cell["Specific assumptions:", "Text",
+ CellChangeTimes->{{3.6374062866598883`*^9, 3.6374062884613237`*^9}, {
+  3.637406389241766*^9, 3.63740639402536*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Exponential growth: ",
+ StyleBox["constant",
+  FontSlant->"Italic"],
+ " amount of resources"
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.6361155278312473`*^9}, {3.6374062929340277`*^9, 
+  3.637406317968203*^9}}],
+
+Cell[TextData[{
+ "Logistic growth: amount of resources ",
+ StyleBox["decreases",
+  FontSlant->"Italic"],
+ " with ",
+ StyleBox["increasing population size",
+  FontSlant->"Italic"]
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.6361155278312473`*^9}, {3.6374062929340277`*^9, 
+  3.63740637091236*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Exponential population growth", "Subsection",
+ CellChangeTimes->{{3.636194857130598*^9, 3.6361948719635468`*^9}, {
+  3.637406429150359*^9, 3.637406433899312*^9}}],
+
+Cell["\<\
+Assumes that the variable changes at a rate proportional to its current value.\
+\>", "Text",
+ CellChangeTimes->{{3.63740749523663*^9, 3.637407513362979*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+All individuals reproduce (we can choose to model only the females)\
+\>", "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.6374065461060677`*^9}}],
+
+Cell[TextData[{
+ "Do not keep track of age ",
+ Cell[BoxData[
+  FormBox["\[Rule]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " can account for nonoverlapping and overlapping generations"
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406728753018*^9}}],
+
+Cell[TextData[{
+ "Variable: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for the # of indiv. at time ",
+ Cell[BoxData[
+  FormBox["t", TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406814306037*^9}}],
+
+Cell[TextData[{
+ "Parameters: ",
+ Cell[BoxData[
+  FormBox["b", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", per capita # of births (continuous time: birth rate); ",
+ Cell[BoxData[
+  FormBox["d", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", fraction of population dying (death rate)"
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406788758746*^9}, {
+  3.637406819399494*^9, 3.637406904619*^9}}],
+
+Cell["Life-cycle and flow diagram:", "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406788758746*^9}, {
+  3.637406819399494*^9, 3.637406919754373*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ GraphicsBox[
+  {Thickness[0.0017638889942322596`], FaceForm[{RGBColor[1., 1., 1.], Opacity[
+   1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{0., 284.}, {
+    567., 284.}, {567., 0.}, {0., 0.}}}], 
+   FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{0., 283.4646}, {
+    566.9291, 283.4646}, {566.9291, 0.}, {0., 0.}}}], 
+   GeometricTransformationBox[RasterBox[CompressedData["
+1:eJztnT2vZFeVhhsx/6ATEAiBTQvNCMktWkJMwAwTgAjaHxrZcmCMLYREYLsd
+oUmMmwSIrG5HFlkbRybscYjDq5shEqRrUqfdf+EaP1W89646ru9bVfucU0/w
+qL7OObWrzt7vXnvttdf+1i/e/N9ffPnatWt//5xXv3Tt2r99/vjZZ5+di4iI
+iIiIiIiIiIiIiIiIiIiIiIiIiIiIiMgwefzo8fmnn376+eOj5mURGSO0r0Wf
+0f5se8cHdeL/fv3rCX98770Jv/3N3cnrZfVFRNbngwfvn5+enCz8HP2l7Z2e
+nDYvqxwG9PVHP/zh+Z8ePJh5nzrw0x//RP0V2QHo6p8//HDlcWjwr375y/NP
+zs6al1n2z4vPvzDR2XmfUV/+9te/NS+jyJChDdHG0NZ1jv/4Lx+fv/LSy83L
+LfuvFzeeePL8D7/7/dzPa32hTnAceo1fIr6qvMfnPP7Pf/33hWbnc6BPj57f
+fevtiX8jZXjz9TsT+4DX2Nvdc1r/TyJXgfpOXa7v4YuIz492U8eZPP/P7/9A
+22fkoG3f/Po3Vmoc2hq9RHepG7zmOTqJhnMM9Sb6zLEck2vj94qPg3Oqzc3x
+qZ+z55yqvzJoaCPYJLEvgHbynW/fuNDc7uecQ/tYZBfJOEDbvvaVr55/9PDh
+0uPQRjQS/aSe8Dp6ST/+3X//j4tj0c9nb9+ePKffR6vRZl6nvt1/596M/nJO
+rsf3cE7mKfQ/y5Ch/tI+aCd5D32lTfCIjXHrqZtf0FrsmK7NLOMCjcP+rX3v
+PF792c9n6k8FDaf+5DVaGm2lfnEu30F9ypzCPP2989ob/zrn0cU56Lj6K0Mm
+tm5skJAxJY/zbF3aC+2gdfllvxD7sGj+DS0E+mHqQtcfzCO63NXf555+ZvI8
+/it0vn4Per/I/o3ecg7jskVlExkCsX+rjUO7oD2krs/TX96LH0/GCzpK/eD+
+V32lbqCtvIeNi48XnaTu4IeIL7frf6i+XfwPqWPp53nO9fAx8Bkw10t/z3fV
+mGPOQYNb/0ciV4FxHG0hr6n/tBnaEtAWqPeX89aPJ/q8alwq4wBbkzqCDlIP
+0FDufdVj3qOeUG/SL8c2RiPRSuoPr9FZroleYzdT3zgnNjPncUz6fY5Df/GF
+xRbOOcvi1UWGALYK9Tuvqf+J++Qz6jntL/qL/UGb0vd2XHC/qQOL4hSzPnmb
+63avWa/VXXN5uQ56vXhJkT5DPca26caTLarf2D7GPoiI7AbGdl0f3zywOxLb
+2brMIiJjAW1dFs+euRa1V0RERERERERERERERERERERERERERGTcZP0yz6e5
+TU/cz1VEZM+gs+R4Im9T9hgih4g5pEVE9k/ynZHTKfu41rx7IiKye7JnFfqb
+3GV1HyEREdkP+BzIDZz8Ismdbi4REZH90s0xnT07zSEtIrJf8Duwr2ZeMw+n
+/oqI7J/ufhX4I9ReERERERERERERkeFAPG/2ksffa3yZiMhhIMbha1/56gXf
+/Po3zt98/c5k7dt0Ds58DyIi++CP7703o7/zIA6Y+F/220aTjYMQEbk66+hv
+F9Yhv/LSy5MYYeLSkiNNRESWE808PTmdrCneVH+74LPARoYPHryvHouIfDbV
+WnI4PHv79vlzTz8zyamDXl5Vc7v6Wx9vPPHk5Pv4Lr7bnD0icgzgmyWWgZgG
+9I8cOtHGqpPA5/gSttVdzuUa0drvfPvG5P3r16/PaDzPsbM5hrJB6/9JRGQX
+oGfEK5CjIXrbtUurfwC/AxBrto7/N9fh2lyDHMCc352H43WuTQwFx1Kmedfk
+/ehx6/9PRGQTiAtDS7E95/kTmB8jZmHV/Fg3/qwLGoktvW3+BzSec5NPrWtv
+U3beI7ZCLRaRvhJ7Fc2tdm58AdHbTXSy2r9oIXYp18Fv283Bs6vfwHX5XvQY
+X0X9/ltP3ZxosetARKQvoEnzfAto2Lv37m+tV9icd157Y2JLY1MfWvfoL7Cv
++W3VX4IvWZtYRFqCBhFP0NXcsdmI0/2VTydanHm8zBPye42hEJFDsUh3j0WH
++P1dv/b09582L5uIjBP0NbpbYxeORXe7pB+qWox/eky2v4i0BT8oOtvVXf2f
+U9Dh6pfAX8x7rcslIsOFOa/u3Brr1NTdef/V4y/4JY55bCAi24PGVt0l9op4
+XMfWq/83dLfqsHuDisi6oBddX4O5djeDmDninuv6vE/OzpqXS0T6CfrAmrK6
+vszx8/Zg88YWjl+Y9dGtyyUi/aL6G9AK1ghr8+4G1tNVfwQarD9CRAA9qP4G
+8iG0LtPYIIak5jOmr1ODRY4X2j++3thm5FcwP/n+YDzBvhzJK4F/WJ+wyPFB
+uyemITlx0QXtscNQ8woRN0x+ztZlEpHDgM7WXIvoQesyHRu5B5mbU4NFxg/t
+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
+RERERERERERERERERERERERERERERERERERERERERERERETW5Z8J4lxi
+     "], {{0., 0.}, {
+     1., 1.}}, {0, 255},
+     ColorFunction->RGBColor], {{{318., 0.}, {0., -192.42610000000002`}}, {3.,
+      242.46454000000003`}}], 
+   GeometricTransformationBox[RasterBox[CompressedData["
+1:eJztnT2PbFl1hq9l/4NOsGxZGBtZIEtczUiWHQB2gOVg+JBly4E/QAjJgWEm
+Qk6wcQJEaIYIkQ0QQTjgzIRXN7MIx6ST9vyFHs9Tpbd79e59qs6pOlWnPp7g
+UVed76o+56211l5r7T/86ht/+9Xffvbs2X9/yEd/69mz3/nw7wcffHAnIiIi
+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIi18P7
+t+/f/ep/fnX38sWL1d9Klr333nuLX6eIXAa//t9f3/3k7bfv/uZzf333l5/+
+9N3vfeR3H/HR3/+DR+9fff7K3T/83d+v9GjpaxeR8+TnP/vZ3ev/9o27P/nj
+j99rTP6yDI2p/MWf/fkTXWK59pCIjAXdiZ0Tvfn4x/5opSWswx7qaQrLWPe9
+73z37tVPPb/XoT/9xCfvfvr2jxf/XCJyuvzfu+/e2zDRHXyuf//mNyfbMO/f
+3q72y3E4LsuW/oxyWPh9Igb4X//x7dW909uGe4ntiCUufb1yGqAV2DixWf7q
+M59d2Sz73iMvX7xc2T85php0uWD3Yv/y+kc//OHq/z60LRrFPbf0NcuyoDFt
+3IZY85y/Td/+1n/e21Tcl0t/Zpkf7hlsnrzHvmEcYtN9xH3h/XC98HtV48rE
+mg9ln2CLP/hh2t2XBP4Uti22bpZh3xADZB0aA+3/ne25L7SJrwvuia/807/c
+2ztoAr9Xhzwn92O0Lja6XAb8b7mHaoyQ+wn/Cx/rX7/2tdVrxi/qfmyPRrH/
+0p9BjgP/8xpj5nfrWOPjnIvzcj8u/T3IfOB3MV5a7ZvoT5aRC8b99st33nm0
+L/vhhy39GeTwYAOjPdwHgP91zPMnDqT+XBbYOPy21GUr/+v5K4+Wce+18R72
+Mw59+aA1NR/n2NoD/CaqP5cH+tGzf/Ct6jK2afPA1J/L5wdvvvUo1rNUPnL0
+p40DyHnD2Feb34WfVe2f+P313kObWMb+S3+GS4NcvlqbyW/+F1977e5Ln//C
+6i9xf/5WWMazyV/+J6np3CdeW8e4ltQeiP5Qu+GYx+XA/cm9Ve9TxrbibyXX
+p439RJMcj5gHNIdnDP3Ax2nrMofqNbct51gcM7mlY68n2nNzc7O49uR69L8u
+E/SltWPyPEDv3mO598J+RNvxbZPnW8G/rTWav3znF6vfhse8WMHvQ90240Wt
+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
+1B+RATI3nvbP/CQGbY9nkT6xf6yXnJ/oj/aPSJ9tcwPL7mSeQu0fkT7pIUb+
+39R90a7k+E3ZL3Xqqd1IzcWmvhYVcoqHrjfHJpdw1++EPEdyI3f5TiraPyKb
+if2zy7NGvGhTTcMQPN+13hP9Sc+fMftTP7apNyyauE8uE8egln5KLW6P9KBX
+f0T67FJ7MQdoxKHyjdCefXO5sbHm0h/9L5E+dfxr6vg7dkJ9tvCfIL0L2+Nl
+ObWerf5wHdme1xB/jPPk2DlO+0zXY6M9aBDL6nHyvl4XeTrs19Z1pdd9PQfL
+2I5jbPM5aw2q9o/IMNQITB1/Z9v0PIwOJY5E7IVeXrWenGeQddEAcmOiP/he
+7JvnlDE51leNwR+KduC7tXP9cS0cG98s9ausQy9qP1nOmX4d6FJ6yrMddfa5
+3lZ/OD/HTi3qNq2u+qP9IzJM6i+mzvHOc1V7UvAsJ+7LMp7fta1wu1pX7QDe
+1/hPts361j6qcSauM3VViffUPhe1D1CuMevQleQasO6Nr7++eo22oHk9/UlP
+kOgI2rNNq6M/9gAS2cyu9aernjhlTojaYwfNYR3PbGyS9D+Eqi/Rn2on1H5f
+2Cl1Xe15yHqOXcfOavynpz9ffO21+/fsn17SNQbW2j98LvRpjO2TayT3ed8Y
+ksilg2+xs/6s7J++/kRT0Ibajwxa/eE4+F1ZX/uQpadq1lX7B72ovhuMtX/Q
+Ra6D64LaM77Vn/QRYt92ro8e6f+j/ohsJmNgY/v7hQf758H/6tk/sVGqD9Xq
+D+vbZ5r8II7RjvG3+sN1V1+t2j/pPVb3Tewo87fyuvpfme+i+l+xv3hNHGvb
+2B2fj++02loi8pSp8w5C5vGKXRONyfw36fkc7UhP1szDhQakHyH2UW++57Zv
+a87LOWov5sSYWR77Jn0ZM68H6zJXGdtia/E+15jXGTfLdtEj9CRayjbVVnv6
+3dze5zQYexbZTnpwjPXB1mPiL+/HpDKulWc+vVTRlsxHwfvMi5G4EMdqt63n
+aW2inKedq5hlmfMZbajxIF5nPtacK9fEcfKe15nfK5/lYQ6zF/fz+mzL0+Y6
+jD2LjCdj4BlPX/p6zpn4XtbUiYwjPhjYB2h30O7k/Tj/oMh4iPXah3U/tCNF
+diNxC56fpa/lXGG8S99LZDoZh7JmaXfie03NJReR9ZznaJD9EKeTuHOd21VE
+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
+iIiIiIiIiIiIiIiIiIiIiIiIiMjx+X/6gn8Q
+     "], {{0., 0.}, {1., 1.}}, {0, 255},
+     ColorFunction->RGBColor], {{{288., 0.}, {0., -181.}}, {315., 
+     237.46457}}]},
+  AspectRatio->Automatic,
+  ImageSize->{567., 284.},
+  PlotRange->{{0., 566.9291}, {0., 283.4646}}]], "Input",
+ CellChangeTimes->{{3.63740739357506*^9, 3.6374073948147707`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Discrete-time version", "Subsubsection",
+ CellChangeTimes->{{3.637406682398019*^9, 3.637406712291272*^9}}],
+
+Cell["Recursion equation (from the life-cycle diagram):", "Text",
+ CellChangeTimes->{{3.637407532414616*^9, 3.6374075347429323`*^9}, {
+  3.637408267216373*^9, 3.637408273440772*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"n", " ", 
+    RowBox[{"(", 
+     RowBox[{"t", "+", "1"}], ")"}]}], "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "-", "b"}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", "d"}], ")"}], " ", "n", " ", "t"}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.637407540591054*^9, 3.6374075808021927`*^9}, {
+   3.6374078051443872`*^9, 3.637407809711874*^9}, 3.6374087911263657`*^9}],
+
+Cell["\<\
+Note that, here, it does not matter whether births or deaths happen first. \
+But recall the squirrel example!\
+\>", "Text",
+ CellChangeTimes->{{3.637407921449244*^9, 3.6374079355010853`*^9}, {
+  3.6374079713135147`*^9, 3.637407992137848*^9}}],
+
+Cell[TextData[{
+ "Define the compound parameter ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"R", "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "-", "d"}], ")"}], 
+     RowBox[{"(", 
+      RowBox[{"1", "+", "b"}], ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " as the number of surviving individuals per parent, or the ",
+ StyleBox["reproductive factor",
+  FontWeight->"Bold"],
+ ". Hence"
+}], "Text",
+ CellChangeTimes->{{3.637407590228771*^9, 3.637407676308113*^9}, {
+  3.637407706705673*^9, 3.637407746312941*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"n", " ", 
+    RowBox[{"(", 
+     RowBox[{"t", "+", "1"}], ")"}]}], "=", 
+   RowBox[{"n", " ", "R", " ", "t"}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.637407540591054*^9, 3.6374075808021927`*^9}, {
+   3.637407684261462*^9, 3.637407685550441*^9}, {3.637407806840374*^9, 
+   3.6374078080715923`*^9}, 3.637408801218996*^9}],
+
+Cell["Difference equation:", "Text",
+ CellChangeTimes->{{3.637407769671256*^9, 3.6374077720793133`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   StyleBox[
+    RowBox[{"\[CapitalDelta]", "n"}]], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"n", " ", 
+      RowBox[{"(", 
+       RowBox[{"t", "+", "1"}], ")"}]}], "-", 
+     RowBox[{"n", " ", "t"}]}], "=", 
+    RowBox[{"n", " ", 
+     RowBox[{"(", 
+      RowBox[{"R", "-", "1"}], ")"}], " ", "t"}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.637407540591054*^9, 3.6374075808021927`*^9}, {
+   3.6374077799925947`*^9, 3.6374077945619907`*^9}, 3.637408803775064*^9}],
+
+Cell[TextData[{
+ "Define the ",
+ StyleBox["discrete-time growth rate",
+  FontWeight->"Bold"],
+ " (per capita change in # of individuals) as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["r", "d"], "=", 
+    RowBox[{
+     RowBox[{"R", "-", "1"}], "=", 
+     RowBox[{"b", "-", "d", "-", 
+      RowBox[{"b", " ", "d"}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.637408029727038*^9, 3.63740808244516*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Continuous-time version", "Subsubsection",
+ CellChangeTimes->{{3.637406682398019*^9, 3.637406712291272*^9}, {
+  3.6374081021107883`*^9, 3.637408103363418*^9}}],
+
+Cell[TextData[{
+ "Now, ",
+ Cell[BoxData[
+  FormBox["b", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["d", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " denote the ",
+ StyleBox["per capita rate of growth ",
+  FontWeight->"Bold"],
+ "and",
+ StyleBox[" death",
+  FontWeight->"Bold"],
+ ", respectively. Multiplied by a small amount of time ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"\[CapitalDelta]", "t"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", they give the # of births and deaths per individual in this time interval."
+}], "Text",
+ CellChangeTimes->{{3.637408137513453*^9, 3.637408257336488*^9}}],
+
+Cell["Differential equation (from the flow diagram):", "Text",
+ CellChangeTimes->{{3.637408261208427*^9, 3.637408280993071*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[DifferentialD]", " ", "n"}], 
+     RowBox[{"\[DifferentialD]", "t"}]], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"b", " ", 
+       RowBox[{"n", "(", "t", ")"}]}], "-", 
+      RowBox[{"d", " ", 
+       RowBox[{"n", "(", "t", ")"}]}]}], "=", 
+     RowBox[{
+      SubscriptBox["r", "c"], 
+      RowBox[{"n", "(", "t", ")"}]}]}]}], ","}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.637408607329226*^9, 3.63740864802149*^9}, {
+   3.637408684996038*^9, 3.637408705885038*^9}, 3.637408779062326*^9, {
+   3.637408832463814*^9, 3.637408858959922*^9}}],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["r", "c"], "=", 
+    RowBox[{"b", "-", "d"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the per capita rate of change in the # of individuals."
+}], "Text",
+ CellChangeTimes->{{3.637408860781543*^9, 3.637408895742161*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Logistic population growth", "Subsection",
+ CellChangeTimes->{{3.637409225560587*^9, 3.637409230190292*^9}}],
+
+Cell[TextData[{
+ "Many factors may ",
+ StyleBox["slow the rate of growth",
+  FontSlant->"Italic"],
+ ", e.g. declining resource availability, increased predation risk, higher \
+incidence of disease, etc. The logistic model describes this processes ",
+ StyleBox["indirectly",
+  FontSlant->"Italic"],
+ ", and there are many ways of modeling the effect."
+}], "Text",
+ CellChangeTimes->{{3.637409246023499*^9, 3.6374093367701073`*^9}, {
+  3.6374095829864893`*^9, 3.637409712043407*^9}, {3.637409889477519*^9, 
+  3.637409964614414*^9}, {3.637410026012978*^9, 3.637410082255947*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Discrete-time version", "Subsubsection",
+ CellChangeTimes->{{3.637410073049736*^9, 3.6374100758952227`*^9}}],
+
+Cell[TextData[{
+ "The ",
+ StyleBox["standard logistic model ",
+  FontWeight->"Bold"],
+ "in discrete time assumes that the ",
+ StyleBox["number of surviving individuals per parent",
+  FontSlant->"Italic"],
+ " ",
+ StyleBox["declines linearly with population size.",
+  FontSlant->"Italic"],
+ " That is, the reproductive factor is modelled as"
+}], "Text",
+ CellChangeTimes->{3.637410064388238*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"R", "(", "n", ")"}], "=", 
+    RowBox[{
+     RowBox[{"intercept", "+", 
+      RowBox[{"slope", " ", "*", " ", 
+       RowBox[{"n", "(", "t", ")"}]}]}], " ", "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        SubscriptBox["r", "d"]}], ")"}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"-", 
+         FractionBox[
+          SubscriptBox["r", "d"], "K"]}], ")"}], 
+       RowBox[{"n", "(", "t", ")"}]}]}]}]}], ","}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.637409972754224*^9, 3.6374100047439623`*^9}, {
+  3.637410093266336*^9, 3.637410168969493*^9}, {3.637460489104022*^9, 
+  3.6374605262496367`*^9}}],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox["K", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the ",
+ StyleBox["carrying capacity",
+  FontWeight->"Bold"],
+ ". The population grows, i.e. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"R", "(", "n", ")"}], ">", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "(", "t", ")"}], "<", "K"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and shrinks, i.e. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"R", "(", "n", ")"}], "<", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "(", "t", ")"}], ">", "K"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". No change occurs if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "(", "t", ")"}], "=", "K"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.6374101710947247`*^9, 3.637410181919029*^9}, {
+  3.637410246064212*^9, 3.637410288383819*^9}, {3.63741032574404*^9, 
+  3.637410416448729*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["logGrowthReproFactorPlot"], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.637410738448616*^9, 3.637410740440503*^9}, 
+   3.637461627783414*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{K$$ = 100, $CellContext`rd$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`rd$$], 1}, 0, 2}, {{
+       Hold[K$$], 100}, 10, 200}}, Typeset`size$$ = {360., {119., 124.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`rd$41159$$ = 0, K$41160$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {K$$ = 100, $CellContext`rd$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`rd$$, $CellContext`rd$41159$$, 0], 
+        Hold[K$$, K$41160$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        $CellContext`logGrowthReproFactor[$CellContext`n, $CellContext`rd$$, 
+         K$$], {$CellContext`n, 0, 2 K$$}, 
+        PlotRange -> {{0, 2 K$$}, {0, 1.05 (1 + $CellContext`rd$$)}}, Frame -> 
+        True, FrameLabel -> {{
+          "Reproductive factor, \!\(\*\nStyleBox[\"R\",\n\
+FontSlant->\"Italic\"]\)(\!\(\*\nStyleBox[\"n\",\nFontSlant->\"Italic\"]\))", 
+           ""}, {"Population size, \!\(\*\nStyleBox[\"n\",\n\
+FontSlant->\"Italic\"]\)(\!\(\*\nStyleBox[\"t\",\nFontSlant->\"Italic\"]\))", 
+           
+           StringJoin[
+           "\!\(\*\nStyleBox[\"K\",\nFontSlant->\"Italic\"]\) = ", 
+            ToString[
+             Round[K$$]], 
+            "; \!\(\*SubscriptBox[\n StyleBox[\"r\",\nFontSlant->\"Italic\"], \
+\n StyleBox[\"d\",\nFontSlant->\"Italic\"]]\) = ", 
+            ToString[
+             Round[$CellContext`rd$$, 0.01]]]}}, LabelStyle -> 
+        Directive[FontFamily -> "Helvetica", FontSize -> 14], 
+        GridLines -> {{K$$}, {1}}], 
+      "Specifications" :> {{{$CellContext`rd$$, 1}, 0, 2}, {{K$$, 100}, 10, 
+         200}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {177., 182.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.637461633602097*^9}]
+}, Open  ]],
+
+Cell["Recursion equation:", "Text",
+ CellChangeTimes->{{3.637461723553927*^9, 3.637461727815539*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"n", "(", 
+    RowBox[{"t", "+", "1"}], ")"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"R", "(", "n", ")"}], " ", 
+     RowBox[{"n", "(", "t", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"[", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          SubscriptBox["r", "d"]}], ")"}], "-", 
+        RowBox[{
+         FractionBox[
+          SubscriptBox["r", "d"], "K"], 
+         RowBox[{"n", "(", "t", ")"}]}]}], "]"}], 
+      RowBox[{"n", "(", "t", ")"}]}], "=", 
+     RowBox[{
+      RowBox[{"n", "(", "t", ")"}], "+", 
+      RowBox[{
+       SubscriptBox["r", "d"], 
+       RowBox[{"n", "(", "t", ")"}], 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          FractionBox[
+           RowBox[{"n", "(", "t", ")"}], "K"]}], ")"}], "."}]}]}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.637461734619032*^9, 3.637461819333362*^9}, {
+  3.6374618563920116`*^9, 3.6374619121783953`*^9}}],
+
+Cell["Difference equation:", "Text",
+ CellChangeTimes->{{3.6374619155568857`*^9, 3.637461924821039*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   StyleBox[
+    RowBox[{"\[CapitalDelta]", "n"}]], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"n", "(", 
+      RowBox[{"t", "+", "1"}], ")"}], "-", 
+     RowBox[{"n", "(", "t", ")"}]}], "=", 
+    RowBox[{
+     SubscriptBox["r", "d"], 
+     RowBox[{"n", "(", "t", ")"}], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        FractionBox[
+         RowBox[{"n", "(", "t", ")"}], "K"]}], ")"}], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.637461734619032*^9, 3.637461819333362*^9}, {
+  3.6374618563920116`*^9, 3.637461955273117*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Continuous-time version", "Subsubsection",
+ CellChangeTimes->{{3.637461676946419*^9, 3.6374616803200827`*^9}}],
+
+Cell["\<\
+We leave the derivation of the differential equation as homework (Problem 2).\
+\
+\>", "Text",
+ CellChangeTimes->{{3.637462338671689*^9, 3.637462359955346*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Problem assignment", "Section",
+ CellChangeTimes->{{3.636720406569543*^9, 3.636720407950808*^9}, {
+  3.636721563081469*^9, 3.636721565420895*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "We constructed the ",
+ StyleBox["differential",
+  FontSlant->"Italic"],
+ " equation for the continuous-time version of the exponential growth model \
+from the flow diagram. (a) Instead, derive the equation from the ",
+ StyleBox["difference",
+  FontSlant->"Italic"],
+ " equation of the discrete-time version. Hint: introduce a small amount of \
+time ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"\[CapitalDelta]", "t"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and take the appropriate limit. (b) Comparing ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["r", "d"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["r", "c"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", explain the difference between the discrete- and continuous-time versions."
+}], "ItemNumbered",
+ CellChangeTimes->{{3.636720427558174*^9, 3.636720607402008*^9}, {
+  3.636720743656756*^9, 3.6367207439451227`*^9}, {3.6374089410243177`*^9, 
+  3.637409076125111*^9}, {3.637409106382325*^9, 3.6374091405835733`*^9}, {
+  3.637409436545826*^9, 3.637409451753961*^9}, {3.6374094937569523`*^9, 
+  3.637409560521297*^9}}],
+
+Cell[TextData[{
+ "Derive the differential equation for the logistic growth model in \
+continuous time. Start by assuming that the per capita growth rate ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"r", "(", "n", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " declines linearly with population size ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Assume that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"r", "(", "n", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " has a maximum equal to the intrinsic growth rate ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["r", "c"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " when there are no competitors (i.e. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"r", "(", "0", ")"}], "=", 
+    SubscriptBox["r", "c"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "), and that it reaches zero when the population is at the carrying capacity \
+(i.e. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"r", "(", "K", ")"}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "). Substitute ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"r", "(", "n", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["r", "c"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in the differential equation of the exponential growth model to obtain the \
+result of interest."
+}], "ItemNumbered",
+ CellChangeTimes->{{3.636720427558174*^9, 3.6367205726034517`*^9}, {
+   3.63672086570037*^9, 3.63672089041302*^9}, {3.636720931805558*^9, 
+   3.636720973795392*^9}, {3.636721246277096*^9, 3.636721346547727*^9}, 
+   3.6369759513709993`*^9, {3.6374623741539497`*^9, 3.637462779212734*^9}}],
+
+Cell[TextData[StyleBox["[Problem 2.6 in OD2007] In the flu model, suppose \
+that after contracting the flu, people are initially resistant to \
+reinfection, but this immunity eventually wanes. (a) Alter the flow diagram \
+for the flu model that we derived to include a \
+\[OpenCurlyDoubleQuote]recovered and immune\[CloseCurlyDoubleQuote] class \
+with these properties. (b) Suppose that immune individuals have a constant \
+per capita rate of losing immunity. What are the continuous-time equations \
+for this modified model?",
+ FontColor->RGBColor[1, 0, 0]]], "ItemNumbered",
+ CellChangeTimes->{{3.636720427558174*^9, 3.6367205726034517`*^9}, {
+  3.63672086570037*^9, 3.636720893333023*^9}, {3.636721378701989*^9, 
+  3.636721507083699*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Handouts", "Section",
+ CellChangeTimes->{{3.6362889955381393`*^9, 3.6362889964486237`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Box 2.3: Seven steps to modelling a biological problem", "Item",
+ CellChangeTimes->{{3.636289042657041*^9, 3.636289053543696*^9}, {
+  3.636656847442515*^9, 3.636656848322083*^9}, {3.63685474012973*^9, 
+  3.636854740137311*^9}}],
+
+Cell["\<\
+Box 2.6: The relationship between discrete-time and continuous-time models\
+\>", "Item",
+ CellChangeTimes->{{3.636289042657041*^9, 3.636289053543696*^9}, {
+  3.636656847442515*^9, 3.636656848322083*^9}, {3.63685474012973*^9, 
+  3.63685474344779*^9}, {3.6368547805227747`*^9, 3.636854793576454*^9}}],
+
+Cell["Copy of Appendix 2", "Item",
+ CellChangeTimes->{{3.636289042657041*^9, 3.636289053536612*^9}, {
+  3.6362891804132423`*^9, 3.636289183530488*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Initialisation cells", "Section",
+ CellChangeTimes->{{3.636288229511508*^9, 3.636288232109663*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"logGrowthReproFactor", "[", 
+   RowBox[{"n_", ",", "rd_", ",", "K_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"1", "+", "rd"}], ")"}], "-", 
+   RowBox[{
+    FractionBox["rd", "K"], "n"}]}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{
+  3.6362882362165117`*^9, {3.63741065507439*^9, 3.637410722878352*^9}}],
+
+Cell[BoxData[
+ RowBox[{"logGrowthReproFactorPlot", ":=", 
+  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"logGrowthReproFactor", "[", 
+       RowBox[{"n", ",", "rd", ",", "K"}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "0", ",", 
+        RowBox[{"2", "K"}]}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", 
+           RowBox[{"2", "K"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", 
+           RowBox[{"1.05", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", "rd"}], ")"}]}]}], "}"}]}], "}"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"FrameLabel", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Reproductive factor, \!\(\*
+StyleBox[\"R\",
+FontSlant->\"Italic\"]\)(\!\(\*
+StyleBox[\"n\",
+FontSlant->\"Italic\"]\))\>\"", ",", "\"\<\>\""}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Population size, \!\(\*
+StyleBox[\"n\",
+FontSlant->\"Italic\"]\)(\!\(\*
+StyleBox[\"t\",
+FontSlant->\"Italic\"]\))\>\"", ",", 
+           RowBox[{"\"\<\!\(\*
+StyleBox[\"K\",
+FontSlant->\"Italic\"]\) = \>\"", "<>", 
+            RowBox[{"ToString", "[", " ", 
+             RowBox[{"Round", "[", "K", "]"}], "]"}], "<>", 
+            "\"\<; \!\(\*SubscriptBox[
+StyleBox[\"r\",
+FontSlant->\"Italic\"], 
+StyleBox[\"d\",
+FontSlant->\"Italic\"]]\) = \>\"", "<>", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"Round", "[", 
+              RowBox[{"rd", ",", "0.01"}], "]"}], "]"}]}]}], "}"}]}], "}"}]}],
+       ",", "\[IndentingNewLine]", 
+      RowBox[{"LabelStyle", "\[Rule]", 
+       RowBox[{"Directive", "[", 
+        RowBox[{
+         RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], ",", " ", 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"GridLines", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "K", "}"}], ",", 
+         RowBox[{"{", "1", "}"}]}], "}"}]}]}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"rd", ",", "1"}], "}"}], ",", "0", ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"K", ",", "100"}], "}"}], ",", "10", ",", "200"}], "}"}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.637410745888214*^9, 3.6374108462762337`*^9}, {
+  3.637460589355794*^9, 3.637460757712675*^9}, {3.6374608404087*^9, 
+  3.637460929594366*^9}, {3.637460971088866*^9, 3.6374610115395107`*^9}, {
+  3.637461121432925*^9, 3.637461326615138*^9}, {3.637461366625155*^9, 
+  3.637461477326951*^9}, {3.637461509440606*^9, 3.63746162022066*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowSize->{808, 809},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, 14},
+PrintingOptions->{"PaperOrientation"->"Portrait",
+"PaperSize"->{612, 792},
+"PrintCellBrackets"->False,
+"PrintMultipleHorizontalPages"->False,
+"PrintRegistrationMarks"->False,
+"PrintingMargins"->{{54.000000585, 54.000000585}, {72.00000078000001, \
+72.00000078000001}}},
+TaggingRules->{"SlideShow" -> True},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[580, 22, 4298, 96, 75, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[6537, 167, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[8973, 248, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[11226, 316, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[35408, 836, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[43392, 1076, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[43818, 1094, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[47883, 1210, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[48853, 1241, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 53113, 1367}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4298, 96, 75, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[4881, 120, 87, 1, 46, "Input"],
+Cell[4971, 123, 307, 4, 29, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[5303, 131, 433, 10, 148, "Title"],
+Cell[5739, 143, 444, 6, 29, "Subsubtitle"],
+Cell[6186, 151, 116, 2, 29, "Subsubtitle"],
+Cell[6305, 155, 183, 6, 69, "Subsubtitle"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6537, 167, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[6626, 172, 92, 1, 64, "Section"],
+Cell[CellGroupData[{
+Cell[6743, 177, 95, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[6863, 182, 206, 4, 28, "Item"],
+Cell[7072, 188, 219, 4, 28, "Item"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7340, 198, 98, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[7463, 203, 151, 2, 28, "Item"],
+Cell[7617, 207, 148, 2, 28, "Item"],
+Cell[7768, 211, 159, 2, 28, "Item"],
+Cell[7930, 215, 149, 2, 28, "Item"],
+Cell[8082, 219, 148, 2, 28, "Item"],
+Cell[8233, 223, 149, 2, 28, "Item"]
+}, Open  ]],
+Cell[8397, 228, 113, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[8535, 233, 201, 3, 28, "Item"],
+Cell[8739, 238, 161, 2, 28, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8973, 248, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[9062, 253, 189, 2, 64, "Section"],
+Cell[9254, 257, 388, 5, 30, "Text"],
+Cell[CellGroupData[{
+Cell[9667, 266, 246, 4, 28, "Item"],
+Cell[9916, 272, 404, 8, 28, "Item"]
+}, Open  ]],
+Cell[10335, 283, 155, 2, 30, "Text"],
+Cell[CellGroupData[{
+Cell[10515, 289, 290, 8, 28, "Item"],
+Cell[10808, 299, 357, 10, 28, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11226, 316, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[11315, 321, 168, 2, 44, "Subsection"],
+Cell[11486, 325, 167, 3, 30, "Text"],
+Cell[CellGroupData[{
+Cell[11678, 332, 358, 6, 28, "Item"],
+Cell[12039, 340, 572, 11, 29, "Item"],
+Cell[12614, 353, 633, 15, 29, "Item"],
+Cell[13250, 370, 727, 16, 29, "Item"],
+Cell[13980, 388, 456, 6, 28, "Item"]
+}, Open  ]],
+Cell[14451, 397, 15794, 263, 299, "Input"],
+Cell[CellGroupData[{
+Cell[30270, 664, 112, 1, 35, "Subsubsection"],
+Cell[30385, 667, 182, 2, 30, "Text"],
+Cell[30570, 671, 463, 13, 25, "DisplayFormulaNumbered"],
+Cell[31036, 686, 252, 5, 30, "Text"],
+Cell[31291, 693, 541, 17, 50, "Text"],
+Cell[31835, 712, 399, 10, 25, "DisplayFormulaNumbered"],
+Cell[32237, 724, 104, 1, 30, "Text"],
+Cell[32344, 727, 534, 16, 25, "DisplayFormulaNumbered"],
+Cell[32881, 745, 469, 16, 32, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33387, 766, 165, 2, 35, "Subsubsection"],
+Cell[33555, 770, 679, 23, 51, "Text"],
+Cell[34237, 795, 128, 1, 30, "Text"],
+Cell[34368, 798, 654, 19, 46, "DisplayFormulaNumbered"],
+Cell[35025, 819, 322, 10, 32, "Text"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35408, 836, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[35497, 841, 114, 1, 44, "Subsection"],
+Cell[35614, 844, 576, 12, 68, "Text"],
+Cell[CellGroupData[{
+Cell[36215, 860, 114, 1, 35, "Subsubsection"],
+Cell[36332, 863, 393, 12, 49, "Text"],
+Cell[36728, 877, 727, 22, 43, "DisplayFormulaNumbered"],
+Cell[37458, 901, 1149, 42, 51, "Text"],
+Cell[CellGroupData[{
+Cell[38632, 947, 169, 3, 28, "Input",
+ InitializationCell->True],
+Cell[38804, 952, 2664, 53, 376, "Output"]
+}, Open  ]],
+Cell[41483, 1008, 101, 1, 30, "Text"],
+Cell[41587, 1011, 1014, 33, 44, "DisplayFormulaNumbered"],
+Cell[42604, 1046, 104, 1, 30, "Text"],
+Cell[42711, 1049, 620, 20, 44, "DisplayFormulaNumbered"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43392, 1076, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[43481, 1081, 116, 1, 35, "Subsubsection"],
+Cell[43600, 1084, 169, 4, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43818, 1094, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[43907, 1099, 152, 2, 64, "Section"],
+Cell[CellGroupData[{
+Cell[44084, 1105, 1190, 31, 87, "ItemNumbered"],
+Cell[45277, 1138, 1801, 52, 106, "ItemNumbered"],
+Cell[47081, 1192, 741, 11, 106, "ItemNumbered"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[47883, 1210, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[47972, 1215, 97, 1, 64, "Section"],
+Cell[CellGroupData[{
+Cell[48094, 1220, 233, 3, 28, "Item"],
+Cell[48330, 1225, 308, 5, 28, "Item"],
+Cell[48641, 1232, 151, 2, 28, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48853, 1241, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[48942, 1246, 105, 1, 64, "Section"],
+Cell[49050, 1249, 370, 11, 48, "Input",
+ InitializationCell->True],
+Cell[49423, 1262, 2962, 79, 199, "Input",
+ InitializationCell->True]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
