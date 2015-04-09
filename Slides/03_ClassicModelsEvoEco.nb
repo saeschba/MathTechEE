@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    104494,       2612]
-NotebookOptionsPosition[     95840,       2342]
-NotebookOutlinePosition[     97709,       2397]
-CellTagsIndexPosition[     97630,       2392]
+NotebookDataLength[    141870,       3649]
+NotebookOptionsPosition[    130705,       3306]
+NotebookOutlinePosition[    132761,       3365]
+CellTagsIndexPosition[    132681,       3360]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -970,14 +970,14 @@ Cell[BoxData[
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`rd$$], 1}, 0, 2}, {{
-       Hold[K$$], 100}, 10, 200}}, Typeset`size$$ = {360., {120., 125.}}, 
+       Hold[K$$], 100}, 10, 200}}, Typeset`size$$ = {360., {119., 124.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`rd$77110$$ = 0, K$77111$$ = 0}, 
+    True, $CellContext`rd$745$$ = 0, K$750$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {K$$ = 100, $CellContext`rd$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`rd$$, $CellContext`rd$77110$$, 0], 
-        Hold[K$$, K$77111$$, 0]}, 
+        Hold[$CellContext`rd$$, $CellContext`rd$745$$, 0], 
+        Hold[K$$, K$750$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1004,7 +1004,7 @@ FontSlant->\"Italic\"]\)(\!\(\*\nStyleBox[\"t\",\nFontSlant->\"Italic\"]\))",
         GridLines -> {{K$$}, {1}}], 
       "Specifications" :> {{{$CellContext`rd$$, 1}, 0, 2}, {{K$$, 100}, 10, 
          200}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{409., {183., 192.}},
+     ImageSizeCache->{405., {177., 182.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1017,7 +1017,8 @@ FontSlant->\"Italic\"]\)(\!\(\*\nStyleBox[\"t\",\nFontSlant->\"Italic\"]\))",
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{
   3.637461633602097*^9, {3.637494965333083*^9, 3.637494974877226*^9}, {
-   3.637497486905939*^9, 3.637497489918324*^9}}]
+   3.637497486905939*^9, 3.637497489918324*^9}, {3.6375787479597588`*^9, 
+   3.6375787553294687`*^9}}]
 }, Open  ]],
 
 Cell["Recursion equation:", "Text",
@@ -1294,7 +1295,6 @@ BSudHM7sZn0KlMt+FChYvwGT5xQRu+b3f6AzuF4=
   GridLines->{None, None},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
-  ImageSize->{455.484375, Automatic},
   LabelStyle->{FontFamily -> "Helvetica", FontSize -> 14},
   Method->{},
   PlotRange->{{0., 100.}, {0, 999999.9999999999}},
@@ -1307,24 +1307,39 @@ BSudHM7sZn0KlMt+FChYvwGT5xQRu+b3f6AzuF4=
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{{3.637497172429716*^9, 3.637497246430852*^9}, {
    3.6374972921797533`*^9, 3.637497322900161*^9}, 3.637497411725046*^9, {
-   3.637497487602543*^9, 3.63749749059918*^9}, 3.6375015288575153`*^9}]
+   3.637497487602543*^9, 3.63749749059918*^9}, 3.6375015288575153`*^9, {
+   3.637578748369851*^9, 3.637578755962078*^9}}]
 }, Open  ]],
 
 Cell[TextData[{
  "Notice the cyclic behaviour, eventually converging to ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"K", "=", "750000"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
- ", of the orange line, which occurs if ",
+   RowBox[{"K", "=", "750000"}], TraditionalForm]]],
+ ", of the orange line. This occurs if ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["r", "d"], TraditionalForm]],
+   SubscriptBox["r", "d"], TraditionalForm]]],
+ " is above a critical value, such that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", "t", ")"}], TraditionalForm]],
   FormatType->"TraditionalForm"],
- " is above a critical value."
+ " can overshoot ",
+ Cell[BoxData[
+  FormBox["K", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and, hence, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"R", "(", "n", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " becomes negative. This behaviour is obseverd only in the discrete-time \
+model."
 }], "Text",
  CellChangeTimes->{{3.637497585591866*^9, 3.6374976365837107`*^9}, 
-   3.637497684301249*^9}]
+   3.637497684301249*^9, {3.637578787001698*^9, 3.637578791960803*^9}, {
+   3.637578858393055*^9, 3.637578911472116*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -1831,8 +1846,834 @@ Cell[CellGroupData[{
 Cell["", "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 
+Cell[CellGroupData[{
+
 Cell["Haploid model of selection", "Subsection",
- CellChangeTimes->{{3.637500839412773*^9, 3.637500843501463*^9}}]
+ CellChangeTimes->{{3.637500839412773*^9, 3.637500843501463*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Assume that the population is censused immediately after the generation of \
+haploids (gametes)\
+\>", "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.63757916781752*^9}}],
+
+Cell[TextData[{
+ "Denote the # of ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " carriers at time ",
+ Cell[BoxData[
+  FormBox["t", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "A"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "a"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", respectively"
+}], "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.637579178700306*^9}}],
+
+Cell["Assume that there is no mutation", "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.637579178685437*^9}, {3.637579224100691*^9, 3.637579233781946*^9}}],
+
+Cell[TextData[{
+ "Each type survives and reproduces according to the exponential growth \
+model, with type-specific reproductive factors. The convention is to denote \
+these by ",
+ Cell[BoxData[
+  FormBox["W", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ": ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", "A"], "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "-", 
+       SubscriptBox["d", "A"]}], ")"}], 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       SubscriptBox["b", "A"]}], ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", "a"], "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "-", 
+       SubscriptBox["d", "a"]}], ")"}], 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       SubscriptBox["b", "a"]}], ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.637579178685437*^9}, {3.637579224100691*^9, 3.637579380668879*^9}, {
+  3.6375794386617947`*^9, 3.6375794561983223`*^9}}],
+
+Cell["Recursion equations in terms of absolute numbers:", "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.637579178685437*^9}, {3.637579224100691*^9, 3.637579380668879*^9}, {
+  3.6375794386617947`*^9, 3.637579485391014*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["n", "A"], "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{
+     SubscriptBox["W", "A"], 
+     RowBox[{
+      SubscriptBox["n", "A"], "(", "t", ")"}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.637579634476775*^9, 3.637579653915303*^9}, 
+   3.637580244468731*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["n", "a"], "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{
+     SubscriptBox["W", "a"], 
+     RowBox[{
+      SubscriptBox["n", "a"], "(", "t", ")"}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.637579634476775*^9, 3.6375796656312103`*^9}, 
+   3.637580245308546*^9}],
+
+Cell[CellGroupData[{
+
+Cell["Symmetric models", "Subsubsection",
+ CellChangeTimes->{{3.6375795075691843`*^9, 3.63757951366299*^9}}],
+
+Cell[TextData[{
+ "In a ",
+ StyleBox["symmetric model",
+  FontWeight->"Bold"],
+ ", the ",
+ StyleBox["labels of the variables are arbitrary",
+  FontSlant->"Italic"],
+ "; interchanging the variable and parameter names does not alter the form of \
+the equations. The haploid model of selection is a symmetric model."
+}], "Text",
+ CellChangeTimes->{{3.6375795152783213`*^9, 3.637579577816947*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Haploid model ",
+ StyleBox["continued",
+  FontSlant->"Italic"]
+}], "Subsection",
+ CellChangeTimes->{{3.637500839412773*^9, 3.637500843501463*^9}, {
+  3.637579689590598*^9, 3.637579691981395*^9}}],
+
+Cell[TextData[{
+ "To express the dynamics ",
+ StyleBox["in terms of allele frequencies",
+  FontSlant->"Italic"],
+ ", set ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"p", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["n", "A"], "(", "t", ")"}], "/", 
+     RowBox[{"[", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["n", "A"], "(", "t", ")"}], "+", 
+       RowBox[{
+        SubscriptBox["n", "a"], "(", "t", ")"}]}], "]"}]}]}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"q", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"1", "-", 
+      RowBox[{"p", "(", "t", ")"}]}], "=", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["n", "a"], "(", "t", ")"}], "/", 
+      RowBox[{"[", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["n", "A"], "(", "t", ")"}], "+", 
+        RowBox[{
+         SubscriptBox["n", "a"], "(", "t", ")"}]}], "]"}]}]}]}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Note that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"p", "(", "t", ")"}], "+", 
+     RowBox[{"q", "(", "t", ")"}]}], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", so that the dynamics can be described in terms of only one variable. \
+Substitution yields"
+}], "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.63757916781752*^9}, {3.637579701438323*^9, 3.637579893366728*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"p", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SubscriptBox["n", "A"], "(", 
+       RowBox[{"t", "+", "1"}], ")"}], 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["n", "A"], "(", 
+        RowBox[{"t", "+", "1"}], ")"}], "+", 
+       RowBox[{
+        SubscriptBox["n", "a"], "(", 
+        RowBox[{"t", "+", "1"}], ")"}]}]], "=", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SubscriptBox["W", "A"], 
+        RowBox[{
+         SubscriptBox["n", "A"], "(", "t", ")"}]}], 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["W", "A"], 
+         RowBox[{
+          SubscriptBox["n", "A"], "(", "t", ")"}]}], "+", 
+        RowBox[{
+         SubscriptBox["W", "a"], 
+         RowBox[{
+          SubscriptBox["n", "a"], "(", "t", ")"}]}]}]], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6375799017201357`*^9, 3.637579993585137*^9}, 
+   3.637580030034387*^9, 3.637580242917213*^9}],
+
+Cell[TextData[{
+ "To express the right-hand side in terms of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"p", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", divide the numerator and denominator by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["n", "A"], "(", "t", ")"}], "+", 
+    RowBox[{
+     SubscriptBox["n", "a"], "(", "t", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " to obtain"
+}], "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.637579178700306*^9}, {3.63758003946798*^9, 3.637580109705351*^9}, {
+  3.637580178409794*^9, 3.637580195840095*^9}, {3.637580349196341*^9, 
+  3.637580351620111*^9}, {3.637581162628763*^9, 3.6375811969183397`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"p", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SubscriptBox["W", "A"], 
+       RowBox[{"p", "(", "t", ")"}]}], 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["W", "A"], 
+        RowBox[{"p", "(", "t", ")"}]}], "+", 
+       RowBox[{
+        SubscriptBox["W", "a"], "(", 
+        RowBox[{"1", "-", 
+         RowBox[{"p", "(", "t", ")"}]}], ")"}]}]], "."}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6375799017201357`*^9, 3.637579993585137*^9}, 
+   3.637580030034387*^9, {3.637580204188705*^9, 3.637580247004929*^9}}],
+
+Cell[TextData[{
+ "The reproductive factors ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["W", "A"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["W", "a"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " are called ",
+ StyleBox["absolute fitnesses",
+  FontSlant->"Italic"],
+ ". Dividing the numerator and denominator by ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["W", "a"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", we can reduce the number of parameters:"
+}], "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.637579178685437*^9}, {3.637579224100691*^9, 3.637579233781946*^9}, {
+  3.637580368905952*^9, 3.6375804607899637`*^9}, {3.637581012139839*^9, 
+  3.637581012560939*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"p", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SubscriptBox["V", "A"], 
+       RowBox[{"p", "(", "t", ")"}]}], 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["V", "A"], 
+        RowBox[{"p", "(", "t", ")"}]}], "+", "1", "-", 
+       RowBox[{"p", "(", "t", ")"}]}]], "."}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6375799017201357`*^9, 3.637579993585137*^9}, 
+   3.637580030034387*^9, {3.637580204188705*^9, 3.637580247004929*^9}, {
+   3.637580469448653*^9, 3.637580496397542*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["V", "A"], "=", 
+    RowBox[{
+     SubscriptBox["W", "A"], "/", 
+     SubscriptBox["W", "a"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the ",
+ StyleBox["relative fitness",
+  FontSlant->"Italic"],
+ " of allele ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". We could also divide by ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["W", "A"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", instead."
+}], "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.637579178685437*^9}, {3.637579224100691*^9, 3.637579380668879*^9}, {
+  3.6375794386617947`*^9, 3.6375794561983223`*^9}, {3.637580507409725*^9, 
+  3.63758057085071*^9}, {3.637580622882904*^9, 3.6375806228901777`*^9}, {
+  3.6375810332507067`*^9, 3.6375810512681293`*^9}, {3.6375812287664213`*^9, 
+  3.637581234022341*^9}}],
+
+Cell[TextData[{
+ "The fact that ",
+ StyleBox["the dynamics depends only on the relative fitnesses",
+  FontWeight->"Bold"],
+ " is important. Even if fitnesses depend on time (i.e. on the ecological \
+context), the equation above holds, ",
+ StyleBox["as long as the ecological context affects both alleles in the same \
+way",
+  FontSlant->"Italic"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.637579178685437*^9}, {3.637579224100691*^9, 3.637579380668879*^9}, {
+  3.6375794386617947`*^9, 3.6375794561983223`*^9}, {3.637580507409725*^9, 
+  3.63758057085071*^9}, {3.637580622882904*^9, 3.637580726899435*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Haploid model ",
+ StyleBox["continued",
+  FontSlant->"Italic"]
+}], "Subsection",
+ CellChangeTimes->{{3.637500839412773*^9, 3.637500843501463*^9}, {
+  3.637579689590598*^9, 3.637579691981395*^9}}],
+
+Cell["Difference equation:", "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.63757916781752*^9}, {3.637579701438323*^9, 3.637579893366728*^9}, {
+  3.637581294791617*^9, 3.637581297468157*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    StyleBox[
+     RowBox[{"\[CapitalDelta]", "p"}]], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SubscriptBox["W", "A"], 
+        RowBox[{"p", "(", "t", ")"}]}], 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["W", "A"], 
+         RowBox[{"p", "(", "t", ")"}]}], "+", 
+        RowBox[{
+         SubscriptBox["W", "a"], "(", 
+         RowBox[{"1", "-", 
+          RowBox[{"p", "(", "t", ")"}]}], ")"}]}]], "-", 
+      RowBox[{"p", "(", "t", ")"}]}], "=", 
+     RowBox[{
+      RowBox[{"p", "(", "t", ")"}], 
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        RowBox[{"p", "(", "t", ")"}]}], ")"}], 
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SubscriptBox["W", "A"], "-", 
+         SubscriptBox["W", "a"]}], 
+        RowBox[{
+         RowBox[{
+          SubscriptBox["W", "A"], 
+          RowBox[{"p", "(", "t", ")"}]}], "+", 
+         RowBox[{
+          SubscriptBox["W", "a"], "(", 
+          RowBox[{"1", "-", 
+           RowBox[{"p", "(", "t", ")"}]}], ")"}]}]], "."}]}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6375799017201357`*^9, 3.637579993585137*^9}, 
+   3.637580030034387*^9, 3.637580242917213*^9, {3.6375813007898607`*^9, 
+   3.637581391215794*^9}, {3.637581439276805*^9, 3.63758145558922*^9}, 
+   3.637581530571785*^9, {3.637582949920691*^9, 3.637582951952668*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Note that the denominator is equal to the ",
+ StyleBox["mean (relative) fitness",
+  FontSlant->"Italic"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["W", "_"], "=", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["W", "A"], 
+      RowBox[{"p", "(", "t", ")"}]}], "+", 
+     RowBox[{
+      SubscriptBox["W", "a"], "(", 
+      RowBox[{"1", "-", 
+       RowBox[{"p", "(", "t", ")"}]}], ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Note also that ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"\[CapitalDelta]", "p"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is ",
+ StyleBox["proportional to the variance",
+  FontSlant->"Italic"],
+ " of the allele frequency, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"p", "(", "t", ")"}], 
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"p", "(", "t", ")"}]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.637579178700306*^9}, {3.63758003946798*^9, 3.637580109705351*^9}, {
+  3.637580178409794*^9, 3.637580195840095*^9}, {3.637580349196341*^9, 
+  3.637580351620111*^9}, {3.637581162628763*^9, 3.6375811969183397`*^9}, {
+  3.637582215752741*^9, 3.637582265259794*^9}, {3.637582982273563*^9, 
+  3.637583019295602*^9}}],
+
+Cell[TextData[{
+ "It is useful to define the ",
+ StyleBox["selection coefficient",
+  FontSlant->"Italic"],
+ " as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["s", "d"], "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       SubscriptBox["W", "A"], "-", 
+       SubscriptBox["W", "a"]}], ")"}], "/", 
+     SubscriptBox["W", "a"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", i.e. the proportional difference in fitnesses. The difference equation \
+becomes"
+}], "Item",
+ CellChangeTimes->{{3.637578957915493*^9, 3.6375789777627373`*^9}, {
+  3.637579025936404*^9, 3.637579092837973*^9}, {3.637579167300879*^9, 
+  3.637579178685437*^9}, {3.637579224100691*^9, 3.637579233781946*^9}, {
+  3.637580368905952*^9, 3.6375804607899637`*^9}, {3.637581012139839*^9, 
+  3.637581012560939*^9}, {3.637582416375534*^9, 3.637582481538762*^9}, {
+  3.637582939852871*^9, 3.6375829442323236`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    StyleBox[
+     RowBox[{"\[CapitalDelta]", "p"}]], "=", 
+    RowBox[{
+     RowBox[{"p", "(", "t", ")"}], 
+     RowBox[{"(", 
+      RowBox[{"1", "-", 
+       RowBox[{"p", "(", "t", ")"}]}], ")"}], 
+     RowBox[{
+      FractionBox[
+       SubscriptBox["s", "d"], 
+       RowBox[{"1", "+", 
+        RowBox[{
+         SubscriptBox["s", "d"], 
+         RowBox[{"p", "(", "t", ")"}]}]}]], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6375799017201357`*^9, 3.637579993585137*^9}, 
+   3.637580030034387*^9, 3.637580242917213*^9, {3.6375813007898607`*^9, 
+   3.637581391215794*^9}, {3.637581439276805*^9, 3.63758145558922*^9}, 
+   3.637581530571785*^9, {3.637582949920691*^9, 3.6375829630090857`*^9}, {
+   3.6375830562674417`*^9, 3.637583084571213*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Let us derive the differential equation from the difference equation:\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.637583386487554*^9, 3.637583397319899*^9}, {
+  3.637583448405691*^9, 3.63758345402486*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.637583572456452*^9, 3.637583578001585*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[DifferentialD]", 
+      RowBox[{"p", "(", "t", ")"}]}], 
+     RowBox[{"\[DifferentialD]", "t"}]], "="}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6375799017201357`*^9, 3.637579993585137*^9}, 
+   3.637580030034387*^9, 3.637580242917213*^9, {3.6375813007898607`*^9, 
+   3.637581391215794*^9}, {3.637581439276805*^9, 3.63758145558922*^9}, 
+   3.637581530571785*^9, {3.637582949920691*^9, 3.6375829630090857`*^9}, {
+   3.6375830562674417`*^9, 3.637583084571213*^9}, {3.637583414483089*^9, 
+   3.637583427853874*^9}}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.637586091904509*^9}],
+
+Cell[CellGroupData[{
+
+Cell["What happens if one of the two alleles is absent?", "Item",
+ CellChangeTimes->{{3.637583541320829*^9, 3.637583548875358*^9}}],
+
+Cell[TextData[{
+ "At what frequency ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"p", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the rate of change maximised?"
+}], "Item",
+ CellChangeTimes->{{3.637583541320829*^9, 3.6375835488626337`*^9}, {
+  3.6375839669772797`*^9, 3.637583991035894*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GraphicsColumn", "[", 
+  RowBox[{"{", 
+   RowBox[{"plotHaploSelChange", ",", "plotHaploSelMod"}], "}"}], 
+  "]"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{
+  3.6375855753024263`*^9, {3.637585877517062*^9, 3.637585929391922*^9}, {
+   3.637585980044121*^9, 3.637585982264174*^9}, {3.637586034476379*^9, 
+   3.6375860442633543`*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {InsetBox[
+     GraphicsBox[{{}, {}, 
+       {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], 
+        Opacity[1.], LineBox[CompressedData["
+1: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
+         "]]}},
+      AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+      Axes->{True, True},
+      AxesLabel->{None, None},
+      AxesOrigin->{0, 0},
+      DisplayFunction->Identity,
+      Frame->{{True, True}, {True, True}},
+      FrameLabel->{{
+         FormBox[
+         "\"Rate of change, \
+\[DifferentialD]\\!\\(\\*\\nStyleBox[\\\"p\\\",\\nFontSlant->\\\"Italic\\\"]\\\
+)/\[DifferentialD]\\!\\(\\*\\nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\
+\\)\"", TraditionalForm], 
+         FormBox["\"\"", TraditionalForm]}, {
+         FormBox[
+         "\"Frequency of \
+\\!\\(\\*\\nStyleBox[\\\"A\\\",\\nFontSlant->\\\"Italic\\\"]\\), \
+\\!\\(\\*\\nStyleBox[\\\"p\\\",\\nFontSlant->\\\"Italic\\\"]\\)(\\!\\(\\*\\\
+nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm], 
+         FormBox[
+         "\"\\!\\(\\*\\nStyleBox[\\\"s\\\",\\nFontSlant->\\\"Italic\\\"]\\) = \
+0.1\"", TraditionalForm]}},
+      FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+      GridLines->{{0.5}, {}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      LabelStyle->Directive[FontFamily -> "Helvetica", FontSize -> 14],
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, "ScalingFunctions" -> None},
+      PlotRange->{{0, 1}, {0, 0.026250000000000002`}},
+      PlotRangeClipping->True,
+      PlotRangePadding->{{
+         Scaled[0.02], 
+         Scaled[0.02]}, {0, 0}},
+      Ticks->{Automatic, Automatic}], {189., -155.3312629199899}, 
+     ImageScaled[{0.5, 0.5}], {360., 291.2461179749811}], InsetBox[
+     TagBox[
+      FormBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`p0$$ = 
+         0.07200000000000001, $CellContext`s$$ = 0.08600000000000001, 
+         Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+         Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+         Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+         Typeset`specs$$ = {{{
+            Hold[$CellContext`p0$$], 0.01}, 0.0001, 1.}, {{
+            Hold[$CellContext`s$$], 0.1}, 0., 1.}}, Typeset`size$$ = {
+         249., {80., 85.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`p0$42407$$ = 
+         0, $CellContext`s$42408$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, TraditionalForm, 
+           "Variables" :> {$CellContext`p0$$ = 0.01, $CellContext`s$$ = 0.1}, 
+           "ControllerVariables" :> {
+             Hold[$CellContext`p0$$, $CellContext`p0$42407$$, 0], 
+             Hold[$CellContext`s$$, $CellContext`s$42408$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> 
+           Plot[(1 + ((1 - $CellContext`p0$$)/$CellContext`p0$$) 
+               E^((-$CellContext`s$$) $CellContext`t))^(-1), {$CellContext`t, 
+              0, 120}, PlotRange -> {Full, {0, 1.05}}, Frame -> True, 
+             FrameLabel -> {
+              "Time, \!\(\*Cell[TextData[StyleBox[\"t\",\nFontSlant->\"Italic\
+\"]]]\)", 
+               "Frequency of \!\(\*\nStyleBox[\"A\",\n\
+FontSlant->\"Italic\"]\), \!\(\*\nStyleBox[\"p\",\n\
+FontSlant->\"Italic\"]\)(\!\(\*\nStyleBox[\"t\",\nFontSlant->\"Italic\"]\))"},
+              LabelStyle -> 
+             Directive[FontFamily -> "Helvetica", FontSize -> 14]], 
+           "Specifications" :> {{{$CellContext`p0$$, 0.01}, 0.0001, 
+              1.}, {{$CellContext`s$$, 0.1}, 0., 1.}}, "Options" :> {}, 
+           "DefaultOptions" :> {}],
+          ImageSizeCache->{292., {136., 141.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       TraditionalForm],
+      Manipulate`InterpretManipulate[1]], {189., -465.99378875996973`}, {
+     Center, Center}, {360., 291.2461179749811}]}, {}},
+  ContentSelectable->True,
+  ImageSize->{323.4921170536823, Automatic},
+  PlotRangePadding->{6, 5}]], "Output",
+ CellChangeTimes->{
+  3.637585998084207*^9, {3.637586035298497*^9, 3.637586057954216*^9}, 
+   3.637586187573666*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2336,7 +3177,130 @@ Cell[BoxData[
  InitializationCell->True,
  CellChangeTimes->{{3.637496675735793*^9, 3.637496726769393*^9}, {
   3.6374967831111803`*^9, 3.637496841170271*^9}, {3.637496881391077*^9, 
-  3.637496910667961*^9}, {3.637496963152856*^9, 3.637496967722193*^9}}]
+  3.637496910667961*^9}, {3.637496963152856*^9, 3.637496967722193*^9}}],
+
+Cell[BoxData[
+ RowBox[{"plotHaploSelMod", ":=", 
+  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"1", "-", "p0"}], "p0"], 
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{
+            RowBox[{"-", "s"}], " ", "t"}]]}]}], ")"}], 
+       RowBox[{"-", "1"}]], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "0", ",", "120"}], "}"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"Full", ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1.05"}], "}"}]}], "}"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"FrameLabel", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Time, \!\(\*Cell[TextData[StyleBox[\"t\",
+FontSlant->\"Italic\"]]]\)\>\"", ",", "\"\<Frequency of \!\(\*
+StyleBox[\"A\",
+FontSlant->\"Italic\"]\), \!\(\*
+StyleBox[\"p\",
+FontSlant->\"Italic\"]\)(\!\(\*
+StyleBox[\"t\",
+FontSlant->\"Italic\"]\))\>\""}], "}"}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{"LabelStyle", "\[Rule]", 
+       RowBox[{"Directive", "[", 
+        RowBox[{
+         RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], ",", " ", 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}]}], 
+     "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"p0", ",", "0.01"}], "}"}], ",", "0.0001", ",", "1.0"}], "}"}],
+     ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"s", ",", "0.1"}], "}"}], ",", "0.", ",", "1."}], "}"}]}], 
+   "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.637584498328936*^9, 3.637584702421434*^9}, {
+   3.6375848920653553`*^9, 3.637584912536875*^9}, {3.637585008093171*^9, 
+   3.637585041432805*^9}, 3.637585084182775*^9, 3.63758513063231*^9, {
+   3.6375851884539003`*^9, 3.637585221498054*^9}, {3.637585392122225*^9, 
+   3.637585471861723*^9}, {3.637585513126178*^9, 3.637585568742504*^9}}],
+
+Cell[BoxData[
+ RowBox[{"plotHaploSelChange", ":=", 
+  RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"p", 
+      RowBox[{"(", 
+       RowBox[{"1", "-", "p"}], ")"}], "s"}], "/.", 
+     RowBox[{"{", 
+      RowBox[{"s", "\[Rule]", "0.1"}], "}"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"p", ",", "0", ",", "1"}], "}"}], ",", 
+    RowBox[{"PlotRange", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"Full", ",", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", 
+          RowBox[{"1.05", "*", 
+           RowBox[{"1", "/", "4"}], " ", "s"}]}], "}"}], "/.", 
+        RowBox[{"{", 
+         RowBox[{"s", "\[Rule]", "0.1"}], "}"}]}]}], "}"}]}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"FrameLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<Rate of change, \[DifferentialD]\!\(\*
+StyleBox[\"p\",
+FontSlant->\"Italic\"]\)/\[DifferentialD]\!\(\*
+StyleBox[\"t\",
+FontSlant->\"Italic\"]\)\>\"", ",", "\"\<\>\""}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Frequency of \!\(\*
+StyleBox[\"A\",
+FontSlant->\"Italic\"]\), \!\(\*
+StyleBox[\"p\",
+FontSlant->\"Italic\"]\)(\!\(\*
+StyleBox[\"t\",
+FontSlant->\"Italic\"]\))\>\"", ",", "\"\<\!\(\*
+StyleBox[\"s\",
+FontSlant->\"Italic\"]\) = 0.1\>\""}], "}"}]}], "}"}]}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"LabelStyle", "\[Rule]", 
+     RowBox[{"Directive", "[", 
+      RowBox[{
+       RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], ",", " ", 
+       RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"GridLines", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", "0.5", "}"}], ",", 
+       RowBox[{"{", "}"}]}], "}"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.637584498328936*^9, 3.637584702421434*^9}, {
+   3.6375848920653553`*^9, 3.637584912536875*^9}, {3.637585008093171*^9, 
+   3.637585041432805*^9}, 3.637585084182775*^9, 3.63758513063231*^9, {
+   3.6375851884539003`*^9, 3.637585221498054*^9}, {3.637585392122225*^9, 
+   3.637585471861723*^9}, {3.637585513126178*^9, 3.637585568742504*^9}, {
+   3.637585613453608*^9, 3.637585731632102*^9}, {3.637585761720105*^9, 
+   3.637585845149206*^9}, {3.637586123207958*^9, 3.637586178289453*^9}}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -2353,7 +3317,7 @@ PrintingOptions->{"PaperOrientation"->"Portrait",
 "PrintingMargins"->{{54.000000585, 54.000000585}, {72.00000078000001, \
 72.00000078000001}}},
 TaggingRules->{"SlideShow" -> True},
-FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 9, \
 2014)",
 StyleDefinitions->"Default.nb"
 ]
@@ -2363,9 +3327,9 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "SlideShowHeader"->{
-  Cell[580, 22, 4298, 96, 0, "SlideShowNavigationBar",
+  Cell[580, 22, 4298, 96, 75, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[6537, 167, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[6537, 167, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
   Cell[9020, 251, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
@@ -2373,69 +3337,73 @@ CellTagsIndex->{
    CellTags->"SlideShowHeader"],
   Cell[35549, 845, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[43679, 1090, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[43725, 1091, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[54459, 1332, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[54987, 1347, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[58705, 1463, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[59233, 1478, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[79519, 1830, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[80047, 1845, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[79737, 1839, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[84542, 1998, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[88084, 2119, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[92305, 2251, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[89105, 2151, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[110011, 2680, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[118358, 2960, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[119379, 2992, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 96541, 2364}
+ {"SlideShowHeader", 131407, 3328}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 4298, 96, 0, "SlideShowNavigationBar",
+Cell[580, 22, 4298, 96, 75, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[4881, 120, 87, 1, 70, "Input"],
-Cell[4971, 123, 307, 4, 62, "Subsubtitle"],
+Cell[4881, 120, 87, 1, 46, "Input"],
+Cell[4971, 123, 307, 4, 29, "Subsubtitle"],
 Cell[CellGroupData[{
-Cell[5303, 131, 433, 10, 281, "Title"],
-Cell[5739, 143, 444, 6, 62, "Subsubtitle"],
-Cell[6186, 151, 116, 2, 62, "Subsubtitle"],
-Cell[6305, 155, 183, 6, 142, "Subsubtitle"]
+Cell[5303, 131, 433, 10, 148, "Title"],
+Cell[5739, 143, 444, 6, 29, "Subsubtitle"],
+Cell[6186, 151, 116, 2, 29, "Subsubtitle"],
+Cell[6305, 155, 183, 6, 69, "Subsubtitle"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6537, 167, 64, 1, 1, "SlideShowNavigationBar",
+Cell[6537, 167, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[6626, 172, 92, 1, 117, "Section"],
+Cell[6626, 172, 92, 1, 64, "Section"],
 Cell[CellGroupData[{
-Cell[6743, 177, 95, 1, 87, "Subsection"],
+Cell[6743, 177, 95, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[6863, 182, 206, 4, 45, "Item"],
-Cell[7072, 188, 219, 4, 45, "Item"]
+Cell[6863, 182, 206, 4, 28, "Item"],
+Cell[7072, 188, 219, 4, 28, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7340, 198, 98, 1, 87, "Subsection"],
+Cell[7340, 198, 98, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[7463, 203, 151, 2, 45, "Item"],
-Cell[7617, 207, 148, 2, 45, "Item"],
-Cell[7768, 211, 159, 2, 45, "Item"],
-Cell[7930, 215, 149, 2, 45, "Item"],
-Cell[8082, 219, 148, 2, 45, "Item"],
-Cell[8233, 223, 149, 2, 45, "Item"]
+Cell[7463, 203, 151, 2, 28, "Item"],
+Cell[7617, 207, 148, 2, 28, "Item"],
+Cell[7768, 211, 159, 2, 28, "Item"],
+Cell[7930, 215, 149, 2, 28, "Item"],
+Cell[8082, 219, 148, 2, 28, "Item"],
+Cell[8233, 223, 149, 2, 28, "Item"]
 }, Open  ]],
 Cell[8397, 228, 44, 1, 1, "PageBreak",
  PageBreakBelow->True],
-Cell[8444, 231, 113, 1, 45, "Text"],
+Cell[8444, 231, 113, 1, 30, "Text"],
 Cell[CellGroupData[{
-Cell[8582, 236, 201, 3, 45, "Item"],
-Cell[8786, 241, 161, 2, 45, "Item"]
+Cell[8582, 236, 201, 3, 28, "Item"],
+Cell[8786, 241, 161, 2, 28, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -2444,16 +3412,16 @@ Cell[CellGroupData[{
 Cell[9020, 251, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[9109, 256, 189, 2, 117, "Section"],
-Cell[9301, 260, 388, 5, 45, "Text"],
+Cell[9109, 256, 189, 2, 64, "Section"],
+Cell[9301, 260, 388, 5, 30, "Text"],
 Cell[CellGroupData[{
-Cell[9714, 269, 246, 4, 45, "Item"],
-Cell[9963, 275, 404, 8, 45, "Item"]
+Cell[9714, 269, 246, 4, 28, "Item"],
+Cell[9963, 275, 404, 8, 28, "Item"]
 }, Open  ]],
-Cell[10382, 286, 155, 2, 45, "Text"],
+Cell[10382, 286, 155, 2, 30, "Text"],
 Cell[CellGroupData[{
-Cell[10562, 292, 290, 8, 45, "Item"],
-Cell[10855, 302, 357, 10, 45, "Item"]
+Cell[10562, 292, 290, 8, 28, "Item"],
+Cell[10855, 302, 357, 10, 28, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -2461,37 +3429,37 @@ Cell[CellGroupData[{
 Cell[11273, 319, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[11362, 324, 168, 2, 87, "Subsection"],
-Cell[11533, 328, 167, 3, 45, "Text"],
+Cell[11362, 324, 168, 2, 44, "Subsection"],
+Cell[11533, 328, 167, 3, 30, "Text"],
 Cell[CellGroupData[{
-Cell[11725, 335, 358, 6, 45, "Item"],
-Cell[12086, 343, 572, 11, 71, "Item"],
-Cell[12661, 356, 633, 15, 45, "Item"],
-Cell[13297, 373, 727, 16, 71, "Item"],
-Cell[14027, 391, 456, 6, 45, "Item"]
+Cell[11725, 335, 358, 6, 28, "Item"],
+Cell[12086, 343, 572, 11, 29, "Item"],
+Cell[12661, 356, 633, 15, 29, "Item"],
+Cell[13297, 373, 727, 16, 29, "Item"],
+Cell[14027, 391, 456, 6, 28, "Item"]
 }, Open  ]],
-Cell[14498, 400, 15794, 263, 307, "Input"],
+Cell[14498, 400, 15794, 263, 299, "Input"],
 Cell[30295, 665, 44, 1, 1, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
 Cell[30364, 670, 112, 1, 51, "Subsubsection"],
 Cell[30479, 673, 182, 2, 45, "Text"],
 Cell[30664, 677, 463, 13, 37, "DisplayFormulaNumbered"],
-Cell[31130, 692, 252, 5, 75, "Text"],
-Cell[31385, 699, 541, 17, 75, "Text"],
-Cell[31929, 718, 399, 10, 37, "DisplayFormulaNumbered"],
-Cell[32331, 730, 104, 1, 45, "Text"],
-Cell[32438, 733, 534, 16, 37, "DisplayFormulaNumbered"],
-Cell[32975, 751, 469, 16, 78, "Text"],
+Cell[31130, 692, 252, 5, 30, "Text"],
+Cell[31385, 699, 541, 17, 31, "Text"],
+Cell[31929, 718, 399, 10, 25, "DisplayFormulaNumbered"],
+Cell[32331, 730, 104, 1, 30, "Text"],
+Cell[32438, 733, 534, 16, 25, "DisplayFormulaNumbered"],
+Cell[32975, 751, 469, 16, 32, "Text"],
 Cell[33447, 769, 44, 1, 1, "PageBreak",
  PageBreakBelow->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33528, 775, 165, 2, 51, "Subsubsection"],
-Cell[33696, 779, 679, 23, 105, "Text"],
-Cell[34378, 804, 128, 1, 45, "Text"],
-Cell[34509, 807, 654, 19, 68, "DisplayFormulaNumbered"],
-Cell[35166, 828, 322, 10, 48, "Text"]
+Cell[33528, 775, 165, 2, 35, "Subsubsection"],
+Cell[33696, 779, 679, 23, 50, "Text"],
+Cell[34378, 804, 128, 1, 30, "Text"],
+Cell[34509, 807, 654, 19, 46, "DisplayFormulaNumbered"],
+Cell[35166, 828, 322, 10, 32, "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -2499,118 +3467,187 @@ Cell[CellGroupData[{
 Cell[35549, 845, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[35638, 850, 114, 1, 87, "Subsection"],
-Cell[35755, 853, 576, 12, 105, "Text"],
+Cell[35638, 850, 114, 1, 44, "Subsection"],
+Cell[35755, 853, 576, 12, 49, "Text"],
 Cell[CellGroupData[{
-Cell[36356, 869, 114, 1, 51, "Subsubsection"],
-Cell[36473, 872, 393, 12, 105, "Text"],
-Cell[36869, 886, 727, 22, 64, "DisplayFormulaNumbered"],
-Cell[37599, 910, 1149, 42, 75, "Text"],
+Cell[36356, 869, 114, 1, 35, "Subsubsection"],
+Cell[36473, 872, 393, 12, 49, "Text"],
+Cell[36869, 886, 727, 22, 43, "DisplayFormulaNumbered"],
+Cell[37599, 910, 1149, 42, 31, "Text"],
 Cell[38751, 954, 44, 1, 1, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[38820, 959, 169, 3, 44, "Input",
+Cell[38820, 959, 169, 3, 28, "Input",
  InitializationCell->True],
-Cell[38992, 964, 2763, 55, 400, "Output"]
+Cell[38992, 964, 2809, 56, 376, "Output"]
 }, Open  ]],
-Cell[41770, 1022, 101, 1, 45, "Text"],
-Cell[41874, 1025, 1014, 33, 67, "DisplayFormulaNumbered"],
-Cell[42891, 1060, 104, 1, 45, "Text"],
-Cell[42998, 1063, 620, 20, 67, "DisplayFormulaNumbered"]
+Cell[41816, 1023, 101, 1, 30, "Text"],
+Cell[41920, 1026, 1014, 33, 44, "DisplayFormulaNumbered"],
+Cell[42937, 1061, 104, 1, 30, "Text"],
+Cell[43044, 1064, 620, 20, 44, "DisplayFormulaNumbered"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[43679, 1090, 64, 1, 1, "SlideShowNavigationBar",
+Cell[43725, 1091, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[43768, 1095, 116, 1, 51, "Subsubsection"],
-Cell[43887, 1098, 169, 4, 45, "Text"],
-Cell[44059, 1104, 44, 1, 1, "PageBreak",
+Cell[43814, 1096, 116, 1, 35, "Subsubsection"],
+Cell[43933, 1099, 169, 4, 30, "Text"],
+Cell[44105, 1105, 44, 1, 1, "PageBreak",
  PageBreakBelow->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[44140, 1110, 155, 2, 51, "Subsubsection"],
+Cell[44186, 1111, 155, 2, 35, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[44320, 1116, 1425, 40, 111, "Input",
+Cell[44366, 1117, 1425, 40, 56, "Input",
  InitializationCell->True],
-Cell[45748, 1158, 8175, 151, 295, "Output"]
+Cell[45794, 1159, 8187, 151, 227, "Output"]
 }, Open  ]],
-Cell[53938, 1312, 472, 14, 78, "Text"]
+Cell[53996, 1313, 942, 28, 52, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[54459, 1332, 64, 1, 1, "SlideShowNavigationBar",
+Cell[54987, 1347, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[54548, 1337, 112, 1, 117, "Section"],
+Cell[55076, 1352, 112, 1, 64, "Section"],
 Cell[CellGroupData[{
-Cell[54685, 1342, 333, 8, 45, "Item"],
-Cell[55021, 1352, 754, 23, 48, "Subitem"],
-Cell[55778, 1377, 445, 10, 71, "Item"],
-Cell[56226, 1389, 1017, 33, 60, "Subitem"],
-Cell[57246, 1424, 539, 12, 97, "Item"],
-Cell[57788, 1438, 436, 7, 71, "Item"],
-Cell[58227, 1447, 417, 9, 45, "Item"]
+Cell[55213, 1357, 333, 8, 28, "Item"],
+Cell[55549, 1367, 754, 23, 26, "Subitem"],
+Cell[56306, 1392, 445, 10, 28, "Item"],
+Cell[56754, 1404, 1017, 33, 34, "Subitem"],
+Cell[57774, 1439, 539, 12, 45, "Item"],
+Cell[58316, 1453, 436, 7, 28, "Item"],
+Cell[58755, 1462, 417, 9, 28, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[58705, 1463, 64, 1, 1, "SlideShowNavigationBar",
+Cell[59233, 1478, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[58794, 1468, 132, 1, 117, "Section"],
-Cell[58929, 1471, 1011, 27, 225, "Text"],
-Cell[59943, 1500, 19527, 324, 353, InheritFromParent]
+Cell[59322, 1483, 132, 1, 64, "Section"],
+Cell[59457, 1486, 1011, 27, 88, "Text"],
+Cell[60471, 1515, 19527, 324, 353, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[79519, 1830, 64, 1, 74, "SlideShowNavigationBar",
- CellTags->"SlideShowHeader"],
-Cell[79586, 1833, 114, 1, 44, "Subsection"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[79737, 1839, 64, 1, 74, "SlideShowNavigationBar",
+Cell[80047, 1845, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[79826, 1844, 152, 2, 64, "Section"],
+Cell[80136, 1850, 114, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[80003, 1850, 1190, 31, 68, "ItemNumbered"],
-Cell[81196, 1883, 1587, 45, 87, "ItemNumbered"]
+Cell[80275, 1855, 284, 6, 28, "Item"],
+Cell[80562, 1863, 805, 29, 30, "Item"],
+Cell[81370, 1894, 260, 3, 28, "Item"],
+Cell[81633, 1899, 1183, 38, 47, "Item"],
+Cell[82819, 1939, 328, 4, 28, "Item"]
 }, Open  ]],
-Cell[82798, 1931, 44, 1, 4, "PageBreak",
+Cell[83162, 1946, 393, 13, 26, "DisplayFormulaNumbered"],
+Cell[83558, 1961, 395, 13, 26, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[83978, 1978, 108, 1, 35, "Subsubsection"],
+Cell[84089, 1981, 392, 10, 49, "Text"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84542, 1998, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[84631, 2003, 213, 6, 44, "Subsection"],
+Cell[84847, 2011, 1551, 52, 47, "Item"],
+Cell[86401, 2065, 1057, 35, 47, "DisplayFormulaNumbered"],
+Cell[87461, 2102, 822, 21, 30, "Item"],
+Cell[88286, 2125, 677, 21, 47, "DisplayFormulaNumbered"],
+Cell[88966, 2148, 864, 25, 47, "Item"],
+Cell[89833, 2175, 645, 19, 47, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[90503, 2198, 1015, 29, 30, "Item"],
+Cell[91521, 2229, 723, 15, 45, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[92305, 2251, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[92394, 2256, 213, 6, 44, "Subsection"],
+Cell[92610, 2264, 296, 4, 28, "Item"],
+Cell[92909, 2270, 1426, 43, 47, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[94360, 2317, 1429, 44, 51, "Item"],
+Cell[95792, 2363, 910, 24, 30, "Item"]
+}, Open  ]],
+Cell[96717, 2390, 838, 23, 46, "DisplayFormulaNumbered"],
+Cell[97558, 2415, 44, 1, 4, "PageBreak",
  PageBreakBelow->True],
-Cell[82845, 1934, 3297, 111, 115, "ItemNumbered"],
-Cell[86145, 2047, 717, 22, 59, "DisplayFormula"],
-Cell[86865, 2071, 1170, 42, 40, "Text"]
+Cell[CellGroupData[{
+Cell[97627, 2420, 216, 4, 35, "Subsubsection"],
+Cell[97846, 2426, 195, 3, 97, "Input"],
+Cell[98044, 2431, 629, 14, 45, "DisplayFormulaNumbered"],
+Cell[98676, 2447, 87, 1, 46, "Input"],
+Cell[CellGroupData[{
+Cell[98788, 2452, 131, 1, 28, "Item"],
+Cell[98922, 2455, 318, 9, 30, "Item"]
+}, Open  ]],
+Cell[99255, 2467, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[99324, 2472, 370, 9, 28, "Input",
+ InitializationCell->True],
+Cell[99697, 2483, 10241, 189, 548, "Output"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[88084, 2119, 64, 1, 74, "SlideShowNavigationBar",
+Cell[110011, 2680, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[88173, 2124, 148, 2, 64, "Section"],
+Cell[110100, 2685, 152, 2, 64, "Section"],
 Cell[CellGroupData[{
-Cell[88346, 2130, 233, 3, 28, "Item"],
-Cell[88582, 2135, 308, 5, 28, "Item"],
-Cell[88893, 2142, 151, 2, 28, "Item"]
+Cell[110277, 2691, 1190, 31, 68, "ItemNumbered"],
+Cell[111470, 2724, 1587, 45, 87, "ItemNumbered"]
+}, Open  ]],
+Cell[113072, 2772, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[113119, 2775, 3297, 111, 115, "ItemNumbered"],
+Cell[116419, 2888, 717, 22, 59, "DisplayFormula"],
+Cell[117139, 2912, 1170, 42, 40, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[118358, 2960, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[118447, 2965, 148, 2, 64, "Section"],
+Cell[CellGroupData[{
+Cell[118620, 2971, 233, 3, 28, "Item"],
+Cell[118856, 2976, 308, 5, 28, "Item"],
+Cell[119167, 2983, 151, 2, 28, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[89105, 2151, 64, 1, 74, "SlideShowNavigationBar",
+Cell[119379, 2992, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[89194, 2156, 105, 1, 64, "Section"],
-Cell[89302, 2159, 370, 11, 48, "Input",
+Cell[119468, 2997, 105, 1, 64, "Section"],
+Cell[119576, 3000, 370, 11, 48, "Input",
  InitializationCell->True],
-Cell[89675, 2172, 2962, 79, 199, "Input",
+Cell[119949, 3013, 2962, 79, 182, "Input",
  InitializationCell->True],
-Cell[92640, 2253, 1398, 38, 63, "Input",
+Cell[122914, 3094, 1398, 38, 63, "Input",
  InitializationCell->True],
-Cell[94041, 2293, 448, 12, 28, "Input",
+Cell[124315, 3134, 448, 12, 28, "Input",
  InitializationCell->True],
-Cell[94492, 2307, 1320, 31, 131, "Input",
+Cell[124766, 3148, 1320, 31, 131, "Input",
+ InitializationCell->True],
+Cell[126089, 3181, 2185, 56, 218, "Input",
+ InitializationCell->True],
+Cell[128277, 3239, 2400, 63, 165, "Input",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
