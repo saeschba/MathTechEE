@@ -24,8 +24,9 @@ openany, % A chapter may start on either a recto or verso page.
 % \usepackage{kpfonts} %Font
 
 \usepackage{amsmath,amssymb,mathtools} % Math
+\usepackage{commath} % Improved mathematical notation
 
-% \usepackage{tikz} % Figures
+\usepackage{tikz} % Figures
 \usepackage{graphicx} % Include figures
 
 %%% PAGE LAYOUT 
@@ -157,8 +158,8 @@ pdfauthor={I am the Author} % author
 %%% Where all the important stuff is included!
 %%%-------------------------------------------------------------------------------
 
-\author{A. Author}
-\title{The amazing Book about Timemachines}
+\author{Simon Aeschbacher}
+\title{Mathematical Techniques in\\Evolution and Ecology}
 
 \usepackage{lipsum} % Just to put in some text
 
@@ -168,33 +169,21 @@ pdfauthor={I am the Author} % author
 
 \maketitle
 
-\begin{abstract}
-\lipsum[1-2]
-\end{abstract}
+%\begin{abstract}
+%\lipsum[1-2]
+%\end{abstract}
 \clearpage
 
 \tableofcontents*
 \clearpage
 
-\chapter{Introduction}
-
-\lipsum[1-12]
+\include{intro}
 
 \mainmatter
 
-\chapter{How to Build a Timemachine}
+\include{chp01}
 
-\lipsum[1-13] 
-
-\chapter{How to Destroy a Timemachine}
-
-\lipsum[1-14]
-
-\appendix
-
-\chapter{Causality}
-
-\lipsum[1-15]
+\include{solutions}
 
 \backmatter
 
