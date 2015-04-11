@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    250731,       6054]
-NotebookOptionsPosition[    236810,       5641]
-NotebookOutlinePosition[    239060,       5704]
-CellTagsIndexPosition[    238980,       5699]
+NotebookDataLength[    250826,       6058]
+NotebookOptionsPosition[    236953,       5644]
+NotebookOutlinePosition[    239224,       5708]
+CellTagsIndexPosition[    239144,       5703]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1573,20 +1573,19 @@ Cell[BoxData["logGrowthReproFactorPlot"], "Input",
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{K$$ = 100, $CellContext`rd$$ = 1, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{K$$ = 154.5, $CellContext`rd$$ = 0.675, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`rd$$], 1}, 0, 2}, {{
-       Hold[K$$], 100}, 10, 200}}, Typeset`size$$ = {
-    259.2, {87., 88.47183422815522}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`rd$12387$$ = 0, K$12388$$ = 0}, 
+       Hold[K$$], 100}, 10, 200}}, Typeset`size$$ = {270., {93., 94.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`rd$780$$ = 0, K$785$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {K$$ = 100, $CellContext`rd$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`rd$$, $CellContext`rd$12387$$, 0], 
-        Hold[K$$, K$12388$$, 0]}, 
+        Hold[$CellContext`rd$$, $CellContext`rd$780$$, 0], 
+        Hold[K$$, K$785$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1613,7 +1612,7 @@ FontSlant->\"Italic\"]\)(\!\(\*\nStyleBox[\"t\",\nFontSlant->\"Italic\"]\))",
         GridLines -> {{K$$}, {1}}], 
       "Specifications" :> {{{$CellContext`rd$$, 1}, 0, 2}, {{K$$, 100}, 10, 
          200}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{296., {129.9365038871765, 134.0634961128235}},
+     ImageSizeCache->{309., {142., 148.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1628,7 +1627,8 @@ FontSlant->\"Italic\"]\)(\!\(\*\nStyleBox[\"t\",\nFontSlant->\"Italic\"]\))",
   3.637461633602097*^9, {3.637494965333083*^9, 3.637494974877226*^9}, {
    3.637497486905939*^9, 3.637497489918324*^9}, {3.6375787479597588`*^9, 
    3.6375787553294687`*^9}, {3.6376324335548573`*^9, 3.637632444948235*^9}, 
-   3.6376353564321012`*^9, {3.637639996517439*^9, 3.637639999383585*^9}}]
+   3.6376353564321012`*^9, {3.637639996517439*^9, 3.637639999383585*^9}, {
+   3.63767386105385*^9, 3.637673871139962*^9}}]
 }, Open  ]],
 
 Cell["Recursion equation:", "Text",
@@ -1919,7 +1919,8 @@ BSudHM7sZn0KlMt+FChYvwGT5xQRu+b3f6AzuF4=
    3.6374972921797533`*^9, 3.637497322900161*^9}, 3.637497411725046*^9, {
    3.637497487602543*^9, 3.63749749059918*^9}, 3.6375015288575153`*^9, {
    3.637578748369851*^9, 3.637578755962078*^9}, {3.637632437677348*^9, 
-   3.637632445572247*^9}, {3.637639997008613*^9, 3.6376399996056337`*^9}}]
+   3.637632445572247*^9}, {3.637639997008613*^9, 3.6376399996056337`*^9}, {
+   3.637673861579459*^9, 3.637673873099004*^9}}]
 }, Open  ]],
 
 Cell[TextData[{
@@ -3728,22 +3729,22 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
      TagBox[
       FormBox[
        StyleBox[
-        DynamicModuleBox[{$CellContext`p0$$ = 0.01, $CellContext`s$$ = 0.1, 
-         Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+        DynamicModuleBox[{$CellContext`p0$$ = 0.212, $CellContext`s$$ = 0.076,
+          Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
          Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
          Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
          Typeset`specs$$ = {{{
             Hold[$CellContext`p0$$], 0.01}, 0.0001, 1.}, {{
             Hold[$CellContext`s$$], 0.1}, 0., 1.}}, Typeset`size$$ = {
-         178.60000000000002`, {58., 58.76988799896563}}, Typeset`update$$ = 0,
-          Typeset`initDone$$, Typeset`skipInitDone$$ = 
-         True, $CellContext`p0$12494$$ = 0, $CellContext`s$12495$$ = 0}, 
+         184., {62., 63.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`p0$1026$$ = 
+         0, $CellContext`s$1027$$ = 0}, 
          DynamicBox[Manipulate`ManipulateBoxes[
           1, TraditionalForm, 
            "Variables" :> {$CellContext`p0$$ = 0.01, $CellContext`s$$ = 0.1}, 
            "ControllerVariables" :> {
-             Hold[$CellContext`p0$$, $CellContext`p0$12494$$, 0], 
-             Hold[$CellContext`s$$, $CellContext`s$12495$$, 0]}, 
+             Hold[$CellContext`p0$$, $CellContext`p0$1026$$, 0], 
+             Hold[$CellContext`s$$, $CellContext`s$1027$$, 0]}, 
            "OtherVariables" :> {
             Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
              Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -3763,7 +3764,7 @@ FontSlant->\"Italic\"]\)(\!\(\*\nStyleBox[\"t\",\nFontSlant->\"Italic\"]\))"},
            "Specifications" :> {{{$CellContext`p0$$, 0.01}, 0.0001, 
               1.}, {{$CellContext`s$$, 0.1}, 0., 1.}}, "Options" :> {}, 
            "DefaultOptions" :> {}],
-          ImageSizeCache->{213., {99.82621085643768, 103.17378914356232`}},
+          ImageSizeCache->{219., {105., 109.}},
           SingleEvaluation->True],
          Deinitialization:>None,
          DynamicModuleValues:>{},
@@ -3782,7 +3783,8 @@ FontSlant->\"Italic\"]\)(\!\(\*\nStyleBox[\"t\",\nFontSlant->\"Italic\"]\))"},
  CellChangeTimes->{
   3.637585998084207*^9, {3.637586035298497*^9, 3.637586057954216*^9}, 
    3.637586187573666*^9, {3.63763243796943*^9, 3.6376324456920547`*^9}, {
-   3.6376399983574963`*^9, 3.63763999972538*^9}}]
+   3.6376399983574963`*^9, 3.63763999972538*^9}, {3.637673862855123*^9, 
+   3.6376738732555103`*^9}}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -4157,7 +4159,7 @@ nFontSlant->\\\"Italic\\\"]\\)\"\>"}
    3.637633928417309*^9}, 3.637634016526829*^9, {3.637634052806419*^9, 
    3.637634072908749*^9}, 3.63763412604818*^9, 3.637634582908943*^9, 
    3.637634653240603*^9, 3.637634733002836*^9, {3.6376399988242617`*^9, 
-   3.637639999933195*^9}}]
+   3.637639999933195*^9}, {3.637673863180735*^9, 3.637673873459943*^9}}]
 }, Open  ]],
 
 Cell["\<\
@@ -4744,7 +4746,8 @@ Cell[BoxData[
   "Grid"]], "Output",
  CellChangeTimes->{
   3.6376388140907717`*^9, 3.637639011866061*^9, 3.637639050598881*^9, 
-   3.6376390976410437`*^9, {3.637639998969679*^9, 3.637640000075379*^9}}]
+   3.6376390976410437`*^9, {3.637639998969679*^9, 3.637640000075379*^9}, {
+   3.637673863313752*^9, 3.6376738735390368`*^9}}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -5639,8 +5642,8 @@ Cell[BoxData[
 }, Open  ]]
 }, Open  ]]
 },
-ScreenStyleEnvironment->"Working",
-WindowSize->{1040, 789},
+ScreenStyleEnvironment->"SlideShow",
+WindowSize->{800, 509},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
@@ -5652,6 +5655,7 @@ PrintingOptions->{"PaperOrientation"->"Portrait",
 "PrintingMargins"->{{54.000000585, 54.000000585}, {72.00000078000001, \
 72.00000078000001}}},
 TaggingRules->{"SlideShow" -> True},
+Magnification:>0.75 Inherited,
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 9, \
 2014)",
 StyleDefinitions->"Default.nb"
@@ -5662,397 +5666,397 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "SlideShowHeader"->{
-  Cell[580, 22, 4298, 96, 75, "SlideShowNavigationBar",
+  Cell[580, 22, 4298, 96, 0, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[6537, 167, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[6537, 167, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[9020, 251, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[9020, 251, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[11273, 319, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[11273, 319, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[71546, 1438, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[71546, 1438, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[80132, 1701, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[80133, 1701, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[91492, 1958, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[91543, 1959, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[95709, 2089, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[95760, 2090, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[146083, 2942, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[146134, 2943, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[150679, 3101, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[150730, 3102, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[158442, 3354, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[158493, 3355, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[176797, 3792, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[176842, 3794, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[191108, 4244, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[191199, 4246, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[193733, 4345, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[193824, 4347, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[206495, 4753, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[206638, 4756, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[214842, 5033, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[214985, 5036, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 237519, 5663}
+ {"SlideShowHeader", 237694, 5667}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 4298, 96, 75, "SlideShowNavigationBar",
+Cell[580, 22, 4298, 96, 0, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[4881, 120, 87, 1, 46, "Input"],
-Cell[4971, 123, 307, 4, 29, "Subsubtitle"],
+Cell[4881, 120, 87, 1, 53, "Input"],
+Cell[4971, 123, 307, 4, 47, "Subsubtitle"],
 Cell[CellGroupData[{
-Cell[5303, 131, 433, 10, 148, "Title"],
-Cell[5739, 143, 444, 6, 29, "Subsubtitle"],
-Cell[6186, 151, 116, 2, 29, "Subsubtitle"],
-Cell[6305, 155, 183, 6, 69, "Subsubtitle"]
+Cell[5303, 131, 433, 10, 193, "Title"],
+Cell[5739, 143, 444, 6, 47, "Subsubtitle"],
+Cell[6186, 151, 116, 2, 47, "Subsubtitle"],
+Cell[6305, 155, 183, 6, 108, "Subsubtitle"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6537, 167, 64, 1, 74, "SlideShowNavigationBar",
+Cell[6537, 167, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[6626, 172, 92, 1, 64, "Section"],
+Cell[6626, 172, 92, 1, 78, "Section"],
 Cell[CellGroupData[{
-Cell[6743, 177, 95, 1, 44, "Subsection"],
+Cell[6743, 177, 95, 1, 58, "Subsection"],
 Cell[CellGroupData[{
-Cell[6863, 182, 206, 4, 28, "Item"],
-Cell[7072, 188, 219, 4, 28, "Item"]
+Cell[6863, 182, 206, 4, 34, "Item"],
+Cell[7072, 188, 219, 4, 34, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7340, 198, 98, 1, 44, "Subsection"],
+Cell[7340, 198, 98, 1, 58, "Subsection"],
 Cell[CellGroupData[{
-Cell[7463, 203, 151, 2, 28, "Item"],
-Cell[7617, 207, 148, 2, 28, "Item"],
-Cell[7768, 211, 159, 2, 28, "Item"],
-Cell[7930, 215, 149, 2, 28, "Item"],
-Cell[8082, 219, 148, 2, 28, "Item"],
-Cell[8233, 223, 149, 2, 28, "Item"]
+Cell[7463, 203, 151, 2, 34, "Item"],
+Cell[7617, 207, 148, 2, 34, "Item"],
+Cell[7768, 211, 159, 2, 34, "Item"],
+Cell[7930, 215, 149, 2, 34, "Item"],
+Cell[8082, 219, 148, 2, 34, "Item"],
+Cell[8233, 223, 149, 2, 34, "Item"]
 }, Open  ]],
-Cell[8397, 228, 44, 1, 1, "PageBreak",
+Cell[8397, 228, 44, 1, 0, "PageBreak",
  PageBreakBelow->True],
-Cell[8444, 231, 113, 1, 30, "Text"],
+Cell[8444, 231, 113, 1, 34, "Text"],
 Cell[CellGroupData[{
-Cell[8582, 236, 201, 3, 28, "Item"],
-Cell[8786, 241, 161, 2, 28, "Item"]
+Cell[8582, 236, 201, 3, 34, "Item"],
+Cell[8786, 241, 161, 2, 34, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9020, 251, 64, 1, 74, "SlideShowNavigationBar",
+Cell[9020, 251, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[9109, 256, 189, 2, 64, "Section"],
-Cell[9301, 260, 388, 5, 30, "Text"],
+Cell[9109, 256, 189, 2, 78, "Section"],
+Cell[9301, 260, 388, 5, 34, "Text"],
 Cell[CellGroupData[{
-Cell[9714, 269, 246, 4, 28, "Item"],
-Cell[9963, 275, 404, 8, 28, "Item"]
+Cell[9714, 269, 246, 4, 34, "Item"],
+Cell[9963, 275, 404, 8, 34, "Item"]
 }, Open  ]],
-Cell[10382, 286, 155, 2, 30, "Text"],
+Cell[10382, 286, 155, 2, 34, "Text"],
 Cell[CellGroupData[{
-Cell[10562, 292, 290, 8, 28, "Item"],
-Cell[10855, 302, 357, 10, 28, "Item"]
+Cell[10562, 292, 290, 8, 34, "Item"],
+Cell[10855, 302, 357, 10, 34, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11273, 319, 64, 1, 74, "SlideShowNavigationBar",
+Cell[11273, 319, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[11362, 324, 168, 2, 44, "Subsection"],
-Cell[11533, 328, 217, 6, 30, "Text"],
+Cell[11362, 324, 168, 2, 58, "Subsection"],
+Cell[11533, 328, 217, 6, 34, "Text"],
 Cell[CellGroupData[{
-Cell[11775, 338, 358, 6, 28, "Item"],
-Cell[12136, 346, 539, 10, 29, "Item"],
-Cell[12678, 358, 633, 15, 29, "Item"],
-Cell[13314, 375, 727, 16, 29, "Item"],
-Cell[14044, 393, 456, 6, 28, "Item"]
+Cell[11775, 338, 358, 6, 34, "Item"],
+Cell[12136, 346, 539, 10, 34, "Item"],
+Cell[12678, 358, 633, 15, 34, "Item"],
+Cell[13314, 375, 727, 16, 54, "Item"],
+Cell[14044, 393, 456, 6, 34, "Item"]
 }, Open  ]],
-Cell[14515, 402, 144, 2, 28, "Input"],
-Cell[14662, 406, 51521, 850, 277, InheritFromParent],
-Cell[66186, 1258, 44, 1, 4, "PageBreak",
+Cell[14515, 402, 144, 2, 33, "Input"],
+Cell[14662, 406, 51521, 850, 214, "Input"],
+Cell[66186, 1258, 44, 1, 0, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[66255, 1263, 112, 1, 35, "Subsubsection"],
-Cell[66370, 1266, 182, 2, 30, "Text"],
-Cell[66555, 1270, 463, 13, 25, "DisplayFormulaNumbered"],
-Cell[67021, 1285, 337, 6, 30, "Text"],
-Cell[67361, 1293, 541, 17, 31, "Text"],
-Cell[67905, 1312, 481, 12, 25, "DisplayFormulaNumbered"],
-Cell[68389, 1326, 104, 1, 30, "Text"],
-Cell[68496, 1329, 572, 16, 25, "DisplayFormulaNumbered"],
-Cell[69071, 1347, 469, 16, 32, "Text"],
-Cell[69543, 1365, 44, 1, 4, "PageBreak",
+Cell[66255, 1263, 112, 1, 38, "Subsubsection"],
+Cell[66370, 1266, 182, 2, 34, "Text"],
+Cell[66555, 1270, 463, 13, 28, "DisplayFormulaNumbered"],
+Cell[67021, 1285, 337, 6, 57, "Text"],
+Cell[67361, 1293, 541, 17, 57, "Text"],
+Cell[67905, 1312, 481, 12, 28, "DisplayFormulaNumbered"],
+Cell[68389, 1326, 104, 1, 34, "Text"],
+Cell[68496, 1329, 572, 16, 28, "DisplayFormulaNumbered"],
+Cell[69071, 1347, 469, 16, 59, "Text"],
+Cell[69543, 1365, 44, 1, 0, "PageBreak",
  PageBreakBelow->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[69624, 1371, 165, 2, 35, "Subsubsection"],
-Cell[69792, 1375, 580, 20, 50, "Text"],
-Cell[70375, 1397, 128, 1, 30, "Text"],
-Cell[70506, 1400, 654, 19, 46, "DisplayFormulaNumbered"],
-Cell[71163, 1421, 322, 10, 32, "Text"]
+Cell[69624, 1371, 165, 2, 38, "Subsubsection"],
+Cell[69792, 1375, 580, 20, 80, "Text"],
+Cell[70375, 1397, 128, 1, 34, "Text"],
+Cell[70506, 1400, 654, 19, 52, "DisplayFormulaNumbered"],
+Cell[71163, 1421, 322, 10, 36, "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[71546, 1438, 64, 1, 74, "SlideShowNavigationBar",
+Cell[71546, 1438, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[71635, 1443, 114, 1, 44, "Subsection"],
-Cell[71752, 1446, 618, 15, 49, "Text"],
+Cell[71635, 1443, 114, 1, 58, "Subsection"],
+Cell[71752, 1446, 618, 15, 80, "Text"],
 Cell[CellGroupData[{
-Cell[72395, 1465, 114, 1, 35, "Subsubsection"],
-Cell[72512, 1468, 393, 12, 49, "Text"],
-Cell[72908, 1482, 727, 22, 43, "DisplayFormulaNumbered"],
-Cell[73638, 1506, 371, 11, 31, "Text"],
+Cell[72395, 1465, 114, 1, 38, "Subsubsection"],
+Cell[72512, 1468, 393, 12, 80, "Text"],
+Cell[72908, 1482, 727, 22, 48, "DisplayFormulaNumbered"],
+Cell[73638, 1506, 371, 11, 34, "Text"],
 Cell[CellGroupData[{
-Cell[74034, 1521, 350, 13, 29, "Item"],
-Cell[74387, 1536, 350, 13, 29, "Item"],
-Cell[74740, 1551, 229, 8, 29, "Item"]
+Cell[74034, 1521, 350, 13, 34, "Item"],
+Cell[74387, 1536, 350, 13, 34, "Item"],
+Cell[74740, 1551, 229, 8, 34, "Item"]
 }, Open  ]],
-Cell[74984, 1562, 44, 1, 1, "PageBreak",
+Cell[74984, 1562, 44, 1, 0, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[75053, 1567, 169, 3, 28, "Input",
+Cell[75053, 1567, 169, 3, 33, "Input",
  InitializationCell->True],
-Cell[75225, 1572, 2983, 58, 376, "Output"]
+Cell[75225, 1572, 2984, 58, 309, "Output"]
 }, Open  ]],
-Cell[78223, 1633, 101, 1, 30, "Text"],
-Cell[78327, 1636, 1014, 33, 44, "DisplayFormulaNumbered"],
-Cell[79344, 1671, 104, 1, 30, "Text"],
-Cell[79451, 1674, 620, 20, 44, "DisplayFormulaNumbered"]
+Cell[78224, 1633, 101, 1, 34, "Text"],
+Cell[78328, 1636, 1014, 33, 51, "DisplayFormulaNumbered"],
+Cell[79345, 1671, 104, 1, 34, "Text"],
+Cell[79452, 1674, 620, 20, 51, "DisplayFormulaNumbered"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[80132, 1701, 64, 1, 74, "SlideShowNavigationBar",
+Cell[80133, 1701, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[80221, 1706, 116, 1, 35, "Subsubsection"],
-Cell[80340, 1709, 169, 4, 30, "Text"],
-Cell[80512, 1715, 44, 1, 1, "PageBreak",
+Cell[80222, 1706, 116, 1, 38, "Subsubsection"],
+Cell[80341, 1709, 169, 4, 34, "Text"],
+Cell[80513, 1715, 44, 1, 0, "PageBreak",
  PageBreakBelow->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[80593, 1721, 155, 2, 35, "Subsubsection"],
+Cell[80594, 1721, 155, 2, 38, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[80773, 1727, 1425, 40, 56, "Input",
+Cell[80774, 1727, 1425, 40, 83, "Input",
  InitializationCell->True],
-Cell[82201, 1769, 8285, 152, 227, "Output"]
+Cell[82202, 1769, 8335, 153, 180, "Output"]
 }, Open  ]],
-Cell[90501, 1924, 942, 28, 52, "Text"]
+Cell[90552, 1925, 942, 28, 82, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[91492, 1958, 64, 1, 74, "SlideShowNavigationBar",
+Cell[91543, 1959, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[91581, 1963, 112, 1, 64, "Section"],
+Cell[91632, 1964, 112, 1, 78, "Section"],
 Cell[CellGroupData[{
-Cell[91718, 1968, 333, 8, 28, "Item"],
-Cell[92054, 1978, 721, 22, 26, "Subitem"],
-Cell[92778, 2002, 445, 10, 28, "Item"],
-Cell[93226, 2014, 984, 32, 34, "Subitem"],
-Cell[94213, 2048, 539, 12, 45, "Item"],
-Cell[94755, 2062, 436, 7, 28, "Item"],
-Cell[95194, 2071, 454, 11, 28, "Item"]
+Cell[91769, 1969, 333, 8, 34, "Item"],
+Cell[92105, 1979, 721, 22, 36, "Subitem"],
+Cell[92829, 2003, 445, 10, 54, "Item"],
+Cell[93277, 2015, 984, 32, 46, "Subitem"],
+Cell[94264, 2049, 539, 12, 74, "Item"],
+Cell[94806, 2063, 436, 7, 54, "Item"],
+Cell[95245, 2072, 454, 11, 34, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[95709, 2089, 64, 1, 74, "SlideShowNavigationBar",
+Cell[95760, 2090, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[95798, 2094, 132, 1, 64, "Section"],
-Cell[95933, 2097, 1011, 27, 88, "Text"],
-Cell[96947, 2126, 49087, 810, 254, InheritFromParent]
+Cell[95849, 2095, 132, 1, 78, "Section"],
+Cell[95984, 2098, 1011, 27, 148, "Text"],
+Cell[96998, 2127, 49087, 810, 196, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[146083, 2942, 64, 1, 74, "SlideShowNavigationBar",
+Cell[146134, 2943, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[146172, 2947, 114, 1, 44, "Subsection"],
+Cell[146223, 2948, 114, 1, 58, "Subsection"],
 Cell[CellGroupData[{
-Cell[146311, 2952, 332, 8, 28, "Item"],
-Cell[146646, 2962, 805, 29, 30, "Item"],
-Cell[147454, 2993, 313, 7, 28, "Item"],
-Cell[147770, 3002, 1183, 38, 47, "Item"],
-Cell[148956, 3042, 328, 4, 28, "Item"]
+Cell[146362, 2953, 332, 8, 54, "Item"],
+Cell[146697, 2963, 805, 29, 36, "Item"],
+Cell[147505, 2994, 313, 7, 34, "Item"],
+Cell[147821, 3003, 1183, 38, 76, "Item"],
+Cell[149007, 3043, 328, 4, 34, "Item"]
 }, Open  ]],
-Cell[149299, 3049, 393, 13, 26, "DisplayFormulaNumbered"],
-Cell[149695, 3064, 395, 13, 26, "DisplayFormulaNumbered"],
+Cell[149350, 3050, 393, 13, 30, "DisplayFormulaNumbered"],
+Cell[149746, 3065, 395, 13, 30, "DisplayFormulaNumbered"],
 Cell[CellGroupData[{
-Cell[150115, 3081, 108, 1, 35, "Subsubsection"],
-Cell[150226, 3084, 392, 10, 49, "Text"]
+Cell[150166, 3082, 108, 1, 38, "Subsubsection"],
+Cell[150277, 3085, 392, 10, 80, "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[150679, 3101, 64, 1, 74, "SlideShowNavigationBar",
+Cell[150730, 3102, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[150768, 3106, 213, 6, 44, "Subsection"],
-Cell[150984, 3114, 1551, 52, 49, "Item"],
-Cell[152538, 3168, 1057, 35, 47, "DisplayFormulaNumbered"],
-Cell[153598, 3205, 822, 21, 30, "Item"],
-Cell[154423, 3228, 677, 21, 47, "DisplayFormulaNumbered"],
-Cell[155103, 3251, 864, 25, 47, "Item"],
-Cell[155970, 3278, 645, 19, 47, "DisplayFormulaNumbered"],
+Cell[150819, 3107, 213, 6, 58, "Subsection"],
+Cell[151035, 3115, 1551, 52, 78, "Item"],
+Cell[152589, 3169, 1057, 35, 56, "DisplayFormulaNumbered"],
+Cell[153649, 3206, 822, 21, 58, "Item"],
+Cell[154474, 3229, 677, 21, 56, "DisplayFormulaNumbered"],
+Cell[155154, 3252, 864, 25, 58, "Item"],
+Cell[156021, 3279, 645, 19, 56, "DisplayFormulaNumbered"],
 Cell[CellGroupData[{
-Cell[156640, 3301, 1015, 29, 30, "Item"],
-Cell[157658, 3332, 723, 15, 45, "Item"]
+Cell[156691, 3302, 1015, 29, 36, "Item"],
+Cell[157709, 3333, 723, 15, 74, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[158442, 3354, 64, 1, 74, "SlideShowNavigationBar",
+Cell[158493, 3355, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[158531, 3359, 213, 6, 44, "Subsection"],
-Cell[158747, 3367, 296, 4, 28, "Item"],
-Cell[159046, 3373, 1426, 43, 47, "DisplayFormulaNumbered"],
+Cell[158582, 3360, 213, 6, 58, "Subsection"],
+Cell[158798, 3368, 296, 4, 34, "Item"],
+Cell[159097, 3374, 1426, 43, 56, "DisplayFormulaNumbered"],
 Cell[CellGroupData[{
-Cell[160497, 3420, 968, 25, 31, "Item"],
-Cell[161468, 3447, 939, 25, 30, "Item"],
-Cell[162410, 3474, 917, 25, 47, "Item"]
+Cell[160548, 3421, 968, 25, 57, "Item"],
+Cell[161519, 3448, 939, 25, 36, "Item"],
+Cell[162461, 3475, 917, 25, 56, "Item"]
 }, Open  ]],
-Cell[163342, 3502, 803, 21, 46, "DisplayFormulaNumbered"],
-Cell[164148, 3525, 44, 1, 1, "PageBreak",
+Cell[163393, 3503, 803, 21, 52, "DisplayFormulaNumbered"],
+Cell[164199, 3526, 44, 1, 0, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[164217, 3530, 216, 4, 35, "Subsubsection"],
-Cell[164436, 3536, 195, 3, 97, "Input"],
-Cell[164634, 3541, 629, 14, 45, "DisplayFormulaNumbered"],
-Cell[165266, 3557, 87, 1, 46, "Input"],
+Cell[164268, 3531, 216, 4, 38, "Subsubsection"],
+Cell[164487, 3537, 195, 3, 110, "Input"],
+Cell[164685, 3542, 629, 14, 53, "DisplayFormulaNumbered"],
+Cell[165317, 3558, 87, 1, 53, "Input"],
 Cell[CellGroupData[{
-Cell[165378, 3562, 213, 3, 62, "Item"],
-Cell[165594, 3567, 318, 9, 30, "Item"]
+Cell[165429, 3563, 213, 3, 74, "Item"],
+Cell[165645, 3568, 318, 9, 36, "Item"]
 }, Open  ]],
-Cell[165927, 3579, 44, 1, 1, "PageBreak",
+Cell[165978, 3580, 44, 1, 0, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[165996, 3584, 370, 9, 28, "Input",
+Cell[166047, 3585, 370, 9, 33, "Input",
  InitializationCell->True],
-Cell[166369, 3595, 10355, 189, 514, "Output"]
+Cell[166420, 3596, 10349, 190, 391, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[176797, 3792, 64, 1, 1, "SlideShowNavigationBar",
+Cell[176842, 3794, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[176886, 3797, 114, 1, 231, "Subsection"],
-Cell[177003, 3800, 1034, 37, 361, "Text"],
+Cell[176931, 3799, 114, 1, 58, "Subsection"],
+Cell[177048, 3802, 1034, 37, 80, "Text"],
 Cell[CellGroupData[{
-Cell[178062, 3841, 1059, 33, 340, "ItemNumbered"],
-Cell[179124, 3876, 517, 14, 190, "ItemNumbered"]
+Cell[178107, 3843, 1059, 33, 98, "ItemNumbered"],
+Cell[179169, 3878, 517, 14, 54, "ItemNumbered"]
 }, Open  ]],
-Cell[179656, 3893, 750, 26, 115, "DisplayFormulaNumbered"],
-Cell[180409, 3921, 938, 31, 190, "ItemNumbered"],
-Cell[181350, 3954, 44, 1, 1, "PageBreak",
+Cell[179701, 3895, 750, 26, 32, "DisplayFormulaNumbered"],
+Cell[180454, 3923, 938, 31, 54, "ItemNumbered"],
+Cell[181395, 3956, 44, 1, 0, "PageBreak",
  PageBreakBelow->True],
-Cell[181397, 3957, 155, 3, 120, "Text"],
+Cell[181442, 3959, 155, 3, 34, "Text"],
 Cell[CellGroupData[{
-Cell[181577, 3964, 131, 2, 117, "Input",
+Cell[181622, 3966, 131, 2, 33, "Input",
  InitializationCell->True],
-Cell[181711, 3968, 7101, 191, 841, "Output"]
+Cell[181756, 3970, 7147, 191, 240, "Output"]
 }, Open  ]],
-Cell[188827, 4162, 233, 4, 200, "Text"],
-Cell[189063, 4168, 834, 27, 187, "DisplayFormulaNumbered"],
-Cell[189900, 4197, 774, 26, 187, "DisplayFormulaNumbered"],
-Cell[190677, 4225, 382, 13, 125, "Text"]
+Cell[188918, 4164, 233, 4, 57, "Text"],
+Cell[189154, 4170, 834, 27, 53, "DisplayFormulaNumbered"],
+Cell[189991, 4199, 774, 26, 53, "DisplayFormulaNumbered"],
+Cell[190768, 4227, 382, 13, 36, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[191108, 4244, 64, 1, 1, "SlideShowNavigationBar",
+Cell[191199, 4246, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[191197, 4249, 99, 1, 136, "Subsubsection"],
-Cell[191299, 4252, 418, 12, 206, "Text"],
-Cell[191720, 4266, 541, 19, 107, "DisplayFormulaNumbered"],
-Cell[192264, 4287, 87, 1, 120, "Text"],
-Cell[192354, 4290, 505, 18, 107, "DisplayFormulaNumbered"],
-Cell[192862, 4310, 822, 29, 297, "Text"]
+Cell[191288, 4251, 99, 1, 38, "Subsubsection"],
+Cell[191390, 4254, 418, 12, 59, "Text"],
+Cell[191811, 4268, 541, 19, 30, "DisplayFormulaNumbered"],
+Cell[192355, 4289, 87, 1, 34, "Text"],
+Cell[192445, 4292, 505, 18, 30, "DisplayFormulaNumbered"],
+Cell[192953, 4312, 822, 29, 84, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[193733, 4345, 64, 1, 1, "SlideShowNavigationBar",
+Cell[193824, 4347, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[193822, 4350, 132, 1, 311, "Section"],
-Cell[193957, 4353, 449, 12, 200, "Text"],
-Cell[194409, 4367, 719, 25, 211, "Text"],
-Cell[195131, 4394, 1339, 41, 559, "Text"],
-Cell[196473, 4437, 778, 27, 190, "DisplayFormulaNumbered"],
-Cell[197254, 4466, 44, 1, 1, "PageBreak",
+Cell[193913, 4352, 132, 1, 78, "Section"],
+Cell[194048, 4355, 449, 12, 57, "Text"],
+Cell[194500, 4369, 719, 25, 61, "Text"],
+Cell[195222, 4396, 1339, 41, 160, "Text"],
+Cell[196564, 4439, 778, 27, 55, "DisplayFormulaNumbered"],
+Cell[197345, 4468, 44, 1, 0, "PageBreak",
  PageBreakBelow->True],
-Cell[197301, 4469, 215, 6, 120, "Text"],
-Cell[197519, 4477, 1011, 33, 208, "DisplayFormulaNumbered"],
-Cell[198533, 4512, 200, 6, 120, "Text"],
-Cell[198736, 4520, 1016, 32, 208, "DisplayFormulaNumbered"],
-Cell[199755, 4554, 44, 1, 1, "PageBreak",
+Cell[197392, 4471, 215, 6, 34, "Text"],
+Cell[197610, 4479, 1011, 33, 60, "DisplayFormulaNumbered"],
+Cell[198624, 4514, 200, 6, 34, "Text"],
+Cell[198827, 4522, 1016, 32, 60, "DisplayFormulaNumbered"],
+Cell[199846, 4556, 44, 1, 0, "PageBreak",
  PageBreakBelow->True],
-Cell[199802, 4557, 485, 13, 297, "Text"],
+Cell[199893, 4559, 485, 13, 85, "Text"],
 Cell[CellGroupData[{
-Cell[200312, 4574, 131, 2, 117, "Input",
+Cell[200403, 4576, 131, 2, 33, "Input",
  InitializationCell->True],
-Cell[200446, 4578, 5988, 168, 884, "Output"]
+Cell[200537, 4580, 6040, 169, 254, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[206495, 4753, 64, 1, 1, "SlideShowNavigationBar",
+Cell[206638, 4756, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[206584, 4758, 152, 2, 311, "Section"],
+Cell[206727, 4761, 152, 2, 74, "Section"],
 Cell[CellGroupData[{
-Cell[206761, 4764, 1190, 31, 407, "ItemNumbered"],
-Cell[207954, 4797, 1587, 45, 484, "ItemNumbered"]
+Cell[206904, 4767, 1190, 31, 115, "ItemNumbered"],
+Cell[208097, 4800, 1587, 45, 139, "ItemNumbered"]
 }, Open  ]],
-Cell[209556, 4845, 44, 1, 1, "PageBreak",
+Cell[209699, 4848, 44, 1, 3, "PageBreak",
  PageBreakBelow->True],
-Cell[209603, 4848, 3297, 111, 683, "ItemNumbered"],
-Cell[212903, 4961, 717, 22, 236, "DisplayFormula"],
-Cell[213623, 4985, 1170, 42, 292, "Text"]
+Cell[209746, 4851, 3297, 111, 204, "ItemNumbered"],
+Cell[213046, 4964, 717, 22, 68, "DisplayFormula"],
+Cell[213766, 4988, 1170, 42, 82, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[214842, 5033, 64, 1, 1, "SlideShowNavigationBar",
+Cell[214985, 5036, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[214931, 5038, 105, 1, 311, "Section"],
-Cell[215039, 5041, 370, 11, 190, "Input",
+Cell[215074, 5041, 105, 1, 48, "Section"],
+Cell[215182, 5044, 370, 11, 36, "Input",
  InitializationCell->True],
-Cell[215412, 5054, 2962, 79, 795, "Input",
+Cell[215555, 5057, 2962, 79, 136, "Input",
  InitializationCell->True],
-Cell[218377, 5135, 1398, 38, 329, "Input",
+Cell[218520, 5138, 1398, 38, 47, "Input",
  InitializationCell->True],
-Cell[219778, 5175, 448, 12, 190, "Input",
+Cell[219921, 5178, 448, 12, 21, "Input",
  InitializationCell->True],
-Cell[220229, 5189, 1320, 31, 592, "Input",
+Cell[220372, 5192, 1320, 31, 98, "Input",
  InitializationCell->True],
-Cell[221552, 5222, 2185, 56, 900, "Input",
+Cell[221695, 5225, 2185, 56, 163, "Input",
  InitializationCell->True],
-Cell[223740, 5280, 2400, 63, 656, "Input",
+Cell[223883, 5283, 2400, 63, 98, "Input",
  InitializationCell->True],
-Cell[226143, 5345, 4588, 127, 1591, "Input",
+Cell[226286, 5348, 4588, 127, 177, "Input",
  InitializationCell->True],
-Cell[230734, 5474, 889, 22, 254, "Input",
+Cell[230877, 5477, 889, 22, 34, "Input",
  InitializationCell->True],
-Cell[231626, 5498, 4211, 114, 1545, "Input",
+Cell[231769, 5501, 4211, 114, 210, "Input",
  InitializationCell->True],
-Cell[235840, 5614, 942, 23, 254, "Input",
+Cell[235983, 5617, 942, 23, 34, "Input",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
