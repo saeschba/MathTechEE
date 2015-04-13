@@ -1,0 +1,944 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     35125,        935]
+NotebookOptionsPosition[     30294,        773]
+NotebookOutlinePosition[     31755,        819]
+CellTagsIndexPosition[     31677,        814]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ TogglerBox[2, {1->
+  OverlayBox[{
+   TagBox[GridBox[{
+      {
+       GraphicsBox[RasterBox[CompressedData["
+1:eJxTTMoPSmNiYGAo5gASQYnljkVFiZXBLECOU2VJahIzkCEFxAJADBL8//8/
+Qfzo0SP2GzduCF29elXs/Pnz0sgYn747d+5wA9VoArE/EB8B4uPoGJu+Fy9e
+MF+4cEENKB8AxBeB+AMQ/wXif+gYi1tBdvoB8QUg/ghV9x8XRtb7/PlzFqje
+t1D7cOrDpv/ixYvqUHuJ0ousHxpWAVA3E6UXWT80nC8S8i82/Q8ePOAgx26Y
+/uvXrwsD2UdJ8Tey/kuXLolD0wNJbofpB6YVSUr0n4ek5QHTT6n7KQ0/SuOP
+0vRDafqlRv6BxgPZ+Ret/HhHrBl4yi9QWHwiFB7Yyk+QO6B+CTxPYvmJjG/f
+vs17nozyG1f9cR6t7gBhAPeiQ4A=
+         "], {{0, 26}, {16, 0}}, {0, 255},
+         ColorFunction->RGBColor],
+        BaseStyle->"ImageGraphics",
+        ImageSize->Magnification[1],
+        ImageSizeRaw->{16, 26},
+        PlotRange->{{0, 16}, {0, 26}}], 
+       GraphicsBox[RasterBox[CompressedData["
+1:eJzt2d9OVFcUB2DSNmkfQRFEiRQ1gCK1vW4fwT6BJu1tE9uk8fUUERE9aECC
+qLGYEmKkErWxtont2mGdcDLVOpNgZijfJB9hzp+99j6zb9b5Hb3ww7nvP+rr
+6/vxs/hz7vzPX1+8eP7St5/El28u/fTdhY/jn/6w8GlfXzlYVdWhDgyEwXT4
+HQYbBho6qQMAAOxt/Q0HWxxo0TzX3xij7juGwpFwNAyHY2EkfB6OhxPhZBgL
+42EinAqnw2SYSl+Es+HL9FWb6uvP5hj1eJNZ41TWHM85nMw5Hc85juSch3MN
+R3JNdf/UfGbtPqf6WdW6/XsDAADsV7vd/7b2vqPV2/veuuc9k6Za1Mfr3vVt
+feto9e+eVb9KL2tmz81M+n25dadZ9bU2zYXbYSmshNXwoOF+uJfn7obFcKfa
+/twMN8L1MNtBTQAAYO+ZSVfTdLqSLreoj0/n9eXe0jeUHmQ+3AoL1XZ/UfqR
+5Wq77yg9yMPwS3gcfg0b4Ul4Gn4LW+F5eBl+D6/CH+F1+DP99Q71+dd5z6sc
+42WOuZU1nmbNjZzD45zTw5zjSs55KdewkGuazzXONp5Xu8+pflb185rpgd8d
+AABgv/kQ/W/J4krGVvrIkruVDO5RWAvr1U7fuxmeVTt9b/Ei1d+38prNaqdv
+Xc+xHuXY97LWYtbWr9Jryj4sGXPJmkvmXD7l/UrZsyWTLu9dyj4u72Ca2fVq
+nivvY8renuug5ps2/b2L2q0JAADwX3azT/kQuv18AAAA2Pv0rOxn3djz3X6f
+BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAADsHW/a1I2aAAAAAAAAsJ91OyOEburGnr/W
+prlwOyyFlbAaHjTcD/fy3N2wGO5U25+b4Ua4HmY7qAkAAAAAAAC9aCZdTdPp
+Srrcoj4+ndeXe0tuVjK4+XCr2s7iSsa2XG3nbiWDexTWwnrYCE/CZngWtsLz
+9CLV37fyms28ZyPHWMsxH2SN5ax5O+cwn3Oabayv3XXVa6vXN9MDvxN7W9mH
+JWMuWXPJnMunZNBlz5ZMumTTZR+XrLqZXa/muZJtl70910HNQx0YCIPp8DsM
+Ngw0dFIHAAAAAAAAel1/w8EWB1o0z/U3xqhzt6FwNAyHY2EkjIYT4WQYC+Nh
+IpwOk+FMmmpRH5/Mayfy3rEc60SOPZK1hrP2ULWT9zXX2O666rXVuv378P/S
+zJ6bmfT7cuuOsup/AFmW9vs=
+         "], {{0, 26}, {2000, 0}}, {0, 255},
+         ColorFunction->RGBColor],
+        BaseStyle->"ImageGraphics",
+        ImageSize->Magnification[1],
+        ImageSizeRaw->{2000, 26},
+        PlotRange->{{0, 2000}, {0, 26}}], 
+       GraphicsBox[RasterBox[CompressedData["
+1:eJy9lstOwkAUhhthQUJcuUBl5cr4GPoABvEJINGtCZoYng4Il4Z7gXAJYUHY
+QAi3GlYQPZ5/4pCm0pYC2uSDaXvmn5lzzpzpVfQl/HyiKMqrj3/CkffbWCwS
+f/TyzV387Snq4cYlc87gYbVaDbpB07SLRqMR6Pf7PiJSnOA+6h7kmBBz0+12
+Tx30v/bgk9GZOvPAa7oejUYeC306AIz1wWjM/WAw8B9ZX4L1TDHGcDj02ulX
+KpUNbt79jKHBV1b66Fcul3fCYgzEJNTr9fxmfaldKpWoUChQPp8X/8ViUWB8
+BhuLMRCPGvJqmz76QWOxWFCtVqNsNku5XE6AdqfToclkImxga7cGuT/M+uw/
+ms/ntF6vqdlsUjKZFKCNC/pynTZxyLbb7bNt/sHcMpkMzWYzoVev1wW4xuOx
+WAdsbGIAH6ncJ7BNH/6FRjqdJl3XSV7T6VSsA76CDWxt9oSKOmLOH/RBLKEP
+LVVVN/qJRGKjDxsnfSZoN3/4CPNfrVa/5n+IvtH/iDHu9/G/2T/G/JT5A41U
+KiXm3Wq1xBhcx5zy0zK+Mj+Xy6XIf5n7EuQ/9sYh+Wneqy73r+3+2rX2OPh+
+a31wqpHG5xbatvXtCDjW5wO1Z9UdzheXyPMRPrc6H49yvpvn/Y/fJ3/6ffUN
+AyH/6w==
+         "], {{0, 26}, {24, 0}}, {0, 255},
+         ColorFunction->RGBColor],
+        BaseStyle->"ImageGraphics",
+        ImageSize->Magnification[1],
+        ImageSizeRaw->{24, 26},
+        PlotRange->{{0, 24}, {0, 26}}]}
+     },
+     AutoDelete->False,
+     GridBoxItemSize->{"Columns" -> {Automatic, 
+         Scaled[0.6], Automatic}},
+     GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {{0}}}],
+    "Grid"], 
+   PaneBox[
+    StyleBox[
+     RowBox[{
+     "Background", " ", "images", " ", "and", " ", "text", " ", "colors", " ",
+       "have", " ", "been", " ", "adjusted", " ", "for", " ", "editing", " ", 
+      
+      RowBox[{"purposes", "."}]}],
+     LineBreakWithin->False,
+     FontFamily->"Helvetica",
+     FontSize->12,
+     FontColor->GrayLevel[0.4]],
+    Alignment->Center,
+    ImageSize->Scaled[0.5],
+    ScrollPosition->{0., 0.}]},
+   Alignment->{Center, Center}], 2->""}, "1"]], "SlideShowNavigationBar", \
+"FirstSlide",
+ CellMargins->{{0, 0}, {0, 0}},
+ CellFrameLabelMargins->2,
+ CellSize->{Inherited, 30},
+ CellChangeTimes->{3.63611411702881*^9},
+ TextAlignment->Center,
+ CellTags->"SlideShowHeader"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.636114599213521*^9}],
+
+Cell["Mathematical Techniques in Evolution and Ecology", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}},
+ TextAlignment->Center],
+
+Cell[CellGroupData[{
+
+Cell["Functions and approximations", "Title",
+ CellChangeTimes->{
+  3.559948400406288*^9, {3.636114041492673*^9, 3.636114071360457*^9}, 
+   3.6361143314213037`*^9, 3.636114611686428*^9, {3.6361146855231953`*^9, 
+   3.636114706235161*^9}, {3.637404947653048*^9, 3.6374049502815857`*^9}, {
+   3.63740501133258*^9, 3.637405025808597*^9}, {3.637460441988028*^9, 
+   3.637460444607782*^9}, {3.6379238923677893`*^9, 3.637923895631575*^9}},
+ TextAlignment->Center],
+
+Cell["Based on primber 1 in Otto and Day (2007)", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}, {
+  3.636114746487883*^9, 3.636114771516698*^9}, {3.636857110980406*^9, 
+  3.636857112831702*^9}, {3.637405036623555*^9, 3.637405036943508*^9}, {
+  3.637923885489958*^9, 3.637923887351268*^9}},
+ TextAlignment->Center],
+
+Cell["", "Subsubtitle",
+ CellChangeTimes->{
+  3.636114639569048*^9, {3.6361147219781303`*^9, 3.636114742854782*^9}}],
+
+Cell["\<\
+Spring Quarter 2015
+Simon Aeschbacher
+saeschbacher@ucdavis.edu\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.636114263144814*^9, 3.636114285607094*^9}},
+ TextAlignment->Center]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Outline", "Section",
+ CellChangeTimes->{{3.636114858795425*^9, 3.636114888142228*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Goal", "Subsection",
+ CellChangeTimes->{{3.636114896869628*^9, 3.6361149212213917`*^9}, 
+   3.6379239710010223`*^9}],
+
+Cell[CellGroupData[{
+
+Cell["To revisit some common functional forms", "Item",
+ CellChangeTimes->{{3.636114980168631*^9, 3.636114992282305*^9}, {
+  3.6374050626541033`*^9, 3.637405075966322*^9}, {3.637923939779592*^9, 
+  3.637923965526207*^9}, {3.637924054420866*^9, 3.637924080346685*^9}}],
+
+Cell["\<\
+To learn some guidelines for simplifying and approximating models\
+\>", "Item",
+ CellChangeTimes->{{3.636114980168631*^9, 3.636114992282305*^9}, {
+   3.6374050626541033`*^9, 3.637405075966322*^9}, {3.637923939779592*^9, 
+   3.637923965526207*^9}, 3.637924054420866*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Concepts", "Subsection",
+ CellChangeTimes->{{3.6361149300211782`*^9, 3.636114933406128*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Linear, quadratic, and polynomial functions", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.6361150401357803`*^9}, {
+  3.637406039565957*^9, 3.637406043570958*^9}, {3.637923982896369*^9, 
+  3.637924011353758*^9}, {3.637924125990636*^9, 3.637924167285763*^9}}],
+
+Cell["Rational, bell-shaped, and sigmoidal (S-shaped) functions", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.6361150401357803`*^9}, {
+  3.637406039565957*^9, 3.637406043570958*^9}, {3.637923982896369*^9, 
+  3.637924011353758*^9}, {3.637924125990636*^9, 3.637924191499604*^9}}],
+
+Cell["Linear approximations (1st order Taylor series)", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.6361150401357803`*^9}, {
+   3.637406039565957*^9, 3.637406043570958*^9}, {3.637923982896369*^9, 
+   3.637924011353758*^9}, 3.637924125990636*^9}],
+
+Cell["More general approximations (higher-order Taylor series)", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.636115045103869*^9}, {
+  3.6374060472836237`*^9, 3.637406049347752*^9}, {3.637923988392593*^9, 
+  3.637924033228147*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Motivation", "Section",
+ CellChangeTimes->{{3.63611520840694*^9, 3.6361152099721193`*^9}, {
+  3.637406164710917*^9, 3.6374061948287487`*^9}, {3.63792421452361*^9, 
+  3.6379242158563128`*^9}}],
+
+Cell[TextData[{
+ "In practice, we will often want (or have to) make ",
+ StyleBox["approximations",
+  FontWeight->"Bold"],
+ " or ",
+ StyleBox["simplifying assumptions",
+  FontWeight->"Bold"],
+ " when constructing and analysing mathematical models. The reasons for this \
+are twofold:"
+}], "Text",
+ CellChangeTimes->{{3.636115242270652*^9, 3.636115317200636*^9}, {
+  3.636115350554655*^9, 3.636115358506082*^9}, {3.636115420984268*^9, 
+  3.636115427799919*^9}, {3.63611565670411*^9, 3.636115663156169*^9}, {
+  3.636116060439621*^9, 3.636116061012479*^9}, {3.637406204061928*^9, 
+  3.637406205445161*^9}, {3.637406277924766*^9, 3.637406281252676*^9}, {
+  3.637924222140623*^9, 3.637924376242167*^9}, {3.637924426322544*^9, 
+  3.637924445322421*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "We want to ",
+ StyleBox["abstract only the parts that are important",
+  FontSlant->"Italic"],
+ " w.r.t. our question(s)"
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.6374062103818893`*^9, 
+  3.6374062148935623`*^9}, {3.637924464047719*^9, 3.637924486695992*^9}}],
+
+Cell["\<\
+Example: The appropriate scale of a map for a road trip is different from the \
+scale of a map for a hike. So is the amount of detail and type of information \
+you expect on the map.\
+\>", "Subitem",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.6374062103818893`*^9, 
+  3.6374062148935623`*^9}, {3.637924464047719*^9, 3.637924606208538*^9}, {
+  3.637924688127857*^9, 3.637924712841977*^9}, {3.637925506819821*^9, 
+  3.637925542621594*^9}}],
+
+Cell[TextData[{
+ "Simplification is ",
+ StyleBox["often necessary for mathematical analysis",
+  FontSlant->"Italic"],
+ ". This is linked to a limited amount of time you have to analalyse a model, \
+and to the difficulty of making sense of very complicated and long formulae."
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.6361154802805347`*^9}, {3.6361982728729753`*^9, 
+  3.6361982758758717`*^9}, {3.637406222266458*^9, 3.6374062559108753`*^9}, {
+  3.637406375889337*^9, 3.6374063759689093`*^9}, {3.637924738450235*^9, 
+  3.63792484169311*^9}}],
+
+Cell["\<\
+Example: To measure the length of a route from A to B on your map, it may be \
+ok to measure the straight line from A to B, as long as the route does not \
+curve too much and there is not too much of a difference in altitude.\
+\>", "Subitem",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.6361154802805347`*^9}, {3.6361982728729753`*^9, 
+  3.6361982758758717`*^9}, {3.637406222266458*^9, 3.6374062559108753`*^9}, {
+  3.637406375889337*^9, 3.6374063759689093`*^9}, {3.637924738450235*^9, 
+  3.637924959172263*^9}, {3.6379255704597073`*^9, 3.6379255715641403`*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Approximation and simplification imply ",
+ StyleBox["compromises",
+  FontWeight->"Bold"],
+ ". Our goal is to learn how to make these choices in an appropriate way. \
+Throughout the modelling process and when interpreting the results, is \
+important to ",
+ StyleBox["be aware of these assumptions and simplifications",
+  FontSlant->"Italic"],
+ "."
+}], "Text",
+ CellChangeTimes->{3.6379244425921803`*^9, 3.637926265387198*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Functions and their forms", "Section",
+ CellChangeTimes->{{3.636194857130598*^9, 3.6361948719635468`*^9}, {
+  3.637406429150359*^9, 3.637406433899312*^9}, {3.637925052399332*^9, 
+  3.637925055463113*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Frame of reference", "Subsection",
+ CellChangeTimes->{{3.637925132885087*^9, 3.637925140260579*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Model processes ",
+ StyleBox["explicitly",
+  FontSlant->"Italic"],
+ " ",
+ StyleBox["within a frame of reference",
+  FontSlant->"Italic"],
+ " (i.e. a certain level of biological complexity or phenomena)"
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+   3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+   3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+   3.6374064982728643`*^9, 3.6374065461060677`*^9}, {3.637925766249576*^9, 
+   3.637925770398294*^9}, 3.637926198367095*^9}],
+
+Cell[TextData[{
+ "Link to ",
+ StyleBox["processes/phenomena at other levels implicitly",
+  FontSlant->"Italic"],
+ " using functions that behave in a way that is consistent with our \
+understanding of these phenomena"
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.6374065461060677`*^9}, {3.637925766249576*^9, 
+  3.6379258666040573`*^9}}],
+
+Cell["\<\
+Example: In our squirrels example, our frame of reference was the (female) \
+squirrel population on campus, whithin which we modelled birth, death, and \
+immigration. We did not explicitly model the cyclists nor the squirrel \
+population in the Arboretum, which we assumed was the source of immigrants.\
+\>", "Subitem",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.6374065461060677`*^9}, {3.637925766249576*^9, 
+  3.637926035386393*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "The ",
+ StyleBox["phenomenological modelling approach",
+  FontWeight->"Bold"],
+ ": a function is used to describe underlying/external biological processes"
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406728753018*^9}, {
+  3.637926230821142*^9, 3.6379263011992598`*^9}, {3.637926337176951*^9, 
+  3.6379263371846457`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Fewer parameters", "Subitem",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406728753018*^9}, {
+  3.637926230821142*^9, 3.6379263011992598`*^9}, {3.637926337176951*^9, 
+  3.637926351765788*^9}}],
+
+Cell["Often easier to understand", "Subitem",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406728753018*^9}, {
+  3.637926230821142*^9, 3.6379263011992598`*^9}, {3.637926337176951*^9, 
+  3.63792636953479*^9}, {3.637926402752384*^9, 3.6379264044162827`*^9}}],
+
+Cell["Intuition about underlying/external process needed", "Subitem",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406728753018*^9}, {
+  3.637926230821142*^9, 3.6379263011992598`*^9}, {3.637926337176951*^9, 
+  3.637926392381537*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "The ",
+ StyleBox["mechanistic modelling approach",
+  FontWeight->"Bold"],
+ ": the details at another level are explicitly tracked"
+}], "Item",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406728753018*^9}, {
+  3.637926230821142*^9, 3.637926329754084*^9}, {3.637926406552371*^9, 
+  3.637926406560816*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["More parameters", "Subitem",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406728753018*^9}, {
+  3.637926230821142*^9, 3.637926329754084*^9}, {3.637926406552371*^9, 
+  3.6379264201846237`*^9}}],
+
+Cell["More detailed, potentially more difficult to understand", "Subitem",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406728753018*^9}, {
+  3.637926230821142*^9, 3.637926329754084*^9}, {3.637926406552371*^9, 
+  3.637926464474174*^9}}],
+
+Cell["Need more data to estimate the parameters", "Subitem",
+ CellChangeTimes->{{3.636115367451468*^9, 3.636115374251664*^9}, {
+  3.636115472206657*^9, 3.636115472216873*^9}, {3.636193117696052*^9, 
+  3.6361931358541193`*^9}, {3.6361937593517237`*^9, 3.636193760744718*^9}, {
+  3.6374064982728643`*^9, 3.63740651817962*^9}, {3.6374066049287357`*^9, 
+  3.637406656260372*^9}, {3.6374067287410927`*^9, 3.637406728753018*^9}, {
+  3.637926230821142*^9, 3.637926329754084*^9}, {3.637926406552371*^9, 
+  3.637926454514535*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+The logistic model as an example of the phenomenological approach\
+\>", "Subsection",
+ CellChangeTimes->{{3.637409225560587*^9, 3.637409230190292*^9}, {
+  3.637926571075203*^9, 3.6379266163040333`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+We did not model the behaviour of individuals during the consumption of \
+resources explicitly\
+\>", "Item",
+ CellChangeTimes->{{3.6379266764645576`*^9, 3.637926709959206*^9}}],
+
+Cell[TextData[{
+ "Instead, we modelled competition implicitly by assuming that the number of \
+surviving offspring per parent, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"R", "(", "n", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", decreases in a certain form as the population size ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " increases. In our example, we chose this to be a linear decrease, i.e. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"R", "(", "n", ")"}], "=", 
+    RowBox[{"1", "+", 
+     SubscriptBox["r", "d"], "-", 
+     RowBox[{
+      FractionBox[
+       SubscriptBox["r", "d"], "K"], 
+      RowBox[{"n", "(", "t", ")"}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", but alternative choices are possible."
+}], "Item",
+ CellChangeTimes->{{3.6379266764645576`*^9, 3.637926848322551*^9}, {
+  3.6379269914417*^9, 3.637927035081912*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"funcRPlot", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"solid", " ", 
+     RowBox[{"blue", ":", " ", "linear"}]}], ";", " ", 
+    RowBox[{"long", "-", 
+     RowBox[{"dashed", " ", 
+      RowBox[{"orange", ":", " ", "quadratic"}]}]}], ";", " ", 
+    RowBox[{"short", "-", 
+     RowBox[{"dased", " ", 
+      RowBox[{"green", ":", " ", "exponential"}]}]}]}], " ", 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.63793007192629*^9, 3.637930119427492*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`rd$$ = 0.75, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`rd$$], 0.75}, 0., 2.5}}, Typeset`size$$ = {
+    270., {92., 93.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`rd$23930$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`rd$$ = 0.75}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`rd$$, $CellContext`rd$23930$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ($CellContext`KK = 100; Plot[{
+          $CellContext`linRFunc[$CellContext`n, $CellContext`rd$$, \
+$CellContext`KK], 
+          $CellContext`quadRFunc[$CellContext`n, $CellContext`rd$$, \
+$CellContext`KK], 
+          $CellContext`expRFunc[$CellContext`n, $CellContext`rd$$, \
+$CellContext`KK]}, {$CellContext`n, 0, 2.5 $CellContext`KK}, 
+         PlotRange -> {{0, 2.5 $CellContext`KK}, {
+           0, 1 + $CellContext`rd$$ + 0.01}}, 
+         GridLines -> {{$CellContext`KK}, {1}}, Frame -> True, 
+         FrameLabel -> {{
+           "Reproductive factor, \!\(\*\nStyleBox[\"R\",\nFontSlant->\"Italic\
+\"]\)(\!\(\*\nStyleBox[\"n\",\nFontSlant->\"Italic\"]\))", ""}, {
+           "Population size, \!\(\*Cell[TextData[{\nStyleBox[\"n\",\n\
+FontSlant->\"Italic\"],\n\"(\",\nStyleBox[\"t\",\nFontSlant->\"Italic\"],\n\
+\")\"\n}]]\)", "\!\(\*\nStyleBox[\"K\",\nFontSlant->\"Italic\"]\) = 100"}}, 
+         LabelStyle -> Directive[FontSize -> 14, FontFamily -> "Helvetica"], 
+         PlotStyle -> {{}, 
+           Dashing[0.05], 
+           Dashing[0.02], 
+           Thickness[Large]}]), 
+      "Specifications" :> {{{$CellContext`rd$$, 0.75}, 0., 2.5}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{305., {126., 130.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.637930072734467*^9, 3.637930120260437*^9, 
+  3.6379302354986*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Problem assignment", "Section",
+ CellChangeTimes->{{3.636720406569543*^9, 3.636720407950808*^9}, {
+  3.636721563081469*^9, 3.636721565420895*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["TODO", "ItemNumbered",
+ CellChangeTimes->{{3.636720427558174*^9, 3.636720607402008*^9}, {
+  3.636720743656756*^9, 3.6367207439451227`*^9}, {3.6374089410243177`*^9, 
+  3.637409076125111*^9}, {3.637409106382325*^9, 3.6374091405835733`*^9}, {
+  3.637409436545826*^9, 3.637409451753961*^9}, {3.6374094937569523`*^9, 
+  3.637409560521297*^9}, {3.637930051090321*^9, 3.637930051382873*^9}}],
+
+Cell["TODO", "ItemNumbered",
+ CellChangeTimes->{{3.636720427558174*^9, 3.6367205726034517`*^9}, {
+   3.63672086570037*^9, 3.63672089041302*^9}, {3.636720931805558*^9, 
+   3.636720973795392*^9}, {3.636721246277096*^9, 3.636721346547727*^9}, 
+   3.6369759513709993`*^9, {3.6374623741539497`*^9, 3.637462779212734*^9}, {
+   3.637501611716858*^9, 3.637501611735515*^9}, {3.637930054727797*^9, 
+   3.637930056623084*^9}}],
+
+Cell[TextData[StyleBox["TODO",
+ FontColor->GrayLevel[0]]], "ItemNumbered",
+ CellChangeTimes->{{3.636720427558174*^9, 3.6367205726034517`*^9}, {
+  3.63672086570037*^9, 3.636720893333023*^9}, {3.636721378701989*^9, 
+  3.636721507083699*^9}, {3.6374994079096403`*^9, 3.637499684415012*^9}, {
+  3.6374997181853733`*^9, 3.6374999625431757`*^9}, {3.637500035381349*^9, 
+  3.637500039413226*^9}, {3.637930060272403*^9, 3.6379300605506067`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Initialisation cells", "Section",
+ CellChangeTimes->{{3.636288229511508*^9, 3.636288232109663*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"linRFunc", "[", 
+   RowBox[{"n_", ",", "rd_", ",", "KK_"}], "]"}], ":=", 
+  RowBox[{"1", "+", "rd", "-", 
+   RowBox[{
+    FractionBox["rd", "KK"], "n"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"quadRFunc", "[", 
+   RowBox[{"n_", ",", "rd_", ",", "KK_"}], "]"}], ":=", 
+  RowBox[{"1", "+", "rd", "-", 
+   RowBox[{
+    FractionBox["rd", 
+     SuperscriptBox["KK", "2"]], 
+    SuperscriptBox["n", "2"]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"expRFunc", "[", 
+   RowBox[{"n_", ",", "rd_", ",", "KK_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"1", "+", "rd"}], ")"}], 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"1", "+", "rd"}], ")"}], 
+    RowBox[{
+     RowBox[{"-", "n"}], "/", "KK"}]]}]}], "\[IndentingNewLine]"}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.6379280606661882`*^9, 3.637928151262969*^9}, {
+  3.637928241909861*^9, 3.637928249237907*^9}, {3.637928469884952*^9, 
+  3.637928489901874*^9}, {3.637928530331368*^9, 3.637928541507668*^9}, {
+  3.63792964282587*^9, 3.637929716734602*^9}, {3.637929955128742*^9, 
+  3.6379299554859753`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"funcRPlot", ":=", 
+  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"KK", "=", "100"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"linRFunc", "[", 
+          RowBox[{"n", ",", "rd", ",", "KK"}], "]"}], ",", 
+         RowBox[{"quadRFunc", "[", 
+          RowBox[{"n", ",", "rd", ",", "KK"}], "]"}], ",", 
+         RowBox[{"expRFunc", "[", 
+          RowBox[{"n", ",", "rd", ",", "KK"}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"n", ",", "0", ",", 
+         RowBox[{"2.5", "KK"}]}], "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", 
+            RowBox[{"2.5", "KK"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", 
+            RowBox[{"1", "+", "rd", "+", "0.01"}]}], "}"}]}], "}"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"GridLines", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "KK", "}"}], ",", 
+          RowBox[{"{", "1", "}"}]}], "}"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"FrameLabel", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"\"\<Reproductive factor, \!\(\*
+StyleBox[\"R\",
+FontSlant->\"Italic\"]\)(\!\(\*
+StyleBox[\"n\",
+FontSlant->\"Italic\"]\))\>\"", ",", "\"\<\>\""}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"\"\<Population size, \!\(\*Cell[TextData[{
+StyleBox[\"n\",
+FontSlant->\"Italic\"],
+\"(\",
+StyleBox[\"t\",
+FontSlant->\"Italic\"],
+\")\"
+}]]\)\>\"", ",", "\"\<\!\(\*
+StyleBox[\"K\",
+FontSlant->\"Italic\"]\) = 100\>\""}], "}"}]}], "}"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"LabelStyle", "\[Rule]", 
+        RowBox[{"Directive", "[", 
+         RowBox[{
+          RowBox[{"FontSize", "\[Rule]", "14"}], ",", 
+          RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}]}], "]"}]}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "}"}], ",", 
+          RowBox[{"Dashing", "[", "0.05", "]"}], ",", 
+          RowBox[{"Dashing", "[", "0.02", "]"}], ",", 
+          RowBox[{"Thickness", "[", "Large", "]"}]}], "}"}]}]}], 
+      "\[IndentingNewLine]", "]"}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"rd", ",", "0.75"}], "}"}], ",", "0.", ",", "2.5"}], "}"}]}], 
+   RowBox[{"(*", 
+    RowBox[{",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"KK", ",", "100"}], "}"}], ",", "0", ",", "1000"}], "}"}]}], 
+    "*)"}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.6379281564304857`*^9, 3.637928232605434*^9}, {
+  3.637928549161639*^9, 3.6379287231004267`*^9}, {3.6379287661912947`*^9, 
+  3.6379288988404512`*^9}, {3.6379297112004967`*^9, 3.637929744023087*^9}, {
+  3.637929964786236*^9, 3.6379299910570583`*^9}, {3.637930145188793*^9, 
+  3.637930231593986*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowSize->{823, 684},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+PrintingOptions->{"PaperOrientation"->"Portrait",
+"PaperSize"->{612, 792},
+"PrintCellBrackets"->False,
+"PrintMultipleHorizontalPages"->False,
+"PrintRegistrationMarks"->False,
+"PrintingMargins"->{{54.000000585, 54.000000585}, {72.00000078000001, \
+72.00000078000001}}},
+TaggingRules->{"SlideShow" -> True},
+Magnification:>0.75 Inherited,
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[580, 22, 4298, 96, 75, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[6610, 165, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[8813, 228, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[12497, 321, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[19378, 478, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[24100, 603, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[25676, 642, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 31032, 796}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4298, 96, 75, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[4881, 120, 87, 1, 36, "Input"],
+Cell[4971, 123, 307, 4, 22, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[5303, 131, 457, 7, 69, "Title"],
+Cell[5763, 140, 493, 7, 22, "Subsubtitle"],
+Cell[6259, 149, 116, 2, 22, "Subsubtitle"],
+Cell[6378, 153, 183, 6, 54, "Subsubtitle"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6610, 165, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[6699, 170, 92, 1, 48, "Section"],
+Cell[CellGroupData[{
+Cell[6816, 175, 122, 2, 33, "Subsection"],
+Cell[CellGroupData[{
+Cell[6963, 181, 267, 3, 22, "Item"],
+Cell[7233, 186, 279, 5, 22, "Item"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7561, 197, 98, 1, 33, "Subsection"],
+Cell[CellGroupData[{
+Cell[7684, 202, 271, 3, 22, "Item"],
+Cell[7958, 207, 285, 3, 22, "Item"],
+Cell[8246, 212, 253, 3, 22, "Item"],
+Cell[8502, 217, 238, 3, 22, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8813, 228, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[8902, 233, 197, 3, 48, "Section"],
+Cell[9102, 238, 746, 16, 39, "Text"],
+Cell[CellGroupData[{
+Cell[9873, 258, 364, 8, 22, "Item"],
+Cell[10240, 268, 521, 9, 33, "Subitem"],
+Cell[10764, 279, 604, 11, 36, "Item"],
+Cell[11371, 292, 620, 9, 33, "Subitem"]
+}, Open  ]],
+Cell[12006, 304, 442, 11, 39, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12497, 321, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[12586, 326, 210, 3, 48, "Section"],
+Cell[CellGroupData[{
+Cell[12821, 333, 106, 1, 33, "Subsection"],
+Cell[CellGroupData[{
+Cell[12952, 338, 574, 13, 22, "Item"],
+Cell[13529, 353, 546, 11, 36, "Item"],
+Cell[14078, 366, 645, 10, 33, "Subitem"]
+}, Open  ]],
+Cell[14738, 379, 44, 1, 3, "PageBreak",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[14807, 384, 650, 12, 22, "Item"],
+Cell[CellGroupData[{
+Cell[15482, 400, 498, 7, 19, "Subitem"],
+Cell[15983, 409, 555, 7, 19, "Subitem"],
+Cell[16541, 418, 532, 7, 19, "Subitem"]
+}, Open  ]],
+Cell[17088, 428, 621, 12, 22, "Item"],
+Cell[CellGroupData[{
+Cell[17734, 444, 497, 7, 19, "Subitem"],
+Cell[18234, 453, 535, 7, 19, "Subitem"],
+Cell[18772, 462, 521, 7, 19, "Subitem"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19378, 478, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[19467, 483, 212, 4, 33, "Subsection"],
+Cell[CellGroupData[{
+Cell[19704, 491, 186, 4, 22, "Item"],
+Cell[19893, 497, 931, 26, 43, "Item"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20861, 528, 482, 13, 23, "Input"],
+Cell[21346, 543, 2693, 53, 303, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24100, 603, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[24189, 608, 152, 2, 48, "Section"],
+Cell[CellGroupData[{
+Cell[24366, 614, 390, 5, 23, "ItemNumbered"],
+Cell[24759, 621, 416, 6, 23, "ItemNumbered"],
+Cell[25178, 629, 437, 6, 23, "ItemNumbered"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25676, 642, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[25765, 647, 105, 1, 48, "Section"],
+Cell[25873, 650, 1139, 31, 102, "Input",
+ InitializationCell->True],
+Cell[27015, 683, 3251, 86, 228, "Input",
+ InitializationCell->True]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
