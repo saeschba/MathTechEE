@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     60714,       1645]
-NotebookOptionsPosition[     54644,       1446]
-NotebookOutlinePosition[     56164,       1493]
-CellTagsIndexPosition[     56085,       1488]
+NotebookDataLength[    117976,       3386]
+NotebookOptionsPosition[    106656,       3026]
+NotebookOutlinePosition[    108449,       3079]
+CellTagsIndexPosition[    108369,       3074]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -628,32 +628,1347 @@ Cell["Linear function", "Subsubsection",
 Cell[BoxData[
  FormBox[
   RowBox[{
+   RowBox[{"f", 
+    RowBox[{"(", "x", ")"}]}], "=", 
    RowBox[{
-    RowBox[{"f", 
-     RowBox[{"(", "x", ")"}]}], "=", 
-    RowBox[{
-     RowBox[{"b", "x"}], "+", "c"}]}], ","}], 
+    RowBox[{"b", "x"}], "+", "c"}]}], 
   TraditionalForm]], "DisplayFormulaNumbered",
  CellChangeTimes->{{3.638060823961413*^9, 3.638060832942645*^9}, {
-  3.6380609336177797`*^9, 3.6380609419508038`*^9}, {3.638060995023757*^9, 
-  3.6380610119707603`*^9}}],
+   3.6380609336177797`*^9, 3.6380609419508038`*^9}, {3.638060995023757*^9, 
+   3.6380610119707603`*^9}, 3.638096860204899*^9}],
 
 Cell[TextData[{
- "describing a line with slope ",
+ "Describes a ",
+ StyleBox["straight line",
+  FontWeight->"Bold"],
+ " with slope ",
  Cell[BoxData[
-  FormBox["b", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["b", TraditionalForm]]],
  " and intercept ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]]]
+}], "Item",
+ CellChangeTimes->{{3.638060967340275*^9, 3.6380609895887814`*^9}, {
+  3.6380966110406923`*^9, 3.63809661212014*^9}, {3.638096861986305*^9, 
+  3.638096866121561*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["linFuncPlot"], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.638095807876841*^9, 3.6380958099854107`*^9}, {
+  3.638096148063488*^9, 3.638096148452126*^9}, {3.6380961831825733`*^9, 
+  3.638096183494295*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`b1$$ = 
+    1, $CellContext`b2$$ = -1, $CellContext`c$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`c$$], 1}, 0, 10}, {{
+       Hold[$CellContext`b1$$], 1}, 0, 10}, {{
+       Hold[$CellContext`b2$$], -1}, -10, 0}}, Typeset`size$$ = {
+    360., {117., 122.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`c$73057$$ = 
+    0, $CellContext`b1$73058$$ = 0, $CellContext`b2$73059$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`b1$$ = 
+        1, $CellContext`b2$$ = -1, $CellContext`c$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`c$$, $CellContext`c$73057$$, 0], 
+        Hold[$CellContext`b1$$, $CellContext`b1$73058$$, 0], 
+        Hold[$CellContext`b2$$, $CellContext`b2$73059$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         $CellContext`linFunc[$CellContext`x, $CellContext`b1$$, \
+$CellContext`c$$], 
+         $CellContext`linFunc[$CellContext`x, $CellContext`b2$$, \
+$CellContext`c$$]}, {$CellContext`x, 0, 10}, PlotRange -> {Full, {-10, 10}}, 
+        Frame -> True, 
+        FrameLabel -> {{
+          "\!\(\*\nStyleBox[\"f\",\nFontSlant->\"Italic\"]\)(\!\(\*\n\
+StyleBox[\"x\",\nFontSlant->\"Italic\"]\))", ""}, {
+          "\!\(\*\nStyleBox[\"x\",\nFontSlant->\"Italic\"]\)", 
+           "Linear function"}}, LabelStyle -> 
+        Directive[FontFamily -> "Helvetica", FontSize -> 14], 
+        PlotStyle -> {{}, Dashed}], 
+      "Specifications" :> {{{$CellContext`c$$, 1}, 0, 
+         10}, {{$CellContext`b1$$, 1}, 0, 10}, {{$CellContext`b2$$, -1}, -10, 
+         0}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {189., 194.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.6380961838783216`*^9, {3.638097393514183*^9, 3.638097398349724*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Quadratic function", "Subsubsection",
+ CellChangeTimes->{{3.638060767067236*^9, 3.6380607795364447`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"f", "(", "x", ")"}], "=", 
+   RowBox[{
+    RowBox[{"a", " ", 
+     SuperscriptBox["x", "2"]}], "+", 
+    RowBox[{"b", " ", "x"}], "+", "c"}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.638060823961413*^9, 3.638060832942645*^9}, {
+   3.6380609336177797`*^9, 3.6380609419508038`*^9}, {3.638060995023757*^9, 
+   3.6380610119707603`*^9}, {3.6380962592801323`*^9, 3.638096281639957*^9}, 
+   3.638096880704772*^9}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Describes a ",
+ StyleBox["parabola",
+  FontWeight->"Bold"],
+ " that curves up (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", ">", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "; convex) or down (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", "<", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "; concave)"
+}], "Item",
+ CellChangeTimes->{{3.638096284687104*^9, 3.638096366033517*^9}, {
+  3.638096404207148*^9, 3.638096406639641*^9}, {3.63809662761559*^9, 
+  3.6380966294219093`*^9}, {3.638096882990478*^9, 3.6380968856703444`*^9}}],
+
+Cell[TextData[{
+ "Where is the maximum (if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", "<", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") / minimum (if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", ">", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") located?"
+}], "Item",
+ CellChangeTimes->{{3.638096409719304*^9, 3.638096465683943*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["quadFuncPlot"], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.638095807876841*^9, 3.6380958099854107`*^9}, {
+  3.638096148063488*^9, 3.638096148452126*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a1$$ = 
+    1, $CellContext`a2$$ = -1, $CellContext`b$$ = 0, $CellContext`c$$ = 1, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`c$$], 1}, -10, 10}, {{
+       Hold[$CellContext`a1$$], 1}, 0, 10}, {{
+       Hold[$CellContext`a2$$], -1}, -10, 0}, {{
+       Hold[$CellContext`b$$], 0}, 0, 10}}, Typeset`size$$ = {
+    360., {117., 122.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`c$73115$$ = 
+    0, $CellContext`a1$73116$$ = 0, $CellContext`a2$73117$$ = 
+    0, $CellContext`b$73118$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a1$$ = 
+        1, $CellContext`a2$$ = -1, $CellContext`b$$ = 0, $CellContext`c$$ = 
+        1}, "ControllerVariables" :> {
+        Hold[$CellContext`c$$, $CellContext`c$73115$$, 0], 
+        Hold[$CellContext`a1$$, $CellContext`a1$73116$$, 0], 
+        Hold[$CellContext`a2$$, $CellContext`a2$73117$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$73118$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         $CellContext`quadFunc[$CellContext`x, $CellContext`a1$$, \
+$CellContext`b$$, $CellContext`c$$], 
+         $CellContext`quadFunc[$CellContext`x, $CellContext`a2$$, \
+$CellContext`b$$, $CellContext`c$$]}, {$CellContext`x, -10, 10}, 
+        PlotRange -> {{-5, 5}, {-10, 10}}, Frame -> True, 
+        FrameLabel -> {{
+          "\!\(\*\nStyleBox[\"f\",\nFontSlant->\"Italic\"]\)(\!\(\*\n\
+StyleBox[\"x\",\nFontSlant->\"Italic\"]\))", ""}, {
+          "\!\(\*\nStyleBox[\"x\",\nFontSlant->\"Italic\"]\)", 
+           "Quadratic function"}}, LabelStyle -> 
+        Directive[FontFamily -> "Helvetica", FontSize -> 14], 
+        PlotStyle -> {{}, Dashed}], 
+      "Specifications" :> {{{$CellContext`c$$, 1}, -10, 
+         10}, {{$CellContext`a1$$, 1}, 0, 10}, {{$CellContext`a2$$, -1}, -10, 
+         0}, {{$CellContext`b$$, 0}, 0, 10}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {203., 208.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.6380960354100523`*^9, 3.638096039482255*^9}, 
+   3.6380961489416122`*^9, {3.638097394010756*^9, 3.638097398799458*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Polynomial function", "Subsubsection",
+ CellChangeTimes->{{3.638095581775158*^9, 3.638095585764719*^9}}],
+
+Cell[TextData[{
+ "Linear and quadratic functions are special cases of the ",
+ StyleBox["polynomial functions",
+  FontWeight->"Bold"],
+ ". The ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "th-degree polynomial is a function of the form"
+}], "Text",
+ CellChangeTimes->{{3.638096493707858*^9, 3.6380965603525553`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"f", 
+    RowBox[{"(", "x", ")"}]}], "=", 
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"i", "=", "0"}], "n"], 
+    RowBox[{
+     SubscriptBox["a", "i"], 
+     SuperscriptBox["x", "i"]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6380965661648607`*^9, 3.638096591995673*^9}, 
+   3.638096710542592*^9}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Polynomials typically have ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "-", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " extrema (i.e. minima or maxima)"
+}], "Item",
+ CellChangeTimes->{{3.6380967196222486`*^9, 3.638096737980297*^9}}],
+
+Cell[TextData[{
+ "The behaviour as ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " goes to positive or negative infinity is determined by the sign of the \
+term with the highest power, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["a", "n"], 
+    SuperscriptBox["x", "n"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.638096747502372*^9, 3.6380968431967382`*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Exponential function", "Subsubsection",
+ CellChangeTimes->{{3.638095588860971*^9, 3.6380955912528553`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"f", "(", "x", ")"}], "=", 
+   RowBox[{"c", " ", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"a", " ", "x"}]]}]}], TraditionalForm]], "DisplayFormulaNumbered",\
+
+ CellChangeTimes->{{3.6380965661648607`*^9, 3.638096591995673*^9}, 
+   3.638096710542592*^9, {3.6380983170072937`*^9, 3.6380983247300863`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Describes an exponential rise or fall", "Item",
+ CellChangeTimes->{{3.638098331562106*^9, 3.638098349580237*^9}}],
+
+Cell[TextData[{
+ "If ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", ">", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", the function increases exponentially"
+}], "Item",
+ CellChangeTimes->{{3.638098331562106*^9, 3.638098380441024*^9}}],
+
+Cell[TextData[{
+ "If ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", "<", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", the function decreases exponentially"
+}], "Item",
+ CellChangeTimes->{{3.638098331562106*^9, 3.638098403380931*^9}}],
+
+Cell[TextData[{
+ "At what value does it cross the ",
+ Cell[BoxData[
+  FormBox["y", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " axis (i.e. what is the intercept)?"
+}], "Item",
+ CellChangeTimes->{{3.638098331562106*^9, 3.638098428998308*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["expFuncPlot"], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.638095807876841*^9, 3.6380958099854107`*^9}, {
+  3.638095967323221*^9, 3.6380959678734426`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a1$$ = 
+    1, $CellContext`a2$$ = -1, $CellContext`c$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`c$$], 1}, 0, 4}, {{
+       Hold[$CellContext`a1$$], 1}, 0, 10}, {{
+       Hold[$CellContext`a2$$], -1}, -10, 0}}, Typeset`size$$ = {
+    360., {122., 127.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`c$73177$$ = 
+    0, $CellContext`a1$73178$$ = 0, $CellContext`a2$73179$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a1$$ = 
+        1, $CellContext`a2$$ = -1, $CellContext`c$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`c$$, $CellContext`c$73177$$, 0], 
+        Hold[$CellContext`a1$$, $CellContext`a1$73178$$, 0], 
+        Hold[$CellContext`a2$$, $CellContext`a2$73179$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         $CellContext`expFunc[$CellContext`x, $CellContext`a1$$, \
+$CellContext`c$$], 
+         $CellContext`expFunc[$CellContext`x, $CellContext`a2$$, \
+$CellContext`c$$]}, {$CellContext`x, -10, 10}, 
+        PlotRange -> {{-2.5, 2.5}, {0, 5}}, Frame -> True, 
+        FrameLabel -> {{
+          "\!\(\*\nStyleBox[\"f\",\nFontSlant->\"Italic\"]\)(\!\(\*\n\
+StyleBox[\"x\",\nFontSlant->\"Italic\"]\))", ""}, {
+          "\!\(\*\nStyleBox[\"x\",\nFontSlant->\"Italic\"]\)", 
+           "Exponential function"}}, LabelStyle -> 
+        Directive[FontFamily -> "Helvetica", FontSize -> 14], 
+        PlotStyle -> {{}, Dashed}], 
+      "Specifications" :> {{{$CellContext`c$$, 1}, 0, 
+         4}, {{$CellContext`a1$$, 1}, 0, 10}, {{$CellContext`a2$$, -1}, -10, 
+         0}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {194., 199.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.638095968408722*^9, {3.638096035889802*^9, 3.638096039912113*^9}, {
+   3.638096097381078*^9, 3.638096116548167*^9}, {3.638097394228118*^9, 
+   3.638097399003743*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Rational function", "Subsubsection",
+ CellChangeTimes->{{3.638095594661097*^9, 3.638095598629079*^9}}],
+
+Cell[TextData[{
+ "If the desired function is nearly linear for small ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", but reaches a constant value (an ",
+ StyleBox["asymptote",
+  FontWeight->"Bold"],
+ ") as ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " becomes large, one choice is a rational function:"
+}], "Text",
+ CellChangeTimes->{{3.638096493707858*^9, 3.6380965603525553`*^9}, {
+  3.6380970387963467`*^9, 3.638097121450356*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"f", "(", "x", ")"}], "=", 
+   FractionBox[
+    RowBox[{
+     RowBox[{"a", " ", "x"}], "+", "c"}], 
+    RowBox[{
+     RowBox[{"b", " ", "x"}], "+", "d"}]]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6380965661648607`*^9, 3.638096591995673*^9}, 
+   3.638096710542592*^9, {3.6380971246215067`*^9, 3.638097135244288*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "What is the intercept (i.e. the value when ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ")"
+}], "Item",
+ CellChangeTimes->{{3.6380967196222486`*^9, 3.638096737980297*^9}, {
+   3.638097149094939*^9, 3.63809716036701*^9}, 3.638097259170087*^9}],
+
+Cell[TextData[{
+ "What is the slope of the increase/decrease when ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is very small?"
+}], "Item",
+ CellChangeTimes->{{3.638096747502372*^9, 3.6380968431967382`*^9}, {
+  3.638097169412619*^9, 3.6380971719325438`*^9}, {3.638097212928594*^9, 
+  3.638097238308118*^9}}],
+
+Cell[TextData[{
+ "What value does ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " converge to as ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " becomes very large?"
+}], "Item",
+ CellChangeTimes->{{3.638096747502372*^9, 3.6380968431967382`*^9}, {
+  3.638097169412619*^9, 3.6380971719325438`*^9}, {3.638097212928594*^9, 
+  3.63809723829809*^9}, {3.638097298187634*^9, 3.638097334627599*^9}}],
+
+Cell["\<\
+In general, a rational function is any polynomial divided by a polynomial\
+\>", "Item",
+ CellChangeTimes->{{3.638096747502372*^9, 3.6380968431967382`*^9}, {
+  3.638097169412619*^9, 3.6380971719325438`*^9}, {3.638097212928594*^9, 
+  3.63809723829809*^9}, {3.638097298187634*^9, 3.638097298963963*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["ratFuncPlot"], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.638095807876841*^9, 3.6380958099854107`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a1$$ = 
+    4, $CellContext`a2$$ = -4, $CellContext`c$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a1$$], 4}, -10, 10}, {{
+       Hold[$CellContext`a2$$], -4}, -10, 10}, {{
+       Hold[$CellContext`c$$], 1}, -10, 10}}, Typeset`size$$ = {
+    360., {120., 124.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a1$73234$$ = 
+    0, $CellContext`a2$73235$$ = 0, $CellContext`c$73236$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a1$$ = 
+        4, $CellContext`a2$$ = -4, $CellContext`c$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a1$$, $CellContext`a1$73234$$, 0], 
+        Hold[$CellContext`a2$$, $CellContext`a2$73235$$, 0], 
+        Hold[$CellContext`c$$, $CellContext`c$73236$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         $CellContext`ratFunc[$CellContext`x, $CellContext`a1$$, 
+          1, $CellContext`c$$, 1], 
+         $CellContext`ratFunc[$CellContext`x, $CellContext`a2$$, 
+          1, $CellContext`c$$, 1]}, {$CellContext`x, 0, 10}, 
+        PlotRange -> {{0, 2}, {-5, 5}}, Frame -> True, 
+        FrameLabel -> {{
+          "\!\(\*\nStyleBox[\"f\",\nFontSlant->\"Italic\"]\)(\!\(\*\n\
+StyleBox[\"x\",\nFontSlant->\"Italic\"]\))", ""}, {
+          "\!\(\*\nStyleBox[\"x\",\nFontSlant->\"Italic\"]\)", 
+           "Rational function"}}, LabelStyle -> 
+        Directive[FontFamily -> "Helvetica", FontSize -> 14], 
+        PlotStyle -> {{}, Dashed}], 
+      "Specifications" :> {{{$CellContext`a1$$, 4}, -10, 
+         10}, {{$CellContext`a2$$, -4}, -10, 10}, {{$CellContext`c$$, 1}, -10,
+          10}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {192., 197.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.63809581080161*^9, {3.638095879489108*^9, 3.638095941821966*^9}, {
+   3.638096036103669*^9, 3.638096040117082*^9}, {3.6380973944323874`*^9, 
+   3.6380973992030993`*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Bell-shaped function", "Subsubsection",
+ CellChangeTimes->{{3.6380956011573343`*^9, 3.6380956042452793`*^9}}],
+
+Cell["A possible choice for a bell-shaped function is", "Text",
+ CellChangeTimes->{{3.6380984489701843`*^9, 3.638098452208085*^9}, {
+  3.638098598214405*^9, 3.63809860207053*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"f", "(", "x", ")"}], "=", 
+   RowBox[{"m", " ", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"-", 
+      FractionBox[
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"x", "-", "b"}], ")"}], "2"], "a"]}]]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6380965661648607`*^9, 3.638096591995673*^9}, 
+   3.638096710542592*^9, {3.6380971246215067`*^9, 3.638097135244288*^9}, {
+   3.638098463342667*^9, 3.638098481194682*^9}, 3.638098691289989*^9}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "At what value of ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " does it have an extremum? What is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " at this value of ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "?"
+}], "Item",
+ CellChangeTimes->{{3.6380967196222486`*^9, 3.638096737980297*^9}, {
+   3.638097149094939*^9, 3.63809716036701*^9}, 3.638097259170087*^9, {
+   3.638098591254311*^9, 3.6380986177506523`*^9}, {3.638098700304549*^9, 
+   3.638098713801078*^9}}],
+
+Cell[TextData[{
+ "Larger values of ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " cause the bell to be wider, smaller values of ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " make it more narrow"
+}], "Item",
+ CellChangeTimes->{{3.638096747502372*^9, 3.6380968431967382`*^9}, {
+  3.638097169412619*^9, 3.6380971719325438`*^9}, {3.638097212928594*^9, 
+  3.638097238308118*^9}, {3.638098735062832*^9, 3.6380987785505037`*^9}}],
+
+Cell[TextData[{
+ "Note the relation to the ",
+ StyleBox["normal distribution",
+  FontWeight->"Bold"],
+ ", where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", "=", 
+    RowBox[{"2", 
+     SuperscriptBox["\[Sigma]", "2"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "(twice the ",
+ StyleBox["variance",
+  FontSlant->"Italic"],
+ "), ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "=", "\[Mu]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " (the ",
+ StyleBox["mean",
+  FontSlant->"Italic"],
+ "), and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"m", "=", 
+    RowBox[{"1", "/", 
+     SqrtBox[
+      RowBox[{"2", "\[Pi]", " ", 
+       SuperscriptBox["\[Sigma]", "2"]}]]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.638096747502372*^9, 3.6380968431967382`*^9}, {
+   3.638097169412619*^9, 3.6380971719325438`*^9}, {3.638097212928594*^9, 
+   3.63809723829809*^9}, {3.638097298187634*^9, 3.638097334627599*^9}, {
+   3.638098789764461*^9, 3.638098872907258*^9}, 3.6380989082722073`*^9}],
+
+Cell["\<\
+In general, a rational function is any polynomial divided by a polynomial\
+\>", "Item",
+ CellChangeTimes->{{3.638096747502372*^9, 3.6380968431967382`*^9}, {
+  3.638097169412619*^9, 3.6380971719325438`*^9}, {3.638097212928594*^9, 
+  3.63809723829809*^9}, {3.638097298187634*^9, 3.638097298963963*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["bellFuncPlot"], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{
+  3.638095613985321*^9, {3.6380958043864803`*^9, 3.638095805134973*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a1$$ = 
+    0.14400000000000002`, $CellContext`a2$$ = 0.5, $CellContext`b$$ = 
+    0, $CellContext`max$$ = 1.6000000000000005`, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a1$$], 0.25}, 0.001, 2}, {{
+       Hold[$CellContext`a2$$], 0.5}, 0.001, 2}, {{
+       Hold[$CellContext`b$$], 0}, -1, 1}, {{
+       Hold[$CellContext`max$$], 2.25}, -5, 5}}, Typeset`size$$ = {
+    360., {120., 124.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a1$73292$$ = 
+    0, $CellContext`a2$73293$$ = 0, $CellContext`b$73294$$ = 
+    0, $CellContext`max$73295$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a1$$ = 0.25, $CellContext`a2$$ = 
+        0.5, $CellContext`b$$ = 0, $CellContext`max$$ = 2.25}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a1$$, $CellContext`a1$73292$$, 0], 
+        Hold[$CellContext`a2$$, $CellContext`a2$73293$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$73294$$, 0], 
+        Hold[$CellContext`max$$, $CellContext`max$73295$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         $CellContext`bellFunc[$CellContext`x, $CellContext`a1$$, \
+$CellContext`b$$, $CellContext`max$$], 
+         $CellContext`bellFunc[$CellContext`x, $CellContext`a2$$, \
+$CellContext`b$$, $CellContext`max$$]}, {$CellContext`x, -10, 10}, 
+        PlotRange -> {{-1.5, 1.5}, {-2.5, 2.5}}, Frame -> True, 
+        FrameLabel -> {{
+          "\!\(\*\nStyleBox[\"f\",\nFontSlant->\"Italic\"]\)(\!\(\*\n\
+StyleBox[\"x\",\nFontSlant->\"Italic\"]\))", ""}, {
+          "\!\(\*\nStyleBox[\"x\",\nFontSlant->\"Italic\"]\)", 
+           "Bell-shaped function"}}, LabelStyle -> 
+        Directive[FontFamily -> "Helvetica", FontSize -> 14], 
+        PlotStyle -> {{}, Dashed}], 
+      "Specifications" :> {{{$CellContext`a1$$, 0.25}, 0.001, 
+         2}, {{$CellContext`a2$$, 0.5}, 0.001, 2}, {{$CellContext`b$$, 0}, -1,
+          1}, {{$CellContext`max$$, 2.25}, -5, 5}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {206., 211.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.638095805692914*^9, {3.638096036294346*^9, 3.63809604031074*^9}, {
+   3.6380973946358833`*^9, 3.6380973994065447`*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["S-shaped (sigmoidal) function", "Subsubsection",
+ CellChangeTimes->{{3.63809560618113*^9, 3.638095611693515*^9}, {
+  3.638098927743555*^9, 3.638098927807822*^9}}],
+
+Cell[TextData[{
+ "A popular choice for a sigmoidal function is the so-called ",
+ StyleBox["logistic function",
+  FontWeight->"Bold"],
+ ","
+}], "Text",
+ CellChangeTimes->{{3.6380989134891043`*^9, 3.638098921873589*^9}, {
+  3.638098957475328*^9, 3.638098984472047*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"f", "(", "x", ")"}], "=", 
+   FractionBox[
+    RowBox[{"c", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"a", " ", "x"}]]}], 
+    RowBox[{
+     RowBox[{"c", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"a", " ", "x"}]]}], "+", 
+     RowBox[{"(", 
+      RowBox[{"1", "-", "c"}], ")"}]}]]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6380990000178537`*^9, 3.63809902712328*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Here, ",
  Cell[BoxData[
   FormBox["c", TraditionalForm]],
   FormatType->"TraditionalForm"],
- "."
-}], "Text",
- CellChangeTimes->{{3.638060967340275*^9, 3.6380609895887814`*^9}}]
+ " is a fraction (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0", "<", "c", "<", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") telling us how far the way up the \[OpenCurlyDoubleQuote]S\
+\[CloseCurlyDoubleQuote] the function is at ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Item",
+ CellChangeTimes->{{3.638099048640984*^9, 3.63809908472397*^9}}],
+
+Cell[TextData[{
+ "If ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", ">", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", the function rises to 1 as ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " increases from 0"
+}], "Item",
+ CellChangeTimes->{{3.638099048640984*^9, 3.638099109981526*^9}}],
+
+Cell[TextData[{
+ "If ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", "<", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", the function falls to 0 as ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " increases from 0 (reverse S-shape)"
+}], "Item",
+ CellChangeTimes->{{3.638099048640984*^9, 3.6380991365265083`*^9}}],
+
+Cell[TextData[{
+ "The magnitude of ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " determines the sharpness of the rise/fall"
+}], "Item",
+ CellChangeTimes->{{3.638099048640984*^9, 3.638099161119779*^9}}]
 }, Open  ]],
 
-Cell["Quadratic function", "Subsubsection",
- CellChangeTimes->{{3.638060767067236*^9, 3.6380607795364447`*^9}}]
+Cell[CellGroupData[{
+
+Cell[BoxData["sigmFuncPlot"], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{3.638095613985321*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a1$$ = 
+    1, $CellContext`a2$$ = -1, $CellContext`c1$$ = 0.01, $CellContext`c2$$ = 
+    0.99, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a1$$], 1}, 0., 10.}, {{
+       Hold[$CellContext`a2$$], -1}, -10., 0.}, {{
+       Hold[$CellContext`c1$$], 0.01}, 0.001, 0.999}, {{
+       Hold[$CellContext`c2$$], 0.99}, 0.001, 0.999}}, Typeset`size$$ = {
+    360., {119., 123.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a1$73356$$ = 
+    0, $CellContext`a2$73357$$ = 0, $CellContext`c1$73358$$ = 
+    0, $CellContext`c2$73359$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a1$$ = 
+        1, $CellContext`a2$$ = -1, $CellContext`c1$$ = 
+        0.01, $CellContext`c2$$ = 0.99}, "ControllerVariables" :> {
+        Hold[$CellContext`a1$$, $CellContext`a1$73356$$, 0], 
+        Hold[$CellContext`a2$$, $CellContext`a2$73357$$, 0], 
+        Hold[$CellContext`c1$$, $CellContext`c1$73358$$, 0], 
+        Hold[$CellContext`c2$$, $CellContext`c2$73359$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         $CellContext`sigmFunc[$CellContext`x, $CellContext`a1$$, \
+$CellContext`c1$$], 
+         $CellContext`sigmFunc[$CellContext`x, $CellContext`a2$$, \
+$CellContext`c2$$]}, {$CellContext`x, 0, 15}, PlotRange -> {{0, 10}, {0, 1}}, 
+        Frame -> True, 
+        FrameLabel -> {{
+          "\!\(\*\nStyleBox[\"f\",\nFontSlant->\"Italic\"]\)(\!\(\*\n\
+StyleBox[\"x\",\nFontSlant->\"Italic\"]\))", ""}, {
+          "\!\(\*\nStyleBox[\"x\",\nFontSlant->\"Italic\"]\)", 
+           "S-shaped (sigmoid) function"}}, LabelStyle -> 
+        Directive[FontFamily -> "Helvetica", FontSize -> 14], 
+        PlotStyle -> {{}, Dashed}], 
+      "Specifications" :> {{{$CellContext`a1$$, 1}, 0., 
+         10.}, {{$CellContext`a2$$, -1}, -10., 
+         0.}, {{$CellContext`c1$$, 0.01}, 0.001, 
+         0.999}, {{$CellContext`c2$$, 0.99}, 0.001, 0.999}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {205., 210.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.638095618247467*^9, 3.638095796540724*^9, {3.6380960365515337`*^9, 
+   3.638096040516967*^9}, 3.6380961283743153`*^9, {3.638097383073223*^9, 
+   3.6380974000498133`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Rule P1.1: Changing the shape of a function", "Subsection",
+ CellChangeTimes->{{3.6380996106743183`*^9, 3.6380996300987463`*^9}}],
+
+Cell[TextData[{
+ "The following rules can be used to alter a function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " to match a desired shape. This can be very useful in practice!"
+}], "Text",
+ CellChangeTimes->{{3.638099637863009*^9, 3.638099677576041*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "To ",
+ StyleBox["shift a function to the right or left",
+  FontWeight->"Bold"],
+ " by an amount of ",
+ Cell[BoxData[
+  FormBox["d", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", replace ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{"x", "-", "d"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " or (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "+", "d"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "), respectively"
+}], "Item",
+ CellChangeTimes->{{3.6380996979069242`*^9, 3.63809979197444*^9}}],
+
+Cell[TextData[{
+ "To ",
+ StyleBox["increase or decrease the height of a function",
+  FontWeight->"Bold"],
+ " by an amount of ",
+ Cell[BoxData[
+  FormBox["d", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", replace ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "x", ")"}], "+", "d"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " or ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "x", ")"}], "-", "d"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", respectively"
+}], "Item",
+ CellChangeTimes->{{3.6380996979069242`*^9, 3.638099854063939*^9}}],
+
+Cell[TextData[{
+ "To ",
+ StyleBox["scale a function along the horizontal (",
+  FontWeight->"Bold"],
+ StyleBox["x",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[") axis",
+  FontWeight->"Bold"],
+ " by a factor ",
+ Cell[BoxData[
+  FormBox["d", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", replace ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "/", "d"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". ",
+ StyleBox["Stretching",
+  FontSlant->"Italic"],
+ " occurs if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"d", ">", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ StyleBox["shrinking",
+  FontSlant->"Italic"],
+ " occurs if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"d", "<", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.6380996979069242`*^9, 3.6380998947226543`*^9}, {
+  3.6380999891223383`*^9, 3.638099997594137*^9}, {3.638100206051297*^9, 
+  3.638100232966752*^9}}],
+
+Cell[TextData[{
+ "To ",
+ StyleBox["scale a function along the vertical (",
+  FontWeight->"Bold"],
+ StyleBox["y",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[") axis",
+  FontWeight->"Bold"],
+ " by a factor of ",
+ Cell[BoxData[
+  FormBox["d", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", replace ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"d", " ", 
+    RowBox[{"f", "(", "x", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". ",
+ StyleBox["Stretching",
+  FontSlant->"Italic"],
+ " occurs if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"d", ">", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ StyleBox["shrinking",
+  FontSlant->"Italic"],
+ " occurs if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"d", "<", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.6380996979069242`*^9, 3.638099933129479*^9}, {
+  3.638100259560595*^9, 3.6381003001969347`*^9}, {3.638100343392741*^9, 
+  3.6381003444964237`*^9}}],
+
+Cell[TextData[{
+ "To ",
+ StyleBox["reflect a function across the horizontal (",
+  FontWeight->"Bold"],
+ StyleBox["x",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[") axis",
+  FontWeight->"Bold"],
+ ", replace ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    RowBox[{"f", "(", "x", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Item",
+ CellChangeTimes->{{3.6380996979069242`*^9, 3.638099933129479*^9}, {
+  3.638100259560595*^9, 3.6381003589346457`*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[CellGroupData[{
+
+Cell["Example", "Subsubsection",
+ CellChangeTimes->{{3.638100716078835*^9, 3.638100721261818*^9}}],
+
+Cell[TextData[{
+ "Imagine modelling the effect of an inhibitor on the level of phosphorus \
+within a cell. Assume that the level of phosphorus ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"P", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " declines exponentially at rate ",
+ Cell[BoxData[
+  FormBox["\[Alpha]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " from an initial level ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["P", "max"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", as the concentration ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " of the inhibitor increases. Assume further that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"P", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " asymptotes at some minimum level ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["P", "min"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " as ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " becomes very large. How can you modify the exponential function introduced \
+above to model this? In other words, what are the parameters ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in this example?"
+}], "Text",
+ CellChangeTimes->{{3.638100725388403*^9, 3.638101015473194*^9}, {
+  3.638102372210346*^9, 3.638102456090077*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Linear approximations", "Section",
+ CellChangeTimes->{{3.6381024695649242`*^9, 3.638102476153924*^9}}],
+
+Cell[TextData[{
+ "When analysing models, we often ask: Is it possible to choose a ",
+ StyleBox["simpler function",
+  FontSlant->"Italic"],
+ " that approximates a complicated function, ",
+ StyleBox["at least within a region of interest",
+  FontSlant->"Italic"],
+ "? Here, the \[OpenCurlyDoubleQuote]region of interest\
+\[CloseCurlyDoubleQuote] may refer to"
+}], "Text",
+ CellChangeTimes->{{3.638102485904811*^9, 3.6381025382376823`*^9}, {
+  3.638102569258497*^9, 3.6381025881179523`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "a ",
+ StyleBox["variable lying near a particular point",
+  FontSlant->"Italic"],
+ " (e.g. the population size is near 0)"
+}], "Item",
+ CellChangeTimes->{{3.6381026081228943`*^9, 3.638102644238504*^9}, {
+  3.638102693189501*^9, 3.638102693853421*^9}}],
+
+Cell[TextData[{
+ "a ",
+ StyleBox["parameter being near a particular value",
+  FontSlant->"Italic"],
+ " (e.g. the selection coefficient is near 0)"
+}], "Item",
+ CellChangeTimes->{{3.6381026081228943`*^9, 3.638102713279228*^9}, {
+  3.638102997962838*^9, 3.6381030098626947`*^9}}]
+}, Open  ]],
+
+Cell["\<\
+Knowing how to approximate an equation accurately is a very important \
+technique in modelling!\
+\>", "Text",
+ CellChangeTimes->{{3.638102738892374*^9, 3.6381027592669783`*^9}}],
+
+Cell[TextData[{
+ "The most straightforward (and often sufficient!) approximation is based on \
+the idea that ",
+ StyleBox["any curve looks roughly like a line if we zoom in close enough",
+  FontWeight->"Bold"],
+ ". Hence, given a complicated function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", we want to approximate it by a function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["f", "~"], "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " of the form"
+}], "Text",
+ CellChangeTimes->{{3.6381027801553087`*^9, 3.638102851437811*^9}, {
+   3.638103047998472*^9, 3.6381030946925697`*^9}, 3.6381037025014677`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    OverscriptBox["f", "~"], 
+    RowBox[{"(", "x", ")"}]}], "=", 
+   RowBox[{
+    RowBox[{"b", " ", "x"}], "+", "c"}]}], TraditionalForm]], "DisplayFormula",\
+
+ CellChangeTimes->{{3.638103099950059*^9, 3.638103124804779*^9}, 
+   3.638103187765435*^9}],
+
+Cell[TextData[{
+ "such that the approximation is \[OpenCurlyDoubleQuote]good\
+\[CloseCurlyDoubleQuote] when ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is close to ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and such that the match is perfect if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", "a"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", i.e. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     OverscriptBox["f", "~"], "(", "a", ")"}], "=", 
+    RowBox[{"f", "(", "a", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.63810313747297*^9, 3.638103150305393*^9}, {
+  3.638103269186082*^9, 3.638103302357952*^9}, {3.638103721198513*^9, 
+  3.638103724263158*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Recipe P1.1: Approximating a function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by a line at ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", "a"}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Subsection",
+ CellChangeTimes->{{3.6381048653176394`*^9, 3.6381048906248417`*^9}}],
+
+Cell[TextData[{
+ "For points ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " near ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", the function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " can be approximated by the line"
+}], "Text",
+ CellChangeTimes->{{3.6381048976031322`*^9, 3.638104914555861*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    OverscriptBox["f", "~"], 
+    RowBox[{"(", "x", ")"}]}], "=", 
+   RowBox[{
+    RowBox[{"f", 
+     RowBox[{"(", "a", ")"}]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"\[DifferentialD]", "f"}], 
+        RowBox[{"\[DifferentialD]", "x"}]], 
+       SubscriptBox["|", 
+        RowBox[{"x", "=", "a"}]]}], ")"}], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"x", "-", "a"}], ")"}], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.63810492378046*^9, 3.6381050281448793`*^9}, 
+   3.638105063986588*^9}],
+
+Cell[TextData[{
+ "This is also called a ",
+ StyleBox["linear Taylor series approximation",
+  FontWeight->"Bold"],
+ " (see next subsection)."
+}], "Text",
+ CellChangeTimes->{{3.6381050361355057`*^9, 3.6381050516083107`*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -666,24 +1981,164 @@ Cell[CellGroupData[{
 
 Cell["Problem assignment", "Section",
  CellChangeTimes->{{3.636720406569543*^9, 3.636720407950808*^9}, {
-  3.636721563081469*^9, 3.636721565420895*^9}}],
+  3.636721563081469*^9, 3.636721565420895*^9}, {3.638099916337411*^9, 
+  3.63809991794471*^9}}],
 
 Cell[CellGroupData[{
 
-Cell["TODO", "ItemNumbered",
+Cell[TextData[{
+ "Determine the functions ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"R", "(", "n", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for the reproductive factor in the logistic growth model, such that the \
+shape of the functions is consistent with the first figure above. In each \
+case, choose the parameters such that the intercept is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"R", "(", "0", ")"}], "=", 
+    RowBox[{"1", "+", "r"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and the value when ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"N", "=", "K"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"R", "(", "K", ")"}], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Specifically, derive"
+}], "ItemNumbered",
  CellChangeTimes->{{3.636720427558174*^9, 3.636720607402008*^9}, {
   3.636720743656756*^9, 3.6367207439451227`*^9}, {3.6374089410243177`*^9, 
   3.637409076125111*^9}, {3.637409106382325*^9, 3.6374091405835733`*^9}, {
   3.637409436545826*^9, 3.637409451753961*^9}, {3.6374094937569523`*^9, 
-  3.637409560521297*^9}, {3.637930051090321*^9, 3.637930051382873*^9}}],
+  3.637409560521297*^9}, {3.637930051090321*^9, 3.637930051382873*^9}, {
+  3.6380992811589203`*^9, 3.638099410278043*^9}}],
 
-Cell["TODO", "ItemNumbered",
+Cell["(a) A function that declines exponentially to zero.", "Item",
+ CellChangeTimes->{{3.638099423574113*^9, 3.63809944786763*^9}}],
+
+Cell[TextData[{
+ "(b) A quadratic function with a maximum at ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.638099423574113*^9, 3.638099480978672*^9}}],
+
+Cell[TextData[{
+ "(c) A reverse-S-shaped function that declines from ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", "+", "r"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " to zero. Keep ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " arbitrary, and use Rule P1.1 above to increase the intercept to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", "+", "r"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.638099423574113*^9, 3.6380995306821537`*^9}}],
+
+Cell["\<\
+Use Recipe P1.1 to confirm the following linear approximations:\
+\>", "ItemNumbered",
  CellChangeTimes->{{3.636720427558174*^9, 3.6367205726034517`*^9}, {
    3.63672086570037*^9, 3.63672089041302*^9}, {3.636720931805558*^9, 
    3.636720973795392*^9}, {3.636721246277096*^9, 3.636721346547727*^9}, 
    3.6369759513709993`*^9, {3.6374623741539497`*^9, 3.637462779212734*^9}, {
    3.637501611716858*^9, 3.637501611735515*^9}, {3.637930054727797*^9, 
-   3.637930056623084*^9}}],
+   3.637930056623084*^9}, {3.638103362188438*^9, 3.6381033708736*^9}, {
+   3.638103452731138*^9, 3.6381034697713623`*^9}}],
+
+Cell[TextData[{
+ "(a) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", "r"], "\[TildeTilde]", 
+    RowBox[{"1", "+", "r"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\t\tassuming ",
+ Cell[BoxData[
+  FormBox["r", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is small"
+}], "Item",
+ CellChangeTimes->{{3.638103510494766*^9, 3.638103524539669*^9}, {
+  3.638103568156992*^9, 3.638103574117669*^9}}],
+
+Cell[TextData[{
+ "(b) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"1", "+", "s"}]], "\[TildeTilde]", 
+    RowBox[{"1", "-", "s"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\t\tassuming ",
+ Cell[BoxData[
+  FormBox["s", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is small"
+}], "Item",
+ CellChangeTimes->{{3.638103510494766*^9, 3.638103545644562*^9}, {
+  3.6381035770640373`*^9, 3.638103583029931*^9}}],
+
+Cell[TextData[{
+ "(c) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"ln", "(", "t", ")"}], "\[TildeTilde]", 
+    RowBox[{"t", "-", "1"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\t\tassuming ",
+ Cell[BoxData[
+  FormBox["t", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is near 1"
+}], "Item",
+ CellChangeTimes->{{3.638103510494766*^9, 3.638103598493403*^9}}],
+
+Cell[TextData[{
+ "(d) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["1", "x"], "\[TildeTilde]", 
+    RowBox[{
+     FractionBox["1", "a"], "-", 
+     RowBox[{
+      FractionBox["1", 
+       SuperscriptBox["a", "2"]], 
+      RowBox[{"(", 
+       RowBox[{"x", "-", "a"}], ")"}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\tassuming ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is near ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Item",
+ CellChangeTimes->{{3.638103510494766*^9, 3.638103635110983*^9}}],
 
 Cell[TextData[StyleBox["TODO",
  FontColor->GrayLevel[0]]], "ItemNumbered",
@@ -1012,7 +2467,8 @@ FontSlant->\"Italic\"]\) = 100\>\""}], "}"}]}], "}"}]}], ",",
   3.637929964786236*^9, 3.6379299910570583`*^9}, {3.637930145188793*^9, 
   3.637930231593986*^9}, {3.638062916651527*^9, 3.638062924680172*^9}, {
   3.638063007671845*^9, 3.638063058253414*^9}, {3.638064075631055*^9, 
-  3.638064092275951*^9}, {3.638064158243998*^9, 3.638064185604136*^9}}],
+  3.638064092275951*^9}, {3.638064158243998*^9, 3.638064185604136*^9}, {
+  3.638095650815981*^9, 3.638095656757333*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -1065,15 +2521,182 @@ Cell[BoxData[{
       RowBox[{"a", " ", "x"}]]}], "+", 
     RowBox[{"(", 
      RowBox[{"1", "-", "c"}], ")"}]}]]}]}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.63806119987337*^9, 3.638061239546256*^9}, {
   3.638061345344097*^9, 3.638061366809725*^9}, {3.6380614398736277`*^9, 
   3.6380615103374863`*^9}, {3.638061696838468*^9, 3.6380618159087152`*^9}, {
   3.638064280553441*^9, 3.638064291243506*^9}}],
 
-Cell["TODO: Go on with remaining functions.", "Text",
- CellChangeTimes->{{3.6380685580777407`*^9, 3.638068565454041*^9}}],
+Cell[BoxData[
+ RowBox[{"sigmFuncPlot", ":=", 
+  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"sigmFunc", "[", 
+         RowBox[{"x", ",", "a1", ",", "c1"}], "]"}], ",", 
+        RowBox[{"sigmFunc", "[", 
+         RowBox[{"x", ",", "a2", ",", "c2"}], "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "15"}], "}"}], ",", "\[IndentingNewLine]", 
+      
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "10"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"FrameLabel", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
+StyleBox[\"f\",
+FontSlant->\"Italic\"]\)(\!\(\*
+StyleBox[\"x\",
+FontSlant->\"Italic\"]\))\>\"", ",", "\"\<\>\""}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
+StyleBox[\"x\",
+FontSlant->\"Italic\"]\)\>\"", ",", "\"\<S-shaped (sigmoidal) function\>\""}],
+           "}"}]}], "}"}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{"LabelStyle", "\[Rule]", 
+       RowBox[{"Directive", "[", 
+        RowBox[{
+         RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], ",", 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"PlotStyle", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", "Dashed"}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a1", ",", "1"}], "}"}], ",", "0.", ",", "10."}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a2", ",", 
+        RowBox[{"-", "1"}]}], "}"}], ",", 
+      RowBox[{"-", "10."}], ",", "0."}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"c1", ",", "0.01"}], "}"}], ",", "0.001", ",", "0.999"}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"c2", ",", "0.99"}], "}"}], ",", "0.001", ",", "0.999"}], 
+     "}"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.638061128865652*^9, 3.638061149362743*^9}, {
+   3.638064307231893*^9, 3.6380645009664087`*^9}, {3.638067320410141*^9, 
+   3.638067373919026*^9}, {3.638067416291314*^9, 3.6380674370918093`*^9}, {
+   3.638067477996866*^9, 3.638067508349351*^9}, {3.638068071373642*^9, 
+   3.638068148612101*^9}, {3.638068298743495*^9, 3.6380683818790417`*^9}, {
+   3.638068413332163*^9, 3.638068414459092*^9}, 3.638068450164763*^9, {
+   3.638068508540965*^9, 3.6380685512915907`*^9}, {3.638094718740314*^9, 
+   3.638094719808503*^9}, {3.6380947589398317`*^9, 3.638094993447998*^9}, {
+   3.638095048885083*^9, 3.638095123213642*^9}, {3.638095225470977*^9, 
+   3.638095281694272*^9}, {3.638095331704253*^9, 3.638095341446732*^9}, {
+   3.63809538474542*^9, 3.638095442189453*^9}, {3.63809550025777*^9, 
+   3.638095511921047*^9}, 3.63809555223698*^9, {3.638095672022855*^9, 
+   3.638095732217963*^9}, {3.638096026909181*^9, 3.638096028768654*^9}, {
+   3.638096135456386*^9, 3.638096137041041*^9}, 3.638098938186878*^9}],
 
-Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"bellFuncPlot", ":=", 
+  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"bellFunc", "[", 
+         RowBox[{"x", ",", "a1", ",", "b", ",", "max"}], "]"}], ",", 
+        RowBox[{"bellFunc", "[", 
+         RowBox[{"x", ",", "a2", ",", "b", ",", "max"}], "]"}]}], "}"}], ",", 
+      
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "2.5"}], ",", "2.5"}], "}"}]}], "}"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"FrameLabel", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
+StyleBox[\"f\",
+FontSlant->\"Italic\"]\)(\!\(\*
+StyleBox[\"x\",
+FontSlant->\"Italic\"]\))\>\"", ",", "\"\<\>\""}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
+StyleBox[\"x\",
+FontSlant->\"Italic\"]\)\>\"", ",", "\"\<Bell-shaped function\>\""}], "}"}]}],
+         "}"}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{"LabelStyle", "\[Rule]", 
+       RowBox[{"Directive", "[", 
+        RowBox[{
+         RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], ",", 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"PlotStyle", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", "Dashed"}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a1", ",", "0.25"}], "}"}], ",", "0.001", ",", "2"}], "}"}], 
+    ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a2", ",", "0.5"}], "}"}], ",", "0.001", ",", "2"}], "}"}], 
+    ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"b", ",", "0"}], "}"}], ",", 
+      RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"max", ",", "2.25"}], "}"}], ",", 
+      RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.638061128865652*^9, 3.638061149362743*^9}, {
+   3.638064307231893*^9, 3.6380645009664087`*^9}, {3.638067320410141*^9, 
+   3.638067373919026*^9}, {3.638067416291314*^9, 3.6380674370918093`*^9}, {
+   3.638067477996866*^9, 3.638067508349351*^9}, {3.638068071373642*^9, 
+   3.638068148612101*^9}, {3.638068298743495*^9, 3.6380683818790417`*^9}, {
+   3.638068413332163*^9, 3.638068414459092*^9}, 3.638068450164763*^9, {
+   3.638068508540965*^9, 3.6380685512915907`*^9}, {3.638094718740314*^9, 
+   3.638094719808503*^9}, {3.6380947589398317`*^9, 3.638094993447998*^9}, {
+   3.638095048885083*^9, 3.638095123213642*^9}, {3.638095225470977*^9, 
+   3.6380952295741243`*^9}, {3.638095736383328*^9, 3.6380957440307083`*^9}, {
+   3.638096000147108*^9, 3.638096003219871*^9}, 3.6380969474737597`*^9}],
 
 Cell[BoxData[
  RowBox[{"ratFuncPlot", ":=", 
@@ -1082,12 +2705,15 @@ Cell[BoxData[
     RowBox[{"Plot", "[", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"ratFunc", "[", 
-        RowBox[{"x", ",", "a", ",", "1", ",", "c", ",", "1"}], "]"}], "}"}], 
-      ",", 
+       RowBox[{
+        RowBox[{"ratFunc", "[", 
+         RowBox[{"x", ",", "a1", ",", "1", ",", "c", ",", "1"}], "]"}], ",", 
+        RowBox[{"ratFunc", "[", 
+         RowBox[{"x", ",", "a2", ",", "1", ",", "c", ",", "1"}], "]"}]}], 
+       "}"}], ",", 
       RowBox[{"{", 
-       RowBox[{"x", ",", 
-        RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"x", ",", "0", ",", "10"}], "}"}], ",", "\[IndentingNewLine]", 
+      
       RowBox[{"PlotRange", "\[Rule]", 
        RowBox[{"{", 
         RowBox[{
@@ -1100,23 +2726,39 @@ Cell[BoxData[
       RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
       RowBox[{"FrameLabel", "\[Rule]", 
        RowBox[{"{", 
-        RowBox[{"\"\<\!\(\*
-StyleBox[\"x\",
-FontSlant->\"Italic\"]\)\>\"", ",", "\"\<\!\(\*
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
 StyleBox[\"f\",
 FontSlant->\"Italic\"]\)(\!\(\*
 StyleBox[\"x\",
-FontSlant->\"Italic\"]\))\>\""}], "}"}]}], ",", "\[IndentingNewLine]", 
+FontSlant->\"Italic\"]\))\>\"", ",", "\"\<\>\""}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
+StyleBox[\"x\",
+FontSlant->\"Italic\"]\)\>\"", ",", "\"\<Rational function\>\""}], "}"}]}], 
+        "}"}]}], ",", "\[IndentingNewLine]", 
       RowBox[{"LabelStyle", "\[Rule]", 
        RowBox[{"Directive", "[", 
         RowBox[{
          RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], ",", 
-         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}]}], 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"PlotStyle", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", "Dashed"}], "}"}]}]}], 
      "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"a", ",", "4"}], "}"}], ",", 
+       RowBox[{"a1", ",", "4"}], "}"}], ",", 
+      RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a2", ",", 
+        RowBox[{"-", "4"}]}], "}"}], ",", 
       RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
     RowBox[{"(*", 
      RowBox[{
@@ -1138,68 +2780,20 @@ FontSlant->\"Italic\"]\))\>\""}], "}"}]}], ",", "\[IndentingNewLine]",
         RowBox[{"d", ",", "1"}], "}"}], ",", 
        RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "*)"}], 
    "\[IndentingNewLine]", "]"}]}]], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.638061128865652*^9, 3.638061149362743*^9}, {
    3.638064307231893*^9, 3.6380645009664087`*^9}, {3.638067320410141*^9, 
    3.638067373919026*^9}, {3.638067416291314*^9, 3.6380674370918093`*^9}, {
    3.638067477996866*^9, 3.638067508349351*^9}, {3.638068071373642*^9, 
    3.638068148612101*^9}, {3.638068298743495*^9, 3.6380683818790417`*^9}, {
    3.638068413332163*^9, 3.638068414459092*^9}, 3.638068450164763*^9, {
-   3.638068508540965*^9, 3.6380685512915907`*^9}}],
+   3.638068508540965*^9, 3.6380685512915907`*^9}, {3.638095747962809*^9, 
+   3.638095753174893*^9}, {3.638095854834733*^9, 3.6380958997188272`*^9}, {
+   3.638095936291106*^9, 3.638095936414358*^9}, {3.638096006664668*^9, 
+   3.638096009428298*^9}, 3.63809695029032*^9}],
 
 Cell[BoxData[
- TagBox[
-  StyleBox[
-   DynamicModuleBox[{$CellContext`a$$ = 4, $CellContext`c$$ = 1, 
-    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`a$$], 4}, -10, 10}, {{
-       Hold[$CellContext`c$$], 1}, -10, 10}}, Typeset`size$$ = {
-    360., {112., 117.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`a$76488$$ = 
-    0, $CellContext`c$76489$$ = 0}, 
-    DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, 
-      "Variables" :> {$CellContext`a$$ = 4, $CellContext`c$$ = 1}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`a$$, $CellContext`a$76488$$, 0], 
-        Hold[$CellContext`c$$, $CellContext`c$76489$$, 0]}, 
-      "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, "Body" :> Plot[{
-         $CellContext`ratFunc[$CellContext`x, $CellContext`a$$, 
-          1, $CellContext`c$$, 1]}, {$CellContext`x, -10, 10}, 
-        PlotRange -> {{0, 2}, {-5, 5}}, Frame -> True, 
-        FrameLabel -> {
-         "\!\(\*\nStyleBox[\"x\",\nFontSlant->\"Italic\"]\)", 
-          "\!\(\*\nStyleBox[\"f\",\nFontSlant->\"Italic\"]\)(\!\(\*\n\
-StyleBox[\"x\",\nFontSlant->\"Italic\"]\))"}, LabelStyle -> 
-        Directive[FontFamily -> "Helvetica", FontSize -> 14]], 
-      "Specifications" :> {{{$CellContext`a$$, 4}, -10, 
-         10}, {{$CellContext`c$$, 1}, -10, 10}}, "Options" :> {}, 
-      "DefaultOptions" :> {}],
-     ImageSizeCache->{405., {170., 175.}},
-     SingleEvaluation->True],
-    Deinitialization:>None,
-    DynamicModuleValues:>{},
-    SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
-   Deployed->True,
-   StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.638068355791131*^9, 3.638068383037654*^9}, 
-   3.638068415063445*^9, 3.638068451795395*^9, 3.638068483217422*^9, {
-   3.638068518725162*^9, 3.638068539933729*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"expFuncPlot", "=", 
+ RowBox[{"expFuncPlot", ":=", 
   RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Plot", "[", 
@@ -1225,24 +2819,33 @@ Cell[BoxData[
       RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
       RowBox[{"FrameLabel", "\[Rule]", 
        RowBox[{"{", 
-        RowBox[{"\"\<\!\(\*
-StyleBox[\"x\",
-FontSlant->\"Italic\"]\)\>\"", ",", "\"\<\!\(\*
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
 StyleBox[\"f\",
 FontSlant->\"Italic\"]\)(\!\(\*
 StyleBox[\"x\",
-FontSlant->\"Italic\"]\))\>\""}], "}"}]}], ",", "\[IndentingNewLine]", 
+FontSlant->\"Italic\"]\))\>\"", ",", "\"\<\>\""}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
+StyleBox[\"x\",
+FontSlant->\"Italic\"]\)\>\"", ",", "\"\<Exponential function\>\""}], "}"}]}],
+         "}"}]}], ",", "\[IndentingNewLine]", 
       RowBox[{"LabelStyle", "\[Rule]", 
        RowBox[{"Directive", "[", 
         RowBox[{
          RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], ",", 
-         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}]}], 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"PlotStyle", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", "Dashed"}], "}"}]}]}], 
      "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"c", ",", "1"}], "}"}], ",", 
-      RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+       RowBox[{"c", ",", "1"}], "}"}], ",", "0", ",", "4"}], "}"}], ",", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
@@ -1260,65 +2863,15 @@ FontSlant->\"Italic\"]\))\>\""}], "}"}]}], ",", "\[IndentingNewLine]",
        RowBox[{"{", 
         RowBox[{"b", ",", "0"}], "}"}], ",", "0", ",", "10"}], "}"}]}], 
     "*)"}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.638061128865652*^9, 3.638061149362743*^9}, {
-  3.638064307231893*^9, 3.6380645009664087`*^9}, {3.638067320410141*^9, 
-  3.638067373919026*^9}, {3.638067416291314*^9, 3.6380674370918093`*^9}, {
-  3.638067477996866*^9, 3.638067508349351*^9}, {3.638068071373642*^9, 
-  3.638068148612101*^9}}],
-
-Cell[BoxData[
- TagBox[
-  StyleBox[
-   DynamicModuleBox[{$CellContext`a1$$ = 
-    1, $CellContext`a2$$ = -1, $CellContext`c$$ = 1, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`c$$], 1}, -10, 10}, {{
-       Hold[$CellContext`a1$$], 1}, 0, 10}, {{
-       Hold[$CellContext`a2$$], -1}, -10, 0}}, Typeset`size$$ = {
-    360., {121., 125.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`c$53883$$ = 
-    0, $CellContext`a1$53884$$ = 0, $CellContext`a2$53885$$ = 0}, 
-    DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, 
-      "Variables" :> {$CellContext`a1$$ = 
-        1, $CellContext`a2$$ = -1, $CellContext`c$$ = 1}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`c$$, $CellContext`c$53883$$, 0], 
-        Hold[$CellContext`a1$$, $CellContext`a1$53884$$, 0], 
-        Hold[$CellContext`a2$$, $CellContext`a2$53885$$, 0]}, 
-      "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, "Body" :> Plot[{
-         $CellContext`expFunc[$CellContext`x, $CellContext`a1$$, \
-$CellContext`c$$], 
-         $CellContext`expFunc[$CellContext`x, $CellContext`a2$$, \
-$CellContext`c$$]}, {$CellContext`x, -10, 10}, 
-        PlotRange -> {{-2.5, 2.5}, {0, 5}}, Frame -> True, 
-        FrameLabel -> {
-         "\!\(\*\nStyleBox[\"x\",\nFontSlant->\"Italic\"]\)", 
-          "\!\(\*\nStyleBox[\"f\",\nFontSlant->\"Italic\"]\)(\!\(\*\n\
-StyleBox[\"x\",\nFontSlant->\"Italic\"]\))"}, LabelStyle -> 
-        Directive[FontFamily -> "Helvetica", FontSize -> 14]], 
-      "Specifications" :> {{{$CellContext`c$$, 1}, -10, 
-         10}, {{$CellContext`a1$$, 1}, 0, 10}, {{$CellContext`a2$$, -1}, -10, 
-         0}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{405., {193., 198.}},
-     SingleEvaluation->True],
-    Deinitialization:>None,
-    DynamicModuleValues:>{},
-    SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
-   Deployed->True,
-   StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.638068098508698*^9, 3.638068149224444*^9}}]
-}, Open  ]],
+   3.638064307231893*^9, 3.6380645009664087`*^9}, {3.638067320410141*^9, 
+   3.638067373919026*^9}, {3.638067416291314*^9, 3.6380674370918093`*^9}, {
+   3.638067477996866*^9, 3.638067508349351*^9}, {3.638068071373642*^9, 
+   3.638068148612101*^9}, {3.6380952094127483`*^9, 3.6380952134368057`*^9}, {
+   3.6380957584778767`*^9, 3.638095763279584*^9}, {3.638096011736431*^9, 
+   3.638096013628105*^9}, {3.638096088314189*^9, 3.638096091610725*^9}, 
+   3.6380969532504673`*^9}],
 
 Cell[BoxData[
  RowBox[{"quadFuncPlot", ":=", 
@@ -1348,18 +2901,28 @@ Cell[BoxData[
       RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
       RowBox[{"FrameLabel", "\[Rule]", 
        RowBox[{"{", 
-        RowBox[{"\"\<\!\(\*
-StyleBox[\"x\",
-FontSlant->\"Italic\"]\)\>\"", ",", "\"\<\!\(\*
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
 StyleBox[\"f\",
 FontSlant->\"Italic\"]\)(\!\(\*
 StyleBox[\"x\",
-FontSlant->\"Italic\"]\))\>\""}], "}"}]}], ",", "\[IndentingNewLine]", 
+FontSlant->\"Italic\"]\))\>\"", ",", "\"\<\>\""}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
+StyleBox[\"x\",
+FontSlant->\"Italic\"]\)\>\"", ",", "\"\<Quadratic function\>\""}], "}"}]}], 
+        "}"}]}], ",", "\[IndentingNewLine]", 
       RowBox[{"LabelStyle", "\[Rule]", 
        RowBox[{"Directive", "[", 
         RowBox[{
          RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], ",", 
-         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}]}], 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"PlotStyle", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", "Dashed"}], "}"}]}]}], 
      "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
@@ -1381,10 +2944,13 @@ FontSlant->\"Italic\"]\))\>\""}], "}"}]}], ",", "\[IndentingNewLine]",
       RowBox[{"{", 
        RowBox[{"b", ",", "0"}], "}"}], ",", "0", ",", "10"}], "}"}]}], 
    "\[IndentingNewLine]", "]"}]}]], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.638061128865652*^9, 3.638061149362743*^9}, {
-  3.638064307231893*^9, 3.6380645009664087`*^9}, {3.638067320410141*^9, 
-  3.638067373919026*^9}, {3.638067416291314*^9, 3.6380674370918093`*^9}, {
-  3.638067477996866*^9, 3.638067508349351*^9}}],
+   3.638064307231893*^9, 3.6380645009664087`*^9}, {3.638067320410141*^9, 
+   3.638067373919026*^9}, {3.638067416291314*^9, 3.6380674370918093`*^9}, {
+   3.638067477996866*^9, 3.638067508349351*^9}, {3.638095202681326*^9, 
+   3.638095203172192*^9}, {3.638095766953724*^9, 3.6380957715277843`*^9}, {
+   3.638096016456272*^9, 3.6380960187493668`*^9}, 3.63809695581061*^9}],
 
 Cell[BoxData[
  RowBox[{"linFuncPlot", ":=", 
@@ -1411,18 +2977,28 @@ Cell[BoxData[
       RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
       RowBox[{"FrameLabel", "\[Rule]", 
        RowBox[{"{", 
-        RowBox[{"\"\<\!\(\*
-StyleBox[\"x\",
-FontSlant->\"Italic\"]\)\>\"", ",", "\"\<\!\(\*
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
 StyleBox[\"f\",
 FontSlant->\"Italic\"]\)(\!\(\*
 StyleBox[\"x\",
-FontSlant->\"Italic\"]\))\>\""}], "}"}]}], ",", "\[IndentingNewLine]", 
+FontSlant->\"Italic\"]\))\>\"", ",", "\"\<\>\""}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<\!\(\*
+StyleBox[\"x\",
+FontSlant->\"Italic\"]\)\>\"", ",", "\"\<Linear function\>\""}], "}"}]}], 
+        "}"}]}], ",", "\[IndentingNewLine]", 
       RowBox[{"LabelStyle", "\[Rule]", 
        RowBox[{"Directive", "[", 
         RowBox[{
          RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], ",", 
-         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}]}], 
+         RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"PlotStyle", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", "Dashed"}], "}"}]}]}], 
      "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
@@ -1439,8 +3015,12 @@ FontSlant->\"Italic\"]\))\>\""}], "}"}]}], ",", "\[IndentingNewLine]",
         RowBox[{"-", "1"}]}], "}"}], ",", 
       RowBox[{"-", "10"}], ",", "0"}], "}"}]}], "\[IndentingNewLine]", 
    "]"}]}]], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.638061128865652*^9, 3.638061149362743*^9}, {
-   3.638064307231893*^9, 3.6380645009664087`*^9}, 3.638067512055312*^9}]
+   3.638064307231893*^9, 3.6380645009664087`*^9}, 3.638067512055312*^9, {
+   3.638095171387328*^9, 3.6380951838575068`*^9}, {3.638095774811146*^9, 
+   3.638095778295494*^9}, {3.638096021844803*^9, 3.6380960237666273`*^9}, 
+   3.638096960810598*^9}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -1479,15 +3059,21 @@ CellTagsIndex->{
    CellTags->"SlideShowHeader"],
   Cell[24567, 606, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[26130, 661, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[58366, 1537, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[27706, 700, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[64876, 1789, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[68247, 1903, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[70081, 1976, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[75613, 2155, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 55351, 1468}
+ {"SlideShowHeader", 107363, 3048}
  }
 *)
 (*NotebookFileOutline
@@ -1584,7 +3170,7 @@ Cell[20017, 496, 881, 24, 72, "Item"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[20935, 525, 482, 13, 46, "Input"],
-Cell[21420, 540, 3086, 59, 410, "Output"]
+Cell[21420, 540, 3086, 59, 376, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -1596,55 +3182,210 @@ Cell[24656, 611, 110, 1, 44, "Subsection"],
 Cell[24769, 614, 348, 6, 68, "Text"],
 Cell[CellGroupData[{
 Cell[25142, 624, 108, 1, 35, "Subsubsection"],
-Cell[25253, 627, 379, 11, 25, "DisplayFormulaNumbered"],
-Cell[25635, 640, 320, 11, 31, "Text"]
-}, Open  ]],
-Cell[25970, 654, 111, 1, 35, "Subsubsection"]
+Cell[25253, 627, 380, 10, 25, "DisplayFormulaNumbered"],
+Cell[25636, 639, 397, 13, 29, "Item"],
+Cell[CellGroupData[{
+Cell[26058, 656, 232, 4, 28, "Input",
+ InitializationCell->True],
+Cell[26293, 662, 2689, 54, 400, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26130, 661, 64, 1, 74, "SlideShowNavigationBar",
+Cell[29031, 722, 111, 1, 35, "Subsubsection"],
+Cell[29145, 725, 484, 12, 26, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[29654, 741, 576, 18, 29, "Item"],
+Cell[30233, 761, 372, 13, 29, "Item"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30642, 779, 182, 3, 28, "Input",
+ InitializationCell->True],
+Cell[30827, 784, 3012, 58, 428, "Output"]
+}, Open  ]],
+Cell[33854, 845, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33935, 851, 110, 1, 35, "Subsubsection"],
+Cell[34048, 854, 357, 10, 50, "Text"],
+Cell[34408, 866, 393, 13, 54, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[34826, 883, 270, 8, 29, "Item"],
+Cell[35099, 893, 465, 15, 48, "Item"]
+}, Open  ]],
+Cell[35579, 911, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35660, 917, 113, 1, 35, "Subsubsection"],
+Cell[35776, 920, 360, 9, 25, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[36161, 933, 119, 1, 28, "Item"],
+Cell[36283, 936, 250, 8, 29, "Item"],
+Cell[36536, 946, 250, 8, 29, "Item"],
+Cell[36789, 956, 252, 7, 30, "Item"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37078, 968, 183, 3, 28, "Input",
+ InitializationCell->True],
+Cell[37264, 973, 2796, 56, 410, "Output"]
+}, Open  ]],
+Cell[40075, 1032, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40156, 1038, 108, 1, 35, "Subsubsection"],
+Cell[40267, 1041, 518, 15, 50, "Text"],
+Cell[40788, 1058, 393, 11, 44, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[41206, 1073, 326, 9, 29, "Item"],
+Cell[41535, 1084, 350, 9, 29, "Item"],
+Cell[41888, 1095, 501, 14, 29, "Item"],
+Cell[42392, 1111, 310, 5, 28, "Item"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42739, 1121, 132, 2, 28, "Input",
+ InitializationCell->True],
+Cell[42874, 1125, 2832, 56, 406, "Output"]
+}, Open  ]],
+Cell[45721, 1184, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45802, 1190, 115, 1, 35, "Subsubsection"],
+Cell[45920, 1193, 179, 2, 30, "Text"],
+Cell[46102, 1197, 539, 14, 37, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[46666, 1215, 636, 19, 29, "Item"],
+Cell[47305, 1236, 507, 13, 29, "Item"],
+Cell[47815, 1251, 1046, 36, 66, "Item"],
+Cell[48864, 1289, 310, 5, 28, "Item"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[49211, 1299, 158, 3, 28, "Input",
+ InitializationCell->True],
+Cell[49372, 1304, 3108, 60, 434, "Output"]
+}, Open  ]],
+Cell[52495, 1367, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52576, 1373, 168, 2, 35, "Subsubsection"],
+Cell[52747, 1377, 267, 7, 30, "Text"],
+Cell[53017, 1386, 483, 15, 50, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[53525, 1405, 541, 17, 29, "Item"],
+Cell[54069, 1424, 346, 12, 29, "Item"],
+Cell[54418, 1438, 366, 12, 29, "Item"],
+Cell[54787, 1452, 244, 7, 29, "Item"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55068, 1464, 107, 2, 28, "Input",
+ InitializationCell->True],
+Cell[55178, 1468, 3115, 61, 432, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58366, 1537, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[26219, 666, 152, 2, 64, "Section"],
+Cell[58455, 1542, 135, 1, 44, "Subsection"],
+Cell[58593, 1545, 329, 8, 50, "Text"],
 Cell[CellGroupData[{
-Cell[26396, 672, 390, 5, 30, "ItemNumbered"],
-Cell[26789, 679, 416, 6, 30, "ItemNumbered"],
-Cell[27208, 687, 437, 6, 30, "ItemNumbered"]
+Cell[58947, 1557, 656, 25, 29, "Item"],
+Cell[59606, 1584, 727, 27, 46, "Item"],
+Cell[60336, 1613, 1060, 42, 47, "Item"],
+Cell[61399, 1657, 1120, 44, 47, "Item"],
+Cell[62522, 1703, 604, 22, 29, "Item"]
+}, Open  ]],
+Cell[63141, 1728, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[63210, 1733, 98, 1, 35, "Subsubsection"],
+Cell[63311, 1736, 1504, 46, 111, "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[27706, 700, 64, 1, 74, "SlideShowNavigationBar",
+Cell[64876, 1789, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[27795, 705, 105, 1, 64, "Section"],
-Cell[27903, 708, 2373, 66, 201, "Input",
+Cell[64965, 1794, 108, 1, 64, "Section"],
+Cell[65076, 1797, 487, 11, 49, "Text"],
+Cell[CellGroupData[{
+Cell[65588, 1812, 268, 7, 28, "Item"],
+Cell[65859, 1821, 277, 7, 28, "Item"]
+}, Open  ]],
+Cell[66151, 1831, 187, 4, 30, "Text"],
+Cell[66341, 1837, 721, 19, 72, "Text"],
+Cell[67065, 1858, 299, 10, 27, "DisplayFormula"],
+Cell[67367, 1870, 831, 27, 53, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68247, 1903, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[68336, 1908, 383, 12, 45, "Subsection"],
+Cell[68722, 1922, 456, 16, 31, "Text"],
+Cell[69181, 1940, 626, 22, 47, "DisplayFormula"],
+Cell[69810, 1964, 222, 6, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70081, 1976, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[70170, 1981, 200, 3, 64, "Section"],
+Cell[CellGroupData[{
+Cell[70395, 1988, 1267, 33, 68, "ItemNumbered"],
+Cell[71665, 2023, 132, 1, 28, "Item"],
+Cell[71800, 2026, 253, 8, 29, "Item"],
+Cell[72056, 2036, 543, 17, 47, "Item"],
+Cell[72602, 2055, 579, 9, 30, "ItemNumbered"],
+Cell[73184, 2066, 449, 15, 29, "Item"],
+Cell[73636, 2083, 460, 16, 37, "Item"],
+Cell[74099, 2101, 392, 14, 29, "Item"],
+Cell[74494, 2117, 618, 23, 38, "Item"],
+Cell[75115, 2142, 437, 6, 30, "ItemNumbered"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75613, 2155, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[75702, 2160, 105, 1, 64, "Section"],
+Cell[75810, 2163, 2373, 66, 201, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[30301, 778, 507, 15, 50, "Input"],
-Cell[30811, 795, 422, 12, 51, "Output"]
+Cell[78208, 2233, 507, 15, 50, "Input"],
+Cell[78718, 2250, 422, 12, 51, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[31270, 812, 799, 20, 52, "Input"],
-Cell[32072, 834, 447, 12, 49, "Output"]
+Cell[79177, 2267, 799, 20, 52, "Input"],
+Cell[79979, 2289, 447, 12, 49, "Output"]
 }, Open  ]],
-Cell[32534, 849, 920, 31, 47, "Text"],
-Cell[33457, 882, 1094, 34, 66, "DisplayFormula"],
-Cell[34554, 918, 3625, 96, 251, "Input",
+Cell[80441, 2304, 920, 31, 47, "Text"],
+Cell[81364, 2337, 1094, 34, 66, "DisplayFormula"],
+Cell[82461, 2373, 3674, 97, 251, "Input",
  InitializationCell->True],
-Cell[38182, 1016, 1885, 54, 175, "Input"],
-Cell[40070, 1072, 121, 1, 30, "Text"],
-Cell[CellGroupData[{
-Cell[40216, 1077, 2581, 69, 165, "Input"],
-Cell[42800, 1148, 2396, 47, 362, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[45233, 1200, 2419, 66, 165, "Input"],
-Cell[47655, 1268, 2596, 51, 408, "Output"]
-}, Open  ]],
-Cell[50266, 1322, 2373, 64, 165, "Input"],
-Cell[52642, 1388, 1974, 54, 165, "Input"]
+Cell[86138, 2472, 1912, 55, 175, "Input",
+ InitializationCell->True],
+Cell[88053, 2529, 3420, 83, 199, "Input",
+ InitializationCell->True],
+Cell[91476, 2614, 3296, 84, 182, "Input",
+ InitializationCell->True],
+Cell[94775, 2700, 3448, 92, 199, "Input",
+ InitializationCell->True],
+Cell[98226, 2794, 2986, 79, 182, "Input",
+ InitializationCell->True],
+Cell[101215, 2875, 2905, 77, 182, "Input",
+ InitializationCell->True],
+Cell[104123, 2954, 2505, 68, 182, "Input",
+ InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
 }
