@@ -1,0 +1,17 @@
+\chapter{How to construct a model}
+
+\section{Problems}
+
+\begin{enumerate}
+	\item[P.1.1] In the squirrel example, assume that death through cyclists occurs before immigration, and immigration is followed by birth. Derive the discrete-time recursion equation and compare it to the one we obtained above, where we assumed that death is followed by birth and immigration. Start from the life-cycle diagram. Interpret the difference.
+	\item[P.1.2] [Problem 2.5 in OD2007] Consider a model of disease transmission with the following equations:
+		\begin{subequations}
+			\label{eq:prob1-1}
+			\begin{align}
+				\frac{dS}{dt} & = \theta - d D - \beta S I + \gamma I,\\
+				\frac{dI}{dt} & = \beta S I - (d + \nu + \gamma) I.
+			\end{align}
+		\end{subequations}
+		The variables $S$ and $I$ denote the number of susceptible and infected individuals. (a) Draw and label a flow diagram for these two variables. (b) Suggest a plausible biological interpretation of the parameters $\gamma$ and $\nu$.
+	\item[P.1.3] [Problem 2.6 in OD2007] In the flu model, suppose that after contracting the flu, people are initially resistant to reinfection, but this immunity eventually wanes. Alter the flow diagram for the flu model that we derived to include a ``recovered and immune'' class with these properties. (b) Suppose that immune individuals have a constant per capita rate of losing immunity. What are the continuous-time equations for this modified model?
+\end{enumerate}

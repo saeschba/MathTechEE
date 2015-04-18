@@ -1,0 +1,24 @@
+\chapter{Some classic models in evolution and ecology}
+
+\section{Problems}
+
+\begin{enumerate}
+	\item[P.2.1] We constructed the differential equation for the continuous-time version of the exponential growth model from the flow diagram. (a) Instead, derive the equation from the difference equation of the discrete-time version. Hint: Introduce a small amount of time $\Delta t$ and take the appropriate limit. (b) Comparing $r_d$ and $r_c$, explain the difference between the discrete- and continuous-time versions.
+	
+	\item[P.2.2] Derive the differential equation for the logistic growth model in continuous time. Start by assuming that the per capita growth rate $r(n)$ declines linearly with population size $n(t)$. Assume that $r(n)$ has a maximum equal to the intrinsic growth rate $r_c$ when there are no competitors (i.e.\ $r(0) = r_c$), and that it reaches zero when the population is at the carrying capacity (i.e.\ $r(K) = 0$). Substitute $r(n)$ for $r_c$ in the differential equation of the exponential growth model to obtain the result of interest.
+	
+	\item[P.2.3] As an alternative way of deriving the continuous-time version of the haploid selection model, start from the continous-time version of the exponential growth model. Specifically, let $n_A$ and $n_a$ be the number of individuals carrying alleles $A$ and $a$, respectively, and let the growth rate depend on the allelic state, i.e.\ $r_A = b_A - d_A$ for carriers of $A$, and $r_a = b_a - d_a$ for carriers of $a$. From the exponential growth model, we have
+	\begin{subequations}
+		\label{eq:haplselconttime}
+		\begin{align}
+			\frac{d n_A}{dt} &= r_A n_A(t),\\
+			\frac{d n_a}{dt} &= r_a n_a(t).
+		\end{align}
+	\end{subequations}
+	However, we want to know how the allele frequencies change! As these sum to 1, it is sufficient to follow only the frequency of allele $A$, $p(t)=n_A(t) / (n_A(t) + n_a(t))$. Start by writing
+	\begin{equation}
+		\label{eq:hapmodcont}
+		\frac{dp}{dt} = \frac{d\left[\frac{n_A(t)}{n_A(t) + n_a(t)}\right]}{dt}.
+	\end{equation}
+	Then use the quotient rule to evaluate the derivative, and use the equations for $d n_A / d t$ and $d n_a / d t$ to express $dp/dt$ in terms of $r_A$, $r_a$, and $p$.
+\end{enumerate}

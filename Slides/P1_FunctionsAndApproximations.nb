@@ -4073,8 +4073,7 @@ Cell[TextData[{
  "Determine the functions ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"R", "(", "n", ")"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"R", "(", "n", ")"}], TraditionalForm]]],
  " for the reproductive factor in the logistic growth model, such that the \
 shape of the functions is consistent with the first figure above. In each \
 case, choose the parameters such that the intercept is ",
@@ -4082,19 +4081,16 @@ case, choose the parameters such that the intercept is ",
   FormBox[
    RowBox[{
     RowBox[{"R", "(", "0", ")"}], "=", 
-    RowBox[{"1", "+", "r"}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    RowBox[{"1", "+", "r"}]}], TraditionalForm]]],
  ", and the value when ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"N", "=", "K"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"N", "=", "K"}], TraditionalForm]]],
  " is ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    RowBox[{"R", "(", "K", ")"}], "=", "1"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    RowBox[{"R", "(", "K", ")"}], "=", "1"}], TraditionalForm]]],
  ". Specifically, derive"
 }], "ItemNumbered",
  CellChangeTimes->{{3.636720427558174*^9, 3.636720607402008*^9}, {
@@ -4111,8 +4107,7 @@ Cell[TextData[{
  "(b) A quadratic function with a maximum at ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"n", "=", "0"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"n", "=", "0"}], TraditionalForm]]],
  "."
 }], "Item",
  CellChangeTimes->{{3.638099423574113*^9, 3.638099480978672*^9}}],
@@ -4121,17 +4116,14 @@ Cell[TextData[{
  "(c) A reverse-S-shaped function that declines from ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"1", "+", "r"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"1", "+", "r"}], TraditionalForm]]],
  " to zero. Keep ",
  Cell[BoxData[
-  FormBox["a", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["a", TraditionalForm]]],
  " arbitrary, and use Rule P1.1 above to increase the intercept to ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"1", "+", "r"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"1", "+", "r"}], TraditionalForm]]],
  "."
 }], "Item",
  CellChangeTimes->{{3.638099423574113*^9, 3.6380995306821537`*^9}}],
