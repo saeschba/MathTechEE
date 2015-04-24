@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    547461,      11806]
-NotebookOptionsPosition[    531134,      11308]
-NotebookOutlinePosition[    533839,      11381]
-CellTagsIndexPosition[    533758,      11376]
+NotebookDataLength[    548510,      11842]
+NotebookOptionsPosition[    532047,      11337]
+NotebookOutlinePosition[    534764,      11411]
+CellTagsIndexPosition[    534683,      11406]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,6 +22,9 @@ Notebook[{
 Cell[CellGroupData[{
 Cell["", "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.63888811708808*^9}],
 
 Cell[BoxData["\[IndentingNewLine]"], "Input",
  CellChangeTimes->{3.636114599213521*^9}],
@@ -128,7 +131,16 @@ Cell["Variable versus variable plots", "Item",
  CellChangeTimes->{{3.636115030088249*^9, 3.6361150401357803`*^9}, {
    3.637406039565957*^9, 3.637406043570958*^9}, {3.637923982896369*^9, 
    3.637924011353758*^9}, 3.637924125990636*^9, {3.638582897023801*^9, 
-   3.6385829032638683`*^9}}],
+   3.6385829032638683`*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See OD2007:", "Subsection",
+ CellChangeTimes->{{3.6388881558192053`*^9, 3.638888171685124*^9}}],
+
+Cell[CellGroupData[{
 
 Cell["Phase-plane diagrams", "Item",
  CellChangeTimes->{{3.636115030088249*^9, 3.636115045103869*^9}, {
@@ -2704,9 +2716,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.4731986666666667], FrameTicks -> None, PlotRangePadding -> 
                     None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.368417, 0.506779, 0.709798]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -2751,9 +2763,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.587148, 0.40736066666666665`, 0.09470066666666668], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.880722, 0.611041, 0.142051]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -3865,9 +3877,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.4731986666666667], FrameTicks -> None, PlotRangePadding -> 
                     None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.368417, 0.506779, 0.709798]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -3911,9 +3923,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.587148, 0.40736066666666665`, 0.09470066666666668], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.880722, 0.611041, 0.142051]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -3957,9 +3969,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.37345400000000006`, 0.461046, 0.12992333333333334`], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.560181, 0.691569, 0.194885]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -4007,9 +4019,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.13945266666666667`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.922526, 0.385626, 0.209179]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -4866,9 +4878,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     RGBColor[0.24561133333333335`, 0.3378526666666667, 
                     0.4731986666666667], FrameTicks -> None, PlotRangePadding -> 
                     None, ImageSize -> 
-                    Dynamic[{Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Dynamic[{Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.368417, 0.506779, 0.709798]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -4912,9 +4924,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     RGBColor[0.587148, 0.40736066666666665`, 
                     0.09470066666666668], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Dynamic[{Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.880722, 0.611041, 0.142051]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -4958,9 +4970,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     RGBColor[0.37345400000000006`, 0.461046, 
                     0.12992333333333334`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Dynamic[{Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.560181, 0.691569, 0.194885]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -5007,9 +5019,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     RGBColor[0.6150173333333333, 0.25708400000000003`, 
                     0.13945266666666667`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Dynamic[{Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.922526, 0.385626, 0.209179]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -5220,9 +5232,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     RGBColor[0.24561133333333335`, 0.3378526666666667, 
                     0.4731986666666667], FrameTicks -> None, PlotRangePadding -> 
                     None, ImageSize -> 
-                    Dynamic[{Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Dynamic[{Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.368417, 0.506779, 0.709798]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -5265,9 +5277,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     RGBColor[0.587148, 0.40736066666666665`, 
                     0.09470066666666668], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Dynamic[{Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.880722, 0.611041, 0.142051]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -5310,9 +5322,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     RGBColor[0.37345400000000006`, 0.461046, 
                     0.12992333333333334`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Dynamic[{Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.560181, 0.691569, 0.194885]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -5358,9 +5370,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     RGBColor[0.6150173333333333, 0.25708400000000003`, 
                     0.13945266666666667`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Dynamic[{Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.922526, 0.385626, 0.209179]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -5422,16 +5434,16 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
 }, Open  ]],
 
 Cell[TextData[{
- "Hence, results obtained with the continuous-time approximation ) are ",
+ "Hence, results obtained with the continuous-time approximation are ",
  StyleBox["robust",
   FontWeight->"Bold"],
  " w.r.t. to the discrete-time version as long as ",
  Cell[BoxData[
-  FormBox["r", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["r", TraditionalForm]]],
  " is not too large."
 }], "Text",
- CellChangeTimes->{{3.6387085800266733`*^9, 3.638708645135427*^9}}]
+ CellChangeTimes->{{3.6387085800266733`*^9, 3.638708645135427*^9}, {
+  3.638889798751378*^9, 3.638889799115646*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -5448,12 +5460,13 @@ Cell["Example: Models of natural selection", "Subsection",
 Cell["\<\
 In the logistic growth model the agreement between the discrete-time and \
 continuous-time version was sensitive to the choices of parameter values (and \
-hence to underlying assumptions). In contrast, the haploid and diplois models \
+hence to underlying assumptions). In contrast, the haploid and diploid models \
 of natural selection display very similar dynamics in discrete and continuous \
 time (cf. Fig. 4.6 in OD2007).\
 \>", "Text",
  CellChangeTimes->{{3.638708712249588*^9, 3.638708818521299*^9}, {
-  3.638708936370861*^9, 3.638708946772025*^9}}],
+  3.638708936370861*^9, 3.638708946772025*^9}, {3.638889847836211*^9, 
+  3.638889848132668*^9}}],
 
 Cell[TextData[{
  "However, the behaviour of models of selection is ",
@@ -5467,7 +5480,11 @@ Cell[TextData[{
  CellChangeTimes->{{3.638708855994388*^9, 3.6387089069205112`*^9}, {
   3.638787224944504*^9, 3.638787225670895*^9}}],
 
-Cell["Overdominance, or heterozygote advantage", "Item",
+Cell[TextData[{
+ StyleBox["Overdominance",
+  FontWeight->"Bold"],
+ ", or heterozygote advantage"
+}], "Item",
  CellChangeTimes->{{3.638787459363606*^9, 3.638787467880323*^9}}],
 
 Cell[BoxData[
@@ -5479,7 +5496,8 @@ Cell[BoxData[
     SubscriptBox["W", "aa"]}]}], TraditionalForm]], "DisplayFormulaNumbered",
  CellChangeTimes->{{3.638787509075898*^9, 3.638787538055229*^9}}],
 
-Cell["Directional selection", "Item",
+Cell[TextData[StyleBox["Directional selection",
+ FontWeight->"Bold"]], "Item",
  CellChangeTimes->{{3.638787459363606*^9, 3.6387874801740417`*^9}}],
 
 Cell[BoxData[
@@ -5500,7 +5518,11 @@ Cell[BoxData[
     SubscriptBox["W", "aa"]}]}], TraditionalForm]], "DisplayFormulaNumbered",
  CellChangeTimes->{{3.638787509075898*^9, 3.638787574295142*^9}}],
 
-Cell["Underdominance, or heterozygote disadvantage", "Item",
+Cell[TextData[{
+ StyleBox["Underdominance",
+  FontWeight->"Bold"],
+ ", or heterozygote disadvantage"
+}], "Item",
  CellChangeTimes->{{3.638787459363606*^9, 3.638787499305794*^9}}],
 
 Cell[BoxData[
@@ -6014,9 +6036,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.4731986666666667], FrameTicks -> None, PlotRangePadding -> 
                     None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.368417, 0.506779, 0.709798]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -6061,9 +6083,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.587148, 0.40736066666666665`, 0.09470066666666668], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.880722, 0.611041, 0.142051]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -6108,9 +6130,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.37345400000000006`, 0.461046, 0.12992333333333334`], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.560181, 0.691569, 0.194885]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -6156,9 +6178,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.13945266666666667`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.922526, 0.385626, 0.209179]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -6204,9 +6226,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.46756733333333333`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.528488, 0.470624, 0.701351]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -6252,9 +6274,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.06825800000000001], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.772079, 0.431554, 0.102387]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -6298,9 +6320,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     RGBColor[0.24259866666666668`, 0.412334, 0.521566], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.363898, 0.618501, 0.782349]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -6885,9 +6907,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.4731986666666667], FrameTicks -> None, PlotRangePadding -> 
                     None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.368417, 0.506779, 0.709798]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -6932,9 +6954,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.587148, 0.40736066666666665`, 0.09470066666666668], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.880722, 0.611041, 0.142051]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -6979,9 +7001,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.37345400000000006`, 0.461046, 0.12992333333333334`], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.560181, 0.691569, 0.194885]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -7027,9 +7049,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.13945266666666667`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.922526, 0.385626, 0.209179]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -7075,9 +7097,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.46756733333333333`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.528488, 0.470624, 0.701351]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -7123,9 +7145,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.06825800000000001], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.772079, 0.431554, 0.102387]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -7169,9 +7191,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     RGBColor[0.24259866666666668`, 0.412334, 0.521566], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.363898, 0.618501, 0.782349]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -7752,9 +7774,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.4731986666666667], FrameTicks -> None, PlotRangePadding -> 
                     None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.368417, 0.506779, 0.709798]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -7799,9 +7821,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.587148, 0.40736066666666665`, 0.09470066666666668], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.880722, 0.611041, 0.142051]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -7846,9 +7868,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.37345400000000006`, 0.461046, 0.12992333333333334`], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.560181, 0.691569, 0.194885]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -7894,9 +7916,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.13945266666666667`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.922526, 0.385626, 0.209179]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -7942,9 +7964,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.46756733333333333`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.528488, 0.470624, 0.701351]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -7990,9 +8012,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     0.06825800000000001], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.772079, 0.431554, 0.102387]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -8036,9 +8058,9 @@ nStyleBox[\\\"t\\\",\\nFontSlant->\\\"Italic\\\"]\\))\"", TraditionalForm],
                     RGBColor[0.24259866666666668`, 0.412334, 0.521566], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "\[InvisibleSpace]"}], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "\[InvisibleSpace]"}], 
                     "RGBColor[0.363898, 0.618501, 0.782349]"], Appearance -> 
                     None, BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
@@ -8372,6 +8394,7 @@ p2gZrzxclBy7grP5NA/PNfyJg6l+YwP/CxUIhds=
   GridLines->{None, None},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
+  ImageSize->{758.9218749999995, Automatic},
   LabelStyle->Directive[FontSize -> 14],
   Method->{"DefaultBoundaryStyle" -> Automatic, "ScalingFunctions" -> None},
   PlotRange->{{0, 1}, {-0.05, 1.05}},
@@ -8467,6 +8490,7 @@ p2gZrzxclBy7grP5NA/PNfyJg6l+YwP/CxUIhds=
   GridLines->{None, None},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
+  ImageSize->{741.4281250000004, Automatic},
   LabelStyle->Directive[FontSize -> 14],
   Method->{"DefaultBoundaryStyle" -> Automatic, "ScalingFunctions" -> None},
   PlotRange->{{0, 1}, {-0.05, 1.05}},
@@ -8646,6 +8670,7 @@ p2gZrzxclBy7grP5NA/PNfyJg6l+YwP/CxUIhds=
   GridLines->{None, None},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
+  ImageSize->{723.1906250000001, Automatic},
   LabelStyle->Directive[FontSize -> 14],
   Method->{"DefaultBoundaryStyle" -> Automatic, "ScalingFunctions" -> None},
   PlotRange->{{0, 1}, {-0.05, 1.05}},
@@ -8743,6 +8768,7 @@ p2gZrzxclBy7grP5NA/PNfyJg6l+YwP/CxUIhds=
   GridLines->{None, None},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
+  ImageSize->{500.24687500000033`, Automatic},
   LabelStyle->Directive[FontSize -> 14],
   Method->{"DefaultBoundaryStyle" -> Automatic, "ScalingFunctions" -> None},
   PlotRange->{{0, 1}, {-0.05, 1.05}},
@@ -9065,7 +9091,8 @@ elv6H9yYEG18LONkuQi92fljY3AhGm94fGWtCP0XZ+Y2MQ==
  CellChangeTimes->{
   3.6388420037178802`*^9, 3.638842326143093*^9, 3.63884241642586*^9, 
    3.638842449713813*^9, {3.638847785605113*^9, 3.638847789612341*^9}, {
-   3.63884782278655*^9, 3.638847826069783*^9}}]
+   3.63884782278655*^9, 3.638847826069783*^9}, {3.638888446313151*^9, 
+   3.638888451940444*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -9224,7 +9251,7 @@ elv6H9yYEG18LONkuQi92fljY3AhGm94fGWtCP0XZ+Y2MQ==
  CellChangeTimes->{
   3.638842199852449*^9, 3.638842327402034*^9, 3.638842450739719*^9, {
    3.638847785682269*^9, 3.6388477897902403`*^9}, {3.638847822985881*^9, 
-   3.638847826152443*^9}}]
+   3.638847826152443*^9}, {3.638888446493887*^9, 3.638888452054631*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -9383,7 +9410,8 @@ elv6H9yYEG18LONkuQi92fljY3AhGm94fGWtCP0XZ+Y2MQ==
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{{3.6388422117227*^9, 3.638842221207388*^9}, 
    3.638842329057281*^9, 3.638842451813335*^9, {3.638847785728157*^9, 
-   3.6388477898288794`*^9}, {3.6388478230345573`*^9, 3.638847826201867*^9}}]
+   3.6388477898288794`*^9}, {3.6388478230345573`*^9, 3.638847826201867*^9}, {
+   3.638888446566983*^9, 3.638888452135749*^9}}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -9445,10 +9473,11 @@ Cell[TextData[{
  "Change in a variable versus variable at time ",
  Cell[BoxData[
   FormBox["t", TraditionalForm]]],
- " "
+ " [Go on here]"
 }], "Subsection",
  CellChangeTimes->{{3.638788081581835*^9, 3.638788082757968*^9}, {
-  3.638788116144763*^9, 3.6387881270119143`*^9}}],
+  3.638788116144763*^9, 3.6387881270119143`*^9}, {3.638891611530415*^9, 
+  3.638891614316414*^9}}],
 
 Cell["\<\
 We plot the difference or the differential equation as a function of the \
@@ -9577,9 +9606,9 @@ Cell[BoxData[
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`s$$], 0.2}, -0.5, 0.5}, {{
        Hold[$CellContext`h$$], 0.5}, -1, 2}}, Typeset`size$$ = {
-    259.2, {82., 82.81769893247716}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`s$54609$$ = 0, $CellContext`h$54610$$ = 0}, 
+    270., {86., 87.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`s$54609$$ = 
+    0, $CellContext`h$54610$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`h$$ = 0.5, $CellContext`s$$ = 0.2}, 
@@ -9596,7 +9625,7 @@ $CellContext`h$$],
       "Specifications" :> {{{$CellContext`s$$, 0.2}, -0.5, 
          0.5}, {{$CellContext`h$$, 0.5}, -1, 2}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{296., {123., 126.}},
+     ImageSizeCache->{309., {135., 141.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -11306,9 +11335,9 @@ FontSlant->\"Italic\"]\)= \>\"", "<>",
 }, Open  ]]
 }, Open  ]]
 },
-ScreenStyleEnvironment->"Working",
-WindowSize->{776, 708},
-WindowMargins->{{-1, Automatic}, {Automatic, 0}},
+ScreenStyleEnvironment->"SlideShow",
+WindowSize->{1280, 708},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
 PrintingOptions->{"PaperOrientation"->"Portrait",
@@ -11319,6 +11348,7 @@ PrintingOptions->{"PaperOrientation"->"Portrait",
 "PrintingMargins"->{{54.000000585, 54.000000585}, {72.00000078000001, \
 72.00000078000001}}},
 TaggingRules->{"SlideShow" -> True},
+Magnification:>0.75 Inherited,
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
 2014)",
 StyleDefinitions->"Default.nb"
@@ -11329,482 +11359,488 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "SlideShowHeader"->{
-  Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[580, 22, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[2539, 75, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[2628, 78, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[5522, 153, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[5783, 165, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[10352, 260, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[10613, 272, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[13383, 344, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[13644, 356, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[15378, 418, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[15639, 430, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[95718, 1997, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[95979, 2009, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[135948, 2888, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[136213, 2900, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[270487, 5439, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[270790, 5451, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[273099, 5519, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[273596, 5541, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[316717, 6387, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[317228, 6409, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[360215, 7258, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[360740, 7280, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[403622, 8124, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[404161, 8146, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[405056, 8171, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[405595, 8193, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[406118, 8210, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[406657, 8232, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[417302, 8484, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[417931, 8508, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[433322, 8859, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[434043, 8885, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[459462, 9392, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[460329, 9420, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[460621, 9438, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[461488, 9466, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[462080, 9486, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[463008, 9515, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[467152, 9623, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[468065, 9652, 64, 1, 1, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 531842, 11330}
+ {"SlideShowHeader", 532788, 11360}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+Cell[580, 22, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[647, 25, 87, 1, 46, "Input"],
-Cell[737, 28, 307, 4, 29, "Subsubtitle"],
+Cell[647, 25, 86, 1, 53, "Input"],
+Cell[736, 28, 87, 1, 53, "Input"],
+Cell[826, 31, 307, 4, 47, "Subsubtitle"],
 Cell[CellGroupData[{
-Cell[1069, 36, 523, 11, 148, "Title"],
-Cell[1595, 49, 590, 8, 29, "Subsubtitle"],
-Cell[2188, 59, 116, 2, 29, "Subsubtitle"],
-Cell[2307, 63, 183, 6, 69, "Subsubtitle"]
+Cell[1158, 39, 523, 11, 202, "Title"],
+Cell[1684, 52, 590, 8, 47, "Subsubtitle"],
+Cell[2277, 62, 116, 2, 47, "Subsubtitle"],
+Cell[2396, 66, 183, 6, 108, "Subsubtitle"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2539, 75, 64, 1, 74, "SlideShowNavigationBar",
- CellTags->"SlideShowHeader"],
-Cell[CellGroupData[{
-Cell[2628, 80, 92, 1, 64, "Section"],
-Cell[CellGroupData[{
-Cell[2745, 85, 122, 2, 44, "Subsection"],
-Cell[2870, 89, 384, 7, 28, "Item"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[3291, 101, 98, 1, 44, "Subsection"],
-Cell[CellGroupData[{
-Cell[3414, 106, 295, 4, 28, "Item"],
-Cell[3712, 112, 354, 5, 28, "Item"],
-Cell[4069, 119, 346, 5, 28, "Item"],
-Cell[4418, 126, 288, 4, 28, "Item"],
-Cell[4709, 132, 248, 3, 28, "Item"],
-Cell[4960, 137, 248, 3, 28, "Item"],
-Cell[5211, 142, 238, 3, 28, "Item"]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[5522, 153, 64, 1, 74, "SlideShowNavigationBar",
+Cell[2628, 78, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[5611, 158, 197, 3, 64, "Section"],
-Cell[5811, 163, 854, 17, 68, "Text"],
+Cell[2717, 83, 92, 1, 83, "Section"],
 Cell[CellGroupData[{
-Cell[6690, 184, 583, 9, 45, "Item"],
-Cell[7276, 195, 555, 9, 28, "Item"],
-Cell[7834, 206, 503, 7, 28, "Item"],
+Cell[2834, 88, 122, 2, 62, "Subsection"],
+Cell[2959, 92, 384, 7, 34, "Item"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[8362, 217, 581, 10, 26, "Subitem"],
-Cell[8946, 229, 707, 11, 41, "Subitem"],
-Cell[9656, 242, 623, 10, 26, "Subitem"]
+Cell[3380, 104, 98, 1, 62, "Subsection"],
+Cell[CellGroupData[{
+Cell[3503, 109, 295, 4, 34, "Item"],
+Cell[3801, 115, 354, 5, 34, "Item"],
+Cell[4158, 122, 346, 5, 34, "Item"],
+Cell[4507, 129, 288, 4, 34, "Item"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4844, 139, 101, 1, 62, "Subsection"],
+Cell[CellGroupData[{
+Cell[4970, 144, 248, 3, 34, "Item"],
+Cell[5221, 149, 248, 3, 34, "Item"],
+Cell[5472, 154, 238, 3, 34, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10352, 260, 64, 1, 74, "SlideShowNavigationBar",
+Cell[5783, 165, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[10441, 265, 259, 3, 64, "Section"],
+Cell[5872, 170, 197, 3, 83, "Section"],
+Cell[6072, 175, 854, 17, 57, "Text"],
 Cell[CellGroupData[{
-Cell[10725, 272, 155, 2, 44, "Subsection"],
-Cell[10883, 276, 459, 9, 68, "Text"]
-}, Open  ]],
+Cell[6951, 196, 583, 9, 54, "Item"],
+Cell[7537, 207, 555, 9, 34, "Item"],
+Cell[8095, 218, 503, 7, 34, "Item"],
 Cell[CellGroupData[{
-Cell[11379, 290, 111, 1, 44, "Subsection"],
-Cell[11493, 293, 203, 4, 30, "Text"],
-Cell[CellGroupData[{
-Cell[11721, 301, 595, 9, 45, "Item"],
-Cell[12319, 312, 991, 24, 62, "Item"]
+Cell[8623, 229, 581, 10, 34, "Subitem"],
+Cell[9207, 241, 707, 11, 34, "Subitem"],
+Cell[9917, 254, 623, 10, 34, "Subitem"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13383, 344, 64, 1, 74, "SlideShowNavigationBar",
+Cell[10613, 272, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[13472, 349, 101, 1, 35, "Subsubsection"],
+Cell[10702, 277, 259, 3, 83, "Section"],
 Cell[CellGroupData[{
-Cell[13598, 354, 1048, 37, 47, "Item"],
-Cell[14649, 393, 668, 18, 71, "Item"]
+Cell[10986, 284, 155, 2, 62, "Subsection"],
+Cell[11144, 288, 459, 9, 57, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11640, 302, 111, 1, 62, "Subsection"],
+Cell[11754, 305, 203, 4, 34, "Text"],
+Cell[CellGroupData[{
+Cell[11982, 313, 595, 9, 34, "Item"],
+Cell[12580, 324, 991, 24, 54, "Item"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15378, 418, 64, 1, 74, "SlideShowNavigationBar",
+Cell[13644, 356, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[15467, 423, 164, 3, 35, "Subsubsection"],
-Cell[15634, 428, 398, 7, 49, "Text"],
+Cell[13733, 361, 101, 1, 38, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[16057, 439, 155, 2, 28, "Input"],
-Cell[16215, 443, 30218, 615, 245, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[46470, 1063, 82, 1, 28, "Input"],
-Cell[46555, 1066, 49102, 924, 251, "Output"]
+Cell[13859, 366, 1048, 37, 54, "Item"],
+Cell[14910, 405, 668, 18, 65, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[95718, 1997, 64, 1, 74, "SlideShowNavigationBar",
+Cell[15639, 430, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[95807, 2002, 123, 1, 35, "Subsubsection"],
-Cell[95933, 2005, 360, 6, 68, "Text"],
-Cell[96296, 2013, 541, 17, 44, "DisplayFormulaNumbered"],
-Cell[96840, 2032, 475, 17, 49, "Text"],
+Cell[15728, 435, 164, 3, 38, "Subsubsection"],
+Cell[15895, 440, 398, 7, 57, "Text"],
 Cell[CellGroupData[{
-Cell[97340, 2053, 48, 0, 28, "Input"],
-Cell[97391, 2055, 22243, 456, 251, "Output"]
+Cell[16318, 451, 155, 2, 33, "Input"],
+Cell[16476, 455, 30218, 615, 193, "Output"]
 }, Open  ]],
-Cell[119649, 2514, 44, 1, 1, "PageBreak",
+Cell[CellGroupData[{
+Cell[46731, 1075, 82, 1, 33, "Input"],
+Cell[46816, 1078, 49102, 924, 198, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[95979, 2009, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[96068, 2014, 123, 1, 38, "Subsubsection"],
+Cell[96194, 2017, 360, 6, 57, "Text"],
+Cell[96557, 2025, 541, 17, 51, "DisplayFormulaNumbered"],
+Cell[97101, 2044, 475, 17, 34, "Text"],
+Cell[CellGroupData[{
+Cell[97601, 2065, 48, 0, 33, "Input"],
+Cell[97652, 2067, 22243, 456, 198, "Output"]
+}, Open  ]],
+Cell[119910, 2526, 44, 1, 3, "PageBreak",
  PageBreakBelow->True],
-Cell[119696, 2517, 533, 17, 44, "DisplayFormula"],
+Cell[119957, 2529, 533, 17, 49, "DisplayFormula"],
 Cell[CellGroupData[{
-Cell[120254, 2538, 118, 1, 28, "Input"],
-Cell[120375, 2541, 13505, 276, 251, "Output"]
+Cell[120515, 2550, 118, 1, 33, "Input"],
+Cell[120636, 2553, 13509, 276, 198, "Output"]
 }, Open  ]],
-Cell[133895, 2820, 44, 1, 1, "PageBreak",
+Cell[134160, 2832, 44, 1, 3, "PageBreak",
  PageBreakBelow->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[133976, 2826, 98, 1, 35, "Subsubsection"],
+Cell[134241, 2838, 98, 1, 38, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[134099, 2831, 567, 13, 80, "Item"],
-Cell[134669, 2846, 344, 9, 45, "Item"],
-Cell[135016, 2857, 618, 17, 62, "Item"],
-Cell[135637, 2876, 250, 5, 28, "Item"]
+Cell[134364, 2843, 567, 13, 74, "Item"],
+Cell[134934, 2858, 344, 9, 54, "Item"],
+Cell[135281, 2869, 618, 17, 54, "Item"],
+Cell[135902, 2888, 250, 5, 34, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[135948, 2888, 64, 1, 74, "SlideShowNavigationBar",
+Cell[136213, 2900, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[136037, 2893, 162, 2, 35, "Subsubsection"],
-Cell[136202, 2897, 432, 7, 68, "Text"],
-Cell[136637, 2906, 137, 1, 30, "Text"],
-Cell[136777, 2909, 966, 31, 45, "DisplayFormula"],
-Cell[137746, 2942, 510, 15, 50, "Text"],
-Cell[138259, 2959, 806, 25, 46, "DisplayFormulaNumbered"],
-Cell[139068, 2986, 87, 1, 30, "Text"],
-Cell[139158, 2989, 589, 18, 46, "DisplayFormulaNumbered"],
-Cell[139750, 3009, 44, 1, 1, "PageBreak",
+Cell[136302, 2905, 162, 2, 38, "Subsubsection"],
+Cell[136467, 2909, 432, 7, 57, "Text"],
+Cell[136902, 2918, 137, 1, 34, "Text"],
+Cell[137042, 2921, 966, 31, 50, "DisplayFormula"],
+Cell[138011, 2954, 510, 15, 34, "Text"],
+Cell[138524, 2971, 806, 25, 52, "DisplayFormulaNumbered"],
+Cell[139333, 2998, 87, 1, 34, "Text"],
+Cell[139423, 3001, 589, 18, 52, "DisplayFormulaNumbered"],
+Cell[140015, 3021, 44, 1, 3, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[139819, 3014, 48, 0, 28, "Input"],
-Cell[139870, 3016, 58496, 1049, 251, "Output"]
+Cell[140084, 3026, 48, 0, 33, "Input"],
+Cell[140135, 3028, 58504, 1049, 198, "Output"]
 }, Open  ]],
-Cell[198381, 4068, 160, 3, 30, "Text"],
-Cell[198544, 4073, 44, 1, 1, "PageBreak",
+Cell[198654, 4080, 160, 3, 34, "Text"],
+Cell[198817, 4085, 44, 1, 3, "PageBreak",
  PageBreakBelow->True],
-Cell[198591, 4076, 387, 9, 50, "Text"],
+Cell[198864, 4088, 387, 9, 57, "Text"],
 Cell[CellGroupData[{
-Cell[199003, 4089, 59, 0, 28, "Input"],
-Cell[199065, 4091, 70988, 1329, 251, "Output"]
+Cell[199276, 4101, 59, 0, 33, "Input"],
+Cell[199338, 4103, 71004, 1329, 198, "Output"]
 }, Open  ]],
-Cell[270068, 5423, 370, 10, 50, "Text"]
+Cell[270357, 5435, 384, 10, 34, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[270487, 5439, 64, 1, 74, "SlideShowNavigationBar",
+Cell[270790, 5451, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[270576, 5444, 124, 1, 44, "Subsection"],
-Cell[270703, 5447, 484, 8, 87, "Text"],
-Cell[271190, 5457, 371, 10, 49, "Text"],
-Cell[271564, 5469, 122, 1, 28, "Item"],
-Cell[271689, 5472, 266, 7, 26, "DisplayFormulaNumbered"],
-Cell[271958, 5481, 105, 1, 28, "Item"],
-Cell[272066, 5484, 268, 7, 26, "DisplayFormulaNumbered"],
-Cell[272337, 5493, 266, 7, 26, "DisplayFormulaNumbered"],
-Cell[272606, 5502, 126, 1, 28, "Item"],
-Cell[272735, 5505, 315, 8, 26, "DisplayFormulaNumbered"]
+Cell[270879, 5456, 124, 1, 62, "Subsection"],
+Cell[271006, 5459, 533, 9, 80, "Text"],
+Cell[271542, 5470, 371, 10, 34, "Text"],
+Cell[271916, 5482, 174, 5, 34, "Item"],
+Cell[272093, 5489, 266, 7, 30, "DisplayFormulaNumbered"],
+Cell[272362, 5498, 146, 2, 34, "Item"],
+Cell[272511, 5502, 268, 7, 30, "DisplayFormulaNumbered"],
+Cell[272782, 5511, 266, 7, 30, "DisplayFormulaNumbered"],
+Cell[273051, 5520, 178, 5, 34, "Item"],
+Cell[273232, 5527, 315, 8, 30, "DisplayFormulaNumbered"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[273099, 5519, 64, 1, 74, "SlideShowNavigationBar",
+Cell[273596, 5541, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[273188, 5524, 129, 1, 35, "Subsubsection"],
+Cell[273685, 5546, 129, 1, 38, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[273342, 5529, 159, 2, 28, "Input"],
-Cell[273504, 5533, 43152, 847, 265, "Output"]
+Cell[273839, 5551, 159, 2, 33, "Input"],
+Cell[274001, 5555, 43166, 847, 208, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[316717, 6387, 64, 1, 74, "SlideShowNavigationBar",
+Cell[317228, 6409, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[316806, 6392, 280, 7, 36, "Subsubsection"],
+Cell[317317, 6414, 280, 7, 40, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[317111, 6403, 209, 3, 28, "Input"],
-Cell[317323, 6408, 42831, 843, 265, "Output"]
+Cell[317622, 6425, 209, 3, 33, "Input"],
+Cell[317834, 6430, 42845, 843, 208, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[360215, 7258, 64, 1, 74, "SlideShowNavigationBar",
+Cell[360740, 7280, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[360304, 7263, 182, 2, 35, "Subsubsection"],
+Cell[360829, 7285, 182, 2, 38, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[360511, 7269, 213, 3, 28, "Input"],
-Cell[360727, 7274, 42834, 843, 265, "Output"]
+Cell[361036, 7291, 213, 3, 33, "Input"],
+Cell[361252, 7296, 42848, 843, 208, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[403622, 8124, 64, 1, 74, "SlideShowNavigationBar",
+Cell[404161, 8146, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[403711, 8129, 135, 1, 64, "Section"],
-Cell[403849, 8132, 571, 16, 49, "Text"],
-Cell[404423, 8150, 247, 5, 25, "DisplayFormula"],
-Cell[404673, 8157, 334, 8, 49, "Text"]
+Cell[404250, 8151, 135, 1, 83, "Section"],
+Cell[404388, 8154, 571, 16, 57, "Text"],
+Cell[404962, 8172, 247, 5, 26, "DisplayFormula"],
+Cell[405212, 8179, 334, 8, 34, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[405056, 8171, 64, 1, 74, "SlideShowNavigationBar",
+Cell[405595, 8193, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[405145, 8176, 339, 11, 46, "Subsection"],
-Cell[405487, 8189, 183, 4, 30, "Text"],
-Cell[405673, 8195, 396, 9, 25, "DisplayFormula"]
+Cell[405684, 8198, 339, 11, 64, "Subsection"],
+Cell[406026, 8211, 183, 4, 34, "Text"],
+Cell[406212, 8217, 396, 9, 26, "DisplayFormula"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[406118, 8210, 64, 1, 74, "SlideShowNavigationBar",
+Cell[406657, 8232, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[406207, 8215, 178, 2, 35, "Subsubsection"],
-Cell[406388, 8219, 252, 8, 32, "Text"],
-Cell[406643, 8229, 620, 22, 47, "DisplayFormula"],
-Cell[407266, 8253, 243, 8, 32, "Text"],
-Cell[407512, 8263, 192, 2, 30, "Text"],
+Cell[406746, 8237, 178, 2, 38, "Subsubsection"],
+Cell[406927, 8241, 252, 8, 36, "Text"],
+Cell[407182, 8251, 620, 22, 54, "DisplayFormula"],
+Cell[407805, 8275, 243, 8, 36, "Text"],
+Cell[408051, 8285, 192, 2, 34, "Text"],
 Cell[CellGroupData[{
-Cell[407729, 8269, 219, 3, 28, "Item"],
-Cell[407951, 8274, 260, 3, 28, "Item"],
-Cell[408214, 8279, 341, 8, 28, "Item"]
+Cell[408268, 8291, 219, 3, 34, "Item"],
+Cell[408490, 8296, 260, 3, 34, "Item"],
+Cell[408753, 8301, 341, 8, 34, "Item"]
 }, Open  ]],
-Cell[408570, 8290, 44, 1, 1, "PageBreak",
- PageBreakBelow->True],
-Cell[CellGroupData[{
-Cell[408639, 8295, 162, 3, 28, "Input"],
-Cell[408804, 8300, 4092, 82, 263, "Output"]
-}, Open  ]],
-Cell[412911, 8385, 44, 1, 1, "PageBreak",
+Cell[409109, 8312, 44, 1, 3, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[412980, 8390, 160, 3, 28, "Input"],
-Cell[413143, 8395, 4098, 82, 263, "Output"]
-}, Open  ]]
-}, Open  ]]
+Cell[409178, 8317, 162, 3, 33, "Input"],
+Cell[409343, 8322, 4137, 83, 390, "Output"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[417302, 8484, 64, 1, 74, "SlideShowNavigationBar",
- CellTags->"SlideShowHeader"],
-Cell[CellGroupData[{
-Cell[417391, 8489, 273, 3, 35, "Subsubsection"],
-Cell[417667, 8494, 252, 8, 32, "Text"],
-Cell[417922, 8504, 1112, 35, 48, "DisplayFormula"],
-Cell[419037, 8541, 243, 8, 32, "Text"],
-Cell[419283, 8551, 368, 7, 30, "Text"],
-Cell[419654, 8560, 44, 1, 1, "PageBreak",
+Cell[413495, 8408, 44, 1, 3, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[419723, 8565, 201, 4, 28, "Input"],
-Cell[419927, 8571, 4288, 85, 263, "Output"]
+Cell[413564, 8413, 160, 3, 33, "Input"],
+Cell[413727, 8418, 4143, 83, 382, "Output"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]],
-Cell[424230, 8659, 44, 1, 1, "PageBreak",
+Cell[CellGroupData[{
+Cell[417931, 8508, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[418020, 8513, 273, 3, 38, "Subsubsection"],
+Cell[418296, 8518, 252, 8, 36, "Text"],
+Cell[418551, 8528, 1112, 35, 56, "DisplayFormula"],
+Cell[419666, 8565, 243, 8, 36, "Text"],
+Cell[419912, 8575, 368, 7, 34, "Text"],
+Cell[420283, 8584, 44, 1, 3, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[424299, 8664, 198, 4, 28, "Input"],
-Cell[424500, 8670, 4175, 83, 263, "Output"]
+Cell[420352, 8589, 201, 4, 33, "Input"],
+Cell[420556, 8595, 4333, 86, 373, "Output"]
 }, Open  ]],
-Cell[428690, 8756, 44, 1, 1, "PageBreak",
+Cell[424904, 8684, 44, 1, 3, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[428759, 8761, 106, 2, 28, "Input"],
-Cell[428868, 8765, 4393, 87, 263, "Output"]
-}, Open  ]]
-}, Open  ]]
+Cell[424973, 8689, 198, 4, 33, "Input"],
+Cell[425174, 8695, 4222, 84, 270, "Output"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[433322, 8859, 64, 1, 74, "SlideShowNavigationBar",
- CellTags->"SlideShowHeader"],
-Cell[CellGroupData[{
-Cell[433411, 8864, 319, 4, 35, "Subsubsection"],
-Cell[433733, 8870, 268, 8, 31, "Text"],
-Cell[434004, 8880, 807, 25, 44, "DisplayFormula"],
-Cell[434814, 8907, 261, 8, 31, "Text"],
-Cell[435078, 8917, 368, 7, 30, "Text"],
-Cell[435449, 8926, 44, 1, 1, "PageBreak",
+Cell[429411, 8782, 44, 1, 3, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[435518, 8931, 220, 5, 28, "Input",
- InitializationCell->True],
-Cell[435741, 8938, 6926, 129, 255, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[442704, 9072, 270, 5, 28, "Input",
- InitializationCell->True],
-Cell[442977, 9079, 8036, 147, 255, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[451050, 9231, 266, 5, 28, "Input",
- InitializationCell->True],
-Cell[451319, 9238, 8082, 147, 255, "Output"]
+Cell[429480, 8787, 106, 2, 33, "Input"],
+Cell[429589, 8791, 4393, 87, 205, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[459462, 9392, 64, 1, 74, "SlideShowNavigationBar",
+Cell[434043, 8885, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[459551, 9397, 136, 1, 35, "Subsubsection"],
-Cell[459690, 9400, 222, 5, 30, "Text"],
+Cell[434132, 8890, 319, 4, 38, "Subsubsection"],
+Cell[434454, 8896, 268, 8, 34, "Text"],
+Cell[434725, 8906, 807, 25, 49, "DisplayFormula"],
+Cell[435535, 8933, 261, 8, 34, "Text"],
+Cell[435799, 8943, 368, 7, 34, "Text"],
+Cell[436170, 8952, 44, 1, 3, "PageBreak",
+ PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[459937, 9409, 316, 10, 29, "Item"],
-Cell[460256, 9421, 304, 10, 29, "Item"]
+Cell[436239, 8957, 220, 5, 33, "Input",
+ InitializationCell->True],
+Cell[436462, 8964, 6976, 130, 200, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[443475, 9099, 270, 5, 33, "Input",
+ InitializationCell->True],
+Cell[443748, 9106, 8082, 147, 200, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[451867, 9258, 266, 5, 33, "Input",
+ InitializationCell->True],
+Cell[452136, 9265, 8132, 148, 200, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[460621, 9438, 64, 1, 74, "SlideShowNavigationBar",
+Cell[460329, 9420, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[460710, 9443, 255, 7, 46, "Subsection"],
-Cell[460968, 9452, 231, 5, 30, "Text"],
-Cell[461202, 9459, 384, 8, 25, "DisplayFormula"],
-Cell[461589, 9469, 442, 11, 45, "DisplayFormula"]
+Cell[460418, 9425, 136, 1, 38, "Subsubsection"],
+Cell[460557, 9428, 222, 5, 34, "Text"],
+Cell[CellGroupData[{
+Cell[460804, 9437, 316, 10, 34, "Item"],
+Cell[461123, 9449, 304, 10, 34, "Item"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[462080, 9486, 64, 1, 74, "SlideShowNavigationBar",
+Cell[461488, 9466, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[462169, 9491, 136, 1, 35, "Subsubsection"],
-Cell[462308, 9494, 129, 1, 30, "Text"],
-Cell[462440, 9497, 474, 14, 26, "DisplayFormulaNumbered"],
-Cell[462917, 9513, 132, 1, 30, "Text"],
-Cell[463052, 9516, 636, 19, 45, "DisplayFormula"],
-Cell[463691, 9537, 234, 8, 32, "Text"],
-Cell[CellGroupData[{
-Cell[463950, 9549, 778, 19, 28, "Input"],
-Cell[464731, 9570, 2360, 46, 366, "Output"]
-}, Open  ]]
+Cell[461577, 9471, 316, 8, 64, "Subsection"],
+Cell[461896, 9481, 231, 5, 34, "Text"],
+Cell[462130, 9488, 384, 8, 26, "DisplayFormula"],
+Cell[462517, 9498, 442, 11, 50, "DisplayFormula"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[467152, 9623, 64, 1, 74, "SlideShowNavigationBar",
+Cell[463008, 9515, 64, 1, 1, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[467241, 9628, 105, 1, 64, "Section"],
-Cell[467349, 9631, 587, 16, 46, "Input",
- InitializationCell->True],
-Cell[467939, 9649, 511, 14, 28, "Input",
- InitializationCell->True],
-Cell[468453, 9665, 265, 7, 32, "Input",
- InitializationCell->True],
-Cell[468721, 9674, 2718, 69, 199, "Input",
- InitializationCell->True],
-Cell[471442, 9745, 2717, 68, 199, "Input",
- InitializationCell->True],
-Cell[474162, 9815, 2415, 64, 199, "Input",
- InitializationCell->True],
-Cell[476580, 9881, 2517, 65, 199, "Input",
- InitializationCell->True],
-Cell[479100, 9948, 506, 13, 46, "Input",
- InitializationCell->True],
-Cell[479609, 9963, 1047, 29, 97, "Input",
- InitializationCell->True],
-Cell[480659, 9994, 650, 16, 46, "Input",
- InitializationCell->True],
-Cell[481312, 10012, 3313, 78, 267, "Input",
- InitializationCell->True],
-Cell[484628, 10092, 2650, 66, 216, "Input",
- InitializationCell->True],
-Cell[487281, 10160, 1664, 38, 131, "Input",
- InitializationCell->True],
-Cell[488948, 10200, 889, 24, 63, "Input",
- InitializationCell->True],
-Cell[489840, 10226, 3041, 72, 233, "Input",
- InitializationCell->True],
-Cell[492884, 10300, 3801, 85, 267, "Input",
- InitializationCell->True],
-Cell[496688, 10387, 1082, 29, 63, "Input",
- InitializationCell->True],
-Cell[497773, 10418, 3245, 87, 233, "Input",
- InitializationCell->True],
-Cell[501021, 10507, 3235, 85, 267, "Input",
- InitializationCell->True],
-Cell[504259, 10594, 358, 7, 46, "Input",
- InitializationCell->True],
-Cell[504620, 10603, 2873, 67, 201, "Input",
- InitializationCell->True],
-Cell[507496, 10672, 783, 19, 46, "Input",
- InitializationCell->True],
-Cell[508282, 10693, 8830, 208, 896, "Input",
- InitializationCell->True],
-Cell[517115, 10903, 478, 14, 28, "Input",
- InitializationCell->True],
-Cell[517596, 10919, 2039, 55, 165, "Input",
- InitializationCell->True],
-Cell[519638, 10976, 895, 25, 51, "Input",
- InitializationCell->True],
-Cell[520536, 11003, 2351, 60, 199, "Input",
- InitializationCell->True],
-Cell[522890, 11065, 597, 14, 45, "Input",
- InitializationCell->True],
-Cell[523490, 11081, 2265, 58, 165, "Input",
- InitializationCell->True],
+Cell[463097, 9520, 136, 1, 38, "Subsubsection"],
+Cell[463236, 9523, 129, 1, 34, "Text"],
+Cell[463368, 9526, 474, 14, 30, "DisplayFormulaNumbered"],
+Cell[463845, 9542, 132, 1, 34, "Text"],
+Cell[463980, 9545, 636, 19, 51, "DisplayFormula"],
+Cell[464619, 9566, 234, 8, 36, "Text"],
 Cell[CellGroupData[{
-Cell[525780, 11143, 1629, 46, 133, "Input"],
-Cell[527412, 11191, 427, 14, 28, "Output"]
+Cell[464878, 9578, 778, 19, 33, "Input"],
+Cell[465659, 9599, 2345, 46, 295, "Output"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[527876, 11210, 230, 6, 28, "Input"],
-Cell[528109, 11218, 219, 7, 47, "Output"]
-}, Open  ]],
-Cell[528343, 11228, 581, 16, 28, "Input",
+Cell[468065, 9652, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[468154, 9657, 105, 1, 83, "Section"],
+Cell[468262, 9660, 587, 16, 54, "Input",
  InitializationCell->True],
-Cell[528927, 11246, 2179, 58, 199, "Input",
+Cell[468852, 9678, 511, 14, 34, "Input",
+ InitializationCell->True],
+Cell[469366, 9694, 265, 7, 37, "Input",
+ InitializationCell->True],
+Cell[469634, 9703, 2718, 69, 186, "Input",
+ InitializationCell->True],
+Cell[472355, 9774, 2717, 68, 186, "Input",
+ InitializationCell->True],
+Cell[475075, 9844, 2415, 64, 205, "Input",
+ InitializationCell->True],
+Cell[477493, 9910, 2517, 65, 205, "Input",
+ InitializationCell->True],
+Cell[480013, 9977, 506, 13, 53, "Input",
+ InitializationCell->True],
+Cell[480522, 9992, 1047, 29, 74, "Input",
+ InitializationCell->True],
+Cell[481572, 10023, 650, 16, 34, "Input",
+ InitializationCell->True],
+Cell[482225, 10041, 3313, 78, 243, "Input",
+ InitializationCell->True],
+Cell[485541, 10121, 2650, 66, 205, "Input",
+ InitializationCell->True],
+Cell[488194, 10189, 1664, 38, 93, "Input",
+ InitializationCell->True],
+Cell[489861, 10229, 889, 24, 73, "Input",
+ InitializationCell->True],
+Cell[490753, 10255, 3041, 72, 205, "Input",
+ InitializationCell->True],
+Cell[493797, 10329, 3801, 85, 243, "Input",
+ InitializationCell->True],
+Cell[497601, 10416, 1082, 29, 53, "Input",
+ InitializationCell->True],
+Cell[498686, 10447, 3245, 87, 243, "Input",
+ InitializationCell->True],
+Cell[501934, 10536, 3235, 85, 243, "Input",
+ InitializationCell->True],
+Cell[505172, 10623, 358, 7, 33, "Input",
+ InitializationCell->True],
+Cell[505533, 10632, 2873, 67, 150, "Input",
+ InitializationCell->True],
+Cell[508409, 10701, 783, 19, 34, "Input",
+ InitializationCell->True],
+Cell[509195, 10722, 8830, 208, 949, "Input",
+ InitializationCell->True],
+Cell[518028, 10932, 478, 14, 34, "Input",
+ InitializationCell->True],
+Cell[518509, 10948, 2039, 55, 168, "Input",
+ InitializationCell->True],
+Cell[520551, 11005, 895, 25, 57, "Input",
+ InitializationCell->True],
+Cell[521449, 11032, 2351, 60, 187, "Input",
+ InitializationCell->True],
+Cell[523803, 11094, 597, 14, 52, "Input",
+ InitializationCell->True],
+Cell[524403, 11110, 2265, 58, 168, "Input",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[526693, 11172, 1629, 46, 122, "Input"],
+Cell[528325, 11220, 427, 14, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[528789, 11239, 230, 6, 33, "Input"],
+Cell[529022, 11247, 219, 7, 52, "Output"]
+}, Open  ]],
+Cell[529256, 11257, 581, 16, 34, "Input",
+ InitializationCell->True],
+Cell[529840, 11275, 2179, 58, 168, "Input",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
