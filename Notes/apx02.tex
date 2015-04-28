@@ -1,0 +1,91 @@
+\chapter{Some rules from calculus}
+
+\section{Derivatives}
+The following rules describe some of the more important derivatives.
+
+\begin{description}
+	\item[Derivative of a constant]
+		\begin{equation}
+			\frac{da}{dx} = 0
+		\end{equation}
+	
+	\item[Factoring out a constant]
+		\begin{equation}
+			\frac{d\left(a f(x)\right)}{dx} = a \frac{d f(x)}{dx}
+		\end{equation}
+		
+	\item[Linearity property]
+		\begin{equation}
+			\frac{d\left( f(x) + g(x) \right)}{dx} = \frac{df(x)}{dx} + \frac{dg(x)}{dx}
+		\end{equation}
+		
+	\item[Linear functions]
+		\begin{equation}
+			\frac{d(ax)}{dx} = a
+		\end{equation}
+		
+	\item[Polynomial functions]
+		\begin{equation}
+			\frac{dx^a}{dx} = a x^{a-1}
+		\end{equation}
+		
+	\item[Exponential functions]
+		\begin{equation}
+			\frac{d\left( e^{f(x)} \right)}{dx} = e^{f(x)} \frac{df(x)}{dx}
+		\end{equation}
+		
+	\item[Power functions I]
+		\begin{equation}
+			\frac{d\left( a^{f(x)} \right)}{dx} = a^{f(x)} \frac{d f(x)}{dx} \ln(a)
+		\end{equation}
+		
+	\item[Power functions II]
+		\begin{equation}
+			\frac{d\left( f(x)^a \right)}{dx} = a f(x)^{a-1} \frac{df}{dx}
+		\end{equation}
+		
+	\item[Natural log functions]
+		\begin{equation}
+			\frac{d\left( \ln\left( f(x) \right) \right)}{dx} = \frac{1}{f(x)} \frac{df(x)}{dx}
+		\end{equation}
+	
+	\item[Log functions in base $b$]
+		\begin{equation}
+			\frac{d\left( \log_{b}\left( f(x) \right) \right)}{dx} = \frac{1}{\ln(b)\, f(x)} \frac{df(x)}{dx}
+		\end{equation}
+	
+	\item[Sine functions]
+		\begin{equation}
+			\frac{d \left( \sin \left( f(x) \right) \right)}{dx} = \cos \left( f(x) \right) \frac{d f(x)}{dx}
+		\end{equation}
+		
+	\item[Cosine functions]
+		\begin{equation}
+			\frac{d \left( \cos \left( f(x) \right) \right)}{dx} = -\sin \left( f(x) \right) \frac{d f(x)}{dx}
+		\end{equation}
+		
+	\item[Product rule]
+		\begin{equation}
+			\frac{d\left( f(x)\, g(x) \right)}{dx} = \frac{df(x)}{dx} g(x) + f(x) \frac{dg(x)}{dx}
+		\end{equation}
+		
+	\item[Quotient rule]
+		\begin{equation}
+			\frac{d \left( \frac{f(x)}{g(x)} \right)}{dx} = \frac{\frac{df(x)}{dx} g(x) - f(x) \frac{dg(x)}{dx}}{g(x)^2}
+		\end{equation}
+		
+	\item[Chain rule with 1 variable]
+		\begin{equation}
+			\frac{d \left( f\left( x(t) \right) \right)}{dt} = \frac{df(x)}{dx} \frac{dx(t)}{dt}
+		\end{equation}
+		
+	\item[Chain rule with 2 variables]
+		\begin{equation}
+			\frac{d \left( f\left( x(t), y(t) \right) \right)}{dt} = \frac{\partial f(x)}{\partial x} \frac{dx(t)}{dt} + \frac{\partial f(y)}{\partial y} \frac{dy}{dt}
+		\end{equation}
+		
+\end{description}
+
+\section{Integrals}
+
+To come.
