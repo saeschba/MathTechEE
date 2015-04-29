@@ -1,0 +1,1796 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     52841,       1787]
+NotebookOptionsPosition[     41835,       1436]
+NotebookOutlinePosition[     44522,       1509]
+CellTagsIndexPosition[     44443,       1504]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ail", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.6393056018745813`*^9, 3.639305602000106*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.63888811708808*^9}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.636114599213521*^9}],
+
+Cell["Mathematical Techniques in Evolution and Ecology", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}},
+ TextAlignment->Center],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Equilibria and stability analysis \[Dash]
+One-variable models\
+\>", "Title",
+ CellChangeTimes->{
+  3.559948400406288*^9, {3.636114041492673*^9, 3.636114071360457*^9}, 
+   3.6361143314213037`*^9, 3.636114611686428*^9, {3.6361146855231953`*^9, 
+   3.636114706235161*^9}, {3.637404947653048*^9, 3.6374049502815857`*^9}, {
+   3.63740501133258*^9, 3.637405025808597*^9}, {3.637460441988028*^9, 
+   3.637460444607782*^9}, {3.6379238923677893`*^9, 3.637923895631575*^9}, {
+   3.638582094029604*^9, 3.6385821126359873`*^9}, {3.63927216074156*^9, 
+   3.639272189645816*^9}},
+ TextAlignment->Center],
+
+Cell["Based on Chapter 5 in Otto and Day (2007)", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}, {
+  3.636114746487883*^9, 3.636114771516698*^9}, {3.636857110980406*^9, 
+  3.636857112831702*^9}, {3.637405036623555*^9, 3.637405036943508*^9}, {
+  3.637923885489958*^9, 3.637923887351268*^9}, {3.638194269997259*^9, 
+  3.638194274665896*^9}, {3.6385821193506002`*^9, 3.638582121525537*^9}, {
+  3.639272193592238*^9, 3.6392721936778107`*^9}},
+ TextAlignment->Center],
+
+Cell["", "Subsubtitle",
+ CellChangeTimes->{
+  3.636114639569048*^9, {3.6361147219781303`*^9, 3.636114742854782*^9}}],
+
+Cell["\<\
+Spring Quarter 2015
+Simon Aeschbacher
+saeschbacher@ucdavis.edu\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.636114263144814*^9, 3.636114285607094*^9}},
+ TextAlignment->Center]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Outline", "Section",
+ CellChangeTimes->{{3.636114858795425*^9, 3.636114888142228*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Goals", "Subsection",
+ CellChangeTimes->{{3.636114896869628*^9, 3.6361149212213917`*^9}, 
+   3.6379239710010223`*^9, 3.639272199141136*^9}],
+
+Cell[CellGroupData[{
+
+Cell["To determine the equilibria of a model with one variable", "Item",
+ CellChangeTimes->{{3.636114980168631*^9, 3.636114992282305*^9}, {
+  3.6374050626541033`*^9, 3.637405075966322*^9}, {3.637923939779592*^9, 
+  3.637923965526207*^9}, {3.637924054420866*^9, 3.637924080346685*^9}, {
+  3.638582828927574*^9, 3.638582848208764*^9}, {3.639272203702836*^9, 
+  3.639272212898542*^9}}],
+
+Cell["To determine the stability of equilibria", "Item",
+ CellChangeTimes->{{3.636114980168631*^9, 3.636114992282305*^9}, {
+  3.6374050626541033`*^9, 3.637405075966322*^9}, {3.637923939779592*^9, 
+  3.637923965526207*^9}, {3.637924054420866*^9, 3.637924080346685*^9}, {
+  3.638582828927574*^9, 3.638582848208764*^9}, {3.639272203702836*^9, 
+  3.639272220858124*^9}}],
+
+Cell["To find approximate values of an equilibrum", "Item",
+ CellChangeTimes->{{3.636114980168631*^9, 3.636114992282305*^9}, {
+  3.6374050626541033`*^9, 3.637405075966322*^9}, {3.637923939779592*^9, 
+  3.637923965526207*^9}, {3.637924054420866*^9, 3.637924080346685*^9}, {
+  3.638582828927574*^9, 3.638582848208764*^9}, {3.639272203702836*^9, 
+  3.63927223742344*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Concepts", "Subsection",
+ CellChangeTimes->{{3.6361149300211782`*^9, 3.636114933406128*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Equilibrium condition", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.6361150401357803`*^9}, {
+  3.637406039565957*^9, 3.637406043570958*^9}, {3.637923982896369*^9, 
+  3.637924011353758*^9}, {3.637924125990636*^9, 3.637924167285763*^9}, {
+  3.638582856072174*^9, 3.638582858157474*^9}, {3.639272243655534*^9, 
+  3.639272246599311*^9}}],
+
+Cell["Local stability analysis", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.6361150401357803`*^9}, {
+  3.637406039565957*^9, 3.637406043570958*^9}, {3.637923982896369*^9, 
+  3.637924011353758*^9}, {3.637924125990636*^9, 3.637924191499604*^9}, {
+  3.6381828849262133`*^9, 3.6381829033161697`*^9}, {3.638582890663746*^9, 
+  3.638582893263605*^9}, {3.639272263080168*^9, 3.639272266296073*^9}}],
+
+Cell["Perturbation analysis", "Item",
+ CellChangeTimes->{{3.636115030088249*^9, 3.6361150401357803`*^9}, {
+   3.637406039565957*^9, 3.637406043570958*^9}, {3.637923982896369*^9, 
+   3.637924011353758*^9}, 3.637924125990636*^9, {3.638582897023801*^9, 
+   3.6385829032638683`*^9}, {3.6392722698483953`*^9, 3.639272273648135*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Motivation and definitions", "Section",
+ CellChangeTimes->{{3.63611520840694*^9, 3.6361152099721193`*^9}, {
+  3.637406164710917*^9, 3.6374061948287487`*^9}, {3.63792421452361*^9, 
+  3.6379242158563128`*^9}, {3.639272322095693*^9, 3.639272324452774*^9}, {
+  3.639305654054612*^9, 3.63930565920278*^9}}],
+
+Cell["\<\
+Finding the equilibria of a dynamical system is a very important step in \
+analysing models. An equilibrium is a point at which a variable remains \
+unchanged over time. In practice, this often tells us where the system of \
+interest will end up. Equilibria can be stable or unstable. Stable equilibria \
+are generally of greater interest.\
+\>", "Text",
+ CellChangeTimes->{{3.6393056610521517`*^9, 3.639305735259503*^9}, {
+  3.6393061522064743`*^9, 3.6393062035631742`*^9}, {3.639306266981658*^9, 
+  3.639306267421142*^9}}],
+
+Cell["", "Text"],
+
+Cell[CellGroupData[{
+
+Cell["Definition 5.1: Equilibrium", "Subsection",
+ CellChangeTimes->{{3.639272365045849*^9, 3.639272378748049*^9}}],
+
+Cell[TextData[{
+ "A system at ",
+ StyleBox["equilibrium",
+  FontWeight->"Bold"],
+ " (plural: equilibria) does not change over time. A particular value of a \
+variable is called an equilibrium value if, when the variable is started at \
+this value, the variable never changes."
+}], "Text",
+ CellChangeTimes->{
+  3.639272383492154*^9, {3.639306214756315*^9, 3.6393063046266813`*^9}, {
+   3.639306681167859*^9, 3.639306686486232*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "At an equilibrium in a discrete-time model, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{"n", "(", "t", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " holds or, equivalently, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox[
+     RowBox[{"\[CapitalDelta]", "n"}]], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"n", "(", 
+       RowBox[{"t", "+", "1"}], ")"}], "-", 
+      RowBox[{"n", "(", "t", ")"}]}], "=", "0"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for each variable"
+}], "Item",
+ CellChangeTimes->{{3.639306310915333*^9, 3.639306312027616*^9}, {
+   3.639306350916153*^9, 3.63930645003753*^9}, {3.6393065041413317`*^9, 
+   3.639306506277467*^9}, 3.639306572379624*^9}],
+
+Cell[TextData[{
+ "At an equilibrium in a continuous-time model, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[DifferentialD]", "n"}], "/", 
+     RowBox[{"\[DifferentialD]", "t"}]}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " holds for each variable"
+}], "Item",
+ CellChangeTimes->{{3.639306310915333*^9, 3.639306312027616*^9}, {
+   3.639306350916153*^9, 3.639306510429749*^9}, 3.639306574475205*^9, {
+   3.639306926128605*^9, 3.639306926139833*^9}}],
+
+Cell[TextData[{
+ "Each of the three equations above is an ",
+ StyleBox["equilibrium condition",
+  FontWeight->"Bold"],
+ ", i.e. a (set of) equation(s) that is (are) satisfied by the equilibria of \
+a model"
+}], "Item",
+ CellChangeTimes->{{3.639306310915333*^9, 3.639306312027616*^9}, {
+   3.639306350916153*^9, 3.639306510429749*^9}, 3.639306574475205*^9, {
+   3.639306926128605*^9, 3.639307027957185*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["Remark:",
+  FontWeight->"Bold"],
+ " Whether, in a discrete-time model, you use the recursion or difference \
+equation to determine the equilibria, does not matter. You should obtain the \
+same answer. However, it is not generally true that the equilibria of a \
+continuous-time differential equation are the same as the equilibria of the \
+underlying discrete-time recursion of difference equation! This is because \
+the two types of models make different assumptions about the possibility of \
+concurrent events (see previous units)."
+}], "Text",
+ CellChangeTimes->{{3.6393079048098927`*^9, 3.6393080110113087`*^9}, {
+  3.6393094676316433`*^9, 3.639309531759115*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Definition 5.2: Stability", "Subsection",
+ CellChangeTimes->{{3.639272386260132*^9, 3.639272392964415*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "An equilibrium is ",
+ StyleBox["locally stable",
+  FontWeight->"Bold"],
+ " if a system ",
+ StyleBox["near",
+  FontSlant->"Italic"],
+ " the equilibrium approaches it (the equilibrium is then ",
+ StyleBox["locally attracting",
+  FontWeight->"Bold"],
+ ")"
+}], "Item",
+ CellChangeTimes->{{3.6393065293845053`*^9, 3.6393065654218817`*^9}}],
+
+Cell[TextData[{
+ "An equilibrium is ",
+ StyleBox["globally stable",
+  FontWeight->"Bold"],
+ " if a system approaches the equilibrium ",
+ StyleBox["regardless of its initial position",
+  FontSlant->"Italic"],
+ " (the equilibrium is then ",
+ StyleBox["globally attracting",
+  FontWeight->"Bold"],
+ ")"
+}], "Item",
+ CellChangeTimes->{{3.6393065293845053`*^9, 3.63930661216645*^9}}],
+
+Cell[TextData[{
+ "An equilibrium is ",
+ StyleBox["unstable",
+  FontWeight->"Bold"],
+ " if a system near the equilibrium moves away from it (the equilibrium is \
+said to be ",
+ StyleBox["repelling",
+  FontWeight->"Bold"],
+ ")"
+}], "Item",
+ CellChangeTimes->{{3.6393065293845053`*^9, 3.639306639293455*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Finding an equilibrium", "Section",
+ CellChangeTimes->{{3.636194857130598*^9, 3.6361948719635468`*^9}, {
+  3.637406429150359*^9, 3.637406433899312*^9}, {3.637925052399332*^9, 
+  3.637925055463113*^9}, {3.638583690934647*^9, 3.638583696076655*^9}, {
+  3.6392723418857803`*^9, 3.6392723457153797`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "For notation, we will place a hat ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", "^", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " over a variable to represent an equilibrium value of that variable, e.g. \
+",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for an equilibrium value of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Item",
+ CellChangeTimes->{{3.639306745957181*^9, 3.639306818515892*^9}, {
+  3.6393068773902063`*^9, 3.639306905272996*^9}}],
+
+Cell["\<\
+While the concept behind finding equilibria is straightforward, in practice \
+it can be difficult or impossible to find them!\
+\>", "Item",
+ CellChangeTimes->{{3.639306745957181*^9, 3.639306818515892*^9}, {
+  3.6393068773902063`*^9, 3.639306905262841*^9}, {3.639307087476644*^9, 
+  3.639307141801454*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Recipe 5.1: Finding an equilibrium ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Subsection",
+ CellChangeTimes->{{3.6392724161296577`*^9, 3.639272429113998*^9}, {
+  3.63930715690812*^9, 3.639307160402547*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Obtain the equilibrium condition from the dynamical equation:\
+\>", "ItemNumbered",
+ CellChangeTimes->{{3.639307169210411*^9, 3.6393071797941732`*^9}}],
+
+Cell[TextData[{
+ "In a discrete-time recursion equation, replace ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", 
+    RowBox[{"t", "+", "1"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " with ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". For example, the exponential growth model ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{"R", " ", 
+     RowBox[{"n", "(", "t", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " becomes ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["n", "^"], "=", 
+    RowBox[{"R", " ", 
+     OverscriptBox["n", "^"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.639307185682397*^9, 3.639307286203185*^9}}],
+
+Cell[TextData[{
+ "In a discrete-time difference equation, replace ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", 
+    RowBox[{"t", "+", "1"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " with ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and set ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox[
+     RowBox[{"\[CapitalDelta]", "n"}]], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". For example, the exponential growth model ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox[
+     RowBox[{"\[CapitalDelta]", "n"}]], "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"R", "-", "1"}], ")"}], 
+     RowBox[{"n", "(", "t", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " becomes ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0", "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"R", "-", "1"}], ")"}], 
+     OverscriptBox["n", "^"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.639307185682397*^9, 3.639307397007813*^9}}],
+
+Cell[TextData[{
+ "In a continuous-time differential equation, replace ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " with ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and set  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[DifferentialD]", "n"}], "/", 
+     RowBox[{"\[DifferentialD]", "t"}]}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". For example, the exponential growth model ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[DifferentialD]", "n"}], "/", 
+     RowBox[{"\[DifferentialD]", "t"}]}], "=", 
+    RowBox[{"r", " ", 
+     RowBox[{"n", "(", "t", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " becomes ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0", "=", 
+    RowBox[{"r", 
+     OverscriptBox["n", "^"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.639307185682397*^9, 3.6393074765647078`*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Solve the equilibrium condition for ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". When ",
+ StyleBox["cancelling a term",
+  FontSlant->"Italic"],
+ " from both sides of an equilibrium condition, check if that term could \
+equal zero for some value of ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". If so, that value of ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is an equilibrium of the model."
+}], "ItemNumbered",
+ CellChangeTimes->{{3.639307491071931*^9, 3.6393075696470337`*^9}}],
+
+Cell[TextData[{
+ "Check each equilibrium by plugging it back into the original dynamical \
+equation and confirming that the system remains constant. Also check that \
+each equilibrium is ",
+ StyleBox["biologically valid",
+  FontSlant->"Italic"],
+ " (e.g. non-negative for counts, or between 0 and 1 for probabilities)."
+}], "ItemNumbered",
+ CellChangeTimes->{{3.639307491071931*^9, 3.639307492901598*^9}, {
+  3.639307585776825*^9, 3.639307664667468*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["Remark:",
+  FontWeight->"Bold"],
+ " Remember in step 2 that we are solving for values of the ",
+ StyleBox["variables",
+  FontSlant->"Italic"],
+ " that satisfy the equilibrium condition, not values of the ",
+ StyleBox["parameters",
+  FontSlant->"Italic"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.639307676005231*^9, 3.639307721831835*^9}},
+ FontWeight->"Plain"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Logistic model of population growth", "Subsection",
+ CellChangeTimes->{{3.639272448860509*^9, 3.639272450874194*^9}, {
+  3.6392725272452593`*^9, 3.6392725321571207`*^9}}],
+
+Cell["Starting from the recursion equation", "Text",
+ CellChangeTimes->{{3.639309278801384*^9, 3.639309288645144*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"n", " ", 
+      RowBox[{"(", 
+       RowBox[{"t", "+", "1"}], ")"}]}], "=", 
+     RowBox[{
+      RowBox[{"n", " ", "r", " ", "t", " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         FractionBox[
+          RowBox[{"n", " ", "t"}], "K"]}], ")"}]}], "+", 
+      RowBox[{"n", " ", "t"}]}]}], ","}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.63930929877497*^9, 3.6393093207998257`*^9}, {
+  3.639309356983395*^9, 3.639309361104203*^9}}],
+
+Cell["\<\
+let us construct the equilibrium condition and determine the equilibria.\
+\>", "Text",
+ CellChangeTimes->{{3.6393093232775908`*^9, 3.63930934227007*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Back to our squirrels-on-campus example", "Subsection",
+ CellChangeTimes->{{3.639272448860509*^9, 3.639272450874194*^9}, {
+  3.6392725272452593`*^9, 3.6392725321571207`*^9}, {3.639308086145763*^9, 
+  3.639308098551352*^9}}],
+
+Cell["\<\
+Consider one of the toy models introduced in the first unit, in which we \
+tracked the number of squirrels on campus, given that births, deaths through \
+cyclists, and immigration from the Arboretum occur. For the case where \
+immigration is the last event per time unit, we obtained the following \
+dynamical equations:\
+\>", "Text",
+ CellChangeTimes->{{3.63930958433703*^9, 3.639309736375784*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"n", " ", 
+     RowBox[{"(", 
+      RowBox[{"t", "+", "1"}], ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"b", "+", "1"}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "-", "d"}], ")"}], " ", 
+      RowBox[{"n", "(", "t", ")"}]}], "+", "m"}]}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.639309670808051*^9, 3.6393097046010017`*^9}, {
+  3.6393097519097757`*^9, 3.639309753469448*^9}, {3.639309783539692*^9, 
+  3.639309788281999*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    StyleBox[
+     RowBox[{"\[CapitalDelta]", "n"}]], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "d"}], " ", 
+      RowBox[{"n", "(", "t", ")"}]}], "+", 
+     RowBox[{
+      RowBox[{"b", "(", 
+       RowBox[{"1", "-", "d"}], ")"}], 
+      RowBox[{"n", "(", "t", ")"}]}], "+", "m"}]}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.639309670808051*^9, 3.6393097046010017`*^9}, {
+  3.6393097519097757`*^9, 3.639309766673477*^9}, {3.639309797642804*^9, 
+  3.639309815333672*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[DifferentialD]", "n"}], 
+     RowBox[{"\[DifferentialD]", "t"}]], "=", 
+    RowBox[{
+     RowBox[{"b", " ", 
+      RowBox[{"n", "(", "t", ")"}]}], "-", 
+     RowBox[{"d", " ", 
+      RowBox[{"n", "(", "t", ")"}]}], "+", 
+     RowBox[{"m", "."}]}]}]}], TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.639309670808051*^9, 3.6393097046010017`*^9}, {
+  3.6393097519097757`*^9, 3.639309766673477*^9}, {3.639309797642804*^9, 
+  3.639309866515925*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Exercise:", "Subsubsection",
+ CellChangeTimes->{{3.639310079303783*^9, 3.6393100809118433`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Write down the corresponding equilibrium conditions. These are implicit \
+solutions for ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". To obtain explicit solutions, solve the equilibrium conditions for ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.639309907894927*^9, 3.639309949905611*^9}, {
+  3.639309997889762*^9, 3.639310011594695*^9}, {3.639310088839651*^9, 
+  3.639310088854031*^9}}],
+
+Cell[TextData[{
+ "How do the parameters ",
+ Cell[BoxData[
+  FormBox["b", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox["d", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and ",
+ Cell[BoxData[
+  FormBox["m", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " affect the number of squirrels at equilibrium?"
+}], "Item",
+ CellChangeTimes->{{3.639309907894927*^9, 3.639309949905611*^9}, {
+  3.639309997889762*^9, 3.639310011594695*^9}, {3.639310088839651*^9, 
+  3.639310122827333*^9}}],
+
+Cell["\<\
+Compare the discrete- with the continuous-time answer. What is different and \
+why? In which model do you predict a lower equilibrium level of squirrels on \
+campus?\
+\>", "Item",
+ CellChangeTimes->{{3.639309907894927*^9, 3.639309949905611*^9}, {
+  3.639309997889762*^9, 3.639310011594695*^9}, {3.639310088839651*^9, 
+  3.639310196827639*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Haploid model of natural selection", "Subsection",
+ CellChangeTimes->{{3.639272638895667*^9, 3.6392726427649*^9}, {
+  3.6392738996689997`*^9, 3.639273900620701*^9}}],
+
+Cell["\<\
+Recall the general version of the discrete-time recursion equation,\
+\>", "Text",
+ CellChangeTimes->{{3.639310722384774*^9, 3.639310738460183*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"p", " ", 
+     RowBox[{"(", 
+      RowBox[{"t", "+", "1"}], ")"}]}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SubscriptBox["W", "A"], 
+       RowBox[{"p", "(", "t", ")"}]}], 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["W", "A"], 
+        RowBox[{"p", "(", "t", ")"}]}], "+", 
+       RowBox[{
+        SubscriptBox["W", "a"], "(", 
+        RowBox[{"1", "-", 
+         RowBox[{"p", "(", "t", ")"}]}], ")"}]}]], "."}]}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.63930929877497*^9, 3.6393093207998257`*^9}, {
+  3.639309356983395*^9, 3.639309361104203*^9}, {3.639310745369378*^9, 
+  3.639310782142582*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Exercise:", "Subsubsection",
+ CellChangeTimes->{{3.63931078997314*^9, 3.639310795540721*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Write down the equilibrium condition", "Item",
+ CellChangeTimes->{{3.639310803949439*^9, 3.639310810664104*^9}}],
+
+Cell[TextData[{
+ "By solving for ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["p", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", show that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["p", "^"], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["p", "^"], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " are the two equilibria"
+}], "Item",
+ CellChangeTimes->{{3.639310803949439*^9, 3.639310810645233*^9}, {
+  3.639310870742283*^9, 3.6393109070630703`*^9}}],
+
+Cell[TextData[{
+ "Identify a special case of ",
+ StyleBox["parameter",
+  FontSlant->"Italic"],
+ " values (i.e. fitnesses) that also satisfies the equilibrium condition"
+}], "Item",
+ CellChangeTimes->{{3.639310803949439*^9, 3.639310810645233*^9}, {
+  3.639310870742283*^9, 3.6393109719589453`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Diploid model of natural selection", "Subsection",
+ CellChangeTimes->{{3.639272638895667*^9, 3.639272653781341*^9}, {
+  3.639273896580901*^9, 3.6392738973717947`*^9}}],
+
+Cell["\<\
+Recall the general form of the discrete-time recursion equation,\
+\>", "Text",
+ CellChangeTimes->{{3.639311003585959*^9, 3.639311030177874*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"p", " ", 
+     RowBox[{"(", 
+      RowBox[{"t", "+", "1"}], ")"}]}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"p", "(", "t", ")"}], "2"], 
+        SubscriptBox["W", 
+         StyleBox["AA",
+          FontSlant->"Italic"]]}], "+", 
+       RowBox[{
+        RowBox[{"p", "(", "t", ")"}], 
+        RowBox[{"q", "(", "t", ")"}], 
+        SubscriptBox["W", 
+         StyleBox["Aa",
+          FontSlant->"Italic"]]}]}], 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"p", "(", "t", ")"}], "2"], 
+        SubscriptBox["W", 
+         StyleBox["AA",
+          FontSlant->"Italic"]]}], "+", 
+       RowBox[{"2", 
+        RowBox[{"p", "(", "t", ")"}], 
+        RowBox[{"q", "(", "t", ")"}], 
+        SubscriptBox["W", 
+         StyleBox["Aa",
+          FontSlant->"Italic"]]}], "+", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"q", "(", "t", ")"}], "2"], 
+        SubscriptBox["W", 
+         StyleBox["aa",
+          FontSlant->"Italic"]]}]}]], "."}]}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.63930929877497*^9, 3.6393093207998257`*^9}, {
+  3.639309356983395*^9, 3.639309361104203*^9}, {3.639310745369378*^9, 
+  3.639310782142582*^9}, {3.6393110513349857`*^9, 3.639311124257414*^9}, {
+  3.63931128227966*^9, 3.639311323620232*^9}}],
+
+Cell[TextData[{
+ "Note that before proceeding, we have to express ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"q", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", "-", 
+    RowBox[{"p", "(", "t", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " here. It would be wrong to leave ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"q", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in there and treat it as constant; it is a function of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"p", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "! The equilibrium condition therefore becomes"
+}], "Text",
+ CellChangeTimes->{{3.639311129062819*^9, 3.639311169223948*^9}, {
+  3.63931123786976*^9, 3.639311260988373*^9}, {3.6393112926697397`*^9, 
+  3.639311308462287*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    OverscriptBox["p", "^"], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         OverscriptBox["p", "^"], "2"], 
+        SubscriptBox["W", 
+         StyleBox["AA",
+          FontSlant->"Italic"]]}], "+", 
+       RowBox[{
+        RowBox[{
+         OverscriptBox["p", "^"], "(", 
+         RowBox[{"1", "-", 
+          OverscriptBox["p", "^"]}], ")"}], 
+        SubscriptBox["W", 
+         StyleBox["Aa",
+          FontSlant->"Italic"]]}]}], 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         OverscriptBox["p", "^"], "2"], 
+        SubscriptBox["W", 
+         StyleBox["AA",
+          FontSlant->"Italic"]]}], "+", 
+       RowBox[{"2", 
+        RowBox[{
+         OverscriptBox["p", "^"], "(", 
+         RowBox[{"1", "-", 
+          OverscriptBox["p", "^"]}], ")"}], 
+        SubscriptBox["W", 
+         StyleBox["Aa",
+          FontSlant->"Italic"]]}], "+", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "-", 
+           OverscriptBox["p", "^"]}], ")"}], "2"], 
+        SubscriptBox["W", 
+         StyleBox["aa",
+          FontSlant->"Italic"]]}]}]], "."}]}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.63930929877497*^9, 3.6393093207998257`*^9}, {
+  3.639309356983395*^9, 3.639309361104203*^9}, {3.639310745369378*^9, 
+  3.639310782142582*^9}, {3.6393110513349857`*^9, 3.639311124257414*^9}, {
+  3.639311271831658*^9, 3.6393112765422373`*^9}, {3.6393113276896143`*^9, 
+  3.639311359415402*^9}}],
+
+Cell[TextData[{
+ "Solving for ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["p", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " looks a bit tricky. Let us do this using a trick that often helps: \
+Factoring the equation, focussing on one parameter at a time, simplifying all \
+therms involving that parameter."
+}], "Text",
+ CellChangeTimes->{{3.6393113947016687`*^9, 3.639311502390712*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[TextData[{
+ "Having found the equilibria, let us check that ech equilibrium is ",
+ StyleBox["biologically valid",
+  FontSlant->"Italic"],
+ ". Specifically, check what the equilibria are for"
+}], "Text",
+ CellChangeTimes->{{3.6393116215739403`*^9, 3.63931171294158*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", 
+     StyleBox["AA",
+      FontSlant->"Italic"]], "=", "0.6"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", "Aa"], "=", "0.2"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", 
+     StyleBox["aa",
+      FontSlant->"Italic"]], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and"
+}], "Item",
+ CellChangeTimes->{{3.63931172158143*^9, 3.6393117521559772`*^9}, {
+  3.639312106926374*^9, 3.639312111288821*^9}, {3.6393121822100163`*^9, 
+  3.639312184685623*^9}}],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", 
+     StyleBox["AA",
+      FontSlant->"Italic"]], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", "Aa"], "=", "0.95"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", 
+     StyleBox["aa",
+      FontSlant->"Italic"]], "=", "0.8"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.63931172158143*^9, 3.6393117521559772`*^9}, {
+  3.639312106926374*^9, 3.63931218654952*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Under which conditions will there be a so-called ",
+ StyleBox["internal equilibrium",
+  FontWeight->"Bold"],
+ ", i.e. one for which ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0", "<", 
+    OverscriptBox["p", "^"], "<", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is satisfied?"
+}], "Text",
+ CellChangeTimes->{{3.639312680469936*^9, 3.639312777186665*^9}, {
+  3.639312826508492*^9, 3.63931287128146*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Rule 5.1: Simplifying inequalities", "Subsection",
+ CellChangeTimes->{{3.639272681993997*^9, 3.6392726909351797`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "As a note of caution, when ",
+ StyleBox["multiplying",
+  FontSlant->"Italic"],
+ " ",
+ StyleBox["both sides ",
+  FontSlant->"Italic"],
+ "of an inequality ",
+ StyleBox["by a negative factor",
+  FontSlant->"Italic"],
+ ", one must ",
+ StyleBox["reverse the inequality",
+  FontSlant->"Italic"],
+ ". This, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", ">", 
+    RowBox[{"b", "/", "c"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is equivalent to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"a", " ", "c"}], ">", "b"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " when ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is positive, but is equivalent to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"a", " ", "c"}], "<", "b"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " when ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is negative. If the sign of ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is not known, it is safest to avoid multiplication by ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "!"
+}], "Item",
+ CellChangeTimes->{{3.639312883957149*^9, 3.6393129675468082`*^9}, {
+  3.6393130045591593`*^9, 3.6393130045696707`*^9}}],
+
+Cell[TextData[{
+ StyleBox["Substracting terms from both sides",
+  FontSlant->"Italic"],
+ " of an inequality, however, ",
+ StyleBox["never reverses the condition",
+  FontSlant->"Italic"],
+ ". Thus ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", ">", 
+    RowBox[{"b", "/", "c"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is equivalent to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"a", "-", 
+     RowBox[{"b", "/", "c"}]}], ">", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", regardless of the signs of these terms."
+}], "Item",
+ CellChangeTimes->{{3.639312883957149*^9, 3.6393129675468082`*^9}, {
+  3.6393130045591593`*^9, 3.639313064828061*^9}}],
+
+Cell[TextData[{
+ "Similarly, one can always ",
+ StyleBox["place terms over a common denominator without altering the \
+condition",
+  FontSlant->"Italic"],
+ ". Thus, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"a", "-", 
+     RowBox[{"b", "/", "c"}]}], ">", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " can be written as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"a", " ", "c"}], "-", "b"}], ")"}], "/", "c"}], ">", "0"}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.639312883957149*^9, 3.6393129675468082`*^9}, {
+  3.6393130045591593`*^9, 3.639313110122035*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["When equilibria cannot be found explicitly", "Subsection",
+ CellChangeTimes->{{3.639272695825974*^9, 3.639272766503434*^9}, {
+  3.639312422170583*^9, 3.639312431077982*^9}, {3.6393138747937603`*^9, 
+  3.6393138748930807`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Sometimes, it is not possible to solve the equilibrium condition, i.e. the \
+implicit solution for the equilibria cannot be turned into an explicit \
+solution. For an example, see the example of the so-called Ricker model with \
+migration in OD2007 (Subsection 5.2.3).\
+\>", "Item",
+ CellChangeTimes->{{3.6393132105316887`*^9, 3.6393133292894506`*^9}, {
+  3.639313385804414*^9, 3.6393133934927683`*^9}}],
+
+Cell[TextData[{
+ "In such cases, we can use ",
+ StyleBox["numerical methods",
+  FontSlant->"Italic"],
+ " (discussed in the previous unit) to solve for an equilibrium of interest."
+}], "Item",
+ CellChangeTimes->{{3.6393132105316887`*^9, 3.6393133292747717`*^9}, {
+  3.639313441300585*^9, 3.639313484904768*^9}}],
+
+Cell[TextData[{
+ "Alternatively, one can try to ",
+ StyleBox["find approximate values of the equilibria",
+  FontSlant->"Italic"],
+ ", as we will see later."
+}], "Item",
+ CellChangeTimes->{{3.6393132105316887`*^9, 3.6393133292747717`*^9}, {
+  3.639313441300585*^9, 3.639313531119475*^9}}],
+
+Cell["Equations that often cannot be solved explicitly are:", "Item",
+ CellChangeTimes->{{3.6393132105316887`*^9, 3.6393133292747717`*^9}, {
+  3.639313441300585*^9, 3.639313595054043*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Mixtures",
+  FontSlant->"Italic"],
+ " of functions like ",
+ StyleBox["exponentials",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["logarithms",
+  FontSlant->"Italic"],
+ ", or ",
+ StyleBox["trigonometric",
+  FontSlant->"Italic"],
+ " (circular) functions (e.g. sine, cosine) plus ",
+ StyleBox["polynomial",
+  FontSlant->"Italic"],
+ " functions. These belong to the category known as ",
+ StyleBox["transcendental equations",
+  FontWeight->"Bold"],
+ "."
+}], "Subitem",
+ CellChangeTimes->{{3.6393136006138906`*^9, 3.639313616563567*^9}, {
+  3.639313664059476*^9, 3.639313740561352*^9}}],
+
+Cell["\<\
+Even equilibrium conditions that are straightforward polynomial functions can \
+be impossible to solve if the order of the polynomial is greater than 4.\
+\>", "Subitem",
+ CellChangeTimes->{{3.6393136006138906`*^9, 3.639313616563567*^9}, {
+  3.639313664059476*^9, 3.639313732512432*^9}, {3.63931376575666*^9, 
+  3.639313819313304*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Determining stability", "Section",
+ CellChangeTimes->{{3.6392728744876328`*^9, 3.6392728773166513`*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Recipe 5.3: Performing a local stability analysis", "Subsection",
+ CellChangeTimes->{{3.639272925598111*^9, 3.6392729392277403`*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Logistic model of population growth", "Subsection",
+ CellChangeTimes->{{3.639272884471665*^9, 3.639272888981061*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Diploid model of natural selection", "Subsection",
+ CellChangeTimes->{{3.6392738860472603`*^9, 3.639273891804714*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Approximations", "Section",
+ CellChangeTimes->{{3.6392742541628513`*^9, 3.639274255767829*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Approximating equilibria (perturbation analysis)", "Subsection",
+ CellChangeTimes->{{3.6392742648344927`*^9, 3.639274278116947*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Theoretical basis (summary of Box 5.1 in OD2007)", "Subsubsection",
+ CellChangeTimes->{{3.639274339712864*^9, 3.6392743511058607`*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Recipe 5.4: Finding an approximate equilibrium", "Subsection",
+ CellChangeTimes->{{3.639274373312344*^9, 3.639274387134284*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Stability when the equilibrium is known by approximation", "Subsection",
+ CellChangeTimes->{{3.639274720186837*^9, 3.639274730944425*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Problems", "Section",
+ CellChangeTimes->{{3.639273060208815*^9, 3.639273061503702*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["[Problem 5.6 in OD2007]", "ItemNumbered",
+ CellChangeTimes->{{3.6392737799779453`*^9, 3.639273797001355*^9}}],
+
+Cell["[Problem 5.10 in OD2007]", "ItemNumbered",
+ CellChangeTimes->{{3.6392737799779453`*^9, 3.639273814606175*^9}}],
+
+Cell["[Problem 5.12 in OD2007]", "ItemNumbered",
+ CellChangeTimes->{{3.6392737799779453`*^9, 3.63927381459451*^9}, {
+  3.639273849696615*^9, 3.639273855401375*^9}}],
+
+Cell["[Problem 5.14 in OD2007]", "ItemNumbered",
+ CellChangeTimes->{{3.6392737799779453`*^9, 3.63927381459451*^9}, {
+  3.639273849696615*^9, 3.6392738591183662`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Initialisation cells", "Section",
+ CellChangeTimes->{{3.63927304878474*^9, 3.639273053197811*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowSize->{1031, 809},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+PrintingOptions->{"PaperOrientation"->"Portrait",
+"PaperSize"->{612, 792},
+"PrintCellBrackets"->False,
+"PrintMultipleHorizontalPages"->False,
+"PrintRegistrationMarks"->False,
+"PrintingMargins"->{{54.000000585, 54.000000585}, {72.00000078000001, \
+72.00000078000001}}},
+TaggingRules->{"SlideShow" -> True},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[715, 26, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[2890, 84, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[5713, 156, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[11029, 324, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[17804, 568, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[18951, 608, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[23044, 741, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[25415, 828, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[32329, 1069, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[35388, 1187, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[37990, 1269, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[38277, 1283, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[38593, 1297, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[38893, 1311, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[39194, 1325, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[39472, 1339, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[39787, 1353, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[40105, 1367, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[40416, 1381, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[40737, 1395, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[41575, 1424, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 42543, 1458}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 132, 2, 46, "Input"],
+Cell[CellGroupData[{
+Cell[715, 26, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[782, 29, 86, 1, 46, "Input"],
+Cell[871, 32, 87, 1, 46, "Input"],
+Cell[961, 35, 307, 4, 29, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[1293, 43, 599, 12, 148, "Title"],
+Cell[1895, 57, 641, 9, 29, "Subsubtitle"],
+Cell[2539, 68, 116, 2, 29, "Subsubtitle"],
+Cell[2658, 72, 183, 6, 69, "Subsubtitle"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2890, 84, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[2979, 89, 92, 1, 64, "Section"],
+Cell[CellGroupData[{
+Cell[3096, 94, 145, 2, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[3266, 100, 382, 5, 28, "Item"],
+Cell[3651, 107, 366, 5, 28, "Item"],
+Cell[4020, 114, 368, 5, 28, "Item"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4437, 125, 98, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[4560, 130, 347, 5, 28, "Item"],
+Cell[4910, 137, 400, 5, 28, "Item"],
+Cell[5313, 144, 327, 4, 28, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5713, 156, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[5802, 161, 307, 4, 64, "Section"],
+Cell[6112, 167, 533, 9, 68, "Text"],
+Cell[6648, 178, 16, 0, 30, "Text"],
+Cell[CellGroupData[{
+Cell[6689, 182, 115, 1, 44, "Subsection"],
+Cell[6807, 185, 431, 10, 49, "Text"],
+Cell[CellGroupData[{
+Cell[7263, 199, 810, 25, 29, "Item"],
+Cell[8076, 226, 498, 13, 29, "Item"],
+Cell[8577, 241, 406, 9, 28, "Item"]
+}, Open  ]],
+Cell[8998, 253, 695, 12, 87, "Text"],
+Cell[9696, 267, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9777, 273, 113, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[9915, 278, 352, 12, 28, "Item"],
+Cell[10270, 292, 378, 12, 45, "Item"],
+Cell[10651, 306, 305, 10, 28, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11029, 324, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[11118, 329, 306, 4, 64, "Section"],
+Cell[CellGroupData[{
+Cell[11449, 337, 623, 19, 31, "Item"],
+Cell[12075, 358, 315, 6, 28, "Item"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12427, 369, 295, 8, 45, "Subsection"],
+Cell[CellGroupData[{
+Cell[12747, 381, 161, 3, 30, "ItemNumbered"],
+Cell[12911, 386, 992, 36, 50, "Item"],
+Cell[13906, 424, 1107, 41, 50, "Item"],
+Cell[15016, 467, 1082, 38, 50, "Item"]
+}, Open  ]],
+Cell[16113, 508, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[16182, 513, 703, 22, 51, "ItemNumbered"],
+Cell[16888, 537, 454, 9, 49, "ItemNumbered"]
+}, Open  ]],
+Cell[17357, 549, 386, 12, 30, "Text"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17804, 568, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[17893, 573, 176, 2, 44, "Subsection"],
+Cell[18072, 577, 118, 1, 30, "Text"],
+Cell[18193, 580, 543, 17, 45, "DisplayFormula"],
+Cell[18739, 599, 163, 3, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18951, 608, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[19040, 613, 229, 3, 44, "Subsection"],
+Cell[19272, 618, 409, 7, 68, "Text"],
+Cell[19684, 627, 559, 17, 25, "DisplayFormula"],
+Cell[20246, 646, 556, 17, 25, "DisplayFormula"],
+Cell[20805, 665, 542, 15, 46, "DisplayFormula"],
+Cell[CellGroupData[{
+Cell[21372, 684, 102, 1, 35, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[21499, 689, 577, 16, 49, "Item"],
+Cell[22079, 707, 536, 17, 29, "Item"],
+Cell[22618, 726, 353, 7, 45, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23044, 741, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[23133, 746, 171, 2, 44, "Subsection"],
+Cell[23307, 750, 157, 3, 30, "Text"],
+Cell[23467, 755, 716, 23, 47, "DisplayFormula"],
+Cell[CellGroupData[{
+Cell[24208, 782, 99, 1, 35, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[24332, 787, 118, 1, 28, "Item"],
+Cell[24453, 790, 589, 21, 31, "Item"],
+Cell[25045, 813, 297, 7, 28, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25415, 828, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[25504, 833, 173, 2, 44, "Subsection"],
+Cell[25680, 837, 154, 3, 30, "Text"],
+Cell[25837, 842, 1418, 45, 52, "DisplayFormula"],
+Cell[27258, 889, 876, 26, 53, "Text"],
+Cell[28137, 917, 1571, 50, 61, "DisplayFormula"],
+Cell[29711, 969, 405, 10, 52, "Text"],
+Cell[30119, 981, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[30166, 984, 274, 6, 30, "Text"],
+Cell[CellGroupData[{
+Cell[30465, 994, 707, 26, 30, "Item"],
+Cell[31175, 1022, 652, 25, 30, "Item"]
+}, Open  ]],
+Cell[31842, 1050, 438, 13, 33, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32329, 1069, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[32418, 1074, 124, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[32567, 1079, 1365, 50, 65, "Item"],
+Cell[33935, 1131, 687, 22, 46, "Item"],
+Cell[34625, 1155, 702, 25, 47, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35388, 1187, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[35477, 1192, 232, 3, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[35734, 1199, 413, 7, 45, "Item"],
+Cell[36150, 1208, 310, 7, 28, "Item"],
+Cell[36463, 1217, 287, 7, 28, "Item"],
+Cell[36753, 1226, 188, 2, 28, "Item"],
+Cell[CellGroupData[{
+Cell[36966, 1232, 604, 21, 41, "Subitem"],
+Cell[37573, 1255, 344, 6, 41, "Subitem"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37990, 1269, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[38079, 1274, 110, 1, 64, "Section"],
+Cell[38192, 1277, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38277, 1283, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[38366, 1288, 139, 1, 44, "Subsection"],
+Cell[38508, 1291, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38593, 1297, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[38682, 1302, 123, 1, 44, "Subsection"],
+Cell[38808, 1305, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38893, 1311, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[38982, 1316, 124, 1, 44, "Subsection"],
+Cell[39109, 1319, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39194, 1325, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[39283, 1330, 101, 1, 64, "Section"],
+Cell[39387, 1333, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39472, 1339, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[39561, 1344, 138, 1, 44, "Subsection"],
+Cell[39702, 1347, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39787, 1353, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[39876, 1358, 141, 1, 35, "Subsubsection"],
+Cell[40020, 1361, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40105, 1367, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[40194, 1372, 134, 1, 44, "Subsection"],
+Cell[40331, 1375, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40416, 1381, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[40505, 1386, 144, 1, 44, "Subsection"],
+Cell[40652, 1389, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40737, 1395, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[40826, 1400, 93, 1, 64, "Section"],
+Cell[CellGroupData[{
+Cell[40944, 1405, 115, 1, 30, "ItemNumbered"],
+Cell[41062, 1408, 116, 1, 30, "ItemNumbered"],
+Cell[41181, 1411, 164, 2, 30, "ItemNumbered"],
+Cell[41348, 1415, 166, 2, 30, "ItemNumbered"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41575, 1424, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[41664, 1429, 104, 1, 64, "Section"],
+Cell[41771, 1432, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
