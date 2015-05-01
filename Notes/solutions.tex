@@ -163,3 +163,113 @@
 		\end{equation}
 		using $q(t) = 1 - p(t) = n_a(t) / (n_A(t) + n_a(t))$. Note that in the derivation we have omitted the dependence of $n_A$ and $n_a$ on $t$ in our notation for simplicity. Comparing the result to the differential equation derived earlier, $dp / dt = s_c p(t) q(t)$, we see that the continuous-time selection coefficient $s_c$ can be interpreted as the difference between the intrinsic growth rates of the two haploid genotypes that compete.
 \end{enumerate}
+
+\section{Primer 1}
+
+\begin{enumerate}
+	
+	\item[P.3.1]
+		\begin{itemize}
+			\item[(a)] Start by writing $R(n)$ as a generic exponential function, $R(n) = c e^{-b n}$, where $c$ is the intercept and $b$ is the rate of decline. Note that when writing the $-$ in front of $b$, for there to be a decline, $b$ has to be positive. We are told that the intercept is $c = R(0) = 1 + r$, and that $R(K) = (1+r) e^{-b K} = 1$. Hence, the slope can be found by solving for $b$:
+			\begin{equation}
+				\begin{split}
+					(1+r) e^{-b K}& = 1\\
+					&\Rightarrow e^{-b K} = \frac{1}{1+r}\\
+					&\Rightarrow -b K = - \ln(1+r)\\
+					&\Rightarrow b = \frac{\ln(1+r)}{K}.
+				\end{split}
+			\end{equation}
+			Putting things together, we obtain
+			\begin{equation}
+				\begin{split}
+					 R(n) &= (1+r) e^{-\ln(1+r)n/K}\\
+					& = (1+r)(1+r)^{-n/K}\\
+					& = (1+r)^{1-n/K}.
+				\end{split}
+			\end{equation}
+			
+			\item[(b)] Start by writing $R(n)$ as a generic quadratic function, $R(n) = a n^2 + bn + c$, where $c$ is the intercept and $b$ and $a$ are the coefficients of the linear and quadratic term, respectively. We are told that the intercept is $c = R(0) = 1 + r$, and that $R(K) = a K^2 + bK + c = 1$. Moreover, we are told that $R(0)$ is a maximum, which implies that $b = 0$. To find $a$, we need to solve $R(K) = a K^2 + bK + c = a K^2 + (1+r) = 1$ for $a$:
+			\begin{equation}
+				\begin{split}
+					 a K^2 + 1 + r &= 1\\
+					&\Rightarrow  a K^2 = -r \\
+					&\Rightarrow a = -\frac{r}{K^2}.
+				\end{split}
+			\end{equation}
+			Putting things together, we obtain
+			\begin{equation}
+				\begin{split}
+					R(n) &= 1+r - \frac{r}{K^2}n^2.
+				\end{split}
+			\end{equation}
+			
+			\item[(c)] Start by writing $R(n)$ as a generic sigmoidal function,
+				\begin{equation}
+					R(n) = \frac{c \, e^{an}}{c \, e^{a n} + (1+c)},
+				\end{equation}
+			where $a$ should be kept general, and $c$ tells us how far up the way to 1 the function starts when $n=0$. We are told that the intercept is $R(0) = 1 + r$. Therefore, we start by stretching the function along the $y$ axis by a factor of $(1+r)/c$, which yields
+			\begin{equation}
+				\begin{split}
+					R(n) &= (1+r)\ \frac{e^{an}}{c\, e^{an} + 1 - c}.
+				\end{split}
+			\end{equation}
+			We also know that $R(K) = 1$, which allows us to identify $c$ as follows:
+			\begin{equation}
+				\begin{split}
+					R(K) &= \frac{(1+r)\, e^{aK}}{c\, e^{aK} + 1 - c} = 1\\
+					& \Rightarrow c \left( e^{aK} + 1 \right) + 1 = (1+r)\, e^{aK}\\
+					& \Rightarrow c = \frac{(1+r)\, e^{aK} - 1}{e^{aK} - 1} \\
+					& \Rightarrow c = \frac{e^{aK} - 1 + r\ e^{a K}}{e^{aK} - 1} \\
+					& \Rightarrow c = 1 - \frac{r\, e^{aK}}{1 - e^{aK}}.
+				\end{split}
+			\end{equation}
+			Putting things together, we find
+			\begin{equation}
+				R(n) = (1+r) \frac{e^{an}}{\left( 1 - \frac{r\, e^{aK}}{1 - e^{aK}} \right)\, e^{an} + \frac{r\, e^{aK}}{1 - e^{aK}}}.
+			\end{equation}
+			
+		\end{itemize}
+		
+	\item[P.3.2]
+		\begin{itemize}
+			
+			\item[(a)] We expand $f(r) = e^r$ as a Taylor series around $r = 0$ by setting
+				\begin{equation}
+				\begin{split}
+					f(r) &= f(0) + \left . \frac{df}{dr}\right |_{r=0} (r - 0) + \mathcal{O}(r^2) \\
+					&= 1 + e^0 r + \mathcal{O}(r^2)\\
+					& \approx 1 + r.
+				\end{split}
+				\end{equation}
+				
+			\item[(b)] We expand $f(s) = 1/(1+s)$ as a Taylor series around $s = 0$ by setting
+				\begin{equation}
+				\begin{split}
+					f(r) &= f(0) + \left . \frac{df}{ds}\right |_{s=0} (s- 0) + \mathcal{O}(s^2) \\
+					&= 1 + (-1)(s-0) + \mathcal{O}(s^2)\\
+					& \approx 1 - s.
+				\end{split}
+				\end{equation}
+				
+			\item[(c)] We expand $f(t) = \ln(t)$ as a Taylor series around $t = 1$ by setting
+				\begin{equation}
+				\begin{split}
+					f(t) &= f(1) + \left . \frac{df}{dt}\right |_{t=1} (t - 1) + \mathcal{O}(t^2) \\
+					&= \ln(1) + 1(t-1) + \mathcal{O}(t^2)\\
+					& \approx t - 1.
+				\end{split}
+				\end{equation}
+				
+			\item[(d)] We expand $f(x) = 1/x$ as a Taylor series around $x = a$ by setting
+				\begin{equation}
+				\begin{split}
+					f(x) &= f(a) + \left . \frac{df}{dx}\right |_{x=a} (x - a) + \mathcal{O}(x^2) \\
+					&= \frac{1}{a} + (-1) \frac{1}{a^2} (x-a) + \mathcal{O}(x^2)\\
+					& \approx \frac{1}{a} - \frac{1}{a^2} (x-a).
+				\end{split}
+				\end{equation}
+			
+			
+		\end{itemize}
+	
+\end{enumerate}
