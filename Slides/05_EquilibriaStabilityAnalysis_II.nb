@@ -1,0 +1,270 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7600,        261]
+NotebookOptionsPosition[      4911,        169]
+NotebookOutlinePosition[      5938,        203]
+CellTagsIndexPosition[      5861,        198]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.63888811708808*^9}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.636114599213521*^9}],
+
+Cell["Mathematical Techniques in Evolution and Ecology", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}},
+ TextAlignment->Center],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Equilibria and stability analysis \[Dash]
+One-variable models (part II)\
+\>", "Title",
+ CellChangeTimes->{
+  3.559948400406288*^9, {3.636114041492673*^9, 3.636114071360457*^9}, 
+   3.6361143314213037`*^9, 3.636114611686428*^9, {3.6361146855231953`*^9, 
+   3.636114706235161*^9}, {3.637404947653048*^9, 3.6374049502815857`*^9}, {
+   3.63740501133258*^9, 3.637405025808597*^9}, {3.637460441988028*^9, 
+   3.637460444607782*^9}, {3.6379238923677893`*^9, 3.637923895631575*^9}, {
+   3.638582094029604*^9, 3.6385821126359873`*^9}, {3.63927216074156*^9, 
+   3.639272189645816*^9}, {3.6394522604519367`*^9, 3.639452285129521*^9}},
+ TextAlignment->Center],
+
+Cell["Based on Chapter 5 in Otto and Day (2007)", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}, {
+  3.636114746487883*^9, 3.636114771516698*^9}, {3.636857110980406*^9, 
+  3.636857112831702*^9}, {3.637405036623555*^9, 3.637405036943508*^9}, {
+  3.637923885489958*^9, 3.637923887351268*^9}, {3.638194269997259*^9, 
+  3.638194274665896*^9}, {3.6385821193506002`*^9, 3.638582121525537*^9}, {
+  3.639272193592238*^9, 3.6392721936778107`*^9}},
+ TextAlignment->Center],
+
+Cell["", "Subsubtitle",
+ CellChangeTimes->{
+  3.636114639569048*^9, {3.6361147219781303`*^9, 3.636114742854782*^9}}],
+
+Cell["\<\
+Spring Quarter 2015
+Simon Aeschbacher
+saeschbacher@ucdavis.edu\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.636114263144814*^9, 3.636114285607094*^9}},
+ TextAlignment->Center]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Approximations", "Section",
+ CellChangeTimes->{{3.6392742541628513`*^9, 3.639274255767829*^9}}],
+
+Cell["To come.", "Text",
+ CellChangeTimes->{{3.639452061479424*^9, 3.639452062347218*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Approximating equilibria (perturbation analysis)", "Subsection",
+ CellChangeTimes->{{3.6392742648344927`*^9, 3.639274278116947*^9}}],
+
+Cell["To come.", "Text",
+ CellChangeTimes->{3.639452066608943*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Theoretical basis (summary of Box 5.1 in OD2007)", "Subsubsection",
+ CellChangeTimes->{{3.639274339712864*^9, 3.6392743511058607`*^9}}],
+
+Cell["To come.", "Text",
+ CellChangeTimes->{3.639452068936949*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Recipe 5.4: Finding an approximate equilibrium", "Subsection",
+ CellChangeTimes->{{3.639274373312344*^9, 3.639274387134284*^9}}],
+
+Cell["To come.", "Text",
+ CellChangeTimes->{3.6394520724810047`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Stability when the equilibrium is known by approximation", "Subsection",
+ CellChangeTimes->{{3.639274720186837*^9, 3.639274730944425*^9}}],
+
+Cell["To come.", "Text",
+ CellChangeTimes->{3.639452075633049*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Problems", "Section",
+ CellChangeTimes->{{3.639273060208815*^9, 3.639273061503702*^9}}],
+
+Cell["[Problem 5.14 in OD2007]", "ItemNumbered",
+ CellChangeTimes->{{3.6392737799779453`*^9, 3.63927381459451*^9}, {
+  3.639273849696615*^9, 3.6392738591183662`*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 709},
+WindowMargins->{{Automatic, 272}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[2813, 80, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[3145, 95, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[3490, 110, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[3838, 125, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[4181, 140, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[4532, 155, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 5225, 180}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[647, 25, 86, 1, 46, "Input"],
+Cell[736, 28, 87, 1, 46, "Input"],
+Cell[826, 31, 307, 4, 29, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[1158, 39, 657, 12, 148, "Title"],
+Cell[1818, 53, 641, 9, 29, "Subsubtitle"],
+Cell[2462, 64, 116, 2, 29, "Subsubtitle"],
+Cell[2581, 68, 183, 6, 69, "Subsubtitle"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2813, 80, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[2902, 85, 101, 1, 64, "Section"],
+Cell[3006, 88, 90, 1, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3145, 95, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[3234, 100, 138, 1, 44, "Subsection"],
+Cell[3375, 103, 66, 1, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3490, 110, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[3579, 115, 141, 1, 35, "Subsubsection"],
+Cell[3723, 118, 66, 1, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3838, 125, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[3927, 130, 134, 1, 44, "Subsection"],
+Cell[4064, 133, 68, 1, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4181, 140, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[4270, 145, 144, 1, 44, "Subsection"],
+Cell[4417, 148, 66, 1, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4532, 155, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[4621, 160, 93, 1, 64, "Section"],
+Cell[4717, 163, 166, 2, 30, "ItemNumbered"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
