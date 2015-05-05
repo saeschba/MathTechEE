@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7600,        261]
-NotebookOptionsPosition[      4911,        169]
-NotebookOutlinePosition[      5938,        203]
-CellTagsIndexPosition[      5861,        198]
+NotebookDataLength[     18236,        597]
+NotebookOptionsPosition[     14547,        475]
+NotebookOutlinePosition[     15583,        509]
+CellTagsIndexPosition[     15505,        504]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -86,8 +86,44 @@ Cell[CellGroupData[{
 Cell["Approximations", "Section",
  CellChangeTimes->{{3.6392742541628513`*^9, 3.639274255767829*^9}}],
 
-Cell["To come.", "Text",
- CellChangeTimes->{{3.639452061479424*^9, 3.639452062347218*^9}}]
+Cell["\<\
+When mathematical analysis of a model becomes complicated or even impossible \
+to conduct, we basically have two (non-exclusive) choices:\
+\>", "Text",
+ CellChangeTimes->{{3.639452061479424*^9, 3.639452062347218*^9}, {
+  3.639773746451057*^9, 3.639773790905356*^9}, {3.639773895999329*^9, 
+  3.639773904514894*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Resort to numerical and simulation techniques using computers\
+\>", "ItemNumbered",
+ CellChangeTimes->{{3.6397738045798492`*^9, 3.639773832491461*^9}}],
+
+Cell["\<\
+Seek approximations that hopefully allow us to proceed the analytical \
+treatment\
+\>", "ItemNumbered",
+ CellChangeTimes->{{3.6397738045798492`*^9, 3.639773861890523*^9}}]
+}, Open  ]],
+
+Cell["\<\
+For option 2, it is often necessary to focus on cases where some parameter \
+values are either very small or very large. Here, we learn how to use such \
+restrictions on the magnitude of the parameter values to\
+\>", "Text",
+ CellChangeTimes->{{3.639773880838614*^9, 3.6397739873446417`*^9}, {
+  3.639774021451391*^9, 3.63977402179525*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["approximate values for equilibria and", "Item",
+ CellChangeTimes->{{3.639773994073316*^9, 3.6397740126738586`*^9}}],
+
+Cell["perform approximate stability analysis", "Item",
+ CellChangeTimes->{{3.639773994073316*^9, 3.639774018779593*^9}}]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -101,8 +137,66 @@ Cell[CellGroupData[{
 Cell["Approximating equilibria (perturbation analysis)", "Subsection",
  CellChangeTimes->{{3.6392742648344927`*^9, 3.639274278116947*^9}}],
 
-Cell["To come.", "Text",
- CellChangeTimes->{3.639452066608943*^9}]
+Cell[TextData[{
+ "Here, we describe a method based on the Taylor series for finding an \
+approximate solution for an equilibrium ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". The method is called perturbation analysis. A ",
+ StyleBox["perturbation analysis",
+  FontWeight->"Bold"],
+ " identifies an ",
+ StyleBox["approximate solution to an equation by assuming that a parameter \
+is small",
+  FontSlant->"Italic"],
+ "."
+}], "Text",
+ CellChangeTimes->{
+  3.639452066608943*^9, {3.639774068792787*^9, 3.639774151446014*^9}, {
+   3.639774215094438*^9, 3.6397742155819817`*^9}}],
+
+Cell["\<\
+This is a very important and general method that can be used to approximate \
+the solution to any equation of interest. Here, we apply it to solve the \
+equilibrium condition.\
+\>", "Text",
+ CellChangeTimes->{{3.639774587627235*^9, 3.639774665777298*^9}, {
+  3.639774730326098*^9, 3.63977473818372*^9}, {3.6397747776296*^9, 
+  3.639774799001399*^9}, {3.639774844035879*^9, 3.63977484700919*^9}}],
+
+Cell["\<\
+Recall that for a one-dimensional discrete-time model, the equilibrium \
+condition is of the form\
+\>", "Text",
+ CellChangeTimes->{{3.6397748487933817`*^9, 3.639774872038612*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     OverscriptBox["n", "^"], "=", 
+     RowBox[{"function", " ", "of", " ", 
+      OverscriptBox["n", "^"]}]}], ","}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.639774810373667*^9, 3.639774825460967*^9}, {
+  3.639774890190061*^9, 3.639774897731637*^9}}],
+
+Cell["and for a continuous-time model, it is of the form", "Text",
+ CellChangeTimes->{{3.639774899767194*^9, 3.63977491219473*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{"0", "=", 
+    RowBox[{"function", " ", "of", " ", 
+     RowBox[{
+      OverscriptBox["n", "^"], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.639774810373667*^9, 3.639774825460967*^9}, {
+  3.639774890190061*^9, 3.639774924280871*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -116,8 +210,220 @@ Cell[CellGroupData[{
 Cell["Theoretical basis (summary of Box 5.1 in OD2007)", "Subsubsection",
  CellChangeTimes->{{3.639274339712864*^9, 3.6392743511058607`*^9}}],
 
-Cell["To come.", "Text",
- CellChangeTimes->{3.639452068936949*^9}]
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Start from the equation you wish to solve, e.g. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["n", "^"], "=", 
+    RowBox[{"function", " ", "of", " ", 
+     OverscriptBox["n", "^"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", but for which you cannot obtain an exact solution."
+}], "Item",
+ CellChangeTimes->{
+  3.639452068936949*^9, {3.639774988381831*^9, 3.639775035605958*^9}, {
+   3.639775161206277*^9, 3.6397751706810102`*^9}, {3.639775342756774*^9, 
+   3.639775342760668*^9}}],
+
+Cell[TextData[{
+ "Bring all of the terms in the equation to one side, so that it has the form \
+",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\"\<stuff\>\"", "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{
+  3.639452068936949*^9, {3.639774988381831*^9, 3.639775035605958*^9}, {
+   3.639775161206277*^9, 3.6397751706810102`*^9}, {3.639775342756774*^9, 
+   3.639775381522365*^9}}],
+
+Cell["\<\
+Identify a (set of) parameter(s) that you are willing to assume is small.\
+\>", "Item",
+ CellChangeTimes->{
+  3.639452068936949*^9, {3.639774988381831*^9, 3.639775070987195*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "If it is a single parameter, replace it by e.g. ",
+ Cell[BoxData[
+  FormBox["\[Zeta]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Subitem",
+ CellChangeTimes->{
+  3.639452068936949*^9, {3.639774988381831*^9, 3.63977510026091*^9}}],
+
+Cell[TextData[{
+ "If there are multiple parameters, write each as some constant times ",
+ Cell[BoxData[
+  FormBox["\[Zeta]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Subitem",
+ CellChangeTimes->{
+  3.639452068936949*^9, {3.639774988381831*^9, 3.639775130133092*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "The key is to write ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " as a sum of terms (i.e. as a series) as follows:"
+}], "Item",
+ CellChangeTimes->{
+  3.639452068936949*^9, {3.639774988381831*^9, 3.639775130127699*^9}, {
+   3.639775182151463*^9, 3.639775210641876*^9}, {3.639775581422455*^9, 
+   3.639775598928082*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    OverscriptBox["n", "^"], "=", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox[
+       OverscriptBox["n", "^"], "0"], "+", 
+      RowBox[{
+       SubscriptBox[
+        OverscriptBox["n", "^"], "1"], "\[Zeta]"}], "+", 
+      RowBox[{
+       SubscriptBox[
+        OverscriptBox["n", "^"], "2"], 
+       SuperscriptBox["\[Zeta]", "2"]}], "+", 
+      RowBox[{
+       SubscriptBox[
+        OverscriptBox["n", "^"], "3"], 
+       SuperscriptBox["\[Zeta]", "3"]}], "+"}], "..."}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.639775220643095*^9, 3.639775228121426*^9}, {
+  3.6397755243624268`*^9, 3.63977555790733*^9}, {3.639775606567787*^9, 
+  3.639775662674048*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "We have just written the unknown solution ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " as a Taylor series with respect to ",
+ Cell[BoxData[
+  FormBox["\[Zeta]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " around ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Zeta]", "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", where ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["n", "^"], "i"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " represents ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"1", "/", 
+      RowBox[{"i", "!"}]}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["\[DifferentialD]", "i"], 
+        OverscriptBox["n", "^"]}], "/", 
+       RowBox[{"\[DifferentialD]", 
+        SuperscriptBox["\[Zeta]", "i"]}]}], ")"}]}], 
+    SubscriptBox["|", 
+     RowBox[{"\[Zeta]", "=", "0"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". To see this, remind yourself of the general expression of a Taylor series \
+in P1_FunctionsAndApproximations.pdf."
+}], "Item",
+ CellChangeTimes->{{3.6397756829733057`*^9, 3.639775698902071*^9}, {
+  3.6397757422644987`*^9, 3.6397759911832848`*^9}, {3.639776028997458*^9, 
+  3.6397760290035048`*^9}}],
+
+Cell[TextData[{
+ "Plug Eq. (1) into the equation that we wish to solve, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\"\<stuff\>\"", "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". To emphasise that \[OpenCurlyDoubleQuote]stuff\[CloseCurlyDoubleQuote] \
+depends on ",
+ Cell[BoxData[
+  FormBox["\[Zeta]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", we write this equation as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "\[Zeta]", ")"}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". The goal is to solve this equation for the ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["n", "^"], "i"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " needed to obtain a sufficiently accurate approximation for ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.6397756829733057`*^9, 3.639775698902071*^9}, {
+  3.6397757422644987`*^9, 3.6397759911832848`*^9}, {3.639776028997458*^9, 
+  3.6397762020103483`*^9}}],
+
+Cell[TextData[{
+ "For the method to work, we must be able to solve the original equation ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\"\<stuff\>\"", "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for the case where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Zeta]", "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", i.e. solve ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "0", ")"}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["n", "^"], "0"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". If even this is impossible, we are stuck and need to reconsider our \
+choice of what parameter(s) are small."
+}], "Item",
+ CellChangeTimes->{{3.6397756829733057`*^9, 3.639775698902071*^9}, {
+  3.6397757422644987`*^9, 3.6397759911832848`*^9}, {3.639776028997458*^9, 
+  3.639776315502654*^9}}]
+}, Open  ]],
+
+Cell["Recipe 5.4 below summarises these steps.", "Text",
+ CellChangeTimes->{{3.639775447384029*^9, 3.639775473925872*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -167,8 +473,8 @@ Cell["[Problem 5.14 in OD2007]", "ItemNumbered",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{808, 709},
-WindowMargins->{{Automatic, 272}, {Automatic, 0}},
+WindowSize->{933, 1035},
+WindowMargins->{{-319, Automatic}, {753, Automatic}},
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
 2014)",
 StyleDefinitions->"Default.nb"
@@ -183,21 +489,21 @@ CellTagsIndex->{
    CellTags->"SlideShowHeader"],
   Cell[2813, 80, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[3145, 95, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[4396, 131, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[3490, 110, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[6715, 204, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[3838, 125, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[13474, 431, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[4181, 140, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[13817, 446, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[4532, 155, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[14168, 461, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 5225, 180}
+ {"SlideShowHeader", 14865, 486}
  }
 *)
 (*NotebookFileOutline
@@ -220,47 +526,77 @@ Cell[2813, 80, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
 Cell[2902, 85, 101, 1, 64, "Section"],
-Cell[3006, 88, 90, 1, 30, "Text"]
+Cell[3006, 88, 325, 6, 49, "Text"],
+Cell[CellGroupData[{
+Cell[3356, 98, 161, 3, 30, "ItemNumbered"],
+Cell[3520, 103, 181, 4, 30, "ItemNumbered"]
+}, Open  ]],
+Cell[3716, 110, 350, 6, 49, "Text"],
+Cell[CellGroupData[{
+Cell[4091, 120, 121, 1, 28, "Item"],
+Cell[4215, 123, 120, 1, 28, "Item"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3145, 95, 64, 1, 74, "SlideShowNavigationBar",
+Cell[4396, 131, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[3234, 100, 138, 1, 44, "Subsection"],
-Cell[3375, 103, 66, 1, 30, "Text"]
+Cell[4485, 136, 138, 1, 44, "Subsection"],
+Cell[4626, 139, 642, 18, 70, "Text"],
+Cell[5271, 159, 405, 7, 49, "Text"],
+Cell[5679, 168, 189, 4, 30, "Text"],
+Cell[5871, 174, 342, 10, 26, "DisplayFormula"],
+Cell[6216, 186, 131, 1, 30, "Text"],
+Cell[6350, 189, 316, 9, 26, "DisplayFormula"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3490, 110, 64, 1, 74, "SlideShowNavigationBar",
+Cell[6715, 204, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[3579, 115, 141, 1, 35, "Subsubsection"],
-Cell[3723, 118, 66, 1, 30, "Text"]
+Cell[6804, 209, 141, 1, 35, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[6970, 214, 530, 14, 30, "Item"],
+Cell[7503, 230, 427, 12, 29, "Item"],
+Cell[7933, 244, 188, 4, 28, "Item"],
+Cell[CellGroupData[{
+Cell[8146, 252, 267, 8, 26, "Subitem"],
+Cell[8416, 262, 288, 8, 26, "Subitem"]
+}, Open  ]],
+Cell[8719, 273, 403, 11, 30, "Item"]
+}, Open  ]],
+Cell[9137, 287, 745, 23, 27, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[9907, 314, 1344, 43, 72, "Item"],
+Cell[11254, 359, 1091, 32, 51, "Item"],
+Cell[12348, 393, 940, 28, 50, "Item"]
+}, Open  ]],
+Cell[13303, 424, 122, 1, 30, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3838, 125, 64, 1, 74, "SlideShowNavigationBar",
+Cell[13474, 431, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[3927, 130, 134, 1, 44, "Subsection"],
-Cell[4064, 133, 68, 1, 30, "Text"]
+Cell[13563, 436, 134, 1, 44, "Subsection"],
+Cell[13700, 439, 68, 1, 30, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4181, 140, 64, 1, 74, "SlideShowNavigationBar",
+Cell[13817, 446, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[4270, 145, 144, 1, 44, "Subsection"],
-Cell[4417, 148, 66, 1, 30, "Text"]
+Cell[13906, 451, 144, 1, 44, "Subsection"],
+Cell[14053, 454, 66, 1, 30, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4532, 155, 64, 1, 74, "SlideShowNavigationBar",
+Cell[14168, 461, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[4621, 160, 93, 1, 64, "Section"],
-Cell[4717, 163, 166, 2, 30, "ItemNumbered"]
+Cell[14257, 466, 93, 1, 64, "Section"],
+Cell[14353, 469, 166, 2, 30, "ItemNumbered"]
 }, Open  ]]
 }, Open  ]]
 }
