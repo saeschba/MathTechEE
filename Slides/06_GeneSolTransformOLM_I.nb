@@ -1,0 +1,691 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     20280,        682]
+NotebookOptionsPosition[     16047,        540]
+NotebookOutlinePosition[     17043,        574]
+CellTagsIndexPosition[     16965,        569]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.63888811708808*^9}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.636114599213521*^9}],
+
+Cell["Mathematical Techniques in Evolution and Ecology", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}},
+ TextAlignment->Center],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+General solutions and transformations \[Dash]
+One-variable models (part I)\
+\>", "Title",
+ CellChangeTimes->{
+  3.559948400406288*^9, {3.636114041492673*^9, 3.636114071360457*^9}, 
+   3.6361143314213037`*^9, 3.636114611686428*^9, {3.6361146855231953`*^9, 
+   3.636114706235161*^9}, {3.637404947653048*^9, 3.6374049502815857`*^9}, {
+   3.63740501133258*^9, 3.637405025808597*^9}, {3.637460441988028*^9, 
+   3.637460444607782*^9}, {3.6379238923677893`*^9, 3.637923895631575*^9}, {
+   3.638582094029604*^9, 3.6385821126359873`*^9}, {3.63927216074156*^9, 
+   3.639272189645816*^9}, {3.6394522604519367`*^9, 3.639452285129521*^9}, {
+   3.640082140756105*^9, 3.6400821483885098`*^9}},
+ TextAlignment->Center],
+
+Cell["Based on Chapter 6 in Otto and Day (2007)", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}, {
+  3.636114746487883*^9, 3.636114771516698*^9}, {3.636857110980406*^9, 
+  3.636857112831702*^9}, {3.637405036623555*^9, 3.637405036943508*^9}, {
+  3.637923885489958*^9, 3.637923887351268*^9}, {3.638194269997259*^9, 
+  3.638194274665896*^9}, {3.6385821193506002`*^9, 3.638582121525537*^9}, {
+  3.639272193592238*^9, 3.6392721936778107`*^9}, {3.640082151852682*^9, 
+  3.640082152012735*^9}},
+ TextAlignment->Center],
+
+Cell["", "Subsubtitle",
+ CellChangeTimes->{
+  3.636114639569048*^9, {3.6361147219781303`*^9, 3.636114742854782*^9}}],
+
+Cell["\<\
+Spring Quarter 2015
+Simon Aeschbacher
+saeschbacher@ucdavis.edu\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.636114263144814*^9, 3.636114285607094*^9}},
+ TextAlignment->Center]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Outline", "Section",
+ CellChangeTimes->{{3.640082189949622*^9, 3.6400821907218847`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Goals", "Subsection",
+ CellChangeTimes->{{3.640082195722251*^9, 3.640082196346025*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+To describe methods for obtaining general solutions for models with one \
+variable\
+\>", "Item",
+ CellChangeTimes->{{3.640082205330205*^9, 3.640082219454011*^9}}],
+
+Cell["To describe transformation methods for simplifying models", "Item",
+ CellChangeTimes->{{3.640082205330205*^9, 3.640082233026683*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Concepts", "Subsection",
+ CellChangeTimes->{{3.640082238914657*^9, 3.640082240098547*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Transformation", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.640082249262412*^9}}],
+
+Cell["Affine models", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.64008224925082*^9}, {
+  3.640082288133376*^9, 3.640082290109345*^9}}],
+
+Cell["Brute force iteration", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.64008224925082*^9}, {
+  3.640082288133376*^9, 3.640082295765732*^9}}],
+
+Cell["Separation of variables", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.64008224925082*^9}, {
+  3.640082288133376*^9, 3.640082299922988*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Motivation", "Section",
+ CellChangeTimes->{{3.6392742541628513`*^9, 3.639274255767829*^9}, {
+  3.640082326680431*^9, 3.6400823291124163`*^9}}],
+
+Cell[TextData[{
+ "For a small fraction of models, it is possible to go beyond identifying \
+equilibria and their stability by finding the ",
+ StyleBox["general solution",
+  FontWeight->"Bold"],
+ " of the equations."
+}], "Text",
+ CellChangeTimes->{{3.639452061479424*^9, 3.639452062347218*^9}, {
+  3.639773746451057*^9, 3.639773790905356*^9}, {3.639773895999329*^9, 
+  3.639773904514894*^9}, {3.640082337892096*^9, 3.6400823663318577`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Definition: General solution", "Subsection",
+ CellChangeTimes->{{3.640082376982525*^9, 3.640082381723955*^9}}],
+
+Cell[TextData[{
+ StyleBox["An explicit description of the state of the system for all future \
+points in time",
+  FontWeight->"Bold"],
+ " that depends only on the ",
+ StyleBox["parameters",
+  FontSlant->"Italic"],
+ ", the ",
+ StyleBox["initial state",
+  FontSlant->"Italic"],
+ ", and the amount of ",
+ StyleBox["time that has passed",
+  FontSlant->"Italic"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.64008238469308*^9, 3.64008242258064*^9}, {
+  3.640082834236062*^9, 3.640082836195567*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Example: Exponential growth in discrete time", "Subsubsection",
+ CellChangeTimes->{{3.640082435476696*^9, 3.640082454645318*^9}}],
+
+Cell[TextData[{
+ "The recursion equation ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{"R", " ", 
+     RowBox[{"n", "(", "t", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " can be iterated by hand to obtain the general solution"
+}], "Text",
+ CellChangeTimes->{{3.640082461975068*^9, 3.640082498599662*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"n", "(", "t", ")"}], "+", 
+     RowBox[{
+      SuperscriptBox["R", "t"], 
+      RowBox[{"n", "(", "0", ")"}]}]}], ","}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.640082505058022*^9, 3.640082530450048*^9}}],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox["R", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the parameter, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", "0", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " the initial state, and ",
+ Cell[BoxData[
+  FormBox["t", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " the amount of time passed."
+}], "Text",
+ CellChangeTimes->{{3.640082532560014*^9, 3.6400825603366528`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Transformations", "Section",
+ CellChangeTimes->{{3.6392742648344927`*^9, 3.639274278116947*^9}, {
+  3.6400825885297823`*^9, 3.640082591166627*^9}}],
+
+Cell["\<\
+Finding a solution by iteration rarely works \[Dash] the model must have a \
+particularly simple form, where the variable is multiplied by the same \
+constant factor each generation to obtain the value of the variable in the \
+next generation.\
+\>", "Text",
+ CellChangeTimes->{
+  3.639452066608943*^9, {3.639774068792787*^9, 3.639774151446014*^9}, {
+   3.639774215094438*^9, 3.6397742155819817`*^9}, {3.640082597855258*^9, 
+   3.640082674669785*^9}}],
+
+Cell[TextData[{
+ "For linear models, we will learn more general methods with some hope to \
+find a general solution for models that are hard or impossible to solve by \
+iteration. The key to many techniques is to use a ",
+ StyleBox["transformation",
+  FontWeight->"Bold"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.639774587627235*^9, 3.639774665777298*^9}, {
+  3.639774730326098*^9, 3.63977473818372*^9}, {3.6397747776296*^9, 
+  3.639774799001399*^9}, {3.639774844035879*^9, 3.63977484700919*^9}, {
+  3.6400827004077663`*^9, 3.640082773554764*^9}, {3.6400829165132313`*^9, 
+  3.640082919689435*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Definition: Transformation", "Subsection",
+ CellChangeTimes->{{3.6397748487933817`*^9, 3.639774872038612*^9}, {
+  3.6400827903741503`*^9, 3.640082793922817*^9}}],
+
+Cell[TextData[{
+ "A transformation ",
+ StyleBox["rewrites the dynamical equations of a model in terms of a new set \
+of variables",
+  FontWeight->"Bold"],
+ ", which is chosen to ",
+ StyleBox["simplify the equations",
+  FontSlant->"Italic"],
+ " or to ",
+ StyleBox["provide more biological insight",
+  FontSlant->"Italic"],
+ " than the original set of variables."
+}], "Text",
+ CellChangeTimes->{{3.640082796682926*^9, 3.640082806211102*^9}, {
+  3.6400828497322273`*^9, 3.640082882185931*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[CellGroupData[{
+
+Cell["Examples:", "Subsubsection",
+ CellChangeTimes->{{3.640082903346356*^9, 3.640082904954178*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "In unit 3, we made a transformation when rewriting the equations in terms \
+of absolute numbers ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "A"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "a"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " of alleles ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " as equations in terms of the relative frequency ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["p", "A"], "=", 
+    RowBox[{
+     SubscriptBox["n", "A"], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       SubscriptBox["n", "A"], "+", 
+       SubscriptBox["n", "a"]}], ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " of ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.64008299211532*^9, 3.6400831322394247`*^9}}],
+
+Cell[TextData[{
+ "In unit 5, we assessed the stability of an equilibrium by studying the \
+displacement of a system from the equilibrium at time ",
+ Cell[BoxData[
+  FormBox["t", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Epsilon]", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"n", "(", "t", ")"}], "-", 
+     OverscriptBox["n", "^"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.64008299211532*^9, 3.640083197647841*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Which transformation should you use? Different transformations work best in \
+different situations. Finding one that works often needs a combination of \
+experience and trial and error. We start by introducing a transformation that \
+works for ",
+ StyleBox["linear models in discrete time",
+  FontWeight->"Bold"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.640083229326891*^9, 3.640083323369575*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Linear models in discrete time", "Section",
+ CellChangeTimes->{{3.640083353741156*^9, 3.640083358490534*^9}}],
+
+Cell["\<\
+With only one variable in discrete time, there are two types of linear models \
+we need to solve:\
+\>", "Text",
+ CellChangeTimes->{{3.640083371603211*^9, 3.640083390772896*^9}}],
+
+Cell["\<\
+(1) Those of the form of the exponential growth model, where a process acts \
+independently on every individual on a per-captia basis:\
+\>", "Item",
+ CellChangeTimes->{{3.640083417224573*^9, 3.6400834466745567`*^9}, {
+  3.640083512905051*^9, 3.640083539625525*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"n", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{"R", " ", 
+     RowBox[{
+      RowBox[{"n", "(", "t", ")"}], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6400834810559072`*^9, 3.6400834939441032`*^9}, 
+   3.640083543371179*^9}],
+
+Cell["\<\
+(2) Those that involve an additional constant that describes a constant input \
+or outflow from the system that does not depend on the current state:\
+\>", "Item",
+ CellChangeTimes->{{3.640083417224573*^9, 3.640083471430524*^9}, 
+   3.64008354713008*^9, {3.6400835792793913`*^9, 3.640083601039747*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"n", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{
+     RowBox[{"R", " ", 
+      RowBox[{"n", "(", "t", ")"}]}], "+", "m"}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6400834810559072`*^9, 3.6400835081694803`*^9}, 
+   3.640083550232979*^9}],
+
+Cell[TextData[{
+ "We have seen an example of the second kind with the model of squirrels on \
+campus, where ",
+ Cell[BoxData[
+  FormBox["m", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " was the constant input of squirrels from the Arboretum, and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"R", "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", "b"}], ")"}], 
+     RowBox[{"(", 
+      RowBox[{"1", "-", "d"}], ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " was the reproductive factor, i.e. the net effect of birth and death \
+through cyclists."
+}], "Text",
+ CellChangeTimes->{{3.64008361215856*^9, 3.64008365426624*^9}, {
+  3.640083755062747*^9, 3.640083807632469*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[TextData[{
+ "Models of the second kind are called ",
+ StyleBox["affine models",
+  FontWeight->"Bold"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.640083672227065*^9, 3.640083680395294*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Definition: Affine model", "Subsection",
+ CellChangeTimes->{{3.640083688475758*^9, 3.6400836918115873`*^9}}],
+
+Cell[TextData[{
+ "An ",
+ StyleBox["affine model",
+  FontWeight->"Bold"],
+ " depends ",
+ StyleBox["linearly on the variables",
+  FontSlant->"Italic"],
+ " and contains ",
+ StyleBox["a constant term",
+  FontSlant->"Italic"],
+ " representing any ",
+ StyleBox["input",
+  FontSlant->"Italic"],
+ " ",
+ StyleBox["or outflow",
+  FontSlant->"Italic"],
+ " to the system."
+}], "Text",
+ CellChangeTimes->{{3.640083694379776*^9, 3.640083724412389*^9}}],
+
+Cell[TextData[{
+ "We can still try to use ",
+ StyleBox["\[OpenCurlyDoubleQuote]brute force iteration\
+\[CloseCurlyDoubleQuote]",
+  FontWeight->"Bold"],
+ " for an affine model: That means solving the recursion equation(s) by ",
+ StyleBox["repeatedly plugging in the recursion equation for the value of the \
+variable in the previous step",
+  FontSlant->"Italic"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.6400838565953417`*^9, 3.6400839294499063`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Exercise:", "Subsubsection",
+ CellChangeTimes->{{3.640083941601923*^9, 3.6400839812106447`*^9}}],
+
+Cell["\<\
+Use brute force iteration to find a general solution to the model described \
+by Eq. (3).\
+\>", "Text",
+ CellChangeTimes->{{3.640083986994691*^9, 3.640084001603043*^9}}],
+
+Cell["\<\
+Often, brute force iteration results in a \[OpenCurlyDoubleQuote]mess\
+\[CloseCurlyDoubleQuote] and does not always work.\
+\>", "Text",
+ CellChangeTimes->{{3.64008401565919*^9, 3.640084028499539*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Tranformation of an affine model", "Subsection",
+ CellChangeTimes->{{3.640084077555048*^9, 3.64008408532226*^9}}],
+
+Cell["\<\
+A much more promising and general approach is to apply tranformation.\
+\>", "Text",
+ CellChangeTimes->{{3.640084089659774*^9, 3.640084111545259*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{843, 809},
+WindowMargins->{{-1, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[2917, 82, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[4352, 136, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[7088, 234, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[11376, 377, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[15649, 525, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 16414, 553}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[647, 25, 86, 1, 46, "Input"],
+Cell[736, 28, 87, 1, 46, "Input"],
+Cell[826, 31, 307, 4, 29, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[1158, 39, 712, 13, 148, "Title"],
+Cell[1873, 54, 690, 10, 29, "Subsubtitle"],
+Cell[2566, 66, 116, 2, 29, "Subsubtitle"],
+Cell[2685, 70, 183, 6, 69, "Subsubtitle"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2917, 82, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[3006, 87, 94, 1, 64, "Section"],
+Cell[CellGroupData[{
+Cell[3125, 92, 93, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[3243, 97, 172, 4, 28, "Item"],
+Cell[3418, 103, 139, 1, 28, "Item"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3606, 110, 96, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[3727, 115, 96, 1, 28, "Item"],
+Cell[3826, 118, 143, 2, 28, "Item"],
+Cell[3972, 122, 151, 2, 28, "Item"],
+Cell[4126, 126, 153, 2, 28, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4352, 136, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[4441, 141, 148, 2, 64, "Section"],
+Cell[4592, 145, 439, 9, 49, "Text"],
+Cell[CellGroupData[{
+Cell[5056, 158, 116, 1, 44, "Subsection"],
+Cell[5175, 161, 488, 16, 49, "Text"],
+Cell[CellGroupData[{
+Cell[5688, 181, 135, 1, 35, "Subsubsection"],
+Cell[5826, 184, 399, 12, 31, "Text"],
+Cell[6228, 198, 316, 10, 26, "DisplayFormulaNumbered"],
+Cell[6547, 210, 468, 16, 31, "Text"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7088, 234, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[7177, 239, 153, 2, 64, "Section"],
+Cell[7333, 243, 460, 9, 49, "Text"],
+Cell[7796, 254, 597, 12, 49, "Text"],
+Cell[CellGroupData[{
+Cell[8418, 270, 167, 2, 44, "Subsection"],
+Cell[8588, 274, 490, 14, 49, "Text"],
+Cell[9081, 290, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[9150, 295, 100, 1, 35, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[9275, 300, 1049, 38, 49, "Item"],
+Cell[10327, 340, 547, 17, 48, "Item"]
+}, Open  ]],
+Cell[10889, 360, 414, 9, 68, "Text"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11376, 377, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[11465, 382, 115, 1, 64, "Section"],
+Cell[11583, 385, 187, 4, 30, "Text"],
+Cell[11773, 391, 275, 5, 45, "Item"],
+Cell[12051, 398, 348, 11, 25, "DisplayFormulaNumbered"],
+Cell[12402, 411, 312, 5, 45, "Item"],
+Cell[12717, 418, 353, 11, 25, "DisplayFormulaNumbered"],
+Cell[13073, 431, 709, 20, 70, "Text"],
+Cell[13785, 453, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[13832, 456, 190, 6, 30, "Text"],
+Cell[CellGroupData[{
+Cell[14047, 466, 114, 1, 44, "Subsection"],
+Cell[14164, 469, 438, 18, 49, "Text"],
+Cell[14605, 489, 449, 11, 49, "Text"],
+Cell[CellGroupData[{
+Cell[15079, 504, 102, 1, 35, "Subsubsection"],
+Cell[15184, 507, 179, 4, 30, "Text"],
+Cell[15366, 513, 210, 4, 30, "Text"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15649, 525, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[15738, 530, 119, 1, 44, "Subsection"],
+Cell[15860, 533, 159, 3, 30, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
