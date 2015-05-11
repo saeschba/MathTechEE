@@ -1,0 +1,968 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     29193,        959]
+NotebookOptionsPosition[     25575,        843]
+NotebookOutlinePosition[     26429,        874]
+CellTagsIndexPosition[     26351,        869]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.63888811708808*^9}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.636114599213521*^9}],
+
+Cell["Mathematical Techniques in Evolution and Ecology", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}},
+ TextAlignment->Center],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+General solutions and transformations \[Dash]
+One-variable models (part II)\
+\>", "Title",
+ CellChangeTimes->{
+  3.559948400406288*^9, {3.636114041492673*^9, 3.636114071360457*^9}, 
+   3.6361143314213037`*^9, 3.636114611686428*^9, {3.6361146855231953`*^9, 
+   3.636114706235161*^9}, {3.637404947653048*^9, 3.6374049502815857`*^9}, {
+   3.63740501133258*^9, 3.637405025808597*^9}, {3.637460441988028*^9, 
+   3.637460444607782*^9}, {3.6379238923677893`*^9, 3.637923895631575*^9}, {
+   3.638582094029604*^9, 3.6385821126359873`*^9}, {3.63927216074156*^9, 
+   3.639272189645816*^9}, {3.6394522604519367`*^9, 3.639452285129521*^9}, {
+   3.640082140756105*^9, 3.6400821483885098`*^9}, 3.6403538452056723`*^9},
+ TextAlignment->Center],
+
+Cell["Based on Chapter 6 in Otto and Day (2007)", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}, {
+  3.636114746487883*^9, 3.636114771516698*^9}, {3.636857110980406*^9, 
+  3.636857112831702*^9}, {3.637405036623555*^9, 3.637405036943508*^9}, {
+  3.637923885489958*^9, 3.637923887351268*^9}, {3.638194269997259*^9, 
+  3.638194274665896*^9}, {3.6385821193506002`*^9, 3.638582121525537*^9}, {
+  3.639272193592238*^9, 3.6392721936778107`*^9}, {3.640082151852682*^9, 
+  3.640082152012735*^9}},
+ TextAlignment->Center],
+
+Cell["", "Subsubtitle",
+ CellChangeTimes->{
+  3.636114639569048*^9, {3.6361147219781303`*^9, 3.636114742854782*^9}}],
+
+Cell["\<\
+Spring Quarter 2015
+Simon Aeschbacher
+saeschbacher@ucdavis.edu\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.636114263144814*^9, 3.636114285607094*^9}},
+ TextAlignment->Center]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Outline", "Section",
+ CellChangeTimes->{{3.640082189949622*^9, 3.6400821907218847`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Goals", "Subsection",
+ CellChangeTimes->{{3.640082195722251*^9, 3.640082196346025*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+To describe methods for obtaining general solutions for models with one \
+variable\
+\>", "Item",
+ CellChangeTimes->{{3.640082205330205*^9, 3.640082219454011*^9}}],
+
+Cell["To describe transformation methods for simplifying models", "Item",
+ CellChangeTimes->{{3.640082205330205*^9, 3.640082233026683*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Concepts", "Subsection",
+ CellChangeTimes->{{3.640082238914657*^9, 3.640082240098547*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Transformation", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.640082249262412*^9}}],
+
+Cell["Affine models", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.64008224925082*^9}, {
+  3.640082288133376*^9, 3.640082290109345*^9}}],
+
+Cell["Brute force iteration", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.64008224925082*^9}, {
+  3.640082288133376*^9, 3.640082295765732*^9}}],
+
+Cell["Separation of variables", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.64008224925082*^9}, {
+  3.640082288133376*^9, 3.640082299922988*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Nonlinear models in discrete time", "Section",
+ CellChangeTimes->{{3.64034887060281*^9, 3.640348874667014*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "There is ",
+ StyleBox["no general recipe for solving nonlinear models in discrete time",
+  FontWeight->"Bold"],
+ ", even when there is only one variable. Yet, that does not mean that a \
+general solution cannot be found in certain cases."
+}], "Item",
+ CellChangeTimes->{{3.6403489127787733`*^9, 3.640349214913616*^9}}],
+
+Cell[TextData[{
+ "In practice, one must ",
+ StyleBox["try a number of different tranformations",
+  FontWeight->"Bold"],
+ " to see if any of them works. Of course, this is also a ",
+ StyleBox["matter of experience",
+  FontWeight->"Bold"],
+ ". "
+}], "Item",
+ CellChangeTimes->{{3.6403489127787733`*^9, 3.6403492106735973`*^9}}],
+
+Cell[TextData[{
+ "While the logistic model and the ",
+ StyleBox["diploid",
+  FontSlant->"Italic"],
+ " model of natural selection do not have a general solution, the ",
+ StyleBox["haploid",
+  FontSlant->"Italic"],
+ " model of natural selection does. It is a good example of how the dynamics \
+can be simplified using the appropriate tranformation."
+}], "Item",
+ CellChangeTimes->{{3.6403489127787733`*^9, 3.640349217026115*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Example: Haploid model of natural selection", "Subsection",
+ CellChangeTimes->{{3.6403492689591713`*^9, 3.640349275887142*^9}}],
+
+Cell["We recall the discrete-time recursion equation", "Text",
+ CellChangeTimes->{{3.6403506485481663`*^9, 3.640350657513831*^9}, {
+  3.640351195476335*^9, 3.6403512063089037`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"p", "(", 
+      RowBox[{"t", "+", "1"}], ")"}], "=", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["W", "A"], "p", 
+       RowBox[{"(", "t", ")"}]}], 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["W", "A"], "p", 
+        RowBox[{"(", "t", ")"}]}], "+", 
+       RowBox[{
+        SubscriptBox["W", "a"], "q", 
+        RowBox[{"(", "t", ")"}]}]}]]}], ","}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.640350666354714*^9, 3.6403506784856977`*^9}, {
+  3.640351181087729*^9, 3.6403511928939943`*^9}, {3.640351247467299*^9, 
+  3.640351248982781*^9}}],
+
+Cell[TextData[{
+ "and the corresponding equilibria ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["p", "^"], "1"], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["p", "^"], "2"], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". We can try a number of different approaches:"
+}], "Text",
+ CellChangeTimes->{{3.640351210541238*^9, 3.6403512393881187`*^9}, {
+  3.640351271211841*^9, 3.6403512928837748`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Brute-force iteration",
+  FontWeight->"Bold"],
+ " will produce a general solution, but it is cumbersome. Let us discuss a \
+number of tranformations instead."
+}], "Item",
+ CellChangeTimes->{{3.640351304835532*^9, 3.640351361396776*^9}}],
+
+Cell[TextData[{
+ StyleBox["Distance to the equilibrium:",
+  FontWeight->"Bold"],
+ " Note that Eq. (5) ",
+ StyleBox["is",
+  FontSlant->"Italic"],
+ " already expressed as a distance from equilibrium ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["p", "^"], "1"], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "! We could express it as a distance from equilibrium ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["p", "^"], "2"], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", i.e. as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"q", "(", "t", ")"}], "=", 
+    RowBox[{"1", "-", 
+     RowBox[{"p", "(", "t", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", but this obviously results in an equation analogous to Eq. (5) due to \
+symmetry."
+}], "Item",
+ CellChangeTimes->{{3.640351304835532*^9, 3.640351545140781*^9}, {
+  3.640351962661899*^9, 3.640351964557444*^9}, {3.640352019280437*^9, 
+  3.640352020757214*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[TextData[{
+ StyleBox["Distance between ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"p", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold"],
+ StyleBox[" and ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"q", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold"],
+ StyleBox[":",
+  FontWeight->"Bold"],
+ " Recalling the symmetry of the model (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"p", "(", "t", ")"}], "+", 
+     RowBox[{"q", "(", "t", ")"}]}], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "), it is a good idea to try a transformation that ",
+ StyleBox["maintains this symmetry",
+  FontSlant->"Italic"],
+ ". The difference ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"d", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"p", "(", "t", ")"}], "-", 
+     RowBox[{"q", "(", "t", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " does so. After some algebra, a recursion for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"d", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " can be found, but it is even more complicated than Eq. (5):"
+}], "Item",
+ CellChangeTimes->{{3.640351304835532*^9, 3.6403517911514683`*^9}, 
+   3.640351971235239*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"d", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SubscriptBox["W", "A"], "-", 
+       SubscriptBox["W", "a"], "+", 
+       RowBox[{
+        SubscriptBox["W", "A"], 
+        RowBox[{"d", "(", "t", ")"}]}], "+", 
+       RowBox[{
+        SubscriptBox["W", "a"], 
+        RowBox[{"d", "(", "t", ")"}]}]}], 
+      RowBox[{
+       SubscriptBox["W", "A"], "+", 
+       SubscriptBox["W", "a"], "+", 
+       RowBox[{
+        SubscriptBox["W", "A"], 
+        RowBox[{"d", "(", "t", ")"}]}], "-", 
+       RowBox[{
+        SubscriptBox["W", "a"], 
+        RowBox[{"d", "(", "t", ")"}]}]}]], "."}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.640350666354714*^9, 3.6403506784856977`*^9}, {
+  3.640351181087729*^9, 3.6403511928939943`*^9}, {3.640351247467299*^9, 
+  3.640351248982781*^9}, {3.640351797153984*^9, 3.640351852463827*^9}}],
+
+Cell[TextData[{
+ StyleBox["Ratio of ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"p", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold"],
+ StyleBox[" and ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"q", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold"],
+ StyleBox[":",
+  FontWeight->"Bold"],
+ " Another tranformation that maintains symmetry is the ratio, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"p", "(", "t", ")"}], "/", 
+     RowBox[{"q", "(", "t", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", which turns out to have a particularly nice recursion equation:"
+}], "Item",
+ CellChangeTimes->{{3.640351304835532*^9, 3.6403517291115847`*^9}, {
+  3.640351864718318*^9, 3.640351941237657*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"f", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"p", "(", 
+       RowBox[{"t", "+", "1"}], ")"}], 
+      RowBox[{"q", "(", 
+       RowBox[{"t", "+", "1"}], ")"}]], "=", 
+     RowBox[{
+      FractionBox[
+       FractionBox[
+        RowBox[{
+         SubscriptBox["W", "A"], "p", 
+         RowBox[{"(", "t", ")"}]}], 
+        RowBox[{
+         RowBox[{
+          SubscriptBox["W", "A"], "p", 
+          RowBox[{"(", "t", ")"}]}], "+", 
+         RowBox[{
+          SubscriptBox["W", "a"], "q", 
+          RowBox[{"(", "t", ")"}]}]}]], 
+       FractionBox[
+        RowBox[{
+         SubscriptBox["W", "a"], 
+         RowBox[{"q", "(", "t", ")"}]}], 
+        RowBox[{
+         RowBox[{
+          SubscriptBox["W", "A"], "p", 
+          RowBox[{"(", "t", ")"}]}], "+", 
+         RowBox[{
+          SubscriptBox["W", "a"], "q", 
+          RowBox[{"(", "t", ")"}]}]}]]], "=", 
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SubscriptBox["W", "A"], "p", 
+         RowBox[{"(", "t", ")"}]}], 
+        RowBox[{
+         SubscriptBox["W", "a"], 
+         RowBox[{"q", "(", "t", ")"}]}]], "=", 
+       RowBox[{
+        FractionBox[
+         SubscriptBox["W", "A"], 
+         SubscriptBox["W", "a"]], 
+        RowBox[{
+         RowBox[{"f", "(", "t", ")"}], "."}]}]}]}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.640350666354714*^9, 3.6403506784856977`*^9}, {
+  3.640351181087729*^9, 3.6403511928939943`*^9}, {3.640351247467299*^9, 
+  3.640351248982781*^9}, {3.640351797153984*^9, 3.640351852463827*^9}, {
+  3.640352045220643*^9, 3.640352154045484*^9}}],
+
+Cell["The recursion in Eq. (7) has the general solution", "Text",
+ CellChangeTimes->{{3.640352156339521*^9, 3.6403521782719917`*^9}, 
+   3.6403522197793617`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"f", "(", "t", ")"}], "=", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox[
+        SubscriptBox["W", "A"], 
+        SubscriptBox["W", "a"]], ")"}], "t"], 
+     RowBox[{
+      RowBox[{"f", "(", "0", ")"}], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.640350666354714*^9, 3.6403506784856977`*^9}, {
+  3.640351181087729*^9, 3.6403511928939943`*^9}, {3.640351247467299*^9, 
+  3.640351248982781*^9}, {3.640351797153984*^9, 3.640351852463827*^9}, {
+  3.640352045220643*^9, 3.640352154045484*^9}, {3.6403521922518578`*^9, 
+  3.6403522158662024`*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[TextData[{
+ "To transform this back to the original variable ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"p", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", we solve ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"p", "(", "t", ")"}], "/", 
+      RowBox[{"q", "(", "t", ")"}]}], "=", 
+     RowBox[{
+      RowBox[{"p", "(", "t", ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        RowBox[{"p", "(", "t", ")"}]}], ")"}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"p", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", which yields ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"p", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"f", "(", "t", ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{"1", "-", 
+       RowBox[{"f", "(", "t", ")"}]}], ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Therefore,"
+}], "Text",
+ CellChangeTimes->{{3.640352229891988*^9, 3.6403523322101307`*^9}, {
+  3.640352480944579*^9, 3.6403524864006968`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"p", "(", "t", ")"}], "=", 
+     RowBox[{
+      FractionBox[
+       RowBox[{"f", "(", "t", ")"}], 
+       RowBox[{"1", "-", 
+        RowBox[{"f", "(", "t", ")"}]}]], "=", 
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           FractionBox[
+            SubscriptBox["W", "A"], 
+            SubscriptBox["W", "a"]], ")"}], "t"], "f", 
+         RowBox[{"(", "0", ")"}]}], 
+        RowBox[{"1", "-", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            FractionBox[
+             SubscriptBox["W", "A"], 
+             SubscriptBox["W", "a"]], ")"}], "t"], 
+          RowBox[{"f", "(", "0", ")"}]}]}]], "=", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           FractionBox[
+            SubscriptBox["W", "A"], 
+            SubscriptBox["W", "a"]], ")"}], "t"], 
+         FractionBox[
+          RowBox[{"p", "(", "0", ")"}], 
+          RowBox[{"q", "(", "0", ")"}]]}], 
+        RowBox[{"1", "-", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            FractionBox[
+             SubscriptBox["W", "A"], 
+             SubscriptBox["W", "a"]], ")"}], "t"], 
+          FractionBox[
+           RowBox[{"p", "(", "0", ")"}], 
+           RowBox[{"q", "(", "0", ")"}]]}]}]]}]}]}], "\[LineSeparator]", "\t", 
+    RowBox[{"=", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SuperscriptBox[
+         SubscriptBox["W", "A"], "t"], 
+        RowBox[{"p", "(", "0", ")"}]}], 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox[
+          SubscriptBox["W", "A"], "t"], 
+         RowBox[{"p", "(", "0", ")"}]}], "-", 
+        RowBox[{
+         SuperscriptBox[
+          SubscriptBox["W", "a"], "t"], 
+         RowBox[{"q", "(", "0", ")"}]}]}]], "=", 
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SuperscriptBox[
+          SubscriptBox["W", "A"], "t"], 
+         RowBox[{"p", "(", "0", ")"}]}], 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox[
+           SubscriptBox["W", "A"], "t"], 
+          RowBox[{"p", "(", "0", ")"}]}], "-", 
+         RowBox[{
+          SuperscriptBox[
+           SubscriptBox["W", "a"], "t"], "(", 
+          RowBox[{"1", "-", 
+           RowBox[{"p", "(", "0", ")"}]}], ")"}]}]], "."}]}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.640350666354714*^9, 3.6403506784856977`*^9}, {
+  3.640351181087729*^9, 3.6403511928939943`*^9}, {3.640351247467299*^9, 
+  3.640351248982781*^9}, {3.640351797153984*^9, 3.640351852463827*^9}, {
+  3.640352045220643*^9, 3.640352154045484*^9}, {3.6403521922518578`*^9, 
+  3.6403522158662024`*^9}, {3.6403523388822813`*^9, 3.6403525306098948`*^9}}],
+
+Cell[TextData[{
+ "Equation (7) provides us with an additional insight: ",
+ StyleBox["selection alters the ratio of allele frequencies by the ratio of \
+their fitnesses",
+  FontSlant->"Italic"],
+ ", i.e. the ratio of allele frequencies undergoes ",
+ StyleBox["exponential growth",
+  FontWeight->"Bold"],
+ " (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", "A"], ">", 
+    SubscriptBox["W", "a"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") ",
+ StyleBox["or decline",
+  FontWeight->"Bold"],
+ " (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", "A"], "<", 
+    SubscriptBox["W", "a"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") over time."
+}], "Text",
+ CellChangeTimes->{{3.640352572775285*^9, 3.640352704911993*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[TextData[{
+ "We can even take this a step further and ask what happens when fitnesses \
+depend on time, i.e. when ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", "A"], "=", 
+    RowBox[{
+     SubscriptBox["W", "A"], "(", "t", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["W", "a"], "=", 
+    RowBox[{
+     SubscriptBox["W", "a"], "(", "t", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Equation (7) suggests that"
+}], "Text",
+ CellChangeTimes->{{3.640352791269492*^9, 3.640352851197215*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"f", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      UnderoverscriptBox["\[Product]", 
+       RowBox[{"i", "=", "0"}], 
+       RowBox[{"t", "-", "1"}]], 
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SubscriptBox["W", "A"], "(", "i", ")"}], 
+        RowBox[{
+         SubscriptBox["W", "a"], "(", "i", ")"}]], 
+       RowBox[{"f", "(", "0", ")"}]}]}], "=", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        UnderoverscriptBox["\[Product]", 
+         RowBox[{"i", "=", "0"}], 
+         RowBox[{"t", "-", "1"}]], 
+        RowBox[{
+         SubscriptBox["W", "A"], 
+         RowBox[{"(", "i", ")"}]}]}], 
+       RowBox[{
+        UnderoverscriptBox["\[Product]", 
+         RowBox[{"i", "=", "0"}], 
+         RowBox[{"t", "-", "1"}]], 
+        RowBox[{
+         SubscriptBox["W", "a"], "(", "i", ")"}]}]], 
+      RowBox[{
+       RowBox[{"f", "(", "0", ")"}], "."}]}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.640350666354714*^9, 3.6403506784856977`*^9}, {
+  3.640351181087729*^9, 3.6403511928939943`*^9}, {3.640351247467299*^9, 
+  3.640351248982781*^9}, {3.640351797153984*^9, 3.640351852463827*^9}, {
+  3.640352045220643*^9, 3.640352154045484*^9}, {3.640352893669121*^9, 
+  3.6403530692444153`*^9}}],
+
+Cell["\<\
+At this point, we recall the definition of the geometric mean,\
+\>", "Text",
+ CellChangeTimes->{{3.6403530714825277`*^9, 3.640353099002747*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["x", "_"], "g"], "=", 
+    RowBox[{
+     RadicalBox[
+      RowBox[{
+       UnderoverscriptBox["\[Product]", 
+        RowBox[{"i", "=", "0"}], 
+        RowBox[{"n", "-", "1"}]], 
+       SubscriptBox["x", "i"]}], "n"], "."}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.640353125979495*^9, 3.640353151291724*^9}, {
+  3.6403532080109053`*^9, 3.64035329503413*^9}}],
+
+Cell[TextData[{
+ "If all the ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["x", "i"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " are positive, then the geometric mean is smaller or equal to the \
+arithmetic mean."
+}], "Text",
+ CellChangeTimes->{{3.640353419575441*^9, 3.640353450127562*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell["Therefore, Eq. (10) can be written as", "Text",
+ CellChangeTimes->{{3.640353249305125*^9, 3.6403532572332478`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"f", "(", "t", ")"}], "=", 
+     RowBox[{
+      RowBox[{
+       FractionBox[
+        SuperscriptBox[
+         RowBox[{"(", 
+          SubscriptBox[
+           OverscriptBox["W", "_"], 
+           RowBox[{"A", ",", "g"}]], ")"}], "t"], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          SubscriptBox[
+           OverscriptBox["W", "_"], 
+           RowBox[{"a", ",", "g"}]], ")"}], "t"]], 
+       RowBox[{"f", "(", "0", ")"}]}], "=", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         FractionBox[
+          SubscriptBox[
+           OverscriptBox["W", "_"], 
+           RowBox[{"A", ",", "g"}]], 
+          SubscriptBox[
+           OverscriptBox["W", "_"], 
+           RowBox[{"a", ",", "g"}]]], ")"}], "t"], 
+       RowBox[{"f", "(", "0", ")"}]}]}]}], ","}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.640350666354714*^9, 3.6403506784856977`*^9}, {
+   3.640351181087729*^9, 3.6403511928939943`*^9}, {3.640351247467299*^9, 
+   3.640351248982781*^9}, {3.640351797153984*^9, 3.640351852463827*^9}, {
+   3.640352045220643*^9, 3.640352154045484*^9}, {3.640352893669121*^9, 
+   3.6403530692444153`*^9}, 3.640353278410289*^9, {3.640353312025378*^9, 
+   3.6403534144259644`*^9}, {3.640353468766964*^9, 3.640353469185422*^9}}],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["W", "_"], 
+    RowBox[{"A", ",", "g"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["W", "_"], 
+    RowBox[{"a", ",", "g"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " are the geometric mean fitnesses over time of alleles ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", respectively."
+}], "Text",
+ CellChangeTimes->{{3.640353471111115*^9, 3.64035352313515*^9}}],
+
+Cell[TextData[{
+ "Equation (12) tells us that allele ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " spreads over time if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["W", "_"], 
+     RowBox[{"A", ",", "g"}]], ">", 
+    SubscriptBox[
+     OverscriptBox["W", "_"], 
+     RowBox[{"a", ",", "g"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and vice versa.\nCannings (1971, ",
+ StyleBox["J. Genet.",
+  FontSlant->"Italic"],
+ " 60:255\[Dash]259) demonstrated this result in more general terms. He also \
+pointed out that ",
+ StyleBox["an allele with less fitness variability over time tends to have a \
+higher geometric fitness",
+  FontWeight->"Bold"],
+ " and is thus selectively ",
+ StyleBox["favoured over alleles with the same arithmetic mean fitness but \
+greater temporal variability",
+  FontWeight->"Bold"],
+ " in fitness."
+}], "Text",
+ CellChangeTimes->{{3.6403535268305607`*^9, 3.640353661261796*^9}, {
+  3.640353699965266*^9, 3.640353757917288*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowSize->{1168, 1129},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[2942, 82, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[4377, 136, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[5763, 183, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 25978, 857}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[647, 25, 86, 1, 46, "Input"],
+Cell[736, 28, 87, 1, 46, "Input"],
+Cell[826, 31, 307, 4, 29, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[1158, 39, 737, 13, 148, "Title"],
+Cell[1898, 54, 690, 10, 29, "Subsubtitle"],
+Cell[2591, 66, 116, 2, 29, "Subsubtitle"],
+Cell[2710, 70, 183, 6, 69, "Subsubtitle"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2942, 82, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[3031, 87, 94, 1, 64, "Section"],
+Cell[CellGroupData[{
+Cell[3150, 92, 93, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[3268, 97, 172, 4, 28, "Item"],
+Cell[3443, 103, 139, 1, 28, "Item"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3631, 110, 96, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[3752, 115, 96, 1, 28, "Item"],
+Cell[3851, 118, 143, 2, 28, "Item"],
+Cell[3997, 122, 151, 2, 28, "Item"],
+Cell[4151, 126, 153, 2, 28, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4377, 136, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[4466, 141, 117, 1, 64, "Section"],
+Cell[CellGroupData[{
+Cell[4608, 146, 336, 7, 45, "Item"],
+Cell[4947, 155, 325, 9, 28, "Item"],
+Cell[5275, 166, 427, 10, 45, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5763, 183, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[5852, 188, 133, 1, 44, "Subsection"],
+Cell[5988, 191, 181, 2, 30, "Text"],
+Cell[6172, 195, 667, 21, 47, "DisplayFormulaNumbered"],
+Cell[6842, 218, 558, 18, 34, "Text"],
+Cell[CellGroupData[{
+Cell[7425, 240, 263, 6, 28, "Item"],
+Cell[7691, 248, 1042, 33, 51, "Item"]
+}, Open  ]],
+Cell[8748, 284, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[8795, 287, 1349, 45, 49, "Item"],
+Cell[10147, 334, 974, 29, 47, "DisplayFormulaNumbered"],
+Cell[11124, 365, 897, 29, 30, "Item"],
+Cell[12024, 396, 1703, 54, 72, "DisplayFormulaNumbered"],
+Cell[13730, 452, 161, 2, 30, "Text"],
+Cell[13894, 456, 673, 18, 49, "DisplayFormulaNumbered"],
+Cell[14570, 476, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[14617, 479, 1163, 40, 32, "Text"],
+Cell[15783, 521, 2792, 85, 136, "DisplayFormulaNumbered"],
+Cell[18578, 608, 774, 27, 51, "Text"],
+Cell[19355, 637, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[19402, 640, 613, 20, 32, "Text"],
+Cell[20018, 662, 1326, 39, 55, "DisplayFormulaNumbered"],
+Cell[21347, 703, 154, 3, 30, "Text"],
+Cell[21504, 708, 481, 15, 64, "DisplayFormulaNumbered"],
+Cell[21988, 725, 303, 9, 32, "Text"],
+Cell[22294, 736, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[22341, 739, 121, 1, 30, "Text"],
+Cell[22465, 742, 1351, 37, 57, "DisplayFormulaNumbered"],
+Cell[23819, 781, 680, 25, 35, "Text"],
+Cell[24502, 808, 1045, 31, 73, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

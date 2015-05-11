@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     20348,        684]
-NotebookOptionsPosition[     16047,        540]
-NotebookOutlinePosition[     17104,        576]
-CellTagsIndexPosition[     17026,        571]
+NotebookDataLength[     32665,       1102]
+NotebookOptionsPosition[     27080,        921]
+NotebookOutlinePosition[     28201,        958]
+CellTagsIndexPosition[     28123,        953]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -532,18 +532,398 @@ Cell["Tranformation of an affine model", "Subsection",
  CellChangeTimes->{{3.640084077555048*^9, 3.64008408532226*^9}}],
 
 Cell["\<\
-A much more promising and general approach is to apply tranformation.\
+A much more promising and general approach is to apply a tranformation. \
+Fortunately, in the case of linear models in discrete time, there is a \
+procedure that always works (see Recipe 6.1).\
 \>", "Text",
- CellChangeTimes->{{3.640084089659774*^9, 3.640084111545259*^9}}]
+ CellChangeTimes->{{3.640084089659774*^9, 3.640084111545259*^9}, {
+  3.640346511034213*^9, 3.640346511121686*^9}, {3.6403466696098747`*^9, 
+  3.640346688967596*^9}, {3.640346743783451*^9, 3.640346756414874*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Recipe 6.1: Solving a linear discrete-time model with a constant term\
+\>", "Subsection",
+ CellChangeTimes->{{3.640346760544972*^9, 3.640346777591041*^9}}],
+
+Cell[TextData[{
+ "Affine recursions of the form ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{
+     RowBox[{"\[Rho]", " ", 
+      RowBox[{"n", "(", "t", ")"}]}], "+", "c"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " can be solved as follows:"
+}], "Text",
+ CellChangeTimes->{{3.640346785149439*^9, 3.6403468158146267`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "(1) Solve for the equilibrium ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Here, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["n", "^"], "=", 
+    RowBox[{"c", "/", 
+     RowBox[{"(", 
+      RowBox[{"1", "-", "\[Rho]"}], ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.640346825998721*^9, 3.640346890192067*^9}}],
+
+Cell[TextData[{
+ "(2) Define a ",
+ StyleBox["new variable",
+  FontSlant->"Italic"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Delta]", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " as the ",
+ StyleBox["distance of the system from the equilibrium",
+  FontSlant->"Italic"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Delta]", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"n", "(", "t", ")"}], "-", 
+     OverscriptBox["n", "^"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Reversing this equation implies that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"\[Delta]", "(", "t", ")"}], "+", 
+     OverscriptBox["n", "^"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.640346825998721*^9, 3.640346961287972*^9}, {
+  3.640347477141345*^9, 3.640347477741378*^9}}]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "(3) The recursion equation for the transformed variable is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Delta]", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{"\[Rho]", " ", 
+     RowBox[{"\[Delta]", "(", "t", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " (see Remark 1 below for a proof)."
+}], "Item",
+ CellChangeTimes->{{3.640346825998721*^9, 3.6403470408203707`*^9}, {
+  3.640347563985487*^9, 3.640347564111444*^9}, {3.6403478525666656`*^9, 
+  3.640347852578618*^9}}],
+
+Cell[TextData[{
+ "(4) The general solution for the distance to the equilibrium can be found \
+by iteration: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Delta]", "(", "t", ")"}], "=", 
+    RowBox[{
+     SuperscriptBox["\[Rho]", "t"], 
+     RowBox[{"\[Delta]", "(", "0", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.640346825998721*^9, 3.6403470408203707`*^9}, {
+  3.640347563985487*^9, 3.640347564111444*^9}, {3.6403478525666656`*^9, 
+  3.640347934046451*^9}}],
+
+Cell[TextData[{
+ "(5) The general solution for the original variable is found by using the \
+result from (4) in ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"\[Delta]", "(", "t", ")"}], "+", 
+     OverscriptBox["n", "^"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", which results in"
+}], "Item",
+ CellChangeTimes->{{3.640346825998721*^9, 3.6403470408203707`*^9}, {
+  3.640347563985487*^9, 3.640347564111444*^9}, {3.6403478525666656`*^9, 
+  3.640347946523941*^9}, {3.640348132234132*^9, 3.6403481941854677`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"n", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[Rho]", "t"], "\[Delta]", 
+      RowBox[{"(", "0", ")"}]}], "+", 
+     OverscriptBox["n", "^"]}]}]}], TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.64034822206619*^9, 3.6403482465533123`*^9}, {
+  3.640348321796906*^9, 3.6403483233849983`*^9}}],
+
+Cell[TextData[{
+ "Rewriting ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Delta]", "(", "0", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in terms of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", "0", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", i.e. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Delta]", "(", "0", ")"}], "=", 
+    RowBox[{
+     RowBox[{"n", "(", "0", ")"}], "-", 
+     OverscriptBox["n", "^"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", gives the general solution of interest:"
+}], "Text",
+ CellChangeTimes->{{3.640348265072591*^9, 3.6403483119925423`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"n", "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["\[Rho]", "t"], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"n", 
+          RowBox[{"(", "0", ")"}]}], "-", 
+         OverscriptBox["n", "^"]}], ")"}]}], "+", 
+      OverscriptBox["n", "^"]}], "=", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["\[Rho]", "t"], "n", 
+       RowBox[{"(", "0", ")"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         SuperscriptBox["\[Rho]", "t"]}], ")"}], 
+       RowBox[{
+        OverscriptBox["n", "^"], "."}]}]}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.640348342641788*^9, 3.6403484254080343`*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[TextData[{
+ StyleBox["Remark 1:",
+  FontWeight->"Bold"],
+ " To prove step (3), use the recursion equation for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", 
+    RowBox[{"t", "+", "1"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " to write the recursion equation for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Delta]", "(", 
+    RowBox[{"t", "+", "1"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.640347022788624*^9, 3.640347026132502*^9}, {
+  3.640347540303691*^9, 3.640347548659255*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"\[Delta]", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"n", 
+       RowBox[{"(", 
+        RowBox[{"t", "+", "1"}], ")"}]}], "-", 
+      OverscriptBox["n", "^"]}], "=", 
+     RowBox[{
+      RowBox[{"\[Rho]", " ", "n", 
+       RowBox[{"(", "t", ")"}]}], "+", "c", "-", 
+      RowBox[{
+       OverscriptBox["n", "^"], "."}]}]}]}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.640347097547666*^9, 3.640347106261198*^9}, {
+  3.640347400219885*^9, 3.640347502969429*^9}, {3.64034762227017*^9, 
+  3.6403476240729733`*^9}, {3.640347735228836*^9, 3.6403477382784986`*^9}}],
+
+Cell[TextData[{
+ "Replacing ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Delta]", "(", "t", ")"}], "+", 
+    OverscriptBox["n", "^"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " gives"
+}], "Text",
+ CellChangeTimes->{
+  3.640347521767646*^9, {3.640347585391183*^9, 3.6403476083749723`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"\[Delta]", "(", 
+     RowBox[{"t", "+", "1"}], ")"}], "=", 
+    RowBox[{
+     RowBox[{"\[Rho]", " ", "\[Delta]", 
+      RowBox[{"(", "t", ")"}]}], "+", 
+     RowBox[{"\[Rho]", " ", 
+      OverscriptBox["n", "^"]}], "+", "c", "-", 
+     RowBox[{
+      OverscriptBox["n", "^"], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.640347097547666*^9, 3.640347106261198*^9}, {
+  3.640347400219885*^9, 3.640347502969429*^9}, {3.64034762227017*^9, 
+  3.6403476497439528`*^9}}],
+
+Cell[TextData[{
+ "Plugging in the formula for the equilibrium, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["n", "^"], "=", 
+    RowBox[{"c", "/", 
+     RowBox[{"(", 
+      RowBox[{"1", "-", "\[Rho]"}], ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", causes the last three terms to equal zero."
+}], "Text",
+ CellChangeTimes->{{3.640347651895582*^9, 3.640347687678246*^9}, {
+  3.640347719093986*^9, 3.6403477276457443`*^9}}],
+
+Cell[TextData[{
+ StyleBox["Remark 2:",
+  FontWeight->"Bold"],
+ " As Recipe 6.1 always works for affine recursions with one variable, steps \
+(2) to (4) can be skipped, and the result in Eq. (4) from step (5) can be \
+used directly after having identified ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and \[Rho]."
+}], "Text",
+ CellChangeTimes->{{3.640347743789701*^9, 3.6403478163810043`*^9}, {
+  3.640348212529533*^9, 3.64034821561723*^9}, {3.640348435543357*^9, 
+  3.640348435631239*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Exercise", "Subsubsection",
+ CellChangeTimes->{{3.640348465352384*^9, 3.640348466654819*^9}}],
+
+Cell["\<\
+Find a general solution for the (female) squirrels-on-campus example \
+introduced in unit 1, using Recipe 6.1. Start from the discrete-time \
+recursion equation\
+\>", "Text",
+ CellChangeTimes->{{3.640348479526947*^9, 3.6403485554464407`*^9}, {
+  3.6403487024206667`*^9, 3.640348703652874*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"n", "(", 
+      RowBox[{"t", "+", "1"}], ")"}], "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "+", "b"}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"1", "-", "d"}], ")"}], "n", 
+       RowBox[{"(", "t", ")"}]}], "+", "m"}]}], ","}]}], 
+  TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.640348646859514*^9, 3.640348684909639*^9}, {
+  3.640348843067202*^9, 3.640348845692039*^9}}],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox["b", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the number of offspring per mother, ",
+ Cell[BoxData[
+  FormBox["d", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the proportion of squirrels dying, and ",
+ Cell[BoxData[
+  FormBox["m", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " a constant number of squirrels immigrating from the Arboretum each time \
+step. As a first step, identify ",
+ Cell[BoxData[
+  FormBox["R", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.6403486872685347`*^9, 3.6403488237872133`*^9}}]
 }, Open  ]]
 }, Open  ]]
 },
-ScreenStyleEnvironment->"SlideShow",
-WindowSize->{843, 809},
+ScreenStyleEnvironment->"Working",
+WindowSize->{1168, 1129},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
-Magnification:>1.25 Inherited,
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
 2014)",
 StyleDefinitions->"Default.nb"
@@ -554,136 +934,174 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "SlideShowHeader"->{
-  Cell[580, 22, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[2917, 82, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[2917, 82, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[4352, 136, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[4352, 136, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[7088, 234, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[7088, 234, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[11376, 377, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[11376, 377, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[15649, 525, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[15649, 525, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[25306, 859, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 16481, 555}
+ {"SlideShowHeader", 27483, 935}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 64, 1, 1, "SlideShowNavigationBar",
+Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[647, 25, 86, 1, 86, "Input"],
-Cell[736, 28, 87, 1, 86, "Input"],
-Cell[826, 31, 307, 4, 77, "Subsubtitle"],
+Cell[647, 25, 86, 1, 46, "Input"],
+Cell[736, 28, 87, 1, 46, "Input"],
+Cell[826, 31, 307, 4, 29, "Subsubtitle"],
 Cell[CellGroupData[{
-Cell[1158, 39, 712, 13, 497, "Title"],
-Cell[1873, 54, 690, 10, 77, "Subsubtitle"],
-Cell[2566, 66, 116, 2, 77, "Subsubtitle"],
-Cell[2685, 70, 183, 6, 176, "Subsubtitle"]
+Cell[1158, 39, 712, 13, 148, "Title"],
+Cell[1873, 54, 690, 10, 29, "Subsubtitle"],
+Cell[2566, 66, 116, 2, 29, "Subsubtitle"],
+Cell[2685, 70, 183, 6, 69, "Subsubtitle"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2917, 82, 64, 1, 1, "SlideShowNavigationBar",
+Cell[2917, 82, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[3006, 87, 94, 1, 166, "Section"],
+Cell[3006, 87, 94, 1, 64, "Section"],
 Cell[CellGroupData[{
-Cell[3125, 92, 93, 1, 124, "Subsection"],
+Cell[3125, 92, 93, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[3243, 97, 172, 4, 58, "Item"],
-Cell[3418, 103, 139, 1, 58, "Item"]
+Cell[3243, 97, 172, 4, 28, "Item"],
+Cell[3418, 103, 139, 1, 28, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3606, 110, 96, 1, 124, "Subsection"],
+Cell[3606, 110, 96, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[3727, 115, 96, 1, 58, "Item"],
-Cell[3826, 118, 143, 2, 58, "Item"],
-Cell[3972, 122, 151, 2, 58, "Item"],
-Cell[4126, 126, 153, 2, 58, "Item"]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[4352, 136, 64, 1, 1, "SlideShowNavigationBar",
- CellTags->"SlideShowHeader"],
-Cell[CellGroupData[{
-Cell[4441, 141, 148, 2, 166, "Section"],
-Cell[4592, 145, 439, 9, 94, "Text"],
-Cell[CellGroupData[{
-Cell[5056, 158, 116, 1, 124, "Subsection"],
-Cell[5175, 161, 488, 16, 94, "Text"],
-Cell[CellGroupData[{
-Cell[5688, 181, 135, 1, 64, "Subsubsection"],
-Cell[5826, 184, 399, 12, 56, "Text"],
-Cell[6228, 198, 316, 10, 49, "DisplayFormulaNumbered"],
-Cell[6547, 210, 468, 16, 56, "Text"]
+Cell[3727, 115, 96, 1, 28, "Item"],
+Cell[3826, 118, 143, 2, 28, "Item"],
+Cell[3972, 122, 151, 2, 28, "Item"],
+Cell[4126, 126, 153, 2, 28, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7088, 234, 64, 1, 1, "SlideShowNavigationBar",
+Cell[4352, 136, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[7177, 239, 153, 2, 166, "Section"],
-Cell[7333, 243, 460, 9, 94, "Text"],
-Cell[7796, 254, 597, 12, 94, "Text"],
+Cell[4441, 141, 148, 2, 64, "Section"],
+Cell[4592, 145, 439, 9, 30, "Text"],
 Cell[CellGroupData[{
-Cell[8418, 270, 167, 2, 124, "Subsection"],
-Cell[8588, 274, 490, 14, 94, "Text"],
+Cell[5056, 158, 116, 1, 44, "Subsection"],
+Cell[5175, 161, 488, 16, 49, "Text"],
+Cell[CellGroupData[{
+Cell[5688, 181, 135, 1, 35, "Subsubsection"],
+Cell[5826, 184, 399, 12, 31, "Text"],
+Cell[6228, 198, 316, 10, 26, "DisplayFormulaNumbered"],
+Cell[6547, 210, 468, 16, 31, "Text"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7088, 234, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[7177, 239, 153, 2, 64, "Section"],
+Cell[7333, 243, 460, 9, 49, "Text"],
+Cell[7796, 254, 597, 12, 49, "Text"],
+Cell[CellGroupData[{
+Cell[8418, 270, 167, 2, 44, "Subsection"],
+Cell[8588, 274, 490, 14, 49, "Text"],
 Cell[9081, 290, 44, 1, 1, "PageBreak",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[9150, 295, 100, 1, 64, "Subsubsection"],
+Cell[9150, 295, 100, 1, 35, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[9275, 300, 1049, 38, 95, "Item"],
-Cell[10327, 340, 547, 17, 90, "Item"]
+Cell[9275, 300, 1049, 38, 49, "Item"],
+Cell[10327, 340, 547, 17, 31, "Item"]
 }, Open  ]],
-Cell[10889, 360, 414, 9, 131, "Text"]
+Cell[10889, 360, 414, 9, 49, "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11376, 377, 64, 1, 1, "SlideShowNavigationBar",
+Cell[11376, 377, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[11465, 382, 115, 1, 166, "Section"],
-Cell[11583, 385, 187, 4, 56, "Text"],
-Cell[11773, 391, 275, 5, 89, "Item"],
-Cell[12051, 398, 348, 11, 46, "DisplayFormulaNumbered"],
-Cell[12402, 411, 312, 5, 89, "Item"],
-Cell[12717, 418, 353, 11, 46, "DisplayFormulaNumbered"],
-Cell[13073, 431, 709, 20, 131, "Text"],
+Cell[11465, 382, 115, 1, 64, "Section"],
+Cell[11583, 385, 187, 4, 30, "Text"],
+Cell[11773, 391, 275, 5, 28, "Item"],
+Cell[12051, 398, 348, 11, 25, "DisplayFormulaNumbered"],
+Cell[12402, 411, 312, 5, 28, "Item"],
+Cell[12717, 418, 353, 11, 25, "DisplayFormulaNumbered"],
+Cell[13073, 431, 709, 20, 51, "Text"],
 Cell[13785, 453, 44, 1, 1, "PageBreak",
  PageBreakBelow->True],
-Cell[13832, 456, 190, 6, 56, "Text"],
+Cell[13832, 456, 190, 6, 30, "Text"],
 Cell[CellGroupData[{
-Cell[14047, 466, 114, 1, 124, "Subsection"],
-Cell[14164, 469, 438, 18, 94, "Text"],
-Cell[14605, 489, 449, 11, 94, "Text"],
+Cell[14047, 466, 114, 1, 44, "Subsection"],
+Cell[14164, 469, 438, 18, 30, "Text"],
+Cell[14605, 489, 449, 11, 49, "Text"],
 Cell[CellGroupData[{
-Cell[15079, 504, 102, 1, 64, "Subsubsection"],
-Cell[15184, 507, 179, 4, 56, "Text"],
-Cell[15366, 513, 210, 4, 94, "Text"]
+Cell[15079, 504, 102, 1, 35, "Subsubsection"],
+Cell[15184, 507, 179, 4, 30, "Text"],
+Cell[15366, 513, 210, 4, 30, "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15649, 525, 64, 1, 1, "SlideShowNavigationBar",
+Cell[15649, 525, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[15738, 530, 119, 1, 108, "Subsection"],
-Cell[15860, 533, 159, 3, 94, "Text"]
+Cell[15738, 530, 119, 1, 44, "Subsection"],
+Cell[15860, 533, 428, 7, 49, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16325, 545, 165, 3, 44, "Subsection"],
+Cell[16493, 550, 411, 13, 32, "Text"],
+Cell[CellGroupData[{
+Cell[16929, 567, 468, 17, 31, "Item"],
+Cell[17400, 586, 937, 33, 31, "Item"]
+}, Open  ]],
+Cell[18352, 622, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[18421, 627, 535, 14, 30, "Item"],
+Cell[18959, 643, 529, 15, 30, "Item"],
+Cell[19491, 660, 590, 15, 30, "Item"]
+}, Open  ]],
+Cell[20096, 678, 399, 11, 27, "DisplayFormula"],
+Cell[20498, 691, 642, 22, 33, "Text"],
+Cell[21143, 715, 775, 26, 29, "DisplayFormulaNumbered"],
+Cell[21921, 743, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True],
+Cell[21968, 746, 572, 18, 31, "Text"],
+Cell[22543, 766, 694, 20, 27, "DisplayFormula"],
+Cell[23240, 788, 435, 16, 33, "Text"],
+Cell[23678, 806, 559, 16, 27, "DisplayFormula"],
+Cell[24240, 824, 457, 13, 33, "Text"],
+Cell[24700, 839, 557, 14, 51, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25306, 859, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[25395, 864, 99, 1, 35, "Subsubsection"],
+Cell[25497, 867, 303, 6, 30, "Text"],
+Cell[25803, 875, 503, 16, 25, "DisplayFormula"],
+Cell[26309, 893, 743, 24, 51, "Text"]
 }, Open  ]]
 }, Open  ]]
 }
