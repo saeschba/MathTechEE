@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13257,        430]
-NotebookOptionsPosition[     10745,        341]
-NotebookOutlinePosition[     11513,        370]
-CellTagsIndexPosition[     11435,        365]
+NotebookDataLength[     18965,        615]
+NotebookOptionsPosition[     15475,        497]
+NotebookOutlinePosition[     16421,        530]
+CellTagsIndexPosition[     16343,        525]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -215,27 +215,29 @@ Cell[BoxData[
  CellChangeTimes->{{3.6406590771515102`*^9, 3.640659125555953*^9}}],
 
 Cell[TextData[{
- "Equation (7) represents two independent population-dynamic processes; the \
+ "Equation (1) represents two independent population-dynamic processes; the \
 dynamics of ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["n", "1"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["n", "1"], TraditionalForm]]],
  " to not depend on ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["n", "2"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["n", "2"], TraditionalForm]]],
  " and vice versa. Each species grows or shrinks according to the exponential \
 one-variable model."
 }], "Text",
- CellChangeTimes->{{3.640659208784933*^9, 3.6406592922240477`*^9}}],
+ CellChangeTimes->{{3.640659208784933*^9, 3.6406592922240477`*^9}, {
+  3.640687098440029*^9, 3.640687098519492*^9}}],
 
 Cell["", "PageBreak",
  PageBreakBelow->True],
 
 Cell[TextData[{
- "There is only one joint equilibrium, namely ",
+ "Linear multivariate models of the form as in Eq. (1) have ",
+ StyleBox["only one joint equilibrium",
+  FontWeight->"Bold"],
+ ", here ",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -243,11 +245,11 @@ Cell[TextData[{
      OverscriptBox["n", "^"], "1"], "=", 
     RowBox[{
      SubscriptBox[
-      OverscriptBox["n", "^"], "2"], "=", "0"}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+      OverscriptBox["n", "^"], "2"], "=", "0"}]}], TraditionalForm]]],
  ". It is found by setting both equations in (1) to zero at the same time."
 }], "Text",
- CellChangeTimes->{{3.640659321835175*^9, 3.6406594122307587`*^9}}],
+ CellChangeTimes->{{3.640659321835175*^9, 3.6406594122307587`*^9}, {
+  3.6406870711601267`*^9, 3.6406871113435593`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -334,8 +336,162 @@ Cell[TextData[{
   FormatType->"TraditionalForm"],
  " corresponding eigenvalues."
 }], "Text",
- CellChangeTimes->{{3.64066006210215*^9, 3.640660158525188*^9}}]
+ CellChangeTimes->{{3.64066006210215*^9, 3.640660158525188*^9}}],
+
+Cell["\<\
+Remark: Keep in mind the difference between eigenvectors and null clines. In \
+a phase-plane for a linear model with two variables:\
+\>", "Text",
+ CellChangeTimes->{{3.6406868373262863`*^9, 3.640686903898428*^9}, {
+  3.6406869745694942`*^9, 3.640686979369296*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Null clines",
+  FontWeight->"Bold"],
+ " are lines along which ",
+ StyleBox["a particular variable does not change over time",
+  FontSlant->"Italic"],
+ ". Each variable has one null cline. If the system is at a null cline, ",
+ StyleBox["the direction of change is perpendicular to the axis of the \
+variable whose null cline it is, and parallel to the axis of the other \
+variable",
+  FontSlant->"Italic"],
+ ". The ",
+ StyleBox["equilibrium",
+  FontSlant->"Italic"],
+ " is where the two null clines ",
+ StyleBox["intersect",
+  FontSlant->"Italic"],
+ ", because this is where both variables do not change over time."
+}], "Item",
+ CellChangeTimes->{{3.6406868719711037`*^9, 3.640686874146987*^9}, {
+  3.6406869066746492`*^9, 3.640686960657901*^9}, {3.640686992697095*^9, 
+  3.640687042680502*^9}, {3.640687118839591*^9, 3.640687129630107*^9}, {
+  3.640687281405455*^9, 3.6406872909653387`*^9}}],
+
+Cell[TextData[{
+ StyleBox["Eigenvectors",
+  FontWeight->"Bold"],
+ " represent ",
+ StyleBox["combinations of the dynamic variables",
+  FontSlant->"Italic"],
+ " for which the ",
+ StyleBox["relative values of the variables remain constant",
+  FontSlant->"Italic"],
+ ". When a dynamical system is on an eigenvector, it never leaves the \
+eigenvector. The movement along an eigenvector is either inward or outward."
+}], "Item",
+ CellChangeTimes->{{3.6406868719711037`*^9, 3.640686874146987*^9}, {
+  3.6406869066746492`*^9, 3.640686960657901*^9}, {3.640686992697095*^9, 
+  3.640687042680502*^9}, {3.640687118839591*^9, 3.640687132927095*^9}, {
+  3.640687353164342*^9, 3.64068738289167*^9}, {3.640687433170909*^9, 
+  3.640687540312418*^9}}]
 }, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Matrix form", "Subsubsection",
+ CellChangeTimes->{{3.640688242612499*^9, 3.6406882498261766`*^9}}],
+
+Cell["\<\
+A multivariate linear model can be written as a matrix of constants times a \
+vector of variables:\
+\>", "Text",
+ CellChangeTimes->{{3.6406882540099697`*^9, 3.640688273562204*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{"\[DifferentialD]", 
+       OverscriptBox["n", "\[RightVector]"]}], 
+      RowBox[{"\[DifferentialD]", "t"}]], "=", 
+     RowBox[{
+      StyleBox["M",
+       FontWeight->"Bold",
+       FontSlant->"Plain"], " ", 
+      OverscriptBox["n", "\[RightVector]"]}]}], ","}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.64068828890628*^9, 3.6406883414825907`*^9}}],
+
+Cell["where", "Text",
+ CellChangeTimes->{{3.640688331881482*^9, 3.640688332233397*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[DifferentialD]", 
+      OverscriptBox["n", "\[RightVector]"]}], "=", 
+     RowBox[{"(", GridBox[{
+        {
+         FractionBox[
+          RowBox[{"\[DifferentialD]", 
+           SubscriptBox["n", "1"]}], 
+          RowBox[{"\[DifferentialD]", "t"}]]},
+        {
+         FractionBox[
+          RowBox[{"\[DifferentialD]", 
+           SubscriptBox["n", "2"]}], 
+          RowBox[{"\[DifferentialD]", "t"}]]}
+       }], ")"}]}], ",", " ", 
+    RowBox[{
+     OverscriptBox["n", "\[RightVector]"], "=", 
+     RowBox[{"(", GridBox[{
+        {
+         SubscriptBox["n", "1"]},
+        {
+         SubscriptBox["n", "2"]}
+       }], ")"}]}], ",", " ", 
+    RowBox[{
+     StyleBox["M",
+      FontWeight->"Bold",
+      FontSlant->"Plain"], " ", "=", " ", 
+     RowBox[{
+      RowBox[{"(", GridBox[{
+         {"a", "b"},
+         {"c", "d"}
+        }], ")"}], "."}]}]}]}], TraditionalForm]], "DisplayFormula",
+ CellChangeTimes->{{3.64068828890628*^9, 3.640688441162459*^9}}],
+
+Cell[TextData[{
+ "In our first example, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", "=", 
+    SubscriptBox["r", "1"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", "
+}], "Text",
+ CellChangeTimes->{{3.640688514690641*^9, 3.640688530999421*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Affine models with multiple variables", "Subsection",
+ CellChangeTimes->{{3.64068820740524*^9, 3.640688227906499*^9}, {
+  3.640688548815309*^9, 3.640688552471191*^9}}],
+
+Cell["This is a text cell.", "Text"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -359,12 +515,16 @@ CellTagsIndex->{
   Cell[3005, 83, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
   Cell[5212, 152, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[12826, 397, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[15146, 484, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 11150, 355}
+ {"SlideShowHeader", 15880, 511}
  }
 *)
 (*NotebookFileOutline
@@ -415,21 +575,46 @@ Cell[5301, 157, 226, 3, 64, "Section"],
 Cell[5530, 162, 676, 12, 87, "Text"],
 Cell[6209, 176, 447, 14, 32, "Text"],
 Cell[6659, 192, 681, 22, 90, "DisplayFormulaNumbered"],
-Cell[7343, 216, 524, 15, 51, "Text"],
-Cell[7870, 233, 44, 1, 4, "PageBreak",
+Cell[7343, 216, 507, 14, 51, "Text"],
+Cell[7853, 232, 44, 1, 4, "PageBreak",
  PageBreakBelow->True],
-Cell[7917, 236, 454, 13, 33, "Text"],
+Cell[7900, 235, 563, 16, 33, "Text"],
 Cell[CellGroupData[{
-Cell[8396, 253, 98, 1, 44, "Subsection"],
+Cell[8488, 255, 98, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[8519, 258, 732, 24, 32, "Item"],
-Cell[9254, 284, 505, 16, 30, "Item"]
+Cell[8611, 260, 732, 24, 32, "Item"],
+Cell[9346, 286, 505, 16, 30, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9808, 306, 128, 1, 44, "Subsection"],
-Cell[9939, 309, 766, 27, 50, "Text"]
+Cell[9900, 308, 128, 1, 44, "Subsection"],
+Cell[10031, 311, 766, 27, 50, "Text"],
+Cell[10800, 340, 274, 5, 30, "Text"],
+Cell[CellGroupData[{
+Cell[11099, 349, 918, 22, 62, "Item"],
+Cell[12020, 373, 733, 16, 45, "Item"]
 }, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12826, 397, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[12915, 402, 104, 1, 35, "Subsubsection"],
+Cell[13022, 405, 190, 4, 30, "Text"],
+Cell[13215, 411, 481, 15, 50, "DisplayFormulaNumbered"],
+Cell[13699, 428, 87, 1, 30, "Text"],
+Cell[13789, 431, 1048, 36, 66, "DisplayFormula"],
+Cell[14840, 469, 257, 9, 32, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15146, 484, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[15235, 489, 173, 2, 44, "Subsection"],
+Cell[15411, 493, 36, 0, 30, "Text"]
 }, Open  ]]
 }, Open  ]]
 }
