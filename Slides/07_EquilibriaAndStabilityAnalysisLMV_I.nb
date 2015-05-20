@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18965,        615]
-NotebookOptionsPosition[     15475,        497]
-NotebookOutlinePosition[     16421,        530]
-CellTagsIndexPosition[     16343,        525]
+NotebookDataLength[     25038,        797]
+NotebookOptionsPosition[     20973,        665]
+NotebookOutlinePosition[     21916,        698]
+CellTagsIndexPosition[     21838,        693]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -53,7 +53,7 @@ Linear models with multiple variables (part I)\
    3.640658417254951*^9, 3.640658441314617*^9}},
  TextAlignment->Center],
 
-Cell["Based on Chapter 6 in Otto and Day (2007)", "Subsubtitle",
+Cell["Based on Chapter 7 in Otto and Day (2007)", "Subsubtitle",
  CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
   3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
   3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}, {
@@ -62,7 +62,7 @@ Cell["Based on Chapter 6 in Otto and Day (2007)", "Subsubtitle",
   3.637923885489958*^9, 3.637923887351268*^9}, {3.638194269997259*^9, 
   3.638194274665896*^9}, {3.6385821193506002`*^9, 3.638582121525537*^9}, {
   3.639272193592238*^9, 3.6392721936778107`*^9}, {3.640082151852682*^9, 
-  3.640082152012735*^9}},
+  3.640082152012735*^9}, {3.641032582983231*^9, 3.64103258313439*^9}},
  TextAlignment->Center],
 
 Cell["", "Subsubtitle",
@@ -491,13 +491,181 @@ Cell["Affine models with multiple variables", "Subsection",
  CellChangeTimes->{{3.64068820740524*^9, 3.640688227906499*^9}, {
   3.640688548815309*^9, 3.640688552471191*^9}}],
 
-Cell["This is a text cell.", "Text"]
+Cell[TextData[{
+ "As for models with one variable, there is also a second type of model for \
+multivariable linear models: adding a constant term to the linear term \
+produces an ",
+ StyleBox["affine multivariable linear model",
+  FontWeight->"Bold"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.6410326594376583`*^9, 3.641032742953911*^9}, {
+  3.641033023219097*^9, 3.641033023714406*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{"\[DifferentialD]", 
+       OverscriptBox["n", "\[RightVector]"]}], 
+      RowBox[{"\[DifferentialD]", "t"}]], "=", 
+     RowBox[{
+      RowBox[{
+       StyleBox["M",
+        FontWeight->"Bold",
+        FontSlant->"Plain"], " ", 
+       OverscriptBox["n", "\[RightVector]"]}], "+", 
+      OverscriptBox["c", "\[RightVector]"]}]}], ","}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.64068828890628*^9, 3.6406883414825907`*^9}, {
+  3.641032801997142*^9, 3.6410328272748537`*^9}}],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["c", "\[RightVector]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is a vector of constants, each representing the rate of input or outflow \
+to its corresponding variable. As in one-variable models, affine models can \
+be transformed into non-affine models of the form in Eq. (2) by considering \
+the dislocation from the equilibrium (details below)."
+}], "Text",
+ CellChangeTimes->{{3.6410328433561907`*^9, 3.6410329526088037`*^9}, {
+  3.641033033854357*^9, 3.6410330726936007`*^9}, {3.6410337357112083`*^9, 
+  3.641033738989031*^9}}],
+
+Cell["Affine models also arise in discrete time and take the form", "Text",
+ CellChangeTimes->{{3.641033648924848*^9, 3.6410336761290417`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      OverscriptBox["n", "\[RightVector]"], "(", 
+      RowBox[{"t", "+", "1"}], ")"}], "=", 
+     RowBox[{
+      RowBox[{
+       StyleBox["M",
+        FontWeight->"Bold",
+        FontSlant->"Plain"], " ", 
+       RowBox[{
+        OverscriptBox["n", "\[RightVector]"], "(", "t", ")"}]}], "+", 
+      OverscriptBox["c", "\[RightVector]"]}]}], ","}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.64068828890628*^9, 3.6406883414825907`*^9}, {
+  3.641032801997142*^9, 3.6410328272748537`*^9}, {3.64103368445313*^9, 
+  3.641033717770136*^9}}],
+
+Cell[TextData[{
+ "where again ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["M",
+    FontWeight->"Bold",
+    FontSlant->"Plain"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is a matrix of constants and ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["c", "\[RightVector]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " a vector of constants."
+}], "Text",
+ CellChangeTimes->{{3.641033744316366*^9, 3.641033768669653*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Transforming affine to non-affine multivariable models", "Subsubsection",
+ CellChangeTimes->{{3.641032966929329*^9, 3.641032986596875*^9}}],
+
+Cell["\<\
+Starting from Eq. (2), we note that at equilibrium, each variable must not \
+change. Hence, the equilibrium condition for a continuous-time affine model is\
+\>", "Text",
+ CellChangeTimes->{{3.641033110253384*^9, 3.641033123365663*^9}, {
+  3.641033164228745*^9, 3.641033177998205*^9}, {3.64103362442759*^9, 
+  3.641033632555973*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     OverscriptBox["0", "\[RightVector]"], "=", 
+     RowBox[{
+      RowBox[{
+       StyleBox["M",
+        FontWeight->"Bold",
+        FontSlant->"Plain"], " ", 
+       OverscriptBox[
+        OverscriptBox["n", "\[RightVector]"], "^"]}], "+", 
+      OverscriptBox["c", "\[RightVector]"]}]}], ","}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.64068828890628*^9, 3.6406883414825907`*^9}, {
+  3.641032801997142*^9, 3.6410328272748537`*^9}, {3.641033206242771*^9, 
+  3.641033253703182*^9}}],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["0", "\[RightVector]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is a vector of zeros."
+}], "Text",
+ CellChangeTimes->{{3.64103325849697*^9, 3.641033288111499*^9}}],
+
+Cell["\<\
+In discrete time, the equilibrium for Eq. (4) must satisfy the condition\
+\>", "Text",
+ CellChangeTimes->{{3.641033299092898*^9, 3.641033332652996*^9}, {
+  3.641033368127199*^9, 3.641033434550413*^9}, {3.641033786871804*^9, 
+  3.641033802613247*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    OverscriptBox["n", 
+     OverscriptBox["\[RightVector]", "^"]], "=", 
+    RowBox[{
+     RowBox[{
+      StyleBox["M",
+       FontWeight->"Bold",
+       FontSlant->"Plain"], " ", 
+      OverscriptBox[
+       OverscriptBox["n", "\[RightVector]"], "^"]}], "+", 
+     RowBox[{
+      OverscriptBox["c", "\[RightVector]"], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.64068828890628*^9, 3.6406883414825907`*^9}, {
+  3.641032801997142*^9, 3.6410328272748537`*^9}, {3.641033448062682*^9, 
+  3.6410334874810123`*^9}, {3.641033608068103*^9, 3.641033609025011*^9}, {
+  3.641033811232069*^9, 3.6410339180720387`*^9}}],
+
+Cell[TextData[{
+ "Moving ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"M", " ", 
+    OverscriptBox["n", "\[RightVector]"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " gives "
+}], "Text",
+ CellChangeTimes->{{3.6410348175322847`*^9, 3.641034884183319*^9}, {
+  3.641035006724828*^9, 3.641035016044731*^9}}]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 ScreenStyleEnvironment->"Working",
-WindowSize->{1168, 1129},
-WindowMargins->{{533, Automatic}, {Automatic, 0}},
+WindowSize->{1101, 807},
+WindowMargins->{{6, Automatic}, {0, Automatic}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
@@ -512,19 +680,19 @@ CellTagsIndex->{
  "SlideShowHeader"->{
   Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[3005, 83, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[3050, 83, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[5212, 152, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[5257, 152, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[12826, 397, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[12871, 397, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[15146, 484, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[15191, 484, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 15880, 511}
+ {"SlideShowHeader", 21375, 679}
  }
 *)
 (*NotebookFileOutline
@@ -537,84 +705,98 @@ Cell[736, 28, 87, 1, 46, "Input"],
 Cell[826, 31, 307, 4, 29, "Subsubtitle"],
 Cell[CellGroupData[{
 Cell[1158, 39, 800, 14, 148, "Title"],
-Cell[1961, 55, 690, 10, 29, "Subsubtitle"],
-Cell[2654, 67, 116, 2, 29, "Subsubtitle"],
-Cell[2773, 71, 183, 6, 69, "Subsubtitle"]
+Cell[1961, 55, 735, 10, 29, "Subsubtitle"],
+Cell[2699, 67, 116, 2, 29, "Subsubtitle"],
+Cell[2818, 71, 183, 6, 69, "Subsubtitle"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3005, 83, 64, 1, 74, "SlideShowNavigationBar",
+Cell[3050, 83, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[3094, 88, 94, 1, 64, "Section"],
+Cell[3139, 88, 94, 1, 64, "Section"],
 Cell[CellGroupData[{
-Cell[3213, 93, 93, 1, 44, "Subsection"],
+Cell[3258, 93, 93, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[3331, 98, 221, 5, 28, "Item"],
-Cell[3555, 105, 169, 2, 28, "Item"],
-Cell[3727, 109, 177, 2, 28, "Item"]
+Cell[3376, 98, 221, 5, 28, "Item"],
+Cell[3600, 105, 169, 2, 28, "Item"],
+Cell[3772, 109, 177, 2, 28, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3953, 117, 96, 1, 44, "Subsection"],
+Cell[3998, 117, 96, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[4074, 122, 155, 2, 28, "Item"],
-Cell[4232, 126, 206, 3, 28, "Item"],
-Cell[4441, 131, 252, 3, 28, "Item"],
-Cell[4696, 136, 203, 3, 28, "Item"],
-Cell[4902, 141, 237, 3, 28, "Item"]
+Cell[4119, 122, 155, 2, 28, "Item"],
+Cell[4277, 126, 206, 3, 28, "Item"],
+Cell[4486, 131, 252, 3, 28, "Item"],
+Cell[4741, 136, 203, 3, 28, "Item"],
+Cell[4947, 141, 237, 3, 28, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5212, 152, 64, 1, 74, "SlideShowNavigationBar",
+Cell[5257, 152, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[5301, 157, 226, 3, 64, "Section"],
-Cell[5530, 162, 676, 12, 87, "Text"],
-Cell[6209, 176, 447, 14, 32, "Text"],
-Cell[6659, 192, 681, 22, 90, "DisplayFormulaNumbered"],
-Cell[7343, 216, 507, 14, 51, "Text"],
-Cell[7853, 232, 44, 1, 4, "PageBreak",
+Cell[5346, 157, 226, 3, 64, "Section"],
+Cell[5575, 162, 676, 12, 87, "Text"],
+Cell[6254, 176, 447, 14, 32, "Text"],
+Cell[6704, 192, 681, 22, 90, "DisplayFormulaNumbered"],
+Cell[7388, 216, 507, 14, 51, "Text"],
+Cell[7898, 232, 44, 1, 1, "PageBreak",
  PageBreakBelow->True],
-Cell[7900, 235, 563, 16, 33, "Text"],
+Cell[7945, 235, 563, 16, 52, "Text"],
 Cell[CellGroupData[{
-Cell[8488, 255, 98, 1, 44, "Subsection"],
+Cell[8533, 255, 98, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[8611, 260, 732, 24, 32, "Item"],
-Cell[9346, 286, 505, 16, 30, "Item"]
+Cell[8656, 260, 732, 24, 32, "Item"],
+Cell[9391, 286, 505, 16, 30, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9900, 308, 128, 1, 44, "Subsection"],
-Cell[10031, 311, 766, 27, 50, "Text"],
-Cell[10800, 340, 274, 5, 30, "Text"],
+Cell[9945, 308, 128, 1, 44, "Subsection"],
+Cell[10076, 311, 766, 27, 50, "Text"],
+Cell[10845, 340, 274, 5, 30, "Text"],
 Cell[CellGroupData[{
-Cell[11099, 349, 918, 22, 62, "Item"],
-Cell[12020, 373, 733, 16, 45, "Item"]
+Cell[11144, 349, 918, 22, 62, "Item"],
+Cell[12065, 373, 733, 16, 45, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12826, 397, 64, 1, 74, "SlideShowNavigationBar",
+Cell[12871, 397, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[12915, 402, 104, 1, 35, "Subsubsection"],
-Cell[13022, 405, 190, 4, 30, "Text"],
-Cell[13215, 411, 481, 15, 50, "DisplayFormulaNumbered"],
-Cell[13699, 428, 87, 1, 30, "Text"],
-Cell[13789, 431, 1048, 36, 66, "DisplayFormula"],
-Cell[14840, 469, 257, 9, 32, "Text"]
+Cell[12960, 402, 104, 1, 35, "Subsubsection"],
+Cell[13067, 405, 190, 4, 30, "Text"],
+Cell[13260, 411, 481, 15, 50, "DisplayFormulaNumbered"],
+Cell[13744, 428, 87, 1, 30, "Text"],
+Cell[13834, 431, 1048, 36, 66, "DisplayFormula"],
+Cell[14885, 469, 257, 9, 32, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15146, 484, 64, 1, 74, "SlideShowNavigationBar",
+Cell[15191, 484, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[15235, 489, 173, 2, 44, "Subsection"],
-Cell[15411, 493, 36, 0, 30, "Text"]
+Cell[15280, 489, 173, 2, 44, "Subsection"],
+Cell[15456, 493, 385, 9, 49, "Text"],
+Cell[15844, 504, 603, 18, 50, "DisplayFormulaNumbered"],
+Cell[16450, 524, 619, 13, 51, "Text"],
+Cell[17072, 539, 143, 1, 30, "Text"],
+Cell[17218, 542, 644, 19, 26, "DisplayFormulaNumbered"],
+Cell[17865, 563, 437, 15, 33, "Text"],
+Cell[CellGroupData[{
+Cell[18327, 582, 145, 1, 35, "Subsubsection"],
+Cell[18475, 585, 342, 6, 30, "Text"],
+Cell[18820, 593, 581, 17, 32, "DisplayFormulaNumbered"],
+Cell[19404, 612, 249, 8, 34, "Text"],
+Cell[19656, 622, 260, 5, 30, "Text"],
+Cell[19919, 629, 699, 19, 33, "DisplayFormulaNumbered"],
+Cell[20621, 650, 312, 10, 32, "Text"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
