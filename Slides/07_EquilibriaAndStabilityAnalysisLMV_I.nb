@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     25038,        797]
-NotebookOptionsPosition[     20973,        665]
-NotebookOutlinePosition[     21916,        698]
-CellTagsIndexPosition[     21838,        693]
+NotebookDataLength[     41732,       1226]
+NotebookOptionsPosition[     36840,       1068]
+NotebookOutlinePosition[     37967,       1105]
+CellTagsIndexPosition[     37888,       1100]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -661,11 +661,414 @@ Cell[TextData[{
   3.641035006724828*^9, 3.641035016044731*^9}}]
 }, Open  ]]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Illustration: Eigenvalues and null clines", "Subsubsection",
+ CellChangeTimes->{{3.6411623672467737`*^9, 3.641162374462829*^9}}],
+
+Cell[TextData[{
+ "In the figure below, the two null clines in blue (solid for ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "1"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and dashed for ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "2"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "), and the eigenvectors are shown in red. The arrows point in the direction \
+of change, and their length is proportional to the rate of change."
+}], "Text",
+ CellChangeTimes->{{3.6411623916432457`*^9, 3.641162399784692*^9}, {
+  3.641163036756123*^9, 3.6411631230880823`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{"vectorFieldPlot", "[", 
+     RowBox[{"mya", ",", "myb", ",", "myc", ",", "myd", ",", "0.1"}], "]"}], 
+    "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"mya", ",", 
+       RowBox[{"-", "2"}]}], "}"}], ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"myb", ",", "1"}], "}"}], ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"myc", ",", "1"}], "}"}], ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"myd", ",", "1"}], "}"}], ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.6411612736928873`*^9, 3.641161298842889*^9}, {
+   3.641161511706233*^9, 3.6411615623476954`*^9}, 3.641161662688006*^9, 
+   3.641161736038171*^9, {3.641162076407*^9, 3.641162129991885*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Parallel`Queue`FIFO`Private`mya$$ = -2, 
+    Parallel`Queue`FIFO`Private`myb$$ = 1, Parallel`Queue`FIFO`Private`myc$$ =
+     1, Parallel`Queue`FIFO`Private`myd$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[Parallel`Queue`FIFO`Private`mya$$], -2}, -10, 10}, {{
+       Hold[Parallel`Queue`FIFO`Private`myb$$], 1}, -10, 10}, {{
+       Hold[Parallel`Queue`FIFO`Private`myc$$], 1}, -10, 10}, {{
+       Hold[Parallel`Queue`FIFO`Private`myd$$], 1}, -10, 10}}, 
+    Typeset`size$$ = {360., {178., 183.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
+    Parallel`Queue`FIFO`Private`mya$174795$$ = 0, 
+    Parallel`Queue`FIFO`Private`myb$174796$$ = 0, 
+    Parallel`Queue`FIFO`Private`myc$174797$$ = 0, 
+    Parallel`Queue`FIFO`Private`myd$174798$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {
+       Parallel`Queue`FIFO`Private`mya$$ = -2, 
+        Parallel`Queue`FIFO`Private`myb$$ = 1, 
+        Parallel`Queue`FIFO`Private`myc$$ = 1, 
+        Parallel`Queue`FIFO`Private`myd$$ = 1}, "ControllerVariables" :> {
+        Hold[
+        Parallel`Queue`FIFO`Private`mya$$, 
+         Parallel`Queue`FIFO`Private`mya$174795$$, 0], 
+        Hold[
+        Parallel`Queue`FIFO`Private`myb$$, 
+         Parallel`Queue`FIFO`Private`myb$174796$$, 0], 
+        Hold[
+        Parallel`Queue`FIFO`Private`myc$$, 
+         Parallel`Queue`FIFO`Private`myc$174797$$, 0], 
+        Hold[
+        Parallel`Queue`FIFO`Private`myd$$, 
+         Parallel`Queue`FIFO`Private`myd$174798$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Parallel`Queue`FIFO`Private`vectorFieldPlot[
+        Parallel`Queue`FIFO`Private`mya$$, Parallel`Queue`FIFO`Private`myb$$, 
+         Parallel`Queue`FIFO`Private`myc$$, Parallel`Queue`FIFO`Private`myd$$,
+          0.1]], "Specifications" :> {{{
+         Parallel`Queue`FIFO`Private`mya$$, -2}, -10, 10}, {{
+         Parallel`Queue`FIFO`Private`myb$$, 1}, -10, 10}, {{
+         Parallel`Queue`FIFO`Private`myc$$, 1}, -10, 10}, {{
+         Parallel`Queue`FIFO`Private`myd$$, 1}, -10, 10}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {264., 269.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.6411612817203217`*^9, 3.641161351859706*^9}, {
+   3.641161407531163*^9, 3.64116144728935*^9}, {3.641161495431567*^9, 
+   3.641161514363042*^9}, 3.641161565677059*^9, {3.6411616237546587`*^9, 
+   3.641161674060019*^9}, 3.6411617369385557`*^9, 3.641161808320634*^9, 
+   3.6411618984250927`*^9, 3.641161947103422*^9, 3.641161982007123*^9, {
+   3.641162077287899*^9, 3.6411621309813023`*^9}, 3.641162163520389*^9, {
+   3.641162202540675*^9, 3.641162258200673*^9}, 3.6411631895350924`*^9, 
+   3.64116353017671*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Initialisation cells", "Section",
+ CellChangeTimes->{{3.641162313284326*^9, 3.641162315718227*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"vectorFieldPlot", "[", 
+   RowBox[{
+   "\[Alpha]_", ",", "\[Beta]_", ",", "\[Chi]_", ",", "\[Delta]_", ",", 
+    "\[Sigma]_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"mya", "=", "\[Alpha]"}], ",", 
+      RowBox[{"myb", "=", "\[Beta]"}], ",", 
+      RowBox[{"myc", "=", "\[Chi]"}], ",", 
+      RowBox[{"myd", "=", "\[Delta]"}], ",", 
+      RowBox[{"mys", "=", "\[Sigma]"}], ",", "n1Min", ",", "n2Min", ",", 
+      "n1Max", ",", "n2Max", ",", "gridStep1", ",", "gridStep2", ",", 
+      "arrowCoord", ",", "vFieldPlot", ",", "eVecs", ",", "nullClines"}], 
+     "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"n1Min", "=", 
+      RowBox[{"-", "20"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"n1Max", "=", "20"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"n2Min", "=", 
+      RowBox[{"-", "20"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"n2Max", "=", "20"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"gridStep1", "=", "4"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"gridStep2", "=", "4"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"arrowCoord", "=", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"x", ",", "y"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"x", "+", 
+               RowBox[{"s", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{"M", ".", 
+                   RowBox[{"{", 
+                    RowBox[{"x", ",", "y"}], "}"}]}], ")"}], 
+                 "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}]}]}], 
+              ",", 
+              RowBox[{"y", "+", 
+               RowBox[{"s", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"a", ",", "b"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"c", ",", "d"}], "}"}]}], "}"}], ".", 
+                   RowBox[{"{", 
+                    RowBox[{"x", ",", "y"}], "}"}]}], ")"}], 
+                 "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}]}]}]}],
+              "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"y", ",", "n2Min", ",", "n2Max", ",", "gridStep2"}], 
+           "}"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "n1Min", ",", "n1Max", ",", "gridStep1"}], "}"}]}],
+        "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"vFieldPlot", "=", 
+      RowBox[{"ListPlot", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"n1Min", ",", "n2Min"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"n1Max", ",", "n2Max"}], "}"}]}], "}"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"PlotStyle", "\[Rule]", "None"}], ",", "\[IndentingNewLine]", 
+        
+        RowBox[{"Epilog", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"Black", ",", 
+           RowBox[{"Arrow", "[", 
+            RowBox[{
+             RowBox[{"Flatten", "[", 
+              RowBox[{"arrowCoord", ",", "1"}], "]"}], "/.", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"a", "\[Rule]", "mya"}], ",", 
+               RowBox[{"b", "\[Rule]", "myb"}], ",", 
+               RowBox[{"c", "\[Rule]", "myc"}], ",", 
+               RowBox[{"d", "\[Rule]", "myd"}], ",", 
+               RowBox[{"s", "\[Rule]", "mys"}]}], "}"}]}], "]"}]}], "}"}]}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n1Min", "-", "2"}], ",", 
+             RowBox[{"n1Max", "+", "2"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n2Min", "-", "2"}], ",", 
+             RowBox[{"n2Max", "+", "2"}]}], "}"}]}], "}"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"AxesLabel", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<\!\(\*SubscriptBox[\(n\), \(1\)]\)\>\"", ",", 
+           "\"\<\!\(\*SubscriptBox[\(n\), \(2\)]\)\>\""}], "}"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"LabelStyle", "\[Rule]", 
+         RowBox[{"Directive", "[", 
+          RowBox[{"FontSize", "\[Rule]", "14"}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "\[IndentingNewLine]", 
+       "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"eVecs", "=", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"N", "[", 
+             RowBox[{"-", 
+              FractionBox[
+               RowBox[{"2", " ", "c"}], 
+               RowBox[{
+                RowBox[{"-", "a"}], "+", "d", "+", 
+                SqrtBox[
+                 RowBox[{
+                  SuperscriptBox["a", "2"], "+", 
+                  RowBox[{"4", " ", "b", " ", "c"}], "-", 
+                  RowBox[{"2", " ", "a", " ", "d"}], "+", 
+                  SuperscriptBox["d", "2"]}]]}]]}], "]"}], "*", "n1"}], "/.", 
+           
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"a", "\[Rule]", "mya"}], ",", 
+             RowBox[{"b", "\[Rule]", "myb"}], ",", 
+             RowBox[{"c", "\[Rule]", "myc"}], ",", 
+             RowBox[{"d", "\[Rule]", "myd"}]}], "}"}]}], ",", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"N", "[", 
+             RowBox[{"-", 
+              FractionBox[
+               RowBox[{"2", " ", "c"}], 
+               RowBox[{
+                RowBox[{"-", "a"}], "+", "d", "-", 
+                SqrtBox[
+                 RowBox[{
+                  SuperscriptBox["a", "2"], "+", 
+                  RowBox[{"4", " ", "b", " ", "c"}], "-", 
+                  RowBox[{"2", " ", "a", " ", "d"}], "+", 
+                  SuperscriptBox["d", "2"]}]]}]]}], "]"}], "*", "n1"}], "/.", 
+           
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"a", "\[Rule]", "mya"}], ",", 
+             RowBox[{"b", "\[Rule]", "myb"}], ",", 
+             RowBox[{"c", "\[Rule]", "myc"}], ",", 
+             RowBox[{"d", "\[Rule]", "myd"}]}], "}"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n1", ",", 
+          RowBox[{"n1Min", "-", "100"}], ",", 
+          RowBox[{"n1Max", "+", "100"}]}], "}"}], ",", "\[IndentingNewLine]", 
+        
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n1Min", "-", "5"}], ",", 
+             RowBox[{"n1Max", "+", "5"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n2Min", "-", "5"}], ",", 
+             RowBox[{"n2Max", "+", "5"}]}], "}"}]}], "}"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"Red", ",", 
+           RowBox[{"{", "Red", "}"}]}], "}"}]}]}], "\[IndentingNewLine]", 
+       "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"nullClines", "=", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "a"}], " ", 
+            RowBox[{"n1", "/", "b"}]}], "/.", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"a", "\[Rule]", "mya"}], ",", 
+             RowBox[{"b", "\[Rule]", "myb"}], ",", 
+             RowBox[{"c", "\[Rule]", "myc"}], ",", 
+             RowBox[{"d", "\[Rule]", "myd"}]}], "}"}]}], ",", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "c"}], " ", 
+            RowBox[{"n1", "/", "d"}]}], "/.", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"a", "\[Rule]", "mya"}], ",", 
+             RowBox[{"b", "\[Rule]", "myb"}], ",", 
+             RowBox[{"c", "\[Rule]", "myc"}], ",", 
+             RowBox[{"d", "\[Rule]", "myd"}]}], "}"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n1", ",", 
+          RowBox[{"n1Min", "-", "100"}], ",", 
+          RowBox[{"n1Max", "+", "100"}]}], "}"}], ",", "\[IndentingNewLine]", 
+        
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n1Min", "-", "5"}], ",", 
+             RowBox[{"n1Max", "+", "5"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n2Min", "-", "5"}], ",", 
+             RowBox[{"n2Max", "+", "5"}]}], "}"}]}], "}"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "Blue", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"Blue", ",", "Dashed"}], "}"}]}], "}"}]}]}], 
+       "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", 
+      RowBox[{"{", 
+       RowBox[{"vFieldPlot", ",", "eVecs", ",", "nullClines"}], "}"}], 
+      "]"}]}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.641161060606532*^9, 3.6411611889392242`*^9}, {
+  3.641161260114332*^9, 3.64116129066197*^9}, {3.641161322037538*^9, 
+  3.641161346723291*^9}, {3.6411613990839777`*^9, 3.641161505812792*^9}, {
+  3.641161618344625*^9, 3.641161671499511*^9}, {3.641161803608473*^9, 
+  3.641161813515531*^9}, {3.641161888206481*^9, 3.641161895685114*^9}, {
+  3.6411619437921467`*^9, 3.6411620259691257`*^9}, {3.641162149587275*^9, 
+  3.641162160961928*^9}, {3.641162198153233*^9, 3.641162293871128*^9}, {
+  3.641163131229788*^9, 3.6411631313397503`*^9}, {3.64116316991523*^9, 
+  3.641163183538636*^9}, {3.6411632253188257`*^9, 3.641163229060534*^9}, {
+  3.641163337701457*^9, 3.641163343379347*^9}}]
+}, Open  ]]
 }, Open  ]]
 },
 ScreenStyleEnvironment->"Working",
-WindowSize->{1101, 807},
-WindowMargins->{{6, Automatic}, {0, Automatic}},
+WindowSize->{1034, 708},
+WindowMargins->{{385, Automatic}, {-753, Automatic}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
@@ -687,12 +1090,16 @@ CellTagsIndex->{
   Cell[12871, 397, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
   Cell[15191, 484, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[20994, 667, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[26616, 805, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 21375, 679}
+ {"SlideShowHeader", 37247, 1082}
  }
 *)
 (*NotebookFileOutline
@@ -751,7 +1158,7 @@ Cell[CellGroupData[{
 Cell[8533, 255, 98, 1, 44, "Subsection"],
 Cell[CellGroupData[{
 Cell[8656, 260, 732, 24, 32, "Item"],
-Cell[9391, 286, 505, 16, 30, "Item"]
+Cell[9391, 286, 505, 16, 47, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -790,13 +1197,35 @@ Cell[17218, 542, 644, 19, 26, "DisplayFormulaNumbered"],
 Cell[17865, 563, 437, 15, 33, "Text"],
 Cell[CellGroupData[{
 Cell[18327, 582, 145, 1, 35, "Subsubsection"],
-Cell[18475, 585, 342, 6, 30, "Text"],
+Cell[18475, 585, 342, 6, 49, "Text"],
 Cell[18820, 593, 581, 17, 32, "DisplayFormulaNumbered"],
 Cell[19404, 612, 249, 8, 34, "Text"],
 Cell[19656, 622, 260, 5, 30, "Text"],
-Cell[19919, 629, 699, 19, 33, "DisplayFormulaNumbered"],
+Cell[19919, 629, 699, 19, 32, "DisplayFormulaNumbered"],
 Cell[20621, 650, 312, 10, 32, "Text"]
 }, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20994, 667, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[21083, 672, 134, 1, 35, "Subsubsection"],
+Cell[21220, 675, 593, 15, 51, "Text"],
+Cell[CellGroupData[{
+Cell[21838, 694, 1144, 32, 80, "Input",
+ InitializationCell->True],
+Cell[22985, 728, 3570, 70, 584, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26616, 805, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[26705, 810, 105, 1, 64, "Section"],
+Cell[26813, 813, 9999, 251, 662, "Input",
+ InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
 }
