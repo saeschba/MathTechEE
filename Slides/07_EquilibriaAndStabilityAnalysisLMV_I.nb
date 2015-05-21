@@ -10,16 +10,29 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     41732,       1226]
-NotebookOptionsPosition[     36840,       1068]
-NotebookOutlinePosition[     37967,       1105]
-CellTagsIndexPosition[     37888,       1100]
+NotebookDataLength[     62025,       1905]
+NotebookOptionsPosition[     53708,       1646]
+NotebookOutlinePosition[     55456,       1697]
+CellTagsIndexPosition[     55377,       1692]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Slide", "Section"],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell["", "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 
@@ -578,15 +591,21 @@ Cell[TextData[{
 }], "Text",
  CellChangeTimes->{{3.641033744316366*^9, 3.641033768669653*^9}}],
 
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
 Cell[CellGroupData[{
 
 Cell["Transforming affine to non-affine multivariable models", "Subsubsection",
  CellChangeTimes->{{3.641032966929329*^9, 3.641032986596875*^9}}],
 
-Cell["\<\
-Starting from Eq. (2), we note that at equilibrium, each variable must not \
-change. Hence, the equilibrium condition for a continuous-time affine model is\
-\>", "Text",
+Cell[TextData[{
+ "Starting from Eq. (2), we note that at equilibrium, each variable must not \
+change. Hence, the equilibrium condition for a ",
+ StyleBox["continuous-time",
+  FontWeight->"Bold"],
+ " affine model is"
+}], "Text",
  CellChangeTimes->{{3.641033110253384*^9, 3.641033123365663*^9}, {
   3.641033164228745*^9, 3.641033177998205*^9}, {3.64103362442759*^9, 
   3.641033632555973*^9}}],
@@ -614,15 +633,74 @@ Cell[TextData[{
  "where ",
  Cell[BoxData[
   FormBox[
-   OverscriptBox["0", "\[RightVector]"], TraditionalForm]],
+   OverscriptBox["0", "\[RightVector]"], TraditionalForm]]],
+ " is a vector of zeros. Moving ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["c", "\[RightVector]"], TraditionalForm]],
   FormatType->"TraditionalForm"],
- " is a vector of zeros."
+ " to the left side and multiplying both sides on the left by ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    StyleBox["M",
+     FontWeight->"Bold",
+     FontSlant->"Plain"], 
+    RowBox[{"-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", we can solve for the equilibrium:"
 }], "Text",
- CellChangeTimes->{{3.64103325849697*^9, 3.641033288111499*^9}}],
+ CellChangeTimes->{{3.64103325849697*^9, 3.641033288111499*^9}, {
+  3.6412350533325233`*^9, 3.6412351267693577`*^9}}],
 
-Cell["\<\
-In discrete time, the equilibrium for Eq. (4) must satisfy the condition\
-\>", "Text",
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t ", 
+   RowBox[{
+    OverscriptBox[
+     OverscriptBox["n", "\[RightVector]"], "^"], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox[
+       StyleBox["M",
+        FontWeight->"Bold",
+        FontSlant->"Plain"], 
+       RowBox[{"-", "1"}]]}], 
+     RowBox[{
+      OverscriptBox["c", "\[RightVector]"], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.64068828890628*^9, 3.6406883414825907`*^9}, {
+  3.641032801997142*^9, 3.6410328272748537`*^9}, {3.641033206242771*^9, 
+  3.641033253703182*^9}, {3.6412351495806026`*^9, 3.641235194653723*^9}}],
+
+Cell[TextData[{
+ "If ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["c", "\[RightVector]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is a vector of zeros, then the equilibrium is at the origin, i.e. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["n", 
+     OverscriptBox["\[RightVector]", "^"]], "=", 
+    OverscriptBox["0", "\[RightVector]"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", as expected for a non-affine linear model (Rule 7.1). "
+}], "Text",
+ CellChangeTimes->{{3.641235196831374*^9, 3.641235239150103*^9}, {
+  3.641235270207858*^9, 3.641235277868835*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[TextData[{
+ "In ",
+ StyleBox["discrete time",
+  FontWeight->"Bold"],
+ ", the equilibrium for Eq. (4) must satisfy the condition"
+}], "Text",
  CellChangeTimes->{{3.641033299092898*^9, 3.641033332652996*^9}, {
   3.641033368127199*^9, 3.641033434550413*^9}, {3.641033786871804*^9, 
   3.641033802613247*^9}}],
@@ -652,14 +730,459 @@ Cell[TextData[{
  "Moving ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"M", " ", 
-    OverscriptBox["n", "\[RightVector]"]}], TraditionalForm]],
+   RowBox[{" ", 
+    OverscriptBox[
+     OverscriptBox["n", "\[RightVector]"], "^"]}], TraditionalForm]]],
+ " to the right and ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["c", "\[RightVector]"], TraditionalForm]],
   FormatType->"TraditionalForm"],
- " gives "
+ " to the left side gives ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"-", 
+     OverscriptBox["c", "\[RightVector]"]}], "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       StyleBox["M",
+        FontWeight->"Bold",
+        FontSlant->"Plain"], "-", 
+       StyleBox["I",
+        FontWeight->"Bold",
+        FontSlant->"Plain"]}], ")"}], 
+     OverscriptBox["n", 
+      OverscriptBox["\[RightVector]", "^"]]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and hence"
 }], "Text",
  CellChangeTimes->{{3.6410348175322847`*^9, 3.641034884183319*^9}, {
-  3.641035006724828*^9, 3.641035016044731*^9}}]
+  3.641035006724828*^9, 3.641035016044731*^9}, {3.641234933156546*^9, 
+  3.641235003942449*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t ", 
+   RowBox[{
+    OverscriptBox[
+     OverscriptBox["n", "\[RightVector]"], "^"], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         StyleBox["M",
+          FontWeight->"Bold",
+          FontSlant->"Plain"], "-", 
+         StyleBox["I",
+          FontWeight->"Bold",
+          FontSlant->"Plain"]}], ")"}], 
+       RowBox[{"-", "1"}]]}], 
+     RowBox[{
+      OverscriptBox["c", "\[RightVector]"], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.64068828890628*^9, 3.6406883414825907`*^9}, {
+  3.641032801997142*^9, 3.6410328272748537`*^9}, {3.641033206242771*^9, 
+  3.641033253703182*^9}, {3.6412351495806026`*^9, 3.641235194653723*^9}, {
+  3.641235358896165*^9, 3.641235368984681*^9}}],
+
+Cell[TextData[{
+ "As in the case of linear models with one variable, the behaviour of affine \
+linear models with multiple variables can be understood using the techniques \
+for non-affine models, provided that we make the appropriate ",
+ StyleBox["transformation",
+  FontWeight->"Bold"],
+ ": We rewrite each variable ",
+ StyleBox["in terms of the deviation from its equilibrium",
+  FontSlant->"Italic"],
+ ", so that the vector of these deviations takes the form of a non-affine \
+linear model:"
+}], "Text",
+ CellChangeTimes->{{3.64123540610879*^9, 3.6412355152784986`*^9}, {
+  3.6412355497318068`*^9, 3.6412355916168003`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t ", 
+   RowBox[{
+    OverscriptBox["\[Delta]", "\[RightVector]"], "=", 
+    RowBox[{
+     OverscriptBox["n", "\[RightVector]"], "-", 
+     RowBox[{
+      OverscriptBox["n", 
+       OverscriptBox["\[RightVector]", "^"]], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.64068828890628*^9, 3.6406883414825907`*^9}, {
+  3.641032801997142*^9, 3.6410328272748537`*^9}, {3.641033206242771*^9, 
+  3.641033253703182*^9}, {3.6412351495806026`*^9, 3.641235194653723*^9}, {
+  3.641235358896165*^9, 3.641235368984681*^9}, {3.641235597650816*^9, 
+  3.641235649631283*^9}}],
+
+Cell["\<\
+Therefore, any result for linear non-affine models can be applied directly to \
+affine models, once this transformation has been made.\
+\>", "Text",
+ CellChangeTimes->{{3.64123565366255*^9, 3.6412356817831373`*^9}}]
 }, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Linear multivariable models in continuous time", "Section",
+ CellChangeTimes->{{3.641235882483507*^9, 3.6412358892362423`*^9}}],
+
+Cell["\<\
+We first summarise the steps to identify the equilibrium of a linear model \
+with multiple variables in continuous time. Then, we learn how to assess the \
+stability of the equilibrium. We will treat the case of discrete time \
+separately later.\
+\>", "Text",
+ CellChangeTimes->{{3.64123589604202*^9, 3.641235966885988*^9}}],
+
+Cell["We find the equilibria by solving the equilibrium condition,", "Text",
+ CellChangeTimes->{{3.641236963677067*^9, 3.641236981275231*^9}, {
+  3.641237021005412*^9, 3.641237029013486*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     OverscriptBox["0", "\[RightVector]"], "=", 
+     RowBox[{
+      StyleBox["M",
+       FontWeight->"Bold",
+       FontSlant->"Plain"], " ", 
+      OverscriptBox[
+       OverscriptBox["n", "\[RightVector]"], "^"]}]}], ","}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.64068828890628*^9, 3.6406883414825907`*^9}, {
+   3.641032801997142*^9, 3.6410328272748537`*^9}, {3.641033206242771*^9, 
+   3.641033253703182*^9}, 3.641237005231484*^9}],
+
+Cell[TextData[{
+ "for ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["n", 
+    OverscriptBox["\[RightVector]", "^"]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". We can already anticipate that the only solution is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["n", 
+     OverscriptBox["\[RightVector]", "^"]], "=", 
+    OverscriptBox["0", "\[RightVector]"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". However, let us take another route here."
+}], "Text",
+ CellChangeTimes->{{3.6412370318193893`*^9, 3.641237049194408*^9}, {
+  3.641237143472588*^9, 3.6412371820289383`*^9}, {3.641237314980445*^9, 
+  3.6412373375460253`*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell["Writing the model in non-matrix form, we have", "Text",
+ CellChangeTimes->{{3.641237188718395*^9, 3.641237192317028*^9}, {
+  3.641237287246808*^9, 3.641237304054111*^9}, {3.641237340174683*^9, 
+  3.641237340852764*^9}, {3.641237391762656*^9, 3.6412373975383*^9}, {
+  3.641237579631507*^9, 3.641237580065007*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"0", "=", 
+     RowBox[{
+      RowBox[{"a", " ", 
+       SubscriptBox["n", "1"]}], "+", 
+      RowBox[{"b", " ", 
+       SubscriptBox["n", "2"]}]}]}], ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"0", "=", 
+     RowBox[{
+      RowBox[{"c", " ", 
+       SubscriptBox["n", "1"]}], "+", 
+      RowBox[{"d", " ", 
+       RowBox[{
+        SubscriptBox["n", "2"], "."}]}]}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.64068828890628*^9, 3.6406883414825907`*^9}, {
+   3.641032801997142*^9, 3.6410328272748537`*^9}, {3.641033206242771*^9, 
+   3.641033253703182*^9}, 3.641237005231484*^9, {3.641237352942092*^9, 
+   3.6412373791610413`*^9}, {3.6412375430590763`*^9, 3.6412375902473*^9}}],
+
+Cell[TextData[{
+ "Solving both equations in (11) for the same variable, e.g. ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "2"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", we find ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "2"], "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "a"}], "/", "b"}], " ", ")"}], 
+     SubscriptBox["n", "1"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "2"], "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "c"}], "/", "d"}], ")"}], 
+     SubscriptBox["n", "1"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Of course, these two equations define the null clines. The equilibrium \
+conditions for Eq. (11) are satisfied by the same value of ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "2"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " only if  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "a"}], "/", "b"}], " ", ")"}], 
+     SubscriptBox[
+      OverscriptBox["n", "^"], "1"]}], "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "c"}], "/", "d"}], ")"}], 
+     SubscriptBox[
+      OverscriptBox["n", "^"], "1"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". In general, this will only hold true if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["n", "^"], "1"], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". This further implies that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["n", "^"], "2"], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". We have just confirmed that the equilibrium occurs where the two null \
+clines intersect."
+}], "Text",
+ CellChangeTimes->{{3.641237401392289*^9, 3.641237536370658*^9}, {
+  3.641237596025289*^9, 3.641237794279215*^9}}],
+
+Cell[TextData[{
+ "In the ",
+ StyleBox["special case where the two null clines coincide",
+  FontWeight->"Bold"],
+ ", there are multiple equilibria. In fact, the whole common null cline is \
+one equilibrium. In this case, we must have ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "a"}], "/", "b"}], "=", 
+    RowBox[{
+     RowBox[{"-", "c"}], "/", "d"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Interestingly, this is also the condition for ",
+ StyleBox["the determinant of",
+  FontSlant->"Italic"],
+ " ",
+ StyleBox["M",
+  FontWeight->"Bold"],
+ " ",
+ StyleBox["to be zero",
+  FontSlant->"Italic"],
+ ", i.e. for ",
+ StyleBox["M",
+  FontWeight->"Bold"],
+ " to be non-invertible. Having a determinant of 0 is ",
+ StyleBox["a special case of the paramters",
+  FontSlant->"Italic"],
+ ", analogous to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"r", "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in the case of one-variable models."
+}], "Text",
+ CellChangeTimes->{{3.641237796388839*^9, 3.641237861586245*^9}, {
+  3.641237902390294*^9, 3.64123790304769*^9}, {3.641237950906425*^9, 
+  3.6412380956017847`*^9}}],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Rule 7.1: Equilibrium of a linear multivariable model in continuous time\
+\>", "Subsection",
+ CellChangeTimes->{{3.6412352880917*^9, 3.641235289970811*^9}, {
+  3.6412360188706293`*^9, 3.641236033601206*^9}}],
+
+Cell[TextData[{
+ "A linear model in continuous time has ",
+ StyleBox["only one equilibrium",
+  FontWeight->"Bold"],
+ " regardless of tthe number of variables, ",
+ StyleBox["provided that the determinant of",
+  FontSlant->"Italic"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["M",
+    FontWeight->"Bold",
+    FontSlant->"Plain"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " ",
+ StyleBox["is not zero",
+  FontSlant->"Italic"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.641236865666172*^9, 3.641236876548258*^9}, {
+  3.641238157784727*^9, 3.641238185401278*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "For a linear model of the form ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[DifferentialD]", 
+      OverscriptBox["n", "\[RightVector]"]}], "/", 
+     RowBox[{"\[DifferentialD]", "t"}]}], "=", 
+    RowBox[{
+     StyleBox["M",
+      FontWeight->"Bold",
+      FontSlant->"Plain"], " ", 
+     OverscriptBox["n", "\[RightVector]"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", the equilibrium point is the origin, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["n", 
+     OverscriptBox["\[RightVector]", "^"]], "=", 
+    OverscriptBox["0", "\[RightVector]"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.641238211829813*^9, 3.641238307301681*^9}}],
+
+Cell[TextData[{
+ "For an affine model of the form  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[DifferentialD]", 
+      OverscriptBox["n", "\[RightVector]"]}], "/", 
+     RowBox[{"\[DifferentialD]", "t"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      StyleBox["M",
+       FontWeight->"Bold",
+       FontSlant->"Plain"], " ", 
+      OverscriptBox["n", "\[RightVector]"]}], "+", 
+     OverscriptBox["c", "\[RightVector]"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", the equilibrium point is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["n", 
+     OverscriptBox["\[RightVector]", "^"]], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox[
+       StyleBox["M",
+        FontWeight->"Bold",
+        FontSlant->"Plain"], 
+       RowBox[{"-", "1"}]]}], 
+     OverscriptBox["c", "\[RightVector]"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Item",
+ CellChangeTimes->{{3.641238211829813*^9, 3.641238356242508*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "If the ",
+ StyleBox["determinant of",
+  FontSlant->"Italic"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["M",
+    FontWeight->"Bold",
+    FontSlant->"Plain"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " ",
+ StyleBox["is zero",
+  FontSlant->"Italic"],
+ ", there are an ",
+ StyleBox["infinite number of equilibria",
+  FontSlant->"Italic"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.641238365767509*^9, 3.6412383854313602`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Determining the stability of the equilibrium", "Subsection",
+ CellChangeTimes->{{3.641236070387662*^9, 3.6412360847130613`*^9}}],
+
+Cell["\<\
+As we have seen, a linear system grows or shrinks along the eigenvectors, as \
+time progresses. If we choose a starting position that lies on an \
+eigenvector, then the system will grow or decay exponentially along the \
+eigenvector, but the relative sizes of the variables will remain constant. \
+\>", "Text",
+ CellChangeTimes->{{3.641238437906109*^9, 3.641238512832979*^9}, {
+  3.641238545708549*^9, 3.641238616739956*^9}}],
+
+Cell["\<\
+To determine if an equilibrium is stable, we are therefore interested in the \
+rate at which the variables shrink or grow along the eigenvector. If the \
+variables all shrink along the eigenvectors, we know that the system will \
+eventually approach the origin, in which case the single equilibrium there is \
+stable. If at least one variable grows along an eigenvector, the equilibrium \
+cannot be stable. \
+\>", "Text",
+ CellChangeTimes->{{3.6412386219684353`*^9, 3.641238655451572*^9}, {
+  3.6412387017226562`*^9, 3.641238808278257*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -677,13 +1200,11 @@ Cell[TextData[{
  "In the figure below, the two null clines in blue (solid for ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["n", "1"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["n", "1"], TraditionalForm]]],
  ", and dashed for ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["n", "2"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["n", "2"], TraditionalForm]]],
  "), and the eigenvectors are shown in red. The arrows point in the direction \
 of change, and their length is proportional to the rate of change."
 }], "Text",
@@ -729,54 +1250,39 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{Parallel`Queue`FIFO`Private`mya$$ = -2, 
-    Parallel`Queue`FIFO`Private`myb$$ = 1, Parallel`Queue`FIFO`Private`myc$$ =
-     1, Parallel`Queue`FIFO`Private`myd$$ = 1, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`mya$$ = -2, $CellContext`myb$$ = 
+    1, $CellContext`myc$$ = 1, $CellContext`myd$$ = 1, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[Parallel`Queue`FIFO`Private`mya$$], -2}, -10, 10}, {{
-       Hold[Parallel`Queue`FIFO`Private`myb$$], 1}, -10, 10}, {{
-       Hold[Parallel`Queue`FIFO`Private`myc$$], 1}, -10, 10}, {{
-       Hold[Parallel`Queue`FIFO`Private`myd$$], 1}, -10, 10}}, 
-    Typeset`size$$ = {360., {178., 183.}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
-    Parallel`Queue`FIFO`Private`mya$174795$$ = 0, 
-    Parallel`Queue`FIFO`Private`myb$174796$$ = 0, 
-    Parallel`Queue`FIFO`Private`myc$174797$$ = 0, 
-    Parallel`Queue`FIFO`Private`myd$174798$$ = 0}, 
+       Hold[$CellContext`mya$$], -2}, -10, 10}, {{
+       Hold[$CellContext`myb$$], 1}, -10, 10}, {{
+       Hold[$CellContext`myc$$], 1}, -10, 10}, {{
+       Hold[$CellContext`myd$$], 1}, -10, 10}}, Typeset`size$$ = {
+    360., {178., 183.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`mya$18548$$ = 
+    0, $CellContext`myb$18549$$ = 0, $CellContext`myc$18550$$ = 
+    0, $CellContext`myd$18551$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
-      "Variables" :> {
-       Parallel`Queue`FIFO`Private`mya$$ = -2, 
-        Parallel`Queue`FIFO`Private`myb$$ = 1, 
-        Parallel`Queue`FIFO`Private`myc$$ = 1, 
-        Parallel`Queue`FIFO`Private`myd$$ = 1}, "ControllerVariables" :> {
-        Hold[
-        Parallel`Queue`FIFO`Private`mya$$, 
-         Parallel`Queue`FIFO`Private`mya$174795$$, 0], 
-        Hold[
-        Parallel`Queue`FIFO`Private`myb$$, 
-         Parallel`Queue`FIFO`Private`myb$174796$$, 0], 
-        Hold[
-        Parallel`Queue`FIFO`Private`myc$$, 
-         Parallel`Queue`FIFO`Private`myc$174797$$, 0], 
-        Hold[
-        Parallel`Queue`FIFO`Private`myd$$, 
-         Parallel`Queue`FIFO`Private`myd$174798$$, 0]}, 
+      "Variables" :> {$CellContext`mya$$ = -2, $CellContext`myb$$ = 
+        1, $CellContext`myc$$ = 1, $CellContext`myd$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`mya$$, $CellContext`mya$18548$$, 0], 
+        Hold[$CellContext`myb$$, $CellContext`myb$18549$$, 0], 
+        Hold[$CellContext`myc$$, $CellContext`myc$18550$$, 0], 
+        Hold[$CellContext`myd$$, $CellContext`myd$18551$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> Show[
-        Parallel`Queue`FIFO`Private`vectorFieldPlot[
-        Parallel`Queue`FIFO`Private`mya$$, Parallel`Queue`FIFO`Private`myb$$, 
-         Parallel`Queue`FIFO`Private`myc$$, Parallel`Queue`FIFO`Private`myd$$,
-          0.1]], "Specifications" :> {{{
-         Parallel`Queue`FIFO`Private`mya$$, -2}, -10, 10}, {{
-         Parallel`Queue`FIFO`Private`myb$$, 1}, -10, 10}, {{
-         Parallel`Queue`FIFO`Private`myc$$, 1}, -10, 10}, {{
-         Parallel`Queue`FIFO`Private`myd$$, 1}, -10, 10}}, "Options" :> {}, 
+        $CellContext`vectorFieldPlot[$CellContext`mya$$, $CellContext`myb$$, \
+$CellContext`myc$$, $CellContext`myd$$, 0.1]], 
+      "Specifications" :> {{{$CellContext`mya$$, -2}, -10, 
+         10}, {{$CellContext`myb$$, 1}, -10, 
+         10}, {{$CellContext`myc$$, 1}, -10, 
+         10}, {{$CellContext`myd$$, 1}, -10, 10}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
      ImageSizeCache->{405., {264., 269.}},
      SingleEvaluation->True],
@@ -796,8 +1302,74 @@ Cell[BoxData[
    3.6411618984250927`*^9, 3.641161947103422*^9, 3.641161982007123*^9, {
    3.641162077287899*^9, 3.6411621309813023`*^9}, 3.641162163520389*^9, {
    3.641162202540675*^9, 3.641162258200673*^9}, 3.6411631895350924`*^9, 
-   3.64116353017671*^9}]
+   3.64116353017671*^9, {3.6412346508990993`*^9, 3.641234677132659*^9}, 
+   3.641234820795003*^9}]
 }, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Example: Metastasis of malignant tumors (adapted from Glass and Kaplan 1995)\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.6412363072936563`*^9, 3.641236314120348*^9}, {
+  3.641236777487678*^9, 3.641236802815053*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["When eigenvalues are complex", "Subsection",
+ CellChangeTimes->{{3.641236104467512*^9, 3.6412361095814466`*^9}, 
+   3.641236143547637*^9}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Rule 7.2: Stability of an equilibrium in a linear continuous-time model\
+\>", "Subsection",
+ CellChangeTimes->{{3.641236128179368*^9, 3.641236130537548*^9}, {
+  3.6412361788393373`*^9, 3.641236189007124*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Equilibria and stability for linear multivariable models in discrete time\
+\>", "Section",
+ CellChangeTimes->{{3.641236267048511*^9, 3.641236289274625*^9}}],
+
+Cell["This is a text cell.", "Text"]
 }, Open  ]]
 }, Open  ]],
 
@@ -853,7 +1425,13 @@ Cell[BoxData[
                RowBox[{"s", 
                 RowBox[{
                  RowBox[{"(", 
-                  RowBox[{"M", ".", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"a", ",", "b"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"c", ",", "d"}], "}"}]}], "}"}], ".", 
                    RowBox[{"{", 
                     RowBox[{"x", ",", "y"}], "}"}]}], ")"}], 
                  "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}]}]}], 
@@ -1054,21 +1632,21 @@ Cell[BoxData[
       "]"}]}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.641161060606532*^9, 3.6411611889392242`*^9}, {
-  3.641161260114332*^9, 3.64116129066197*^9}, {3.641161322037538*^9, 
-  3.641161346723291*^9}, {3.6411613990839777`*^9, 3.641161505812792*^9}, {
-  3.641161618344625*^9, 3.641161671499511*^9}, {3.641161803608473*^9, 
-  3.641161813515531*^9}, {3.641161888206481*^9, 3.641161895685114*^9}, {
-  3.6411619437921467`*^9, 3.6411620259691257`*^9}, {3.641162149587275*^9, 
-  3.641162160961928*^9}, {3.641162198153233*^9, 3.641162293871128*^9}, {
-  3.641163131229788*^9, 3.6411631313397503`*^9}, {3.64116316991523*^9, 
-  3.641163183538636*^9}, {3.6411632253188257`*^9, 3.641163229060534*^9}, {
-  3.641163337701457*^9, 3.641163343379347*^9}}]
+   3.641161260114332*^9, 3.64116129066197*^9}, {3.641161322037538*^9, 
+   3.641161346723291*^9}, {3.6411613990839777`*^9, 3.641161505812792*^9}, {
+   3.641161618344625*^9, 3.641161671499511*^9}, {3.641161803608473*^9, 
+   3.641161813515531*^9}, {3.641161888206481*^9, 3.641161895685114*^9}, {
+   3.6411619437921467`*^9, 3.6411620259691257`*^9}, {3.641162149587275*^9, 
+   3.641162160961928*^9}, {3.641162198153233*^9, 3.641162293871128*^9}, {
+   3.641163131229788*^9, 3.6411631313397503`*^9}, {3.64116316991523*^9, 
+   3.641163183538636*^9}, {3.6411632253188257`*^9, 3.641163229060534*^9}, {
+   3.641163337701457*^9, 3.641163343379347*^9}, 3.641234756036305*^9}]
 }, Open  ]]
 }, Open  ]]
 },
 ScreenStyleEnvironment->"Working",
-WindowSize->{1034, 708},
-WindowMargins->{{385, Automatic}, {-753, Automatic}},
+WindowSize->{997, 706},
+WindowMargins->{{3, Automatic}, {Automatic, 0}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
@@ -1083,23 +1661,37 @@ CellTagsIndex->{
  "SlideShowHeader"->{
   Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[3050, 83, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[781, 35, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[5257, 152, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[3251, 96, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[12871, 397, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[5458, 165, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[15191, 484, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[13072, 410, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[20994, 667, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[15392, 497, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[26616, 805, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[26052, 833, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[35496, 1158, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[36759, 1190, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[41746, 1312, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[42149, 1329, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[42470, 1344, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[42865, 1361, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[43208, 1377, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 37247, 1082}
+ {"SlideShowHeader", 54109, 1660}
  }
 *)
 (*NotebookFileOutline
@@ -1107,124 +1699,211 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[647, 25, 86, 1, 46, "Input"],
-Cell[736, 28, 87, 1, 46, "Input"],
-Cell[826, 31, 307, 4, 29, "Subsubtitle"],
 Cell[CellGroupData[{
-Cell[1158, 39, 800, 14, 148, "Title"],
-Cell[1961, 55, 735, 10, 29, "Subsubtitle"],
-Cell[2699, 67, 116, 2, 29, "Subsubtitle"],
-Cell[2818, 71, 183, 6, 69, "Subsubtitle"]
+Cell[669, 27, 24, 0, 64, "Section"],
+Cell[696, 29, 36, 0, 30, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3050, 83, 64, 1, 74, "SlideShowNavigationBar",
+Cell[781, 35, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[848, 38, 86, 1, 46, "Input"],
+Cell[937, 41, 87, 1, 46, "Input"],
+Cell[1027, 44, 307, 4, 29, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[1359, 52, 800, 14, 148, "Title"],
+Cell[2162, 68, 735, 10, 29, "Subsubtitle"],
+Cell[2900, 80, 116, 2, 29, "Subsubtitle"],
+Cell[3019, 84, 183, 6, 69, "Subsubtitle"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3251, 96, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[3139, 88, 94, 1, 64, "Section"],
+Cell[3340, 101, 94, 1, 64, "Section"],
 Cell[CellGroupData[{
-Cell[3258, 93, 93, 1, 44, "Subsection"],
+Cell[3459, 106, 93, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[3376, 98, 221, 5, 28, "Item"],
-Cell[3600, 105, 169, 2, 28, "Item"],
-Cell[3772, 109, 177, 2, 28, "Item"]
+Cell[3577, 111, 221, 5, 28, "Item"],
+Cell[3801, 118, 169, 2, 28, "Item"],
+Cell[3973, 122, 177, 2, 28, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3998, 117, 96, 1, 44, "Subsection"],
+Cell[4199, 130, 96, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[4119, 122, 155, 2, 28, "Item"],
-Cell[4277, 126, 206, 3, 28, "Item"],
-Cell[4486, 131, 252, 3, 28, "Item"],
-Cell[4741, 136, 203, 3, 28, "Item"],
-Cell[4947, 141, 237, 3, 28, "Item"]
+Cell[4320, 135, 155, 2, 28, "Item"],
+Cell[4478, 139, 206, 3, 28, "Item"],
+Cell[4687, 144, 252, 3, 28, "Item"],
+Cell[4942, 149, 203, 3, 28, "Item"],
+Cell[5148, 154, 237, 3, 28, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5257, 152, 64, 1, 74, "SlideShowNavigationBar",
+Cell[5458, 165, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[5346, 157, 226, 3, 64, "Section"],
-Cell[5575, 162, 676, 12, 87, "Text"],
-Cell[6254, 176, 447, 14, 32, "Text"],
-Cell[6704, 192, 681, 22, 90, "DisplayFormulaNumbered"],
-Cell[7388, 216, 507, 14, 51, "Text"],
-Cell[7898, 232, 44, 1, 1, "PageBreak",
+Cell[5547, 170, 226, 3, 64, "Section"],
+Cell[5776, 175, 676, 12, 106, "Text"],
+Cell[6455, 189, 447, 14, 32, "Text"],
+Cell[6905, 205, 681, 22, 90, "DisplayFormulaNumbered"],
+Cell[7589, 229, 507, 14, 51, "Text"],
+Cell[8099, 245, 44, 1, 1, "PageBreak",
  PageBreakBelow->True],
-Cell[7945, 235, 563, 16, 52, "Text"],
+Cell[8146, 248, 563, 16, 52, "Text"],
 Cell[CellGroupData[{
-Cell[8533, 255, 98, 1, 44, "Subsection"],
+Cell[8734, 268, 98, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[8656, 260, 732, 24, 32, "Item"],
-Cell[9391, 286, 505, 16, 47, "Item"]
+Cell[8857, 273, 732, 24, 32, "Item"],
+Cell[9592, 299, 505, 16, 47, "Item"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9945, 308, 128, 1, 44, "Subsection"],
-Cell[10076, 311, 766, 27, 50, "Text"],
-Cell[10845, 340, 274, 5, 30, "Text"],
+Cell[10146, 321, 128, 1, 44, "Subsection"],
+Cell[10277, 324, 766, 27, 50, "Text"],
+Cell[11046, 353, 274, 5, 30, "Text"],
 Cell[CellGroupData[{
-Cell[11144, 349, 918, 22, 62, "Item"],
-Cell[12065, 373, 733, 16, 45, "Item"]
+Cell[11345, 362, 918, 22, 62, "Item"],
+Cell[12266, 386, 733, 16, 45, "Item"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12871, 397, 64, 1, 74, "SlideShowNavigationBar",
+Cell[13072, 410, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[12960, 402, 104, 1, 35, "Subsubsection"],
-Cell[13067, 405, 190, 4, 30, "Text"],
-Cell[13260, 411, 481, 15, 50, "DisplayFormulaNumbered"],
-Cell[13744, 428, 87, 1, 30, "Text"],
-Cell[13834, 431, 1048, 36, 66, "DisplayFormula"],
-Cell[14885, 469, 257, 9, 32, "Text"]
+Cell[13161, 415, 104, 1, 35, "Subsubsection"],
+Cell[13268, 418, 190, 4, 30, "Text"],
+Cell[13461, 424, 481, 15, 50, "DisplayFormulaNumbered"],
+Cell[13945, 441, 87, 1, 30, "Text"],
+Cell[14035, 444, 1048, 36, 66, "DisplayFormula"],
+Cell[15086, 482, 257, 9, 32, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15191, 484, 64, 1, 74, "SlideShowNavigationBar",
+Cell[15392, 497, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[15280, 489, 173, 2, 44, "Subsection"],
-Cell[15456, 493, 385, 9, 49, "Text"],
-Cell[15844, 504, 603, 18, 50, "DisplayFormulaNumbered"],
-Cell[16450, 524, 619, 13, 51, "Text"],
-Cell[17072, 539, 143, 1, 30, "Text"],
-Cell[17218, 542, 644, 19, 26, "DisplayFormulaNumbered"],
-Cell[17865, 563, 437, 15, 33, "Text"],
+Cell[15481, 502, 173, 2, 44, "Subsection"],
+Cell[15657, 506, 385, 9, 49, "Text"],
+Cell[16045, 517, 603, 18, 50, "DisplayFormulaNumbered"],
+Cell[16651, 537, 619, 13, 51, "Text"],
+Cell[17273, 552, 143, 1, 30, "Text"],
+Cell[17419, 555, 644, 19, 26, "DisplayFormulaNumbered"],
+Cell[18066, 576, 437, 15, 33, "Text"],
+Cell[18506, 593, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[18327, 582, 145, 1, 35, "Subsubsection"],
-Cell[18475, 585, 342, 6, 49, "Text"],
-Cell[18820, 593, 581, 17, 32, "DisplayFormulaNumbered"],
-Cell[19404, 612, 249, 8, 34, "Text"],
-Cell[19656, 622, 260, 5, 30, "Text"],
-Cell[19919, 629, 699, 19, 32, "DisplayFormulaNumbered"],
-Cell[20621, 650, 312, 10, 32, "Text"]
+Cell[18575, 598, 145, 1, 35, "Subsubsection"],
+Cell[18723, 601, 391, 9, 49, "Text"],
+Cell[19117, 612, 581, 17, 32, "DisplayFormulaNumbered"],
+Cell[19701, 631, 695, 22, 34, "Text"],
+Cell[20399, 655, 625, 18, 32, "DisplayFormulaNumbered"],
+Cell[21027, 675, 611, 17, 39, "Text"],
+Cell[21641, 694, 44, 1, 1, "PageBreak",
+ PageBreakBelow->True],
+Cell[21688, 697, 309, 8, 30, "Text"],
+Cell[22000, 707, 699, 19, 32, "DisplayFormulaNumbered"],
+Cell[22702, 728, 978, 34, 39, "Text"],
+Cell[23683, 764, 817, 24, 33, "DisplayFormulaNumbered"],
+Cell[24503, 790, 627, 13, 68, "Text"],
+Cell[25133, 805, 630, 15, 33, "DisplayFormulaNumbered"],
+Cell[25766, 822, 225, 4, 30, "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20994, 667, 64, 1, 74, "SlideShowNavigationBar",
+Cell[26052, 833, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[21083, 672, 134, 1, 35, "Subsubsection"],
-Cell[21220, 675, 593, 15, 51, "Text"],
+Cell[26141, 838, 133, 1, 64, "Section"],
+Cell[26277, 841, 334, 6, 49, "Text"],
+Cell[26614, 849, 191, 2, 30, "Text"],
+Cell[26808, 853, 533, 15, 32, "DisplayFormulaNumbered"],
+Cell[27344, 870, 665, 19, 39, "Text"],
+Cell[28012, 891, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
+Cell[28059, 894, 318, 4, 30, "Text"],
+Cell[28380, 900, 778, 21, 46, "DisplayFormulaNumbered"],
+Cell[29161, 923, 2003, 69, 96, "Text"],
+Cell[31167, 994, 1165, 38, 70, "Text"],
+Cell[32335, 1034, 44, 1, 4, "PageBreak",
+ PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[21838, 694, 1144, 32, 80, "Input",
+Cell[32404, 1039, 217, 4, 44, "Subsection"],
+Cell[32624, 1045, 569, 20, 50, "Text"],
+Cell[CellGroupData[{
+Cell[33218, 1069, 763, 25, 41, "Item"],
+Cell[33984, 1096, 983, 33, 41, "Item"]
+}, Open  ]],
+Cell[34982, 1132, 453, 19, 31, "Text"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35496, 1158, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[35585, 1163, 134, 1, 44, "Subsection"],
+Cell[35722, 1166, 435, 7, 68, "Text"],
+Cell[36160, 1175, 550, 9, 68, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36759, 1190, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[36848, 1195, 134, 1, 35, "Subsubsection"],
+Cell[36985, 1198, 527, 13, 51, "Text"],
+Cell[CellGroupData[{
+Cell[37537, 1215, 1144, 32, 80, "Input",
  InitializationCell->True],
-Cell[22985, 728, 3570, 70, 584, "Output"]
+Cell[38684, 1249, 3001, 56, 550, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26616, 805, 64, 1, 74, "SlideShowNavigationBar",
+Cell[41746, 1312, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[26705, 810, 105, 1, 64, "Section"],
-Cell[26813, 813, 9999, 251, 662, "Input",
+Cell[41835, 1317, 226, 4, 35, "Subsubsection"],
+Cell[42064, 1323, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42149, 1329, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[42238, 1334, 144, 2, 44, "Subsection"],
+Cell[42385, 1338, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42470, 1344, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[42559, 1349, 218, 4, 44, "Subsection"],
+Cell[42780, 1355, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42865, 1361, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[42954, 1366, 166, 3, 64, "Section"],
+Cell[43123, 1371, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43208, 1377, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[43297, 1382, 105, 1, 64, "Section"],
+Cell[43405, 1385, 10275, 257, 662, "Input",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
