@@ -1,0 +1,942 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     31556,        933]
+NotebookOptionsPosition[     27179,        793]
+NotebookOutlinePosition[     28480,        834]
+CellTagsIndexPosition[     28402,        829]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.63888811708808*^9}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.636114599213521*^9}],
+
+Cell["Mathematical Techniques in Evolution and Ecology", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}},
+ TextAlignment->Center],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Equilibria and stability analysis \[Dash]
+Nonlinear models with multiple variables\
+\>", "Title",
+ CellChangeTimes->{
+  3.559948400406288*^9, {3.636114041492673*^9, 3.636114071360457*^9}, 
+   3.6361143314213037`*^9, 3.636114611686428*^9, {3.6361146855231953`*^9, 
+   3.636114706235161*^9}, {3.637404947653048*^9, 3.6374049502815857`*^9}, {
+   3.63740501133258*^9, 3.637405025808597*^9}, {3.637460441988028*^9, 
+   3.637460444607782*^9}, {3.6379238923677893`*^9, 3.637923895631575*^9}, {
+   3.638582094029604*^9, 3.6385821126359873`*^9}, {3.63927216074156*^9, 
+   3.639272189645816*^9}, {3.6394522604519367`*^9, 3.639452285129521*^9}, {
+   3.640082140756105*^9, 3.6400821483885098`*^9}, 3.6403538452056723`*^9, {
+   3.640658417254951*^9, 3.640658441314617*^9}, 3.641291125838172*^9, {
+   3.641644247440754*^9, 3.641644250707059*^9}},
+ TextAlignment->Center],
+
+Cell["Based on Chapter 8 in Otto and Day (2007)", "Subsubtitle",
+ CellChangeTimes->{{3.6361140738110437`*^9, 3.636114105202126*^9}, {
+  3.636114292374742*^9, 3.636114292919485*^9}, {3.636114430585359*^9, 
+  3.636114430808786*^9}, {3.636114503998451*^9, 3.636114519333572*^9}, {
+  3.636114746487883*^9, 3.636114771516698*^9}, {3.636857110980406*^9, 
+  3.636857112831702*^9}, {3.637405036623555*^9, 3.637405036943508*^9}, {
+  3.637923885489958*^9, 3.637923887351268*^9}, {3.638194269997259*^9, 
+  3.638194274665896*^9}, {3.6385821193506002`*^9, 3.638582121525537*^9}, {
+  3.639272193592238*^9, 3.6392721936778107`*^9}, {3.640082151852682*^9, 
+  3.640082152012735*^9}, {3.641032582983231*^9, 3.64103258313439*^9}, {
+  3.641644253675405*^9, 3.641644255299293*^9}},
+ TextAlignment->Center],
+
+Cell["", "Subsubtitle",
+ CellChangeTimes->{
+  3.636114639569048*^9, {3.6361147219781303`*^9, 3.636114742854782*^9}}],
+
+Cell["\<\
+Spring Quarter 2015
+Simon Aeschbacher
+saeschbacher@ucdavis.edu\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.636114263144814*^9, 3.636114285607094*^9}},
+ TextAlignment->Center]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Outline", "Section",
+ CellChangeTimes->{{3.640082189949622*^9, 3.6400821907218847`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Goals", "Subsection",
+ CellChangeTimes->{{3.640082195722251*^9, 3.640082196346025*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+To construct dynamical models involving nonlinear combinations of multiple \
+variables\
+\>", "Item",
+ CellChangeTimes->{{3.640082205330205*^9, 3.640082219454011*^9}, {
+  3.640658456482489*^9, 3.64065847096233*^9}, {3.641644268355207*^9, 
+  3.641644268563252*^9}}],
+
+Cell["To find equilibria of these models", "Item",
+ CellChangeTimes->{{3.640082205330205*^9, 3.640082233026683*^9}, {
+  3.6406584768903513`*^9, 3.6406584826919613`*^9}}],
+
+Cell["To analyse the stability of these equilibria", "Item",
+ CellChangeTimes->{{3.640082205330205*^9, 3.640082233026683*^9}, {
+  3.6406584768903513`*^9, 3.640658492641814*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Concepts", "Subsection",
+ CellChangeTimes->{{3.640082238914657*^9, 3.640082240098547*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Multivariable equilibria", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.640082249262412*^9}, {
+  3.640658497642112*^9, 3.640658502705814*^9}}],
+
+Cell["Linearisation near equilibria", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.64008224925082*^9}, {
+  3.640082288133376*^9, 3.640082295765732*^9}, {3.640658583144848*^9, 
+  3.640658595448641*^9}, {3.6416442897468853`*^9, 3.6416442968428164`*^9}}],
+
+Cell["Stability analysis with multiple equilibria", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.64008224925082*^9}, {
+  3.640082288133376*^9, 3.640082290109345*^9}, {3.640658506705784*^9, 
+  3.6406585090659933`*^9}, {3.640658604136644*^9, 3.640658605896798*^9}, {
+  3.6416443025324097`*^9, 3.6416443113144827`*^9}}],
+
+Cell["(Linkage disequilibrium)", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.64008224925082*^9}, {
+  3.640082288133376*^9, 3.640082299922988*^9}, {3.64065859940851*^9, 
+  3.640658635730793*^9}, {3.641644324058769*^9, 3.641644331026313*^9}}],
+
+Cell["Approximate stability analysis", "Item",
+ CellChangeTimes->{{3.640082246746821*^9, 3.64008224925082*^9}, {
+  3.640082288133376*^9, 3.640082299922988*^9}, {3.64065859940851*^9, 
+  3.640658649496134*^9}, {3.6416443347464447`*^9, 3.641644340650399*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Nonlinear multi-variable models in continuous time", "Section",
+ CellChangeTimes->{{3.64034887060281*^9, 3.640348874667014*^9}, {
+  3.640658667835402*^9, 3.6406586732153997`*^9}, {3.640658943916668*^9, 
+  3.640658945148486*^9}, {3.641644351154574*^9, 3.6416443595382633`*^9}}],
+
+Cell[TextData[{
+ "Many problems that arise in biology are nonlinear. As an example, consider \
+a two-variable model for the spread of a disease that tracks the dynamics of \
+the number of susceptible and infected individuals in a population, ",
+ Cell[BoxData[
+  FormBox["I", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["S", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", respectively. (We have encountered a similar model in one of our very \
+first units.)"
+}], "Text",
+ CellChangeTimes->{{3.641644494473043*^9, 3.641644602560288*^9}, {
+  3.641644999700993*^9, 3.6416450011408987`*^9}}],
+
+Cell["The dynamics can be described in continuous time as", "Text",
+ CellChangeTimes->{{3.6416446092321043`*^9, 3.641644636647798*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{"\[DifferentialD]", "S"}], 
+      RowBox[{"\[DifferentialD]", "t"}]], "=", 
+     RowBox[{"\[Theta]", "-", 
+      RowBox[{"d", " ", "S"}], "-", 
+      RowBox[{"\[Beta]", " ", "S", " ", "I"}], "+", 
+      RowBox[{"\[Gamma]", " ", "I"}]}]}], ",", "\[LineSeparator]", "\t", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"\[DifferentialD]", "I"}], 
+      RowBox[{"\[DifferentialD]", "t"}]], "=", 
+     RowBox[{
+      RowBox[{"\[Beta]", " ", "S", " ", "I"}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"d", "+", "\[Nu]", "+", "\[Gamma]"}], ")"}], 
+       RowBox[{"I", "."}]}]}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.641644648729127*^9, 3.6416447120719547`*^9}, {
+  3.641645110550755*^9, 3.641645115004683*^9}}],
+
+Cell[TextData[{
+ "Here, ",
+ Cell[BoxData[
+  FormBox["\[Theta]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the constant rate at which the susceptible host population is \
+replenished, ",
+ Cell[BoxData[
+  FormBox["\[Beta]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the transmission rate fo the disease, ",
+ Cell[BoxData[
+  FormBox["d", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " the per capita background mortality rate of the host, \[Nu] the additional \
+mortality due to infection, and \[Gamma] the rate of clearance of disease \
+through host defense mechanisms."
+}], "Text",
+ CellChangeTimes->{{3.641644908845324*^9, 3.641645098523178*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Finding equilibria", "Subsection",
+ CellChangeTimes->{{3.641644399515538*^9, 3.641644404257949*^9}}],
+
+Cell[TextData[{
+ "To find the equilibria of the model in Eq. (1), we set ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[DifferentialD]", "S"}], "/", 
+     RowBox[{"\[DifferentialD]", "t"}]}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[DifferentialD]", "I"}], "/", 
+     RowBox[{"\[DifferentialD]", "t"}]}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", which yields the equilibrium conditions:"
+}], "Text",
+ CellChangeTimes->{{3.641645175701021*^9, 3.641645239171391*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"0", "=", 
+     RowBox[{"\[Theta]", "-", 
+      RowBox[{"d", " ", 
+       StyleBox[
+        OverscriptBox["S", "^"],
+        FontSlant->"Italic"]}], "-", 
+      RowBox[{"\[Beta]", " ", 
+       StyleBox[
+        OverscriptBox["S", "^"],
+        FontSlant->"Italic"], " ", 
+       StyleBox[
+        OverscriptBox["I", "^"],
+        FontSlant->"Italic"]}], "+", 
+      RowBox[{"\[Gamma]", " ", 
+       StyleBox[
+        OverscriptBox["I", "^"],
+        FontSlant->"Italic"]}]}]}], ",", "\[LineSeparator]", "\t", 
+    RowBox[{"0", "=", 
+     RowBox[{
+      RowBox[{"\[Beta]", " ", 
+       OverscriptBox[
+        RowBox[{"S", " "}], "^"], 
+       StyleBox[
+        OverscriptBox["I", "^"],
+        FontSlant->"Italic"]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"d", "+", "\[Nu]", "+", "\[Gamma]"}], ")"}], 
+       RowBox[{
+        StyleBox[
+         OverscriptBox["I", "^"],
+         FontSlant->"Italic"], "."}]}]}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.641644648729127*^9, 3.6416447120719547`*^9}, {
+  3.641645110550755*^9, 3.641645115004683*^9}, {3.641645246347157*^9, 
+  3.641645328336368*^9}}],
+
+Cell["\<\
+Unlike in a linear model, there can be several equilibria in a nonlinear \
+model, and we would like to obtain explicit expressions for all of them. \
+Identifying all equilibria can be difficult in practice. A good place to \
+start is to factor the equations, and, if this is possible, look for values \
+of the variables that make any of the factors zero.\
+\>", "Text",
+ CellChangeTimes->{{3.6416453491373158`*^9, 3.641645451888721*^9}}],
+
+Cell["\<\
+For our example in Eq. (2), we see that the first equation cannot be \
+factored, but the second can, giving\
+\>", "Text",
+ CellChangeTimes->{{3.641645454760212*^9, 3.641645490040007*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{"0", "=", 
+    RowBox[{
+     StyleBox[
+      OverscriptBox["I", "^"],
+      FontSlant->"Italic"], 
+     RowBox[{
+      RowBox[{
+       StyleBox["{",
+        FontSlant->"Italic"], 
+       RowBox[{
+        RowBox[{"\[Beta]", " ", 
+         OverscriptBox[
+          RowBox[{"S", " "}], "^"]}], "-", 
+        RowBox[{"(", 
+         RowBox[{"d", "+", "\[Nu]", "+", "\[Gamma]"}], ")"}]}], 
+       StyleBox["}",
+        FontSlant->"Italic"]}], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.641644648729127*^9, 3.6416447120719547`*^9}, {
+  3.641645110550755*^9, 3.641645115004683*^9}, {3.641645246347157*^9, 
+  3.641645328336368*^9}, {3.641645496488748*^9, 3.641645528492817*^9}}],
+
+Cell[TextData[{
+ "Therefore, an equilibrium must satisfy either ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox[
+     OverscriptBox["I", "^"],
+     FontSlant->"Italic"], 
+    StyleBox["=",
+     FontSlant->"Plain"], 
+    StyleBox["0",
+     FontSlant->"Plain"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " or ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0", "=", 
+    RowBox[{
+     RowBox[{"\[Beta]", " ", 
+      OverscriptBox[
+       RowBox[{"S", " "}], "^"]}], "-", 
+     RowBox[{"(", 
+      RowBox[{"d", "+", "\[Nu]", "+", "\[Gamma]"}], ")"}]}]}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". For both cases, we must now find the conditions under which the first \
+equation in Eq. (2) is also satisfied:"
+}], "Text",
+ CellChangeTimes->{{3.641645574279181*^9, 3.6416456972784986`*^9}, {
+  3.6416461662983017`*^9, 3.64164616665783*^9}}],
+
+Cell[TextData[{
+ "Substituting ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox[
+     OverscriptBox["I", "^"],
+     FontSlant->"Italic"], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " into the first equation and solving for ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    OverscriptBox["S", "^"],
+    FontSlant->"Italic"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " yields one equilibrium of the model:"
+}], "Item",
+ CellChangeTimes->{{3.641646176809907*^9, 3.641646207609385*^9}, {
+  3.641646243235153*^9, 3.641646247465399*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     StyleBox[
+      OverscriptBox["S", "^"],
+      FontSlant->"Italic"], "=", 
+     FractionBox["\[Theta]", "d"]}], ",", " ", 
+    RowBox[{
+     StyleBox[
+      OverscriptBox["I", "^"],
+      FontSlant->"Italic"], "=", "0."}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.641644648729127*^9, 3.6416447120719547`*^9}, {
+  3.641645110550755*^9, 3.641645115004683*^9}, {3.641645246347157*^9, 
+  3.641645328336368*^9}, {3.641645496488748*^9, 3.641645528492817*^9}, {
+  3.641646255784754*^9, 3.6416462825305443`*^9}}],
+
+Cell[TextData[{
+ "Similarly, substituting ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0", "=", 
+    RowBox[{
+     RowBox[{"\[Beta]", " ", 
+      OverscriptBox[
+       RowBox[{"S", " "}], "^"]}], "-", 
+     RowBox[{"(", 
+      RowBox[{"d", "+", "\[Nu]", "+", "\[Gamma]"}], ")"}]}]}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " we find, after some algebra, the second equilibrium:"
+}], "Item",
+ CellChangeTimes->{{3.641646304816798*^9, 3.641646361248479*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{
+     StyleBox[
+      OverscriptBox["S", "^"],
+      FontSlant->"Italic"], "=", 
+     FractionBox[
+      RowBox[{"d", "+", "\[Nu]", "+", "\[Gamma]"}], "\[Beta]"]}], ",", " ", 
+    RowBox[{
+     StyleBox[
+      OverscriptBox["I", "^"],
+      FontSlant->"Italic"], "=", 
+     RowBox[{
+      FractionBox[
+       RowBox[{"\[Theta]", "-", 
+        RowBox[{
+         FractionBox["d", "\[Beta]"], 
+         RowBox[{"(", 
+          RowBox[{"d", "+", "\[Nu]", "+", "\[Gamma]"}], ")"}]}]}], 
+       RowBox[{"d", "+", "\[Nu]"}]], "."}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.641644648729127*^9, 3.6416447120719547`*^9}, {
+  3.641645110550755*^9, 3.641645115004683*^9}, {3.641645246347157*^9, 
+  3.641645328336368*^9}, {3.641645496488748*^9, 3.641645528492817*^9}, {
+  3.641646255784754*^9, 3.6416462825305443`*^9}, {3.641646355088312*^9, 
+  3.641646411035646*^9}}],
+
+Cell[TextData[{
+ "Equilibrium (4) corresponds to the case where the disease is absent, and \
+equilibrium (5) to the case where the disease is present, which is often \
+referred to as the ",
+ StyleBox["endemic",
+  FontSlant->"Italic"],
+ " equilibrium."
+}], "Text",
+ CellChangeTimes->{{3.641646422551813*^9, 3.641646472359243*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Determining the stability of the equilibria", "Subsection",
+ CellChangeTimes->{{3.6416444189794064`*^9, 3.6416444266256104`*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+The general approach for determining the local stability of equilibria\
+\>", "Subsection",
+ CellChangeTimes->{{3.641644461458941*^9, 3.6416444736972933`*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Concluding remarks", "Section",
+ CellChangeTimes->{{3.641644452363172*^9, 3.641644455641416*^9}}],
+
+Cell["This is a text cell.", "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Initialisation cells", "Section",
+ CellChangeTimes->{{3.641162313284326*^9, 3.641162315718227*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"vectorFieldPlot", "[", 
+   RowBox[{
+   "\[Alpha]_", ",", "\[Beta]_", ",", "\[Chi]_", ",", "\[Delta]_", ",", 
+    "\[Sigma]_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"mya", "=", "\[Alpha]"}], ",", 
+      RowBox[{"myb", "=", "\[Beta]"}], ",", 
+      RowBox[{"myc", "=", "\[Chi]"}], ",", 
+      RowBox[{"myd", "=", "\[Delta]"}], ",", 
+      RowBox[{"mys", "=", "\[Sigma]"}], ",", "n1Min", ",", "n2Min", ",", 
+      "n1Max", ",", "n2Max", ",", "gridStep1", ",", "gridStep2", ",", 
+      "arrowCoord", ",", "vFieldPlot", ",", "eVecs", ",", "nullClines"}], 
+     "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"n1Min", "=", 
+      RowBox[{"-", "20"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"n1Max", "=", "20"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"n2Min", "=", 
+      RowBox[{"-", "20"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"n2Max", "=", "20"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"gridStep1", "=", "4"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"gridStep2", "=", "4"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"arrowCoord", "=", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"x", ",", "y"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"x", "+", 
+               RowBox[{"s", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"a", ",", "b"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"c", ",", "d"}], "}"}]}], "}"}], ".", 
+                   RowBox[{"{", 
+                    RowBox[{"x", ",", "y"}], "}"}]}], ")"}], 
+                 "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}]}]}], 
+              ",", 
+              RowBox[{"y", "+", 
+               RowBox[{"s", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"a", ",", "b"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"c", ",", "d"}], "}"}]}], "}"}], ".", 
+                   RowBox[{"{", 
+                    RowBox[{"x", ",", "y"}], "}"}]}], ")"}], 
+                 "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}]}]}]}],
+              "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"y", ",", "n2Min", ",", "n2Max", ",", "gridStep2"}], 
+           "}"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "n1Min", ",", "n1Max", ",", "gridStep1"}], "}"}]}],
+        "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"vFieldPlot", "=", 
+      RowBox[{"ListPlot", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"n1Min", ",", "n2Min"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"n1Max", ",", "n2Max"}], "}"}]}], "}"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"PlotStyle", "\[Rule]", "None"}], ",", "\[IndentingNewLine]", 
+        
+        RowBox[{"Epilog", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"Black", ",", 
+           RowBox[{"Arrow", "[", 
+            RowBox[{
+             RowBox[{"Flatten", "[", 
+              RowBox[{"arrowCoord", ",", "1"}], "]"}], "/.", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"a", "\[Rule]", "mya"}], ",", 
+               RowBox[{"b", "\[Rule]", "myb"}], ",", 
+               RowBox[{"c", "\[Rule]", "myc"}], ",", 
+               RowBox[{"d", "\[Rule]", "myd"}], ",", 
+               RowBox[{"s", "\[Rule]", "mys"}]}], "}"}]}], "]"}]}], "}"}]}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n1Min", "-", "2"}], ",", 
+             RowBox[{"n1Max", "+", "2"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n2Min", "-", "2"}], ",", 
+             RowBox[{"n2Max", "+", "2"}]}], "}"}]}], "}"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"AxesLabel", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<\!\(\*SubscriptBox[\(n\), \(1\)]\)\>\"", ",", 
+           "\"\<\!\(\*SubscriptBox[\(n\), \(2\)]\)\>\""}], "}"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"LabelStyle", "\[Rule]", 
+         RowBox[{"Directive", "[", 
+          RowBox[{"FontSize", "\[Rule]", "14"}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "\[IndentingNewLine]", 
+       "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"eVecs", "=", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"N", "[", 
+             RowBox[{"-", 
+              FractionBox[
+               RowBox[{"2", " ", "c"}], 
+               RowBox[{
+                RowBox[{"-", "a"}], "+", "d", "+", 
+                SqrtBox[
+                 RowBox[{
+                  SuperscriptBox["a", "2"], "+", 
+                  RowBox[{"4", " ", "b", " ", "c"}], "-", 
+                  RowBox[{"2", " ", "a", " ", "d"}], "+", 
+                  SuperscriptBox["d", "2"]}]]}]]}], "]"}], "*", "n1"}], "/.", 
+           
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"a", "\[Rule]", "mya"}], ",", 
+             RowBox[{"b", "\[Rule]", "myb"}], ",", 
+             RowBox[{"c", "\[Rule]", "myc"}], ",", 
+             RowBox[{"d", "\[Rule]", "myd"}]}], "}"}]}], ",", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"N", "[", 
+             RowBox[{"-", 
+              FractionBox[
+               RowBox[{"2", " ", "c"}], 
+               RowBox[{
+                RowBox[{"-", "a"}], "+", "d", "-", 
+                SqrtBox[
+                 RowBox[{
+                  SuperscriptBox["a", "2"], "+", 
+                  RowBox[{"4", " ", "b", " ", "c"}], "-", 
+                  RowBox[{"2", " ", "a", " ", "d"}], "+", 
+                  SuperscriptBox["d", "2"]}]]}]]}], "]"}], "*", "n1"}], "/.", 
+           
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"a", "\[Rule]", "mya"}], ",", 
+             RowBox[{"b", "\[Rule]", "myb"}], ",", 
+             RowBox[{"c", "\[Rule]", "myc"}], ",", 
+             RowBox[{"d", "\[Rule]", "myd"}]}], "}"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n1", ",", 
+          RowBox[{"n1Min", "-", "100"}], ",", 
+          RowBox[{"n1Max", "+", "100"}]}], "}"}], ",", "\[IndentingNewLine]", 
+        
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n1Min", "-", "5"}], ",", 
+             RowBox[{"n1Max", "+", "5"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n2Min", "-", "5"}], ",", 
+             RowBox[{"n2Max", "+", "5"}]}], "}"}]}], "}"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"Red", ",", 
+           RowBox[{"{", "Red", "}"}]}], "}"}]}]}], "\[IndentingNewLine]", 
+       "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"nullClines", "=", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "a"}], " ", 
+            RowBox[{"n1", "/", "b"}]}], "/.", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"a", "\[Rule]", "mya"}], ",", 
+             RowBox[{"b", "\[Rule]", "myb"}], ",", 
+             RowBox[{"c", "\[Rule]", "myc"}], ",", 
+             RowBox[{"d", "\[Rule]", "myd"}]}], "}"}]}], ",", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "c"}], " ", 
+            RowBox[{"n1", "/", "d"}]}], "/.", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"a", "\[Rule]", "mya"}], ",", 
+             RowBox[{"b", "\[Rule]", "myb"}], ",", 
+             RowBox[{"c", "\[Rule]", "myc"}], ",", 
+             RowBox[{"d", "\[Rule]", "myd"}]}], "}"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n1", ",", 
+          RowBox[{"n1Min", "-", "100"}], ",", 
+          RowBox[{"n1Max", "+", "100"}]}], "}"}], ",", "\[IndentingNewLine]", 
+        
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n1Min", "-", "5"}], ",", 
+             RowBox[{"n1Max", "+", "5"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"n2Min", "-", "5"}], ",", 
+             RowBox[{"n2Max", "+", "5"}]}], "}"}]}], "}"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "Blue", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"Blue", ",", "Dashed"}], "}"}]}], "}"}]}]}], 
+       "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", 
+      RowBox[{"{", 
+       RowBox[{"vFieldPlot", ",", "eVecs", ",", "nullClines"}], "}"}], 
+      "]"}]}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.641161060606532*^9, 3.6411611889392242`*^9}, {
+   3.641161260114332*^9, 3.64116129066197*^9}, {3.641161322037538*^9, 
+   3.641161346723291*^9}, {3.6411613990839777`*^9, 3.641161505812792*^9}, {
+   3.641161618344625*^9, 3.641161671499511*^9}, {3.641161803608473*^9, 
+   3.641161813515531*^9}, {3.641161888206481*^9, 3.641161895685114*^9}, {
+   3.6411619437921467`*^9, 3.6411620259691257`*^9}, {3.641162149587275*^9, 
+   3.641162160961928*^9}, {3.641162198153233*^9, 3.641162293871128*^9}, {
+   3.641163131229788*^9, 3.6411631313397503`*^9}, {3.64116316991523*^9, 
+   3.641163183538636*^9}, {3.6411632253188257`*^9, 3.641163229060534*^9}, {
+   3.641163337701457*^9, 3.641163343379347*^9}, 3.641234756036305*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowSize->{1005, 1277},
+WindowMargins->{{645, Automatic}, {Automatic, 2}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[3165, 85, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[5611, 156, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[8363, 236, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[15653, 475, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[15742, 480, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[16054, 494, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[16399, 510, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[16679, 524, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 27584, 807}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[647, 25, 86, 1, 46, "Input"],
+Cell[736, 28, 87, 1, 46, "Input"],
+Cell[826, 31, 307, 4, 29, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[1158, 39, 866, 15, 148, "Title"],
+Cell[2027, 56, 784, 11, 29, "Subsubtitle"],
+Cell[2814, 69, 116, 2, 29, "Subsubtitle"],
+Cell[2933, 73, 183, 6, 69, "Subsubtitle"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3165, 85, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[3254, 90, 94, 1, 64, "Section"],
+Cell[CellGroupData[{
+Cell[3373, 95, 93, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[3491, 100, 273, 6, 28, "Item"],
+Cell[3767, 108, 169, 2, 28, "Item"],
+Cell[3939, 112, 177, 2, 28, "Item"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4165, 120, 96, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[4286, 125, 155, 2, 28, "Item"],
+Cell[4444, 129, 258, 3, 28, "Item"],
+Cell[4705, 134, 323, 4, 28, "Item"],
+Cell[5031, 140, 248, 3, 28, "Item"],
+Cell[5282, 145, 256, 3, 28, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5611, 156, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[5700, 161, 282, 3, 64, "Section"],
+Cell[5985, 166, 640, 15, 69, "Text"],
+Cell[6628, 183, 135, 1, 30, "Text"],
+Cell[6766, 186, 856, 24, 91, "DisplayFormulaNumbered"],
+Cell[7625, 212, 689, 18, 71, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8363, 236, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[8452, 241, 106, 1, 44, "Subsection"],
+Cell[8561, 244, 617, 19, 31, "Text"],
+Cell[9181, 265, 1215, 39, 55, "DisplayFormulaNumbered"],
+Cell[10399, 306, 446, 7, 68, "Text"],
+Cell[10848, 315, 197, 4, 30, "Text"],
+Cell[11048, 321, 761, 23, 36, "DisplayFormulaNumbered"],
+Cell[11812, 346, 867, 29, 55, "Text"],
+Cell[12682, 377, 568, 19, 33, "Item"],
+Cell[13253, 398, 608, 17, 47, "DisplayFormulaNumbered"],
+Cell[13864, 417, 471, 15, 34, "Item"],
+Cell[14338, 434, 956, 27, 58, "DisplayFormulaNumbered"],
+Cell[15297, 463, 329, 8, 49, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[15653, 475, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[15742, 480, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[15831, 485, 135, 1, 44, "Subsection"],
+Cell[15969, 488, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16054, 494, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[16143, 499, 168, 3, 44, "Subsection"],
+Cell[16314, 504, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16399, 510, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[16488, 515, 103, 1, 64, "Section"],
+Cell[16594, 518, 36, 0, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16679, 524, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[16768, 529, 105, 1, 64, "Section"],
+Cell[16876, 532, 10275, 257, 662, "Input",
+ InitializationCell->True]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
